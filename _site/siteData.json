@@ -14,10 +14,32 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "ay1920-s2": "ay1920-s2"
-      },
+      "headings": {},
       "src": "README.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/footer.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/head.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/header.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/navigation.md",
       "title": "",
       "layout": "default"
     },
@@ -30,6 +52,66 @@
       "footer": "footer.md",
       "siteNav": "site-nav.md",
       "src": "contents/peerlearning/peerlearning.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "peer-learning-task": "Peer Learning Task"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/peerlearning/peerlearningtask.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "piazza-participation": "Piazza Participation"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/peerlearning/piazza.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "textbook-contributions": "Textbook Contributions"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/peerlearning/textbook.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "static-vs-dynamic-typing": "Static Vs. Dynamic Typing"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "textbook": "Textbook"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/textbook.md",
       "title": "",
       "layout": "default"
     },
