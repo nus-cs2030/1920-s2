@@ -35,6 +35,66 @@
     },
     {
       "headings": {
+        "peer-learning-task": "Peer Learning Task"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/peerlearning/peerlearningtask.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "piazza-participation": "Piazza Participation"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/peerlearning/piazza.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "textbook-contributions": "Textbook Contributions"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/peerlearning/textbook.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "static-vs-dynamic-typing": "Static Vs. Dynamic Typing"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "textbook": "Textbook"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/textbook.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "week-1": "Week 1"
       },
       "pageNav": 2,
