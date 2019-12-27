@@ -1317,3 +1317,26 @@ Missing reference in C:\Users\seanl\Desktop\website\index.md
 2019-12-27T13:12:36.506Z - info: Rebuilding 1 pages
 2019-12-27T13:12:36.530Z - info: Pages rebuilt
 2019-12-27T13:12:36.534Z - info: Site data built
+2019-12-27T14:03:30.547Z - info: Website generation started at 10:03:30 PM
+2019-12-27T14:03:30.701Z - info: Building assets...
+2019-12-27T14:03:30.813Z - info: Assets built
+2019-12-27T14:03:30.815Z - info: Generating pages...
+2019-12-27T14:03:31.080Z - info: Pages built
+2019-12-27T14:03:31.341Z - info: Website generation complete! Total build time: 0.847s
+2019-12-27T14:03:31.365Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2019-12-27T14:03:31.365Z - info: Press CTRL+C to stop ...
+2019-12-27T14:03:31.445Z - info: Site data built
+2019-12-27T14:04:54.572Z - info: [10:04:54 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-27T14:04:55.575Z - info: Rebuilding affected source files
+2019-12-27T14:04:55.577Z - info: Rebuilding 1 pages
+2019-12-27T14:04:55.638Z - info: Pages rebuilt
+2019-12-27T14:04:55.641Z - info: Site data built
+2019-12-27T14:05:09.609Z - info: Website generation started at 10:05:09 PM
+2019-12-27T14:05:09.749Z - info: Building assets...
+2019-12-27T14:05:09.854Z - info: Assets built
+2019-12-27T14:05:09.855Z - info: Generating pages...
+2019-12-27T14:05:10.105Z - info: Pages built
+2019-12-27T14:05:10.168Z - info: Website generation complete! Total build time: 0.591s
+2019-12-27T14:05:10.189Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2019-12-27T14:05:10.189Z - info: Press CTRL+C to stop ...
+2019-12-27T14:05:10.238Z - info: Site data built

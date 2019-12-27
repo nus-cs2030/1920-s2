@@ -10,7 +10,7 @@
 # Textbook
 
 **Lecture 1**
-* [Static Vs. Dynamic Typing](lecture01/staticVsDynamicTyping.html) [:fas-pen:](https://www.google.com)
+* [Static Vs. Dynamic Typing](lecture01/staticVsDynamicTyping.html) [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture01/staticVsDynamicTyping.md)
 
 **Lecture 2**
 

@@ -14,32 +14,10 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "ay1920-s2": "ay1920-s2"
+      },
       "src": "README.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/footer.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/head.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/header.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/navigation.md",
       "title": "",
       "layout": "default"
     },
