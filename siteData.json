@@ -1,0 +1,49 @@
+{
+  "enableSearch": true,
+  "pages": [
+    {
+      "headings": {
+        "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
+      },
+      "header": "header.md",
+      "footer": "footer.md",
+      "pageNav": 2,
+      "siteNav": "site-nav.md",
+      "src": "index.md",
+      "title": "CS2030 AY19/20 Semester 2",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "ay1920-s2": "ay1920-s2"
+      },
+      "src": "README.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "peer-learning-segment": "Peer Learning Segment"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/peerlearning/peerlearning.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "week-1": "Week 1"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/weeks/week1.md",
+      "title": "",
+      "layout": "default"
+    }
+  ]
+}
