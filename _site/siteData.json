@@ -2,9 +2,7 @@
   "enableSearch": true,
   "pages": [
     {
-      "headings": {
-        "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
-      },
+      "headings": {},
       "header": "header.md",
       "footer": "footer.md",
       "pageNav": 2,
@@ -14,17 +12,37 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "ay1920-s2": "ay1920-s2"
-      },
+      "headings": {},
       "src": "README.md",
       "title": "",
       "layout": "default"
     },
     {
-      "headings": {
-        "peer-learning-segment": "Peer Learning Segment"
-      },
+      "headings": {},
+      "src": "_site/markbind/layouts/default/footer.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/head.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/header.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/navigation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -34,9 +52,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "peer-learning-task": "Peer Learning Task"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -46,9 +62,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "piazza-participation": "Piazza Participation"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -58,9 +72,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "textbook-contributions": "Textbook Contributions"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -70,9 +82,37 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "static-vs-dynamic-typing": "Static Vs. Dynamic Typing"
-      },
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/abstraction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/encapsulation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/oopIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -82,8 +122,674 @@
       "layout": "default"
     },
     {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/FactoryMethods.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/JShellIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/cyclicDependency.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/immutability.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/inheritance.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/javaTesting.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/lsp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/overloadingVsOverriding.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/polymorphism.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/abstractClasses.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/dip.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
       "headings": {
-        "textbook": "Textbook"
+        "final-keyword": "Final Keyword",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/finalKeyword.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/interfaces.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/isp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/ocp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/srp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/stubs.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/anonymousInnerClasses.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/boxing.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/collections.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/comparator.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/genericsIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/pecs.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/varianceTypes.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/wildcards.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/accessModifiers.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/assertions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/enumerations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/exceptionsControlFlow.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/exceptionsIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/handlingExceptions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/packages.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/staticKeyword.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/throwingExceptions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/flatMap.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/lambdas.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/localClassVariableCapture.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/map.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/optionals.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/functions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/functors.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/javaFunctions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/monad.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/streamsAndPipelines.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture09/lazyEvaluation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/correctnessParallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/debuggingParallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/parallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "parallel-vs-sequential-streams": "Parallel vs Sequential Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/forkAndJoin.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/forkJoinOrder.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/recursiveTask.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/threadPools.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/workFetching.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/workStealing.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/callable.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/callbacks.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/future.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/listeners.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "textbook": "Textbook",
+        "lecture-1": "Lecture 1",
+        "lecture-2": "Lecture 2",
+        "lecture-3": "Lecture 3",
+        "lecture-4": "Lecture 4",
+        "lecture-5": "Lecture 5",
+        "lecture-6": "Lecture 6",
+        "lecture-7": "Lecture 7",
+        "lecture-8": "Lecture 8",
+        "lecture-9": "Lecture 9",
+        "lecture-10": "Lecture 10",
+        "lecture-11": "Lecture 11",
+        "lecture-12": "Lecture 12"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -94,9 +800,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "week-1": "Week 1"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",

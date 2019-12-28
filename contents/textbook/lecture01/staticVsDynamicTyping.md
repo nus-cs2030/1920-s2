@@ -7,6 +7,31 @@
 
 <br> 
 
-# Static Vs. Dynamic Typing
-[Edit This Chapter Here! :fas-pen:](https://www.google.com)
+# JShell Introduction
+[Edit This Chapter Here! :fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture01/staticVsDynamicTyping.md)
 <hr>
+
+## Definition
+<!-- Content for Definitions will be here -->
+
+<br> 
+
+## Explanation
+<!-- Content for Explanations will be here -->
+
+<br>
+
+## Examples
+<!-- Content for Examples will be here -->
+
+<br>
+
+## Exercises
+<!-- Content for Exercises will be here -->
+
+<br>
+
+## Resources
+<!-- Content for Resources will be here -->
+
+<br>

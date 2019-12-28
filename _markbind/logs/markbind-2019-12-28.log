@@ -1,0 +1,1268 @@
+2019-12-28T03:18:44.062Z - info: Website generation started at 11:18:43 AM
+2019-12-28T03:18:44.233Z - info: Building assets...
+2019-12-28T03:18:44.349Z - info: Assets built
+2019-12-28T03:18:44.349Z - info: Generating pages...
+2019-12-28T03:18:44.631Z - info: Pages built
+2019-12-28T03:18:44.837Z - info: Website generation complete! Total build time: 0.838s
+2019-12-28T03:18:44.871Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2019-12-28T03:18:44.872Z - info: Press CTRL+C to stop ...
+2019-12-28T03:18:44.927Z - info: Site data built
+2019-12-28T03:21:06.468Z - info: [11:21:06 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\staticVsDynamicTyping.md
+2019-12-28T03:21:07.471Z - info: Rebuilding affected source files
+2019-12-28T03:21:07.472Z - info: Rebuilding 1 pages
+2019-12-28T03:21:07.531Z - info: Pages rebuilt
+2019-12-28T03:21:07.536Z - info: Site data built
+2019-12-28T03:21:17.073Z - info: [11:21:17 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\staticVsDynamicTyping.md
+2019-12-28T03:21:18.076Z - info: Rebuilding affected source files
+2019-12-28T03:21:18.076Z - info: Rebuilding 1 pages
+2019-12-28T03:21:18.119Z - info: Pages rebuilt
+2019-12-28T03:21:18.122Z - info: Site data built
+2019-12-28T03:21:56.004Z - info: [11:21:56 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\staticVsDynamicTyping.md
+2019-12-28T03:21:57.007Z - info: Rebuilding affected source files
+2019-12-28T03:21:57.008Z - info: Rebuilding 1 pages
+2019-12-28T03:21:57.044Z - info: Pages rebuilt
+2019-12-28T03:21:57.047Z - info: Site data built
+2019-12-28T03:22:20.500Z - info: [11:22:20 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\staticVsDynamicTyping.md
+2019-12-28T03:22:21.502Z - info: Rebuilding affected source files
+2019-12-28T03:22:21.503Z - info: Rebuilding 1 pages
+2019-12-28T03:22:21.543Z - info: Pages rebuilt
+2019-12-28T03:22:21.546Z - info: Site data built
+2019-12-28T03:22:55.031Z - info: [11:22:55 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\staticVsDynamicTyping.md
+2019-12-28T03:22:56.035Z - info: Rebuilding affected source files
+2019-12-28T03:22:56.036Z - info: Rebuilding 1 pages
+2019-12-28T03:22:56.093Z - info: Pages rebuilt
+2019-12-28T03:22:56.096Z - info: Site data built
+2019-12-28T03:22:59.737Z - info: [11:22:59 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\staticVsDynamicTyping.md
+2019-12-28T03:23:00.739Z - info: Rebuilding affected source files
+2019-12-28T03:23:00.740Z - info: Rebuilding 1 pages
+2019-12-28T03:23:00.786Z - info: Pages rebuilt
+2019-12-28T03:23:00.789Z - info: Site data built
+2019-12-28T03:24:16.153Z - info: [11:24:16 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:24:17.155Z - info: Rebuilding affected source files
+2019-12-28T03:24:17.156Z - info: Rebuilding 1 pages
+2019-12-28T03:24:17.197Z - info: Pages rebuilt
+2019-12-28T03:24:17.200Z - info: Site data built
+2019-12-28T03:25:12.175Z - info: [11:25:12 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\oopIntroduction.md
+2019-12-28T03:25:13.177Z - warn: Rebuilding all source files
+2019-12-28T03:25:14.233Z - info: Assets removed
+2019-12-28T03:25:14.234Z - info: Generating pages...
+2019-12-28T03:25:14.529Z - info: Pages built
+2019-12-28T03:25:32.080Z - info: [11:25:32 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:25:33.081Z - info: Rebuilding affected source files
+2019-12-28T03:25:33.081Z - info: Rebuilding 1 pages
+2019-12-28T03:25:33.111Z - info: Pages rebuilt
+2019-12-28T03:25:33.115Z - info: Site data built
+2019-12-28T03:25:58.051Z - info: [11:25:58 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\oopIntroduction.md
+2019-12-28T03:25:59.054Z - info: Rebuilding affected source files
+2019-12-28T03:25:59.054Z - info: Rebuilding 1 pages
+2019-12-28T03:25:59.087Z - info: Pages rebuilt
+2019-12-28T03:25:59.091Z - info: Site data built
+2019-12-28T03:26:20.463Z - info: [11:26:20 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:26:21.465Z - info: Rebuilding affected source files
+2019-12-28T03:26:21.466Z - info: Rebuilding 1 pages
+2019-12-28T03:26:21.561Z - info: Pages rebuilt
+2019-12-28T03:26:21.572Z - info: Site data built
+2019-12-28T03:26:28.542Z - info: [11:26:28 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:26:29.544Z - info: Rebuilding affected source files
+2019-12-28T03:26:29.544Z - info: Rebuilding 1 pages
+2019-12-28T03:26:29.578Z - info: Pages rebuilt
+2019-12-28T03:26:29.582Z - info: Site data built
+2019-12-28T03:26:34.182Z - info: [11:26:34 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:26:35.184Z - info: Rebuilding affected source files
+2019-12-28T03:26:35.185Z - info: Rebuilding 1 pages
+2019-12-28T03:26:35.213Z - info: Pages rebuilt
+2019-12-28T03:26:35.217Z - info: Site data built
+2019-12-28T03:28:50.345Z - info: [11:28:50 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:28:51.348Z - info: Rebuilding affected source files
+2019-12-28T03:28:51.349Z - info: Rebuilding 1 pages
+2019-12-28T03:28:51.383Z - info: Pages rebuilt
+2019-12-28T03:28:51.386Z - info: Site data built
+2019-12-28T03:29:56.461Z - info: [11:29:56 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\abstraction.md
+2019-12-28T03:29:57.461Z - warn: Rebuilding all source files
+2019-12-28T03:29:58.521Z - info: Assets removed
+2019-12-28T03:29:58.521Z - info: Generating pages...
+2019-12-28T03:29:58.768Z - info: Pages built
+2019-12-28T03:30:02.233Z - info: [11:30:02 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\encapsulation.md
+2019-12-28T03:30:03.235Z - warn: Rebuilding all source files
+2019-12-28T03:30:04.294Z - info: Assets removed
+2019-12-28T03:30:04.294Z - info: Generating pages...
+2019-12-28T03:30:04.539Z - info: Pages built
+2019-12-28T03:30:13.909Z - info: [11:30:13 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:30:14.911Z - info: Rebuilding affected source files
+2019-12-28T03:30:14.913Z - info: Rebuilding 1 pages
+2019-12-28T03:30:14.954Z - info: Pages rebuilt
+2019-12-28T03:30:14.957Z - info: Site data built
+2019-12-28T03:30:21.257Z - info: [11:30:21 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:30:22.260Z - info: Rebuilding affected source files
+2019-12-28T03:30:22.261Z - info: Rebuilding 1 pages
+2019-12-28T03:30:22.298Z - info: Pages rebuilt
+2019-12-28T03:30:22.301Z - info: Site data built
+2019-12-28T03:30:54.699Z - info: [11:30:54 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:30:55.701Z - info: Rebuilding affected source files
+2019-12-28T03:30:55.703Z - info: Rebuilding 1 pages
+2019-12-28T03:30:55.735Z - info: Pages rebuilt
+2019-12-28T03:30:55.738Z - info: Site data built
+2019-12-28T03:31:09.642Z - info: [11:31:09 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:31:10.646Z - info: Rebuilding affected source files
+2019-12-28T03:31:10.647Z - info: Rebuilding 1 pages
+2019-12-28T03:31:10.681Z - info: Pages rebuilt
+2019-12-28T03:31:10.684Z - info: Site data built
+2019-12-28T03:31:16.162Z - info: [11:31:16 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:31:17.164Z - info: Rebuilding affected source files
+2019-12-28T03:31:17.165Z - info: Rebuilding 1 pages
+2019-12-28T03:31:17.196Z - info: Pages rebuilt
+2019-12-28T03:31:17.199Z - info: Site data built
+2019-12-28T03:32:08.801Z - info: [11:32:08 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\JShellIntroduction.md
+2019-12-28T03:32:09.803Z - warn: Rebuilding all source files
+2019-12-28T03:32:10.868Z - info: Assets removed
+2019-12-28T03:32:10.869Z - info: Generating pages...
+2019-12-28T03:32:11.150Z - info: Pages built
+2019-12-28T03:32:29.783Z - info: [11:32:29 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\encapsulation.md
+2019-12-28T03:32:30.786Z - info: Rebuilding affected source files
+2019-12-28T03:32:30.787Z - info: Rebuilding 1 pages
+2019-12-28T03:32:30.818Z - info: Pages rebuilt
+2019-12-28T03:32:30.822Z - info: Site data built
+2019-12-28T03:32:47.978Z - info: [11:32:47 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\abstraction.md
+2019-12-28T03:32:48.981Z - info: Rebuilding affected source files
+2019-12-28T03:32:48.982Z - info: Rebuilding 1 pages
+2019-12-28T03:32:49.021Z - info: Pages rebuilt
+2019-12-28T03:32:49.024Z - info: Site data built
+2019-12-28T03:35:00.889Z - info: [11:35:00 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\JShellIntroduction.md
+2019-12-28T03:35:00.895Z - info: [11:35:00 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:35:01.893Z - info: Rebuilding affected source files
+2019-12-28T03:35:01.894Z - info: Rebuilding 2 pages
+2019-12-28T03:35:01.966Z - info: Pages rebuilt
+2019-12-28T03:35:01.970Z - info: Site data built
+2019-12-28T03:35:17.694Z - info: [11:35:17 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture01\staticVsDynamicTyping.md
+2019-12-28T03:35:18.697Z - info: Rebuilding affected source files
+2019-12-28T03:35:18.699Z - info: Rebuilding 1 pages
+2019-12-28T03:35:18.728Z - info: Pages rebuilt
+2019-12-28T03:35:18.731Z - info: Site data built
+2019-12-28T03:36:51.794Z - info: [11:36:51 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\javaTesting.md
+2019-12-28T03:36:52.794Z - warn: Rebuilding all source files
+2019-12-28T03:36:53.858Z - info: Assets removed
+2019-12-28T03:36:53.859Z - info: Generating pages...
+2019-12-28T03:36:54.160Z - info: Pages built
+2019-12-28T03:37:06.555Z - info: [11:37:06 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\javaTesting.md
+2019-12-28T03:37:06.561Z - info: [11:37:06 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:37:07.558Z - info: Rebuilding affected source files
+2019-12-28T03:37:07.560Z - info: Rebuilding 2 pages
+2019-12-28T03:37:07.621Z - info: Pages rebuilt
+2019-12-28T03:37:07.625Z - info: Site data built
+2019-12-28T03:37:25.892Z - info: [11:37:25 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:37:26.896Z - info: Rebuilding affected source files
+2019-12-28T03:37:26.896Z - info: Rebuilding 1 pages
+2019-12-28T03:37:26.931Z - info: Pages rebuilt
+2019-12-28T03:37:26.934Z - info: Site data built
+2019-12-28T03:38:21.905Z - info: [11:38:21 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\FactoryMethods.md
+2019-12-28T03:38:22.908Z - warn: Rebuilding all source files
+2019-12-28T03:38:23.970Z - info: Assets removed
+2019-12-28T03:38:23.971Z - info: Generating pages...
+2019-12-28T03:38:24.285Z - info: Pages built
+2019-12-28T03:38:30.384Z - info: [11:38:30 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\immutability.md
+2019-12-28T03:38:31.384Z - warn: Rebuilding all source files
+2019-12-28T03:38:32.443Z - info: Assets removed
+2019-12-28T03:38:32.443Z - info: Generating pages...
+2019-12-28T03:38:32.838Z - info: Pages built
+2019-12-28T03:38:40.425Z - info: [11:38:40 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\inheritance.md
+2019-12-28T03:38:41.427Z - warn: Rebuilding all source files
+2019-12-28T03:38:42.493Z - info: Assets removed
+2019-12-28T03:38:42.494Z - info: Generating pages...
+2019-12-28T03:38:42.893Z - info: Pages built
+2019-12-28T03:38:47.068Z - info: [11:38:47 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\cyclicDependency.md
+2019-12-28T03:38:48.070Z - warn: Rebuilding all source files
+2019-12-28T03:38:49.130Z - info: Assets removed
+2019-12-28T03:38:49.130Z - info: Generating pages...
+2019-12-28T03:38:49.457Z - info: Pages built
+2019-12-28T03:39:13.938Z - info: [11:39:13 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:39:14.943Z - info: Rebuilding affected source files
+2019-12-28T03:39:14.944Z - info: Rebuilding 1 pages
+2019-12-28T03:39:14.983Z - info: Pages rebuilt
+2019-12-28T03:39:14.988Z - info: Site data built
+2019-12-28T03:39:41.215Z - info: [11:39:41 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\JShellIntroduction.md
+2019-12-28T03:39:41.222Z - info: [11:39:41 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\cyclicDependency.md
+2019-12-28T03:39:42.219Z - info: Rebuilding affected source files
+2019-12-28T03:39:42.221Z - info: Rebuilding 2 pages
+2019-12-28T03:39:42.283Z - info: Pages rebuilt
+2019-12-28T03:39:42.288Z - info: Site data built
+2019-12-28T03:39:52.149Z - info: [11:39:52 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\cyclicDependency.md
+2019-12-28T03:39:53.151Z - info: Rebuilding affected source files
+2019-12-28T03:39:53.152Z - info: Rebuilding 1 pages
+2019-12-28T03:39:53.183Z - info: Pages rebuilt
+2019-12-28T03:39:53.186Z - info: Site data built
+2019-12-28T03:40:08.966Z - info: [11:40:08 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\FactoryMethods.md
+2019-12-28T03:40:09.969Z - info: Rebuilding affected source files
+2019-12-28T03:40:09.969Z - info: Rebuilding 1 pages
+2019-12-28T03:40:10.003Z - info: Pages rebuilt
+2019-12-28T03:40:10.007Z - info: Site data built
+2019-12-28T03:40:22.557Z - info: [11:40:22 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\immutability.md
+2019-12-28T03:40:23.559Z - info: Rebuilding affected source files
+2019-12-28T03:40:23.560Z - info: Rebuilding 1 pages
+2019-12-28T03:40:23.592Z - info: Pages rebuilt
+2019-12-28T03:40:23.595Z - info: Site data built
+2019-12-28T03:40:32.255Z - info: [11:40:32 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture02\inheritance.md
+2019-12-28T03:40:33.257Z - info: Rebuilding affected source files
+2019-12-28T03:40:33.258Z - info: Rebuilding 1 pages
+2019-12-28T03:40:33.296Z - info: Pages rebuilt
+2019-12-28T03:40:33.299Z - info: Site data built
+2019-12-28T03:42:34.910Z - info: [11:42:34 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:42:35.912Z - info: Rebuilding affected source files
+2019-12-28T03:42:35.913Z - info: Rebuilding 1 pages
+2019-12-28T03:42:35.963Z - info: Pages rebuilt
+2019-12-28T03:42:35.970Z - info: Site data built
+2019-12-28T03:49:32.077Z - info: [11:49:32 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:49:33.080Z - info: Rebuilding affected source files
+2019-12-28T03:49:33.081Z - info: Rebuilding 1 pages
+2019-12-28T03:49:33.134Z - info: Pages rebuilt
+2019-12-28T03:49:33.137Z - info: Site data built
+2019-12-28T03:49:36.648Z - info: [11:49:36 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\polymorphism.md
+2019-12-28T03:49:37.651Z - warn: Rebuilding all source files
+2019-12-28T03:49:38.719Z - info: Assets removed
+2019-12-28T03:49:38.720Z - info: Generating pages...
+2019-12-28T03:49:39.100Z - info: Pages built
+2019-12-28T03:50:00.410Z - info: [11:50:00 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\polymorphism.md
+2019-12-28T03:50:01.412Z - info: Rebuilding affected source files
+2019-12-28T03:50:01.413Z - info: Rebuilding 1 pages
+2019-12-28T03:50:01.450Z - info: Pages rebuilt
+2019-12-28T03:50:01.454Z - info: Site data built
+2019-12-28T03:51:15.066Z - info: [11:51:15 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:51:16.068Z - info: Rebuilding affected source files
+2019-12-28T03:51:16.069Z - info: Rebuilding 1 pages
+2019-12-28T03:51:16.113Z - info: Pages rebuilt
+2019-12-28T03:51:16.117Z - info: Site data built
+2019-12-28T03:51:30.083Z - info: [11:51:30 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\staticVsDynamicBinding.md
+2019-12-28T03:51:31.085Z - warn: Rebuilding all source files
+2019-12-28T03:51:32.153Z - info: Assets removed
+2019-12-28T03:51:32.154Z - info: Generating pages...
+2019-12-28T03:51:32.577Z - info: Pages built
+2019-12-28T03:51:46.442Z - info: [11:51:46 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\staticVsDynamicBinding.md
+2019-12-28T03:51:47.446Z - info: Rebuilding affected source files
+2019-12-28T03:51:47.447Z - info: Rebuilding 1 pages
+2019-12-28T03:51:47.471Z - info: Pages rebuilt
+2019-12-28T03:51:47.474Z - info: Site data built
+2019-12-28T03:52:25.323Z - info: [11:52:25 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\overloadingVsOverriding.md
+2019-12-28T03:52:26.324Z - warn: Rebuilding all source files
+2019-12-28T03:52:27.401Z - info: Assets removed
+2019-12-28T03:52:27.401Z - info: Generating pages...
+2019-12-28T03:52:27.837Z - info: Pages built
+2019-12-28T03:52:55.506Z - info: [11:52:55 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\overloadingVsOverriding.md
+2019-12-28T03:52:55.515Z - info: [11:52:55 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:52:56.510Z - info: Rebuilding affected source files
+2019-12-28T03:52:56.511Z - info: Rebuilding 2 pages
+2019-12-28T03:52:56.578Z - info: Pages rebuilt
+2019-12-28T03:52:56.581Z - info: Site data built
+2019-12-28T03:53:09.309Z - info: [11:53:09 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\overloadingVsOverriding.md
+2019-12-28T03:53:09.316Z - info: [11:53:09 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:53:10.312Z - info: Rebuilding affected source files
+2019-12-28T03:53:10.313Z - info: Rebuilding 2 pages
+2019-12-28T03:53:10.378Z - info: Pages rebuilt
+2019-12-28T03:53:10.382Z - info: Site data built
+2019-12-28T03:58:15.882Z - info: [11:58:15 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:58:16.887Z - info: Rebuilding affected source files
+2019-12-28T03:58:16.888Z - info: Rebuilding 1 pages
+2019-12-28T03:58:16.938Z - info: Pages rebuilt
+2019-12-28T03:58:16.941Z - info: Site data built
+2019-12-28T03:58:36.290Z - info: [11:58:36 AM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\abstractCkasses.md
+2019-12-28T03:58:37.292Z - warn: Rebuilding all source files
+2019-12-28T03:58:38.358Z - info: Assets removed
+2019-12-28T03:58:38.360Z - info: Generating pages...
+2019-12-28T03:58:38.819Z - info: Pages built
+2019-12-28T03:59:02.200Z - info: [11:59:02 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T03:59:03.205Z - info: Rebuilding affected source files
+2019-12-28T03:59:03.207Z - info: Rebuilding 1 pages
+2019-12-28T03:59:03.280Z - info: Pages rebuilt
+2019-12-28T03:59:03.284Z - info: Site data built
+2019-12-28T03:59:19.951Z - info: [11:59:19 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\abstractCkasses.md
+2019-12-28T03:59:20.953Z - info: Rebuilding affected source files
+2019-12-28T03:59:20.954Z - info: Rebuilding 1 pages
+2019-12-28T03:59:20.991Z - info: Pages rebuilt
+2019-12-28T03:59:20.994Z - info: Site data built
+2019-12-28T04:00:04.099Z - info: [12:00:04 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:00:05.101Z - info: Rebuilding affected source files
+2019-12-28T04:00:05.103Z - info: Rebuilding 1 pages
+2019-12-28T04:00:05.147Z - info: Pages rebuilt
+2019-12-28T04:00:05.150Z - info: Site data built
+2019-12-28T04:00:09.847Z - info: [12:00:09 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\interfaces.md
+2019-12-28T04:00:10.850Z - warn: Rebuilding all source files
+2019-12-28T04:00:11.921Z - info: Assets removed
+2019-12-28T04:00:11.923Z - info: Generating pages...
+2019-12-28T04:00:12.419Z - info: Pages built
+2019-12-28T04:00:19.008Z - info: [12:00:19 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\interfaces.md
+2019-12-28T04:00:20.012Z - info: Rebuilding affected source files
+2019-12-28T04:00:20.014Z - info: Rebuilding 1 pages
+2019-12-28T04:00:20.052Z - info: Pages rebuilt
+2019-12-28T04:00:20.055Z - info: Site data built
+2019-12-28T04:00:52.528Z - info: [12:00:52 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\stubs.html
+2019-12-28T04:00:53.531Z - warn: Rebuilding all source files
+2019-12-28T04:00:54.599Z - info: Assets removed
+2019-12-28T04:00:54.600Z - info: Generating pages...
+2019-12-28T04:00:55.084Z - info: Pages built
+2019-12-28T04:01:09.328Z - info: [12:01:09 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\stubs.md
+2019-12-28T04:01:09.427Z - info: [12:01:09 PM] Reload for file deletion: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\stubs.html
+2019-12-28T04:01:10.330Z - warn: Rebuilding all source files
+2019-12-28T04:01:11.398Z - info: Assets removed
+2019-12-28T04:01:11.398Z - info: Generating pages...
+2019-12-28T04:01:11.995Z - info: Pages built
+2019-12-28T04:01:18.253Z - info: [12:01:18 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:01:19.255Z - info: Rebuilding affected source files
+2019-12-28T04:01:19.257Z - info: Rebuilding 1 pages
+2019-12-28T04:01:19.305Z - info: Pages rebuilt
+2019-12-28T04:01:19.308Z - info: Site data built
+2019-12-28T04:01:26.656Z - info: [12:01:26 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\stubs.md
+2019-12-28T04:01:27.659Z - info: Rebuilding affected source files
+2019-12-28T04:01:27.660Z - info: Rebuilding 1 pages
+2019-12-28T04:01:27.690Z - info: Pages rebuilt
+2019-12-28T04:01:27.693Z - info: Site data built
+2019-12-28T04:01:50.856Z - info: [12:01:50 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\finalKeyword.md
+2019-12-28T04:01:51.858Z - warn: Rebuilding all source files
+2019-12-28T04:01:52.926Z - info: Assets removed
+2019-12-28T04:01:52.929Z - info: Generating pages...
+2019-12-28T04:01:53.459Z - info: Pages built
+2019-12-28T04:02:10.408Z - info: [12:02:10 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:02:11.409Z - info: Rebuilding affected source files
+2019-12-28T04:02:11.410Z - info: Rebuilding 1 pages
+2019-12-28T04:02:11.504Z - info: Pages rebuilt
+2019-12-28T04:02:11.506Z - info: Site data built
+2019-12-28T04:02:14.260Z - info: [12:02:14 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:02:15.265Z - info: Rebuilding affected source files
+2019-12-28T04:02:15.266Z - info: Rebuilding 1 pages
+2019-12-28T04:02:15.326Z - info: Pages rebuilt
+2019-12-28T04:02:15.329Z - info: Site data built
+2019-12-28T04:02:24.895Z - info: [12:02:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:02:25.896Z - info: Rebuilding affected source files
+2019-12-28T04:02:25.897Z - info: Rebuilding 1 pages
+2019-12-28T04:02:25.956Z - info: Pages rebuilt
+2019-12-28T04:02:25.960Z - info: Site data built
+2019-12-28T04:03:09.859Z - info: [12:03:09 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\srp.md
+2019-12-28T04:03:10.860Z - warn: Rebuilding all source files
+2019-12-28T04:03:11.929Z - info: Assets removed
+2019-12-28T04:03:11.930Z - info: Generating pages...
+2019-12-28T04:03:12.493Z - info: Pages built
+2019-12-28T04:03:15.527Z - info: [12:03:15 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\ocp.md
+2019-12-28T04:03:16.529Z - warn: Rebuilding all source files
+2019-12-28T04:03:16.619Z - info: [12:03:16 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:03:17.616Z - info: Assets removed
+2019-12-28T04:03:17.617Z - info: Generating pages...
+2019-12-28T04:03:17.623Z - info: Rebuilding affected source files
+2019-12-28T04:03:17.623Z - info: Rebuilding 1 pages
+2019-12-28T04:03:18.152Z - info: Pages rebuilt
+2019-12-28T04:03:18.179Z - info: Site data built
+2019-12-28T04:03:18.218Z - info: Pages built
+2019-12-28T04:03:33.046Z - info: [12:03:33 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\isp.md
+2019-12-28T04:03:34.048Z - warn: Rebuilding all source files
+2019-12-28T04:03:35.121Z - info: Assets removed
+2019-12-28T04:03:35.122Z - info: Generating pages...
+2019-12-28T04:03:35.632Z - info: Pages built
+2019-12-28T04:03:37.368Z - info: [12:03:37 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\dip.md
+2019-12-28T04:03:38.370Z - warn: Rebuilding all source files
+2019-12-28T04:03:39.448Z - info: Assets removed
+2019-12-28T04:03:39.448Z - info: Generating pages...
+2019-12-28T04:03:39.953Z - info: Pages built
+2019-12-28T04:03:49.375Z - info: [12:03:49 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\lsp.md
+2019-12-28T04:03:50.376Z - warn: Rebuilding all source files
+2019-12-28T04:03:51.447Z - info: Assets removed
+2019-12-28T04:03:51.448Z - info: Generating pages...
+2019-12-28T04:03:51.967Z - info: Pages built
+2019-12-28T04:03:53.970Z - info: [12:03:53 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\lsp.md
+2019-12-28T04:03:54.068Z - info: [12:03:54 PM] Reload for file deletion: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\lsp.md
+2019-12-28T04:03:54.972Z - warn: Rebuilding all source files
+2019-12-28T04:03:56.048Z - info: Assets removed
+2019-12-28T04:03:56.049Z - info: Generating pages...
+2019-12-28T04:03:56.519Z - info: Pages built
+2019-12-28T04:04:15.036Z - info: [12:04:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\lsp.md
+2019-12-28T04:04:16.039Z - info: Rebuilding affected source files
+2019-12-28T04:04:16.040Z - info: Rebuilding 1 pages
+2019-12-28T04:04:16.109Z - info: Pages rebuilt
+2019-12-28T04:04:16.112Z - info: Site data built
+2019-12-28T04:04:40.165Z - info: [12:04:40 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:04:40.172Z - info: [12:04:40 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture03\lsp.md
+2019-12-28T04:04:41.169Z - info: Rebuilding affected source files
+2019-12-28T04:04:41.170Z - info: Rebuilding 2 pages
+2019-12-28T04:04:41.252Z - info: Pages rebuilt
+2019-12-28T04:04:41.256Z - info: Site data built
+2019-12-28T04:04:45.302Z - info: [12:04:45 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:04:46.304Z - info: Rebuilding affected source files
+2019-12-28T04:04:46.305Z - info: Rebuilding 1 pages
+2019-12-28T04:04:46.380Z - info: Pages rebuilt
+2019-12-28T04:04:46.383Z - info: Site data built
+2019-12-28T04:05:18.559Z - info: [12:05:18 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:05:19.560Z - info: Rebuilding affected source files
+2019-12-28T04:05:19.561Z - info: Rebuilding 1 pages
+2019-12-28T04:05:19.612Z - info: Pages rebuilt
+2019-12-28T04:05:19.615Z - info: Site data built
+2019-12-28T04:05:38.642Z - info: [12:05:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\ocp.md
+2019-12-28T04:05:39.644Z - info: Rebuilding affected source files
+2019-12-28T04:05:39.645Z - info: Rebuilding 1 pages
+2019-12-28T04:05:39.684Z - info: Pages rebuilt
+2019-12-28T04:05:39.687Z - info: Site data built
+2019-12-28T04:05:42.023Z - info: [12:05:42 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\ocp.md
+2019-12-28T04:05:43.025Z - info: Rebuilding affected source files
+2019-12-28T04:05:43.026Z - info: Rebuilding 1 pages
+2019-12-28T04:05:43.056Z - info: Pages rebuilt
+2019-12-28T04:05:43.059Z - info: Site data built
+2019-12-28T04:05:49.794Z - info: [12:05:49 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\isp.md
+2019-12-28T04:05:50.797Z - info: Rebuilding affected source files
+2019-12-28T04:05:50.797Z - info: Rebuilding 1 pages
+2019-12-28T04:05:50.838Z - info: Pages rebuilt
+2019-12-28T04:05:50.841Z - info: Site data built
+2019-12-28T04:06:04.965Z - info: [12:06:04 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\isp.md
+2019-12-28T04:06:05.965Z - info: Rebuilding affected source files
+2019-12-28T04:06:05.966Z - info: Rebuilding 1 pages
+2019-12-28T04:06:05.997Z - info: Pages rebuilt
+2019-12-28T04:06:06.000Z - info: Site data built
+2019-12-28T04:06:29.989Z - info: [12:06:29 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\ocp.md
+2019-12-28T04:06:29.996Z - info: [12:06:29 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\srp.md
+2019-12-28T04:06:30.993Z - info: Rebuilding affected source files
+2019-12-28T04:06:30.994Z - info: Rebuilding 2 pages
+2019-12-28T04:06:31.063Z - info: Pages rebuilt
+2019-12-28T04:06:31.066Z - info: Site data built
+2019-12-28T04:06:41.930Z - info: [12:06:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\dip.md
+2019-12-28T04:06:42.931Z - info: Rebuilding affected source files
+2019-12-28T04:06:42.932Z - info: Rebuilding 1 pages
+2019-12-28T04:06:42.963Z - info: Pages rebuilt
+2019-12-28T04:06:42.966Z - info: Site data built
+2019-12-28T04:06:57.739Z - info: [12:06:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:06:58.742Z - info: Rebuilding affected source files
+2019-12-28T04:06:58.743Z - info: Rebuilding 1 pages
+2019-12-28T04:06:58.815Z - info: Pages rebuilt
+2019-12-28T04:06:58.821Z - info: Site data built
+2019-12-28T04:07:09.753Z - info: [12:07:09 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:07:10.758Z - info: Rebuilding affected source files
+2019-12-28T04:07:10.759Z - info: Rebuilding 1 pages
+2019-12-28T04:07:10.814Z - info: Pages rebuilt
+2019-12-28T04:07:10.816Z - info: Site data built
+2019-12-28T04:07:40.057Z - info: [12:07:40 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:07:41.060Z - info: Rebuilding affected source files
+2019-12-28T04:07:41.061Z - info: Rebuilding 1 pages
+2019-12-28T04:07:41.114Z - info: Pages rebuilt
+2019-12-28T04:07:41.116Z - info: Site data built
+2019-12-28T04:07:59.275Z - info: [12:07:59 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:08:00.278Z - info: Rebuilding affected source files
+2019-12-28T04:08:00.279Z - info: Rebuilding 1 pages
+2019-12-28T04:08:00.334Z - info: Pages rebuilt
+2019-12-28T04:08:00.337Z - info: Site data built
+2019-12-28T04:08:07.645Z - info: [12:08:07 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:08:08.646Z - info: Rebuilding affected source files
+2019-12-28T04:08:08.647Z - info: Rebuilding 1 pages
+2019-12-28T04:08:08.700Z - info: Pages rebuilt
+2019-12-28T04:08:08.703Z - info: Site data built
+2019-12-28T04:08:39.440Z - info: [12:08:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:08:40.441Z - info: Rebuilding affected source files
+2019-12-28T04:08:40.442Z - info: Rebuilding 1 pages
+2019-12-28T04:08:40.505Z - info: Pages rebuilt
+2019-12-28T04:08:40.508Z - info: Site data built
+2019-12-28T04:11:58.156Z - info: [12:11:58 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\genericsIntroduction.md
+2019-12-28T04:11:59.158Z - warn: Rebuilding all source files
+2019-12-28T04:12:00.235Z - info: Assets removed
+2019-12-28T04:12:00.236Z - info: Generating pages...
+2019-12-28T04:12:00.917Z - info: Pages built
+2019-12-28T04:12:11.658Z - info: [12:12:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:12:12.661Z - info: Rebuilding affected source files
+2019-12-28T04:12:12.662Z - info: Rebuilding 1 pages
+2019-12-28T04:12:12.738Z - info: Pages rebuilt
+2019-12-28T04:12:12.741Z - info: Site data built
+2019-12-28T04:28:42.820Z - info: [12:28:42 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:28:43.825Z - info: Rebuilding affected source files
+2019-12-28T04:28:43.827Z - info: Rebuilding 1 pages
+2019-12-28T04:28:43.890Z - info: Pages rebuilt
+2019-12-28T04:28:43.892Z - info: Site data built
+2019-12-28T04:28:54.602Z - info: [12:28:54 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:28:55.608Z - info: Rebuilding affected source files
+2019-12-28T04:28:55.609Z - info: Rebuilding 1 pages
+2019-12-28T04:28:55.667Z - info: Pages rebuilt
+2019-12-28T04:28:55.673Z - info: Site data built
+2019-12-28T04:29:42.121Z - info: [12:29:42 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\boxing.md
+2019-12-28T04:29:43.124Z - warn: Rebuilding all source files
+2019-12-28T04:29:44.197Z - info: Assets removed
+2019-12-28T04:29:44.197Z - info: Generating pages...
+2019-12-28T04:29:44.881Z - info: Pages built
+2019-12-28T04:29:56.156Z - info: [12:29:56 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:29:57.160Z - info: Rebuilding affected source files
+2019-12-28T04:29:57.161Z - info: Rebuilding 1 pages
+2019-12-28T04:29:57.219Z - info: Pages rebuilt
+2019-12-28T04:29:57.223Z - info: Site data built
+2019-12-28T04:30:28.668Z - info: [12:30:28 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:30:29.672Z - info: Rebuilding affected source files
+2019-12-28T04:30:29.672Z - info: Rebuilding 1 pages
+2019-12-28T04:30:29.797Z - info: Pages rebuilt
+2019-12-28T04:30:29.800Z - info: Site data built
+2019-12-28T04:31:15.858Z - info: [12:31:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:31:16.862Z - info: Rebuilding affected source files
+2019-12-28T04:31:16.863Z - info: Rebuilding 1 pages
+2019-12-28T04:31:16.943Z - info: Pages rebuilt
+2019-12-28T04:31:16.946Z - info: Site data built
+2019-12-28T04:31:23.555Z - info: [12:31:23 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:31:24.557Z - info: Rebuilding affected source files
+2019-12-28T04:31:24.558Z - info: Rebuilding 1 pages
+2019-12-28T04:31:24.626Z - info: Pages rebuilt
+2019-12-28T04:31:24.628Z - info: Site data built
+2019-12-28T04:31:53.671Z - info: [12:31:53 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\varianceTypes.md
+2019-12-28T04:31:54.672Z - warn: Rebuilding all source files
+2019-12-28T04:31:55.754Z - info: Assets removed
+2019-12-28T04:31:55.755Z - info: Generating pages...
+2019-12-28T04:31:56.416Z - info: Pages built
+2019-12-28T04:31:58.272Z - info: [12:31:58 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\wildcards.md
+2019-12-28T04:31:59.274Z - warn: Rebuilding all source files
+2019-12-28T04:32:00.346Z - info: Assets removed
+2019-12-28T04:32:00.350Z - info: Generating pages...
+2019-12-28T04:32:01.327Z - info: Pages built
+2019-12-28T04:32:05.278Z - info: [12:32:05 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\pecs.md
+2019-12-28T04:32:06.281Z - warn: Rebuilding all source files
+2019-12-28T04:32:07.358Z - info: Assets removed
+2019-12-28T04:32:07.360Z - info: Generating pages...
+2019-12-28T04:32:07.961Z - info: Pages built
+2019-12-28T04:32:17.142Z - info: [12:32:17 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\collections.md
+2019-12-28T04:32:18.143Z - warn: Rebuilding all source files
+2019-12-28T04:32:19.217Z - info: Assets removed
+2019-12-28T04:32:19.218Z - info: Generating pages...
+2019-12-28T04:32:20.016Z - info: Pages built
+2019-12-28T04:32:46.183Z - info: [12:32:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\collections.md
+2019-12-28T04:32:47.186Z - info: Rebuilding affected source files
+2019-12-28T04:32:47.187Z - info: Rebuilding 1 pages
+2019-12-28T04:32:47.219Z - info: Pages rebuilt
+2019-12-28T04:32:47.222Z - info: Site data built
+2019-12-28T04:33:08.063Z - info: [12:33:08 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\varianceTypes.md
+2019-12-28T04:33:09.067Z - info: Rebuilding affected source files
+2019-12-28T04:33:09.068Z - info: Rebuilding 1 pages
+2019-12-28T04:33:09.101Z - info: Pages rebuilt
+2019-12-28T04:33:09.104Z - info: Site data built
+2019-12-28T04:33:17.451Z - info: [12:33:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\wildcards.md
+2019-12-28T04:33:18.454Z - info: Rebuilding affected source files
+2019-12-28T04:33:18.455Z - info: Rebuilding 1 pages
+2019-12-28T04:33:18.495Z - info: Pages rebuilt
+2019-12-28T04:33:18.500Z - info: Site data built
+2019-12-28T04:33:32.348Z - info: [12:33:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\pecs.md
+2019-12-28T04:33:33.350Z - info: Rebuilding affected source files
+2019-12-28T04:33:33.351Z - info: Rebuilding 1 pages
+2019-12-28T04:33:33.385Z - info: Pages rebuilt
+2019-12-28T04:33:33.389Z - info: Site data built
+2019-12-28T04:33:53.056Z - info: [12:33:53 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\boxing.md
+2019-12-28T04:33:54.058Z - info: Rebuilding affected source files
+2019-12-28T04:33:54.059Z - info: Rebuilding 1 pages
+2019-12-28T04:33:54.093Z - info: Pages rebuilt
+2019-12-28T04:33:54.096Z - info: Site data built
+2019-12-28T04:34:11.280Z - info: [12:34:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\genericsIntroduction.md
+2019-12-28T04:34:12.282Z - info: Rebuilding affected source files
+2019-12-28T04:34:12.282Z - info: Rebuilding 1 pages
+2019-12-28T04:34:12.314Z - info: Pages rebuilt
+2019-12-28T04:34:12.317Z - info: Site data built
+2019-12-28T04:34:15.830Z - info: [12:34:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\genericsIntroduction.md
+2019-12-28T04:34:16.834Z - info: Rebuilding affected source files
+2019-12-28T04:34:16.835Z - info: Rebuilding 1 pages
+2019-12-28T04:34:16.868Z - info: Pages rebuilt
+2019-12-28T04:34:16.871Z - info: Site data built
+2019-12-28T04:34:40.425Z - info: [12:34:40 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:34:41.428Z - info: Rebuilding affected source files
+2019-12-28T04:34:41.428Z - info: Rebuilding 1 pages
+2019-12-28T04:34:41.489Z - info: Pages rebuilt
+2019-12-28T04:34:41.493Z - info: Site data built
+2019-12-28T04:35:15.065Z - info: [12:35:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:35:16.069Z - info: Rebuilding affected source files
+2019-12-28T04:35:16.070Z - info: Rebuilding 1 pages
+2019-12-28T04:35:16.127Z - info: Pages rebuilt
+2019-12-28T04:35:16.130Z - info: Site data built
+2019-12-28T04:35:32.985Z - info: [12:35:32 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\staticKeyword.md
+2019-12-28T04:35:33.987Z - warn: Rebuilding all source files
+2019-12-28T04:35:35.061Z - info: Assets removed
+2019-12-28T04:35:35.061Z - info: Generating pages...
+2019-12-28T04:35:35.840Z - info: Pages built
+2019-12-28T04:35:37.478Z - info: [12:35:37 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\staticKeyword.md
+2019-12-28T04:35:37.485Z - info: [12:35:37 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:35:38.481Z - info: Rebuilding affected source files
+2019-12-28T04:35:38.482Z - info: Rebuilding 2 pages
+2019-12-28T04:35:38.585Z - info: Pages rebuilt
+2019-12-28T04:35:38.590Z - info: Site data built
+2019-12-28T04:35:52.557Z - info: [12:35:52 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\staticKeyword.md
+2019-12-28T04:35:53.559Z - info: Rebuilding affected source files
+2019-12-28T04:35:53.561Z - info: Rebuilding 1 pages
+2019-12-28T04:35:53.589Z - info: Pages rebuilt
+2019-12-28T04:35:53.592Z - info: Site data built
+2019-12-28T04:36:05.884Z - info: [12:36:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:36:06.888Z - info: Rebuilding affected source files
+2019-12-28T04:36:06.889Z - info: Rebuilding 1 pages
+2019-12-28T04:36:06.955Z - info: Pages rebuilt
+2019-12-28T04:36:06.958Z - info: Site data built
+2019-12-28T04:36:25.846Z - info: [12:36:25 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:36:26.848Z - info: Rebuilding affected source files
+2019-12-28T04:36:26.848Z - info: Rebuilding 1 pages
+2019-12-28T04:36:26.904Z - info: Pages rebuilt
+2019-12-28T04:36:26.907Z - info: Site data built
+2019-12-28T04:37:02.892Z - info: [12:37:02 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:37:03.897Z - info: Rebuilding affected source files
+2019-12-28T04:37:03.897Z - info: Rebuilding 1 pages
+2019-12-28T04:37:03.957Z - info: Pages rebuilt
+2019-12-28T04:37:03.960Z - info: Site data built
+2019-12-28T04:37:27.968Z - info: [12:37:27 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\exceptionsIntroduction.md
+2019-12-28T04:37:28.969Z - warn: Rebuilding all source files
+2019-12-28T04:37:30.043Z - info: Assets removed
+2019-12-28T04:37:30.043Z - info: Generating pages...
+2019-12-28T04:37:30.805Z - info: Pages built
+2019-12-28T04:37:50.885Z - info: [12:37:50 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:37:51.888Z - info: Rebuilding affected source files
+2019-12-28T04:37:51.890Z - info: Rebuilding 1 pages
+2019-12-28T04:37:52.025Z - info: Pages rebuilt
+2019-12-28T04:37:52.027Z - info: Site data built
+2019-12-28T04:38:17.522Z - info: [12:38:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\exceptionsIntroduction.md
+2019-12-28T04:38:18.524Z - info: Rebuilding affected source files
+2019-12-28T04:38:18.525Z - info: Rebuilding 1 pages
+2019-12-28T04:38:18.567Z - info: Pages rebuilt
+2019-12-28T04:38:18.571Z - info: Site data built
+2019-12-28T04:38:36.053Z - info: [12:38:36 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:38:37.056Z - info: Rebuilding affected source files
+2019-12-28T04:38:37.057Z - info: Rebuilding 1 pages
+2019-12-28T04:38:37.141Z - info: Pages rebuilt
+2019-12-28T04:38:37.143Z - info: Site data built
+2019-12-28T04:39:33.125Z - info: [12:39:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:39:34.128Z - info: Rebuilding affected source files
+2019-12-28T04:39:34.129Z - info: Rebuilding 1 pages
+2019-12-28T04:39:34.197Z - info: Pages rebuilt
+2019-12-28T04:39:34.200Z - info: Site data built
+2019-12-28T04:39:38.836Z - info: [12:39:38 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\exceptionsControlFlow.md
+2019-12-28T04:39:39.838Z - warn: Rebuilding all source files
+2019-12-28T04:39:40.929Z - info: Assets removed
+2019-12-28T04:39:40.930Z - info: Generating pages...
+2019-12-28T04:39:41.756Z - info: Pages built
+2019-12-28T04:39:59.432Z - info: [12:39:59 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\exceptionsControlFlow.md
+2019-12-28T04:40:00.435Z - info: Rebuilding affected source files
+2019-12-28T04:40:00.437Z - info: Rebuilding 1 pages
+2019-12-28T04:40:00.498Z - info: Pages rebuilt
+2019-12-28T04:40:00.501Z - info: Site data built
+2019-12-28T04:41:55.548Z - info: [12:41:55 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:41:56.552Z - info: Rebuilding affected source files
+2019-12-28T04:41:56.553Z - info: Rebuilding 1 pages
+2019-12-28T04:41:56.672Z - info: Pages rebuilt
+2019-12-28T04:41:56.678Z - info: Site data built
+2019-12-28T04:41:57.890Z - info: [12:41:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:41:58.894Z - info: Rebuilding affected source files
+2019-12-28T04:41:58.896Z - info: Rebuilding 1 pages
+2019-12-28T04:41:58.983Z - info: Pages rebuilt
+2019-12-28T04:41:58.986Z - info: Site data built
+2019-12-28T04:49:01.321Z - info: [12:49:01 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\throwingExceptions.md
+2019-12-28T04:49:02.323Z - warn: Rebuilding all source files
+2019-12-28T04:49:03.418Z - info: Assets removed
+2019-12-28T04:49:03.418Z - info: Generating pages...
+2019-12-28T04:49:04.240Z - info: Pages built
+2019-12-28T04:49:08.664Z - info: [12:49:08 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\handlingExceptions.md
+2019-12-28T04:49:09.667Z - warn: Rebuilding all source files
+2019-12-28T04:49:10.740Z - info: Assets removed
+2019-12-28T04:49:10.741Z - info: Generating pages...
+2019-12-28T04:49:11.605Z - info: Pages built
+2019-12-28T04:49:46.453Z - info: [12:49:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\handlingExceptions.md
+2019-12-28T04:49:46.461Z - info: [12:49:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\throwingExceptions.md
+2019-12-28T04:49:46.469Z - info: [12:49:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:49:47.457Z - info: Rebuilding affected source files
+2019-12-28T04:49:47.459Z - info: Rebuilding 3 pages
+2019-12-28T04:49:47.666Z - info: Pages rebuilt
+2019-12-28T04:49:47.671Z - info: Site data built
+2019-12-28T04:50:02.978Z - info: [12:50:02 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:50:03.984Z - info: Rebuilding affected source files
+2019-12-28T04:50:03.984Z - info: Rebuilding 1 pages
+2019-12-28T04:50:04.059Z - info: Pages rebuilt
+2019-12-28T04:50:04.063Z - info: Site data built
+2019-12-28T04:50:17.740Z - info: [12:50:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:50:18.744Z - info: Rebuilding affected source files
+2019-12-28T04:50:18.745Z - info: Rebuilding 1 pages
+2019-12-28T04:50:18.818Z - info: Pages rebuilt
+2019-12-28T04:50:18.821Z - info: Site data built
+2019-12-28T04:50:53.808Z - info: [12:50:53 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\assertions.md
+2019-12-28T04:50:54.811Z - warn: Rebuilding all source files
+2019-12-28T04:50:55.891Z - info: Assets removed
+2019-12-28T04:50:55.892Z - info: Generating pages...
+2019-12-28T04:50:56.799Z - info: Pages built
+2019-12-28T04:52:07.953Z - info: [12:52:07 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\assertions.md
+2019-12-28T04:52:08.958Z - info: Rebuilding affected source files
+2019-12-28T04:52:08.959Z - info: Rebuilding 1 pages
+2019-12-28T04:52:09.023Z - info: Pages rebuilt
+2019-12-28T04:52:09.027Z - info: Site data built
+2019-12-28T04:53:43.253Z - info: [12:53:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:53:44.256Z - info: Rebuilding affected source files
+2019-12-28T04:53:44.257Z - info: Rebuilding 1 pages
+2019-12-28T04:53:44.347Z - info: Pages rebuilt
+2019-12-28T04:53:44.350Z - info: Site data built
+2019-12-28T04:54:02.149Z - info: [12:54:02 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\enumerations.md
+2019-12-28T04:54:03.152Z - warn: Rebuilding all source files
+2019-12-28T04:54:04.234Z - info: Assets removed
+2019-12-28T04:54:04.234Z - info: Generating pages...
+2019-12-28T04:54:05.134Z - info: Pages built
+2019-12-28T04:54:08.926Z - info: [12:54:08 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\accessModifiers.md
+2019-12-28T04:54:09.928Z - warn: Rebuilding all source files
+2019-12-28T04:54:11.005Z - info: Assets removed
+2019-12-28T04:54:11.006Z - info: Generating pages...
+2019-12-28T04:54:11.744Z - info: Pages built
+2019-12-28T04:54:16.269Z - info: [12:54:16 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\packages.md
+2019-12-28T04:54:17.271Z - warn: Rebuilding all source files
+2019-12-28T04:54:18.348Z - info: Assets removed
+2019-12-28T04:54:18.349Z - info: Generating pages...
+2019-12-28T04:54:19.188Z - info: Pages built
+2019-12-28T04:54:24.441Z - info: [12:54:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\packages.md
+2019-12-28T04:54:25.445Z - info: Rebuilding affected source files
+2019-12-28T04:54:25.447Z - info: Rebuilding 1 pages
+2019-12-28T04:54:25.472Z - info: Pages rebuilt
+2019-12-28T04:54:25.476Z - info: Site data built
+2019-12-28T04:54:33.650Z - info: [12:54:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\accessModifiers.md
+2019-12-28T04:54:34.651Z - info: Rebuilding affected source files
+2019-12-28T04:54:34.652Z - info: Rebuilding 1 pages
+2019-12-28T04:54:34.678Z - info: Pages rebuilt
+2019-12-28T04:54:34.681Z - info: Site data built
+2019-12-28T04:54:41.201Z - info: [12:54:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture06\enumerations.md
+2019-12-28T04:54:42.204Z - info: Rebuilding affected source files
+2019-12-28T04:54:42.205Z - info: Rebuilding 1 pages
+2019-12-28T04:54:42.274Z - info: Pages rebuilt
+2019-12-28T04:54:42.277Z - info: Site data built
+2019-12-28T04:55:32.715Z - info: [12:55:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:55:33.719Z - info: Rebuilding affected source files
+2019-12-28T04:55:33.720Z - info: Rebuilding 1 pages
+2019-12-28T04:55:33.834Z - info: Pages rebuilt
+2019-12-28T04:55:33.838Z - info: Site data built
+2019-12-28T04:56:51.407Z - info: [12:56:51 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\anonymousInnerClasses.md
+2019-12-28T04:56:52.410Z - warn: Rebuilding all source files
+2019-12-28T04:56:53.492Z - info: Assets removed
+2019-12-28T04:56:53.493Z - info: Generating pages...
+2019-12-28T04:56:54.399Z - info: Pages built
+2019-12-28T04:57:00.170Z - info: [12:57:00 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\comparator.md
+2019-12-28T04:57:01.172Z - warn: Rebuilding all source files
+2019-12-28T04:57:02.247Z - info: Assets removed
+2019-12-28T04:57:02.247Z - info: Generating pages...
+2019-12-28T04:57:03.130Z - info: Pages built
+2019-12-28T04:57:33.896Z - info: [12:57:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\anonymousInnerClasses.md
+2019-12-28T04:57:33.903Z - info: [12:57:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\comparator.md
+2019-12-28T04:57:34.900Z - info: Rebuilding affected source files
+2019-12-28T04:57:34.901Z - info: Rebuilding 2 pages
+2019-12-28T04:57:34.993Z - info: Pages rebuilt
+2019-12-28T04:57:34.996Z - info: Site data built
+2019-12-28T04:58:05.970Z - info: [12:58:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:58:05.980Z - info: [12:58:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture05\comparator.md
+2019-12-28T04:58:06.991Z - info: Rebuilding affected source files
+2019-12-28T04:58:06.992Z - info: Rebuilding 2 pages
+2019-12-28T04:58:07.128Z - info: Pages rebuilt
+2019-12-28T04:58:07.131Z - info: Site data built
+2019-12-28T04:59:07.945Z - info: [12:59:07 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\lambdas.md
+2019-12-28T04:59:08.946Z - warn: Rebuilding all source files
+2019-12-28T04:59:10.028Z - info: Assets removed
+2019-12-28T04:59:10.030Z - info: Generating pages...
+2019-12-28T04:59:11.162Z - info: Pages built
+2019-12-28T04:59:16.891Z - info: [12:59:16 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T04:59:17.892Z - info: Rebuilding affected source files
+2019-12-28T04:59:17.893Z - info: Rebuilding 1 pages
+2019-12-28T04:59:17.952Z - info: Pages rebuilt
+2019-12-28T04:59:17.955Z - info: Site data built
+2019-12-28T04:59:35.150Z - info: [12:59:35 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\lambdas.md
+2019-12-28T04:59:36.153Z - info: Rebuilding affected source files
+2019-12-28T04:59:36.155Z - info: Rebuilding 1 pages
+2019-12-28T04:59:36.233Z - info: Pages rebuilt
+2019-12-28T04:59:36.236Z - info: Site data built
+2019-12-28T04:59:39.639Z - info: [12:59:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\lambdas.md
+2019-12-28T04:59:40.641Z - info: Rebuilding affected source files
+2019-12-28T04:59:40.643Z - info: Rebuilding 1 pages
+2019-12-28T04:59:40.680Z - info: Pages rebuilt
+2019-12-28T04:59:40.683Z - info: Site data built
+2019-12-28T04:59:47.361Z - info: [12:59:47 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\lambdas.md
+2019-12-28T04:59:48.362Z - info: Rebuilding affected source files
+2019-12-28T04:59:48.363Z - info: Rebuilding 1 pages
+2019-12-28T04:59:48.398Z - info: Pages rebuilt
+2019-12-28T04:59:48.401Z - info: Site data built
+2019-12-28T05:00:43.587Z - info: [1:00:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:00:44.590Z - info: Rebuilding affected source files
+2019-12-28T05:00:44.593Z - info: Rebuilding 1 pages
+2019-12-28T05:00:44.731Z - info: Pages rebuilt
+2019-12-28T05:00:44.734Z - info: Site data built
+2019-12-28T05:01:17.343Z - info: [1:01:17 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\optionals.md
+2019-12-28T05:01:18.343Z - warn: Rebuilding all source files
+2019-12-28T05:01:19.429Z - info: Assets removed
+2019-12-28T05:01:19.429Z - info: Generating pages...
+2019-12-28T05:01:20.435Z - info: Pages built
+2019-12-28T05:01:32.898Z - info: [1:01:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\optionals.md
+2019-12-28T05:01:33.900Z - info: Rebuilding affected source files
+2019-12-28T05:01:33.903Z - info: Rebuilding 1 pages
+2019-12-28T05:01:33.931Z - info: Pages rebuilt
+2019-12-28T05:01:33.934Z - info: Site data built
+2019-12-28T05:02:04.991Z - info: [1:02:04 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\localClassVariableCapture.md
+2019-12-28T05:02:05.994Z - warn: Rebuilding all source files
+2019-12-28T05:02:07.071Z - info: Assets removed
+2019-12-28T05:02:07.071Z - info: Generating pages...
+2019-12-28T05:02:08.024Z - info: Pages built
+2019-12-28T05:02:19.118Z - info: [1:02:19 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\localClassVariableCapture.md
+2019-12-28T05:02:20.121Z - info: Rebuilding affected source files
+2019-12-28T05:02:20.121Z - info: Rebuilding 1 pages
+2019-12-28T05:02:20.147Z - info: Pages rebuilt
+2019-12-28T05:02:20.150Z - info: Site data built
+2019-12-28T05:02:29.818Z - info: [1:02:29 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\localClassVariableCapture.md
+2019-12-28T05:02:30.821Z - info: Rebuilding affected source files
+2019-12-28T05:02:30.822Z - info: Rebuilding 1 pages
+2019-12-28T05:02:30.918Z - info: Pages rebuilt
+2019-12-28T05:02:30.921Z - info: Site data built
+2019-12-28T05:02:43.441Z - info: [1:02:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:02:44.444Z - info: Rebuilding affected source files
+2019-12-28T05:02:44.446Z - info: Rebuilding 1 pages
+2019-12-28T05:02:44.542Z - info: Pages rebuilt
+2019-12-28T05:02:44.545Z - info: Site data built
+2019-12-28T05:02:54.334Z - info: [1:02:54 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\map.md
+2019-12-28T05:02:55.336Z - warn: Rebuilding all source files
+2019-12-28T05:02:56.430Z - info: Assets removed
+2019-12-28T05:02:56.431Z - info: Generating pages...
+2019-12-28T05:02:57.426Z - info: Pages built
+2019-12-28T05:02:59.118Z - info: [1:02:59 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\flatMap.md
+2019-12-28T05:03:00.119Z - warn: Rebuilding all source files
+2019-12-28T05:03:01.196Z - info: Assets removed
+2019-12-28T05:03:01.197Z - info: Generating pages...
+2019-12-28T05:03:02.163Z - info: Pages built
+2019-12-28T05:03:21.225Z - info: [1:03:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\flatMap.md
+2019-12-28T05:03:21.228Z - info: [1:03:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture07\map.md
+2019-12-28T05:03:22.229Z - info: Rebuilding affected source files
+2019-12-28T05:03:22.231Z - info: Rebuilding 2 pages
+2019-12-28T05:03:22.349Z - info: Pages rebuilt
+2019-12-28T05:03:22.352Z - info: Site data built
+2019-12-28T05:03:41.404Z - info: [1:03:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:03:42.405Z - info: Rebuilding affected source files
+2019-12-28T05:03:42.406Z - info: Rebuilding 1 pages
+2019-12-28T05:03:42.506Z - info: Pages rebuilt
+2019-12-28T05:03:42.510Z - info: Site data built
+2019-12-28T05:04:13.569Z - info: [1:04:13 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\functions.md
+2019-12-28T05:04:14.573Z - warn: Rebuilding all source files
+2019-12-28T05:04:15.664Z - info: Assets removed
+2019-12-28T05:04:15.664Z - info: Generating pages...
+2019-12-28T05:04:16.738Z - info: Pages built
+2019-12-28T05:04:25.517Z - info: [1:04:25 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\functions.md
+2019-12-28T05:04:26.517Z - info: Rebuilding affected source files
+2019-12-28T05:04:26.518Z - info: Rebuilding 1 pages
+2019-12-28T05:04:26.564Z - info: Pages rebuilt
+2019-12-28T05:04:26.568Z - info: Site data built
+2019-12-28T05:04:55.881Z - info: [1:04:55 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:04:56.883Z - info: Rebuilding affected source files
+2019-12-28T05:04:56.884Z - info: Rebuilding 1 pages
+2019-12-28T05:04:57.014Z - info: Pages rebuilt
+2019-12-28T05:04:57.016Z - info: Site data built
+2019-12-28T05:05:21.187Z - info: [1:05:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\functions.md
+2019-12-28T05:05:22.189Z - info: Rebuilding affected source files
+2019-12-28T05:05:22.190Z - info: Rebuilding 1 pages
+2019-12-28T05:05:22.236Z - info: Pages rebuilt
+2019-12-28T05:05:22.240Z - info: Site data built
+2019-12-28T05:05:58.889Z - info: [1:05:58 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\javaFunctions.md
+2019-12-28T05:05:59.891Z - warn: Rebuilding all source files
+2019-12-28T05:06:00.978Z - info: Assets removed
+2019-12-28T05:06:00.979Z - info: Generating pages...
+2019-12-28T05:06:02.075Z - info: Pages built
+2019-12-28T05:06:08.146Z - info: [1:06:08 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\javaFunctions.md
+2019-12-28T05:06:09.149Z - info: Rebuilding affected source files
+2019-12-28T05:06:09.150Z - info: Rebuilding 1 pages
+2019-12-28T05:06:09.187Z - info: Pages rebuilt
+2019-12-28T05:06:09.190Z - info: Site data built
+2019-12-28T05:06:26.206Z - info: [1:06:26 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\javaFunctions.md
+2019-12-28T05:06:26.213Z - info: [1:06:26 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:06:27.210Z - info: Rebuilding affected source files
+2019-12-28T05:06:27.211Z - info: Rebuilding 2 pages
+2019-12-28T05:06:27.354Z - info: Pages rebuilt
+2019-12-28T05:06:27.357Z - info: Site data built
+2019-12-28T05:06:35.679Z - info: [1:06:35 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:06:36.681Z - info: Rebuilding affected source files
+2019-12-28T05:06:36.682Z - info: Rebuilding 1 pages
+2019-12-28T05:06:36.768Z - info: Pages rebuilt
+2019-12-28T05:06:36.771Z - info: Site data built
+2019-12-28T05:06:58.465Z - info: [1:06:58 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:06:59.466Z - info: Rebuilding affected source files
+2019-12-28T05:06:59.467Z - info: Rebuilding 1 pages
+2019-12-28T05:06:59.569Z - info: Pages rebuilt
+2019-12-28T05:06:59.572Z - info: Site data built
+2019-12-28T05:09:37.299Z - info: [1:09:37 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:09:38.301Z - info: Rebuilding affected source files
+2019-12-28T05:09:38.302Z - info: Rebuilding 1 pages
+2019-12-28T05:09:38.394Z - info: Pages rebuilt
+2019-12-28T05:09:38.397Z - info: Site data built
+2019-12-28T05:09:48.125Z - info: [1:09:48 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\functors.md
+2019-12-28T05:09:49.128Z - warn: Rebuilding all source files
+2019-12-28T05:09:50.213Z - info: Assets removed
+2019-12-28T05:09:50.214Z - info: Generating pages...
+2019-12-28T05:09:51.322Z - info: Pages built
+2019-12-28T05:09:52.648Z - info: [1:09:52 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\monads.md
+2019-12-28T05:09:53.649Z - warn: Rebuilding all source files
+2019-12-28T05:09:54.735Z - info: Assets removed
+2019-12-28T05:09:54.736Z - info: Generating pages...
+2019-12-28T05:09:55.754Z - info: Pages built
+2019-12-28T05:10:22.369Z - info: [1:10:22 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\monad.md
+2019-12-28T05:10:22.464Z - info: [1:10:22 PM] Reload for file deletion: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\monads.md
+2019-12-28T05:10:23.372Z - warn: Rebuilding all source files
+2019-12-28T05:10:24.462Z - info: Assets removed
+2019-12-28T05:10:24.463Z - info: Generating pages...
+2019-12-28T05:10:25.773Z - info: Pages built
+2019-12-28T05:10:27.619Z - info: [1:10:27 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:10:28.622Z - info: Rebuilding affected source files
+2019-12-28T05:10:28.623Z - info: Rebuilding 1 pages
+2019-12-28T05:10:28.689Z - info: Pages rebuilt
+2019-12-28T05:10:28.694Z - info: Site data built
+2019-12-28T05:10:36.615Z - info: [1:10:36 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\functors.md
+2019-12-28T05:10:37.616Z - info: Rebuilding affected source files
+2019-12-28T05:10:37.617Z - info: Rebuilding 1 pages
+2019-12-28T05:10:37.642Z - info: Pages rebuilt
+2019-12-28T05:10:37.645Z - info: Site data built
+2019-12-28T05:10:42.655Z - info: [1:10:42 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\monad.md
+2019-12-28T05:10:43.657Z - info: Rebuilding affected source files
+2019-12-28T05:10:43.658Z - info: Rebuilding 1 pages
+2019-12-28T05:10:43.719Z - info: Pages rebuilt
+2019-12-28T05:10:43.721Z - info: Site data built
+2019-12-28T05:11:13.625Z - info: [1:11:13 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\streamsAndPipelines.md
+2019-12-28T05:11:14.626Z - warn: Rebuilding all source files
+2019-12-28T05:11:15.715Z - info: Assets removed
+2019-12-28T05:11:15.716Z - info: Generating pages...
+2019-12-28T05:11:16.894Z - info: Pages built
+2019-12-28T05:11:30.240Z - info: [1:11:30 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:11:30.245Z - info: [1:11:30 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\streamsAndPipelines.md
+2019-12-28T05:11:31.242Z - info: Rebuilding affected source files
+2019-12-28T05:11:31.245Z - info: Rebuilding 2 pages
+2019-12-28T05:11:31.345Z - info: Pages rebuilt
+2019-12-28T05:11:31.348Z - info: Site data built
+2019-12-28T05:11:52.729Z - info: [1:11:52 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:11:53.731Z - info: Rebuilding affected source files
+2019-12-28T05:11:53.732Z - info: Rebuilding 1 pages
+2019-12-28T05:11:53.910Z - info: Pages rebuilt
+2019-12-28T05:11:53.913Z - info: Site data built
+2019-12-28T05:13:43.268Z - info: [1:13:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:13:44.270Z - info: Rebuilding affected source files
+2019-12-28T05:13:44.271Z - info: Rebuilding 1 pages
+2019-12-28T05:13:44.388Z - info: Pages rebuilt
+2019-12-28T05:13:44.393Z - info: Site data built
+2019-12-28T05:14:56.397Z - info: [1:14:56 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\intermediateVsTerminalOperations.md
+2019-12-28T05:14:57.398Z - warn: Rebuilding all source files
+2019-12-28T05:14:58.485Z - info: Assets removed
+2019-12-28T05:14:58.486Z - info: Generating pages...
+2019-12-28T05:14:59.671Z - info: Pages built
+2019-12-28T05:15:16.264Z - info: [1:15:16 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\intermediateVsTerminalOperations.md
+2019-12-28T05:15:17.268Z - info: Rebuilding affected source files
+2019-12-28T05:15:17.270Z - info: Rebuilding 1 pages
+2019-12-28T05:15:17.330Z - info: Pages rebuilt
+2019-12-28T05:15:17.335Z - info: Site data built
+2019-12-28T05:15:29.298Z - info: [1:15:29 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:15:30.301Z - info: Rebuilding affected source files
+2019-12-28T05:15:30.302Z - info: Rebuilding 1 pages
+2019-12-28T05:15:30.404Z - info: Pages rebuilt
+2019-12-28T05:15:30.407Z - info: Site data built
+2019-12-28T05:15:38.647Z - info: [1:15:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:15:39.648Z - info: Rebuilding affected source files
+2019-12-28T05:15:39.649Z - info: Rebuilding 1 pages
+2019-12-28T05:15:39.738Z - info: Pages rebuilt
+2019-12-28T05:15:39.741Z - info: Site data built
+2019-12-28T05:15:50.969Z - info: [1:15:50 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:15:51.973Z - info: Rebuilding affected source files
+2019-12-28T05:15:51.973Z - info: Rebuilding 1 pages
+2019-12-28T05:15:52.068Z - info: Pages rebuilt
+2019-12-28T05:15:52.072Z - info: Site data built
+2019-12-28T05:16:33.665Z - info: [1:16:33 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\statelessVsStatefulOperations.md
+2019-12-28T05:16:34.666Z - warn: Rebuilding all source files
+2019-12-28T05:16:35.756Z - info: Assets removed
+2019-12-28T05:16:35.756Z - info: Generating pages...
+2019-12-28T05:16:36.963Z - info: Pages built
+2019-12-28T05:16:50.672Z - info: [1:16:50 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture08\statelessVsStatefulOperations.md
+2019-12-28T05:16:51.675Z - info: Rebuilding affected source files
+2019-12-28T05:16:51.677Z - info: Rebuilding 1 pages
+2019-12-28T05:16:51.704Z - info: Pages rebuilt
+2019-12-28T05:16:51.707Z - info: Site data built
+2019-12-28T05:17:20.217Z - info: [1:17:20 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:17:21.222Z - info: Rebuilding affected source files
+2019-12-28T05:17:21.222Z - info: Rebuilding 1 pages
+2019-12-28T05:17:21.377Z - info: Pages rebuilt
+2019-12-28T05:17:21.380Z - info: Site data built
+2019-12-28T05:21:35.027Z - info: [1:21:35 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture09\lazyEvaluation.md
+2019-12-28T05:21:36.029Z - warn: Rebuilding all source files
+2019-12-28T05:21:37.129Z - info: Assets removed
+2019-12-28T05:21:37.130Z - info: Generating pages...
+2019-12-28T05:21:38.527Z - info: Pages built
+2019-12-28T05:22:21.475Z - info: [1:22:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:22:22.479Z - info: Rebuilding affected source files
+2019-12-28T05:22:22.481Z - info: Rebuilding 1 pages
+2019-12-28T05:22:22.662Z - info: Pages rebuilt
+2019-12-28T05:22:22.665Z - info: Site data built
+2019-12-28T05:22:43.781Z - info: [1:22:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture09\lazyEvaluation.md
+2019-12-28T05:22:44.784Z - info: Rebuilding affected source files
+2019-12-28T05:22:44.785Z - info: Rebuilding 1 pages
+2019-12-28T05:22:44.827Z - info: Pages rebuilt
+2019-12-28T05:22:44.830Z - info: Site data built
+2019-12-28T05:24:25.792Z - info: [1:24:25 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\parallelStreams.md
+2019-12-28T05:24:26.793Z - warn: Rebuilding all source files
+2019-12-28T05:24:27.882Z - info: Assets removed
+2019-12-28T05:24:27.883Z - info: Generating pages...
+2019-12-28T05:24:29.063Z - info: Pages built
+2019-12-28T05:25:40.432Z - info: [1:25:40 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:25:41.435Z - info: Rebuilding affected source files
+2019-12-28T05:25:41.436Z - info: Rebuilding 1 pages
+2019-12-28T05:25:41.654Z - info: Pages rebuilt
+2019-12-28T05:25:41.658Z - info: Site data built
+2019-12-28T05:25:54.561Z - info: [1:25:54 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\parallelStreams.md
+2019-12-28T05:25:55.565Z - info: Rebuilding affected source files
+2019-12-28T05:25:55.565Z - info: Rebuilding 1 pages
+2019-12-28T05:25:55.608Z - info: Pages rebuilt
+2019-12-28T05:25:55.611Z - info: Site data built
+2019-12-28T05:26:05.511Z - info: [1:26:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\parallelStreams.md
+2019-12-28T05:26:06.515Z - info: Rebuilding affected source files
+2019-12-28T05:26:06.516Z - info: Rebuilding 1 pages
+2019-12-28T05:26:06.554Z - info: Pages rebuilt
+2019-12-28T05:26:06.557Z - info: Site data built
+2019-12-28T05:26:16.424Z - info: [1:26:16 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:26:17.427Z - info: Rebuilding affected source files
+2019-12-28T05:26:17.428Z - info: Rebuilding 1 pages
+2019-12-28T05:26:17.531Z - info: Pages rebuilt
+2019-12-28T05:26:17.535Z - info: Site data built
+2019-12-28T05:26:42.602Z - info: [1:26:42 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:26:43.604Z - info: Rebuilding affected source files
+2019-12-28T05:26:43.605Z - info: Rebuilding 1 pages
+2019-12-28T05:26:43.770Z - info: Pages rebuilt
+2019-12-28T05:26:43.774Z - info: Site data built
+2019-12-28T05:27:36.507Z - info: [1:27:36 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\parallelVsSequentialStreams.md
+2019-12-28T05:27:37.510Z - warn: Rebuilding all source files
+2019-12-28T05:27:38.606Z - info: Assets removed
+2019-12-28T05:27:38.607Z - info: Generating pages...
+2019-12-28T05:27:39.822Z - info: Pages built
+2019-12-28T05:27:56.342Z - info: [1:27:56 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\parallelVsSequentialStreams.md
+2019-12-28T05:27:56.350Z - info: [1:27:56 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:27:57.345Z - info: Rebuilding affected source files
+2019-12-28T05:27:57.347Z - info: Rebuilding 2 pages
+2019-12-28T05:27:57.558Z - info: Pages rebuilt
+2019-12-28T05:27:57.562Z - info: Site data built
+2019-12-28T05:28:15.317Z - info: [1:28:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:28:16.321Z - info: Rebuilding affected source files
+2019-12-28T05:28:16.321Z - info: Rebuilding 1 pages
+2019-12-28T05:28:16.419Z - info: Pages rebuilt
+2019-12-28T05:28:16.423Z - info: Site data built
+2019-12-28T05:29:13.382Z - info: [1:29:13 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:29:14.386Z - info: Rebuilding affected source files
+2019-12-28T05:29:14.388Z - info: Rebuilding 1 pages
+2019-12-28T05:29:14.490Z - info: Pages rebuilt
+2019-12-28T05:29:14.493Z - info: Site data built
+2019-12-28T05:29:17.765Z - info: [1:29:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:29:18.767Z - info: Rebuilding affected source files
+2019-12-28T05:29:18.767Z - info: Rebuilding 1 pages
+2019-12-28T05:29:18.858Z - info: Pages rebuilt
+2019-12-28T05:29:18.861Z - info: Site data built
+2019-12-28T05:31:00.874Z - info: [1:31:00 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\debuggingParallelStreams.md
+2019-12-28T05:31:01.876Z - warn: Rebuilding all source files
+2019-12-28T05:31:02.967Z - info: Assets removed
+2019-12-28T05:31:02.968Z - info: Generating pages...
+2019-12-28T05:31:04.165Z - info: Pages built
+2019-12-28T05:31:13.832Z - info: [1:31:13 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\correctnessParallelStreams.md
+2019-12-28T05:31:14.833Z - warn: Rebuilding all source files
+2019-12-28T05:31:15.929Z - info: Assets removed
+2019-12-28T05:31:15.931Z - info: Generating pages...
+2019-12-28T05:31:17.063Z - info: Pages built
+2019-12-28T05:31:24.649Z - info: [1:31:24 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\accumulatorAndCombiner.md
+2019-12-28T05:31:25.650Z - warn: Rebuilding all source files
+2019-12-28T05:31:26.731Z - info: Assets removed
+2019-12-28T05:31:26.731Z - info: Generating pages...
+2019-12-28T05:31:27.805Z - info: Pages built
+2019-12-28T05:32:00.913Z - info: [1:32:00 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\debuggingParallelStreams.md
+2019-12-28T05:32:01.916Z - info: Rebuilding affected source files
+2019-12-28T05:32:01.918Z - info: Rebuilding 1 pages
+2019-12-28T05:32:01.994Z - info: Pages rebuilt
+2019-12-28T05:32:01.998Z - info: Site data built
+2019-12-28T05:32:11.432Z - info: [1:32:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\correctnessParallelStreams.md
+2019-12-28T05:32:12.436Z - info: Rebuilding affected source files
+2019-12-28T05:32:12.437Z - info: Rebuilding 1 pages
+2019-12-28T05:32:12.479Z - info: Pages rebuilt
+2019-12-28T05:32:12.482Z - info: Site data built
+2019-12-28T05:32:26.789Z - info: [1:32:26 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\accumulatorAndCombiner.md
+2019-12-28T05:32:27.793Z - info: Rebuilding affected source files
+2019-12-28T05:32:27.794Z - info: Rebuilding 1 pages
+2019-12-28T05:32:27.839Z - info: Pages rebuilt
+2019-12-28T05:32:27.843Z - info: Site data built
+2019-12-28T05:32:44.807Z - info: [1:32:44 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:32:45.809Z - info: Rebuilding affected source files
+2019-12-28T05:32:45.810Z - info: Rebuilding 1 pages
+2019-12-28T05:32:45.925Z - info: Pages rebuilt
+2019-12-28T05:32:45.927Z - info: Site data built
+2019-12-28T05:32:49.586Z - info: [1:32:49 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:32:50.588Z - info: Rebuilding affected source files
+2019-12-28T05:32:50.589Z - info: Rebuilding 1 pages
+2019-12-28T05:32:50.693Z - info: Pages rebuilt
+2019-12-28T05:32:50.696Z - info: Site data built
+2019-12-28T05:33:43.074Z - info: [1:33:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:33:44.079Z - info: Rebuilding affected source files
+2019-12-28T05:33:44.080Z - info: Rebuilding 1 pages
+2019-12-28T05:33:44.190Z - info: Pages rebuilt
+2019-12-28T05:33:44.193Z - info: Site data built
+2019-12-28T05:33:49.857Z - info: [1:33:49 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\forkAndJoin.md
+2019-12-28T05:33:50.859Z - warn: Rebuilding all source files
+2019-12-28T05:33:51.955Z - info: Assets removed
+2019-12-28T05:33:51.956Z - info: Generating pages...
+2019-12-28T05:33:53.387Z - info: Pages built
+2019-12-28T05:34:02.349Z - info: [1:34:02 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\forkAndJoin.md
+2019-12-28T05:34:03.352Z - info: Rebuilding affected source files
+2019-12-28T05:34:03.353Z - info: Rebuilding 1 pages
+2019-12-28T05:34:03.376Z - info: Pages rebuilt
+2019-12-28T05:34:03.379Z - info: Site data built
+2019-12-28T05:34:04.953Z - info: [1:34:04 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\forkAndJoin.md
+2019-12-28T05:34:05.956Z - info: Rebuilding affected source files
+2019-12-28T05:34:05.957Z - info: Rebuilding 1 pages
+2019-12-28T05:34:05.983Z - info: Pages rebuilt
+2019-12-28T05:34:05.986Z - info: Site data built
+2019-12-28T05:34:15.335Z - info: [1:34:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:34:16.338Z - info: Rebuilding affected source files
+2019-12-28T05:34:16.339Z - info: Rebuilding 1 pages
+2019-12-28T05:34:16.482Z - info: Pages rebuilt
+2019-12-28T05:34:16.485Z - info: Site data built
+2019-12-28T05:34:54.219Z - info: [1:34:54 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:34:54.226Z - info: [1:34:54 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\forkAndJoin.md
+2019-12-28T05:34:55.223Z - info: Rebuilding affected source files
+2019-12-28T05:34:55.224Z - info: Rebuilding 2 pages
+2019-12-28T05:34:55.365Z - info: Pages rebuilt
+2019-12-28T05:34:55.368Z - info: Site data built
+2019-12-28T05:37:33.898Z - info: [1:37:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:37:34.900Z - info: Rebuilding affected source files
+2019-12-28T05:37:34.902Z - info: Rebuilding 1 pages
+2019-12-28T05:37:35.057Z - info: Pages rebuilt
+2019-12-28T05:37:35.062Z - info: Site data built
+2019-12-28T05:38:01.430Z - info: [1:38:01 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:38:02.433Z - info: Rebuilding affected source files
+2019-12-28T05:38:02.434Z - info: Rebuilding 1 pages
+2019-12-28T05:38:02.557Z - info: Pages rebuilt
+2019-12-28T05:38:02.563Z - info: Site data built
+2019-12-28T05:38:08.527Z - info: [1:38:08 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\recursiveTask.md
+2019-12-28T05:38:09.530Z - warn: Rebuilding all source files
+2019-12-28T05:38:10.633Z - info: Assets removed
+2019-12-28T05:38:10.633Z - info: Generating pages...
+2019-12-28T05:38:11.955Z - info: Pages built
+2019-12-28T05:38:20.320Z - info: [1:38:20 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\recursiveTask.md
+2019-12-28T05:38:21.321Z - info: Rebuilding affected source files
+2019-12-28T05:38:21.322Z - info: Rebuilding 1 pages
+2019-12-28T05:38:21.350Z - info: Pages rebuilt
+2019-12-28T05:38:21.353Z - info: Site data built
+2019-12-28T05:38:45.734Z - info: [1:38:45 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:38:46.740Z - info: Rebuilding affected source files
+2019-12-28T05:38:46.741Z - info: Rebuilding 1 pages
+2019-12-28T05:38:46.937Z - info: Pages rebuilt
+2019-12-28T05:38:46.940Z - info: Site data built
+2019-12-28T05:38:55.696Z - info: [1:38:55 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\threadPools.md
+2019-12-28T05:38:56.698Z - warn: Rebuilding all source files
+2019-12-28T05:38:57.829Z - info: Assets removed
+2019-12-28T05:38:57.830Z - info: Generating pages...
+2019-12-28T05:38:59.369Z - info: Pages built
+2019-12-28T05:39:45.966Z - info: [1:39:45 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\workFetching.md
+2019-12-28T05:39:46.969Z - warn: Rebuilding all source files
+2019-12-28T05:39:48.076Z - info: Assets removed
+2019-12-28T05:39:48.077Z - info: Generating pages...
+2019-12-28T05:39:49.466Z - info: Pages built
+2019-12-28T05:39:50.216Z - info: [1:39:50 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\workStealing.md
+2019-12-28T05:39:51.218Z - warn: Rebuilding all source files
+2019-12-28T05:39:52.305Z - info: Assets removed
+2019-12-28T05:39:52.305Z - info: Generating pages...
+2019-12-28T05:39:53.525Z - info: Pages built
+2019-12-28T05:39:59.791Z - info: [1:39:59 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\forkJoinOrder.md
+2019-12-28T05:40:00.793Z - warn: Rebuilding all source files
+2019-12-28T05:40:01.881Z - info: Assets removed
+2019-12-28T05:40:01.881Z - info: Generating pages...
+2019-12-28T05:40:03.066Z - info: Pages built
+2019-12-28T05:40:12.306Z - info: [1:40:12 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\threadPools.md
+2019-12-28T05:40:13.309Z - info: Rebuilding affected source files
+2019-12-28T05:40:13.311Z - info: Rebuilding 1 pages
+2019-12-28T05:40:13.337Z - info: Pages rebuilt
+2019-12-28T05:40:13.340Z - info: Site data built
+2019-12-28T05:40:23.404Z - info: [1:40:23 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\forkJoinOrder.md
+2019-12-28T05:40:24.406Z - info: Rebuilding affected source files
+2019-12-28T05:40:24.406Z - info: Rebuilding 1 pages
+2019-12-28T05:40:24.476Z - info: Pages rebuilt
+2019-12-28T05:40:24.480Z - info: Site data built
+2019-12-28T05:40:32.793Z - info: [1:40:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\workStealing.md
+2019-12-28T05:40:33.794Z - info: Rebuilding affected source files
+2019-12-28T05:40:33.795Z - info: Rebuilding 1 pages
+2019-12-28T05:40:33.837Z - info: Pages rebuilt
+2019-12-28T05:40:33.841Z - info: Site data built
+2019-12-28T05:40:36.193Z - info: [1:40:36 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\workStealing.md
+2019-12-28T05:40:37.197Z - info: Rebuilding affected source files
+2019-12-28T05:40:37.198Z - info: Rebuilding 1 pages
+2019-12-28T05:40:37.231Z - info: Pages rebuilt
+2019-12-28T05:40:37.234Z - info: Site data built
+2019-12-28T05:40:53.243Z - info: [1:40:53 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\workStealing.md
+2019-12-28T05:40:53.246Z - info: [1:40:53 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture11\workFetching.md
+2019-12-28T05:40:54.247Z - info: Rebuilding affected source files
+2019-12-28T05:40:54.248Z - info: Rebuilding 2 pages
+2019-12-28T05:40:54.311Z - info: Pages rebuilt
+2019-12-28T05:40:54.313Z - info: Site data built
+2019-12-28T05:41:54.431Z - info: [1:41:54 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:41:55.433Z - info: Rebuilding affected source files
+2019-12-28T05:41:55.434Z - info: Rebuilding 1 pages
+2019-12-28T05:41:55.552Z - info: Pages rebuilt
+2019-12-28T05:41:55.555Z - info: Site data built
+2019-12-28T05:43:21.658Z - info: [1:43:21 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\synchronousVsAsynchronous.md
+2019-12-28T05:43:22.662Z - warn: Rebuilding all source files
+2019-12-28T05:43:23.760Z - info: Assets removed
+2019-12-28T05:43:23.761Z - info: Generating pages...
+2019-12-28T05:43:25.134Z - info: Pages built
+2019-12-28T05:43:57.481Z - info: [1:43:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:43:57.491Z - info: [1:43:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\synchronousVsAsynchronous.md
+2019-12-28T05:43:58.486Z - info: Rebuilding affected source files
+2019-12-28T05:43:58.489Z - info: Rebuilding 2 pages
+2019-12-28T05:43:58.685Z - info: Pages rebuilt
+2019-12-28T05:43:58.688Z - info: Site data built
+2019-12-28T05:44:17.570Z - info: [1:44:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:44:18.571Z - info: Rebuilding affected source files
+2019-12-28T05:44:18.572Z - info: Rebuilding 1 pages
+2019-12-28T05:44:18.685Z - info: Pages rebuilt
+2019-12-28T05:44:18.688Z - info: Site data built
+2019-12-28T05:44:28.058Z - info: [1:44:28 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:44:29.060Z - info: Rebuilding affected source files
+2019-12-28T05:44:29.061Z - info: Rebuilding 1 pages
+2019-12-28T05:44:29.168Z - info: Pages rebuilt
+2019-12-28T05:44:29.171Z - info: Site data built
+2019-12-28T05:45:07.888Z - info: [1:45:07 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\callbacks.md
+2019-12-28T05:45:08.888Z - warn: Rebuilding all source files
+2019-12-28T05:45:09.988Z - info: Assets removed
+2019-12-28T05:45:09.988Z - info: Generating pages...
+2019-12-28T05:45:11.391Z - info: Pages built
+2019-12-28T05:45:14.899Z - info: [1:45:14 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\listeners.md
+2019-12-28T05:45:15.901Z - warn: Rebuilding all source files
+2019-12-28T05:45:16.990Z - info: Assets removed
+2019-12-28T05:45:16.991Z - info: Generating pages...
+2019-12-28T05:45:18.285Z - info: Pages built
+2019-12-28T05:51:23.007Z - info: [1:51:23 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\callbacks.md
+2019-12-28T05:51:23.010Z - info: [1:51:23 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\listeners.md
+2019-12-28T05:51:24.011Z - info: Rebuilding affected source files
+2019-12-28T05:51:24.013Z - info: Rebuilding 2 pages
+2019-12-28T05:51:24.124Z - info: Pages rebuilt
+2019-12-28T05:51:24.127Z - info: Site data built
+2019-12-28T05:51:56.106Z - info: [1:51:56 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\callable.md
+2019-12-28T05:51:57.108Z - warn: Rebuilding all source files
+2019-12-28T05:51:58.213Z - info: Assets removed
+2019-12-28T05:51:58.214Z - info: Generating pages...
+2019-12-28T05:51:59.782Z - info: Pages built
+2019-12-28T05:52:01.607Z - info: [1:52:01 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\future.md
+2019-12-28T05:52:02.609Z - warn: Rebuilding all source files
+2019-12-28T05:52:03.706Z - info: Assets removed
+2019-12-28T05:52:03.708Z - info: Generating pages...
+2019-12-28T05:52:05.119Z - info: Pages built
+2019-12-28T05:52:10.697Z - info: [1:52:10 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\callable.md
+2019-12-28T05:52:11.700Z - info: Rebuilding affected source files
+2019-12-28T05:52:11.701Z - info: Rebuilding 1 pages
+2019-12-28T05:52:11.728Z - info: Pages rebuilt
+2019-12-28T05:52:11.732Z - info: Site data built
+2019-12-28T05:52:24.513Z - info: [1:52:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture12\future.md
+2019-12-28T05:52:25.516Z - info: Rebuilding affected source files
+2019-12-28T05:52:25.517Z - info: Rebuilding 1 pages
+2019-12-28T05:52:25.587Z - info: Pages rebuilt
+2019-12-28T05:52:25.591Z - info: Site data built
+2019-12-28T05:53:11.436Z - info: [1:53:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:53:12.437Z - info: Rebuilding affected source files
+2019-12-28T05:53:12.438Z - info: Rebuilding 1 pages
+2019-12-28T05:53:12.587Z - info: Pages rebuilt
+2019-12-28T05:53:12.590Z - info: Site data built
+2019-12-28T05:53:18.532Z - info: [1:53:18 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:53:19.535Z - info: Rebuilding affected source files
+2019-12-28T05:53:19.536Z - info: Rebuilding 1 pages
+2019-12-28T05:53:19.663Z - info: Pages rebuilt
+2019-12-28T05:53:19.666Z - info: Site data built
+2019-12-28T05:54:28.645Z - info: [1:54:28 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\abstractClasses.md
+2019-12-28T05:54:28.742Z - info: [1:54:28 PM] Reload for file deletion: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\abstractCkasses.md
+2019-12-28T05:54:29.649Z - warn: Rebuilding all source files
+2019-12-28T05:54:30.801Z - info: Assets removed
+2019-12-28T05:54:30.802Z - info: Generating pages...
+2019-12-28T05:54:32.286Z - info: Pages built
+2019-12-28T05:55:17.717Z - info: [1:55:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture04\finalKeyword.md
+2019-12-28T05:55:18.720Z - info: Rebuilding affected source files
+2019-12-28T05:55:18.722Z - info: Rebuilding 1 pages
+2019-12-28T05:55:18.803Z - info: Pages rebuilt
+2019-12-28T05:55:18.807Z - info: Site data built
+2019-12-28T05:56:55.054Z - info: [1:56:55 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T05:56:56.059Z - info: Rebuilding affected source files
+2019-12-28T05:56:56.059Z - info: Rebuilding 1 pages
+2019-12-28T05:56:56.199Z - info: Pages rebuilt
+2019-12-28T05:56:56.202Z - info: Site data built
+2019-12-28T05:57:13.057Z - info: [1:57:13 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\lecture10\parallelVsSequentialStreams.md
+2019-12-28T05:57:14.058Z - info: Rebuilding affected source files
+2019-12-28T05:57:14.059Z - info: Rebuilding 1 pages
+2019-12-28T05:57:14.100Z - info: Pages rebuilt
+2019-12-28T05:57:14.104Z - info: Site data built
