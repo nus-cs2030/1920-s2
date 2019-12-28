@@ -71,7 +71,63 @@
     },
     {
       "headings": {
-        "static-vs-dynamic-typing": "Static Vs. Dynamic Typing"
+        "abstraction": "Abstraction",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/abstraction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "encapsulation": "Encapsulation",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/encapsulation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "introduction-to-object-oriented-programming": "Introduction to Object-Oriented Programming",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/oopIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "jshell-introduction": "JShell Introduction",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -83,7 +139,1107 @@
     },
     {
       "headings": {
-        "textbook": "Textbook"
+        "using-factory-methods": "Using Factory Methods",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/FactoryMethods.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "introduction-to-jshell": "Introduction to JShell",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/JShellIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "cyclic-dependencies": "Cyclic Dependencies",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/cyclicDependency.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "immutability": "Immutability",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/immutability.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "inheritance": "Inheritance",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/inheritance.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "testing-java-classes": "Testing Java Classes",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/javaTesting.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "liskov-substitution-principle-lsp": "Liskov Substitution Principle (LSP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/lsp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "overloading-vs-overriding": "Overloading vs Overriding",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/overloadingVsOverriding.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "polymorphism": "Polymorphism",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/polymorphism.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "static-vs-dynamic-binding": "Static Vs Dynamic Binding",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "abstract-classes": "Abstract Classes",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/abstractClasses.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "dependency-inversion-principle-srp": "Dependency Inversion Principle (SRP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/dip.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "final-keyword": "Final Keyword",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/finalKeyword.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "interfaces": "Interfaces",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/interfaces.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "interface-segregation-principle-isp": "Interface Segregation Principle (ISP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/isp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "open-closed-principle-ocp": "Open-Closed Principle (OCP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/ocp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "single-responsibility-principle-srp": "Single Responsibility Principle (SRP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/srp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "stubs": "Stubs",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/stubs.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "anonymous-inner-classes": "Anonymous Inner Classes",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/anonymousInnerClasses.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "auto-boxing-and-unboxing": "Auto-Boxing and Unboxing",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/boxing.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "collections": "Collections",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/collections.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "comparator": "Comparator",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/comparator.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "introduction-to-generics": "Introduction to Generics",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/genericsIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "producer-extends-consumer-super-pecs": "Producer Extends, Consumer Super (PECS)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/pecs.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "variance-of-types": "Variance of Types",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/varianceTypes.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "wild-cards": "Wild Cards",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/wildcards.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "access-modifiers": "Access Modifiers",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/accessModifiers.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "assertions": "Assertions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/assertions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "enumerations": "Enumerations",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/enumerations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "exceptions-control-flow": "Exceptions Control Flow",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/exceptionsControlFlow.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "introduction-to-exceptions": "Introduction to Exceptions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/exceptionsIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "handling-exceptions": "Handling Exceptions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/handlingExceptions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "packages": "Packages",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/packages.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "static-keyword": "Static Keyword",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/staticKeyword.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "throwing-exceptions": "Throwing Exceptions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/throwingExceptions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "flatmap": "FlatMap",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/flatMap.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "lambda-expressions": "Lambda Expressions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/lambdas.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "local-class-and-variable-capture": "Local Class and Variable Capture",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/localClassVariableCapture.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "map": "Map",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/map.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "java-s-optional-class": "Java's Optional Class",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/optionals.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "functions": "Functions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/functions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "functors": "Functors",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/functors.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "intermediate-vs-terminal-operations": "Intermediate Vs Terminal Operations",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "java-s-function-interface": "Java's Function Interface",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/javaFunctions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "monad": "Monad",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/monad.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "stateless-vs-stateful-operations": "Stateless Vs Stateful Operations",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "streams-and-pipelines": "Streams and Pipelines",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/streamsAndPipelines.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "lazy-evaluation": "Lazy Evaluation",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture09/lazyEvaluation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "accumulator-and-combiner": "Accumulator and Combiner",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "correctness-of-parallel-streams": "Correctness of Parallel Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/correctnessParallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "debugging-parallel-streams": "Debugging Parallel Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/debuggingParallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "parallel-streams": "Parallel Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/parallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "parallel-vs-sequential-streams": "Parallel vs Sequential Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "introduction-to-fork-and-join": "Introduction to Fork and Join",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/forkAndJoin.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "order-of-fork-and-join": "Order of Fork and Join",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/forkJoinOrder.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "java-s-recursivetask": "Java's RecursiveTask",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/recursiveTask.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "thread-pools": "Thread Pools",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/threadPools.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "work-fetching": "Work Fetching",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/workFetching.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "work-stealing": "Work Stealing",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/workStealing.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "callable-interface": "Callable Interface",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/callable.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "callbacks": "Callbacks",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/callbacks.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "future-interface": "Future Interface",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/future.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "listeners": "Listeners",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/listeners.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "synchronous-vs-asynchronous-programming": "Synchronous Vs Asynchronous Programming",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "textbook": "Textbook",
+        "lecture-1": "Lecture 1",
+        "lecture-2": "Lecture 2",
+        "lecture-3": "Lecture 3",
+        "lecture-4": "Lecture 4",
+        "lecture-5": "Lecture 5",
+        "lecture-6": "Lecture 6",
+        "lecture-7": "Lecture 7",
+        "lecture-8": "Lecture 8",
+        "lecture-9": "Lecture 9",
+        "lecture-10": "Lecture 10",
+        "lecture-11": "Lecture 11",
+        "lecture-12": "Lecture 12"
       },
       "pageNav": 2,
       "header": "header.md",
