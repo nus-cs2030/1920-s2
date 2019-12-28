@@ -1248,18 +1248,6 @@
       "src": "contents/textbook/textbook.md",
       "title": "",
       "layout": "default"
-    },
-    {
-      "headings": {
-        "week-1": "Week 1"
-      },
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
-      "src": "contents/weeks/week1.md",
-      "title": "",
-      "layout": "default"
     }
   ]
 }
