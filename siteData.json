@@ -59,7 +59,8 @@
     },
     {
       "headings": {
-        "textbook-contributions": "Textbook Contributions"
+        "textbook-contributions": "Textbook Contributions",
+        "tutorial": "Tutorial"
       },
       "pageNav": 2,
       "header": "header.md",
