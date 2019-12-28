@@ -1502,3 +1502,12 @@
 2019-12-28T07:15:53.945Z - info: Rebuilding 1 pages
 2019-12-28T07:15:54.002Z - info: Pages rebuilt
 2019-12-28T07:15:54.005Z - info: Site data built
+2019-12-28T07:19:05.844Z - info: Website generation started at 3:19:05 PM
+2019-12-28T07:19:06.365Z - info: Building assets...
+2019-12-28T07:19:06.650Z - info: Assets built
+2019-12-28T07:19:06.651Z - info: Generating pages...
+2019-12-28T07:19:09.430Z - info: Pages built
+2019-12-28T07:19:09.781Z - info: Website generation complete! Total build time: 4.045s
+2019-12-28T07:19:09.820Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2019-12-28T07:19:09.821Z - info: Press CTRL+C to stop ...
+2019-12-28T07:19:09.867Z - info: Site data built
