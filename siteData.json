@@ -122,7 +122,7 @@
     },
     {
       "headings": {
-        "jshell-introduction": "JShell Introduction",
+        "static-vs-dynamic-typing": "Static Vs Dynamic Typing",
         "definition": "Definition",
         "explanation": "Explanation",
         "examples": "Examples",
