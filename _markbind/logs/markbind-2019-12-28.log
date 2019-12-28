@@ -1511,3 +1511,411 @@
 2019-12-28T07:19:09.820Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
 2019-12-28T07:19:09.821Z - info: Press CTRL+C to stop ...
 2019-12-28T07:19:09.867Z - info: Site data built
+2019-12-28T07:27:08.429Z - info: Website generation started at 3:27:08 PM
+2019-12-28T07:27:08.886Z - info: Building assets...
+2019-12-28T07:27:09.217Z - info: Assets built
+2019-12-28T07:27:09.217Z - info: Generating pages...
+2019-12-28T07:27:11.519Z - info: Pages built
+2019-12-28T07:27:11.761Z - info: Website generation complete! Total build time: 3.44s
+2019-12-28T07:27:11.785Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2019-12-28T07:27:11.785Z - info: Press CTRL+C to stop ...
+2019-12-28T07:27:11.818Z - info: Site data built
+2019-12-28T07:27:25.963Z - info: [3:27:25 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:27:26.966Z - info: Rebuilding affected source files
+2019-12-28T07:27:26.970Z - info: Rebuilding 1 pages
+2019-12-28T07:27:27.094Z - info: Pages rebuilt
+2019-12-28T07:27:27.098Z - info: Site data built
+2019-12-28T07:28:05.601Z - info: [3:28:05 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:28:06.605Z - warn: Rebuilding all source files
+2019-12-28T07:28:07.796Z - info: Assets removed
+2019-12-28T07:28:07.797Z - info: Generating pages...
+2019-12-28T07:28:10.377Z - info: Pages built
+2019-12-28T07:28:23.054Z - info: [3:28:23 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:28:24.056Z - info: Rebuilding affected source files
+2019-12-28T07:28:24.059Z - info: Rebuilding 1 pages
+2019-12-28T07:28:24.176Z - info: Pages rebuilt
+2019-12-28T07:28:24.182Z - info: Site data built
+2019-12-28T07:29:24.538Z - info: [3:29:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:29:25.542Z - info: Rebuilding affected source files
+2019-12-28T07:29:25.543Z - info: Rebuilding 1 pages
+2019-12-28T07:29:25.623Z - info: Pages rebuilt
+2019-12-28T07:29:25.627Z - info: Site data built
+2019-12-28T07:29:30.334Z - info: [3:29:30 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:29:31.343Z - info: Rebuilding affected source files
+2019-12-28T07:29:31.344Z - info: Rebuilding 1 pages
+2019-12-28T07:29:31.536Z - info: Pages rebuilt
+2019-12-28T07:29:31.540Z - info: Site data built
+2019-12-28T07:31:21.385Z - info: [3:31:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:31:22.392Z - info: Rebuilding affected source files
+2019-12-28T07:31:22.394Z - info: Rebuilding 1 pages
+2019-12-28T07:31:22.461Z - info: Pages rebuilt
+2019-12-28T07:31:22.469Z - info: Site data built
+2019-12-28T07:31:31.149Z - info: [3:31:31 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:31:32.152Z - info: Rebuilding affected source files
+2019-12-28T07:31:32.153Z - info: Rebuilding 1 pages
+2019-12-28T07:31:32.192Z - info: Pages rebuilt
+2019-12-28T07:31:32.195Z - info: Site data built
+2019-12-28T07:33:14.346Z - info: [3:33:14 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:33:15.350Z - info: Rebuilding affected source files
+2019-12-28T07:33:15.351Z - info: Rebuilding 1 pages
+2019-12-28T07:33:15.413Z - info: Pages rebuilt
+2019-12-28T07:33:15.417Z - info: Site data built
+2019-12-28T07:34:13.893Z - info: [3:34:13 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:34:14.896Z - info: Rebuilding affected source files
+2019-12-28T07:34:14.897Z - info: Rebuilding 1 pages
+2019-12-28T07:34:14.965Z - info: Pages rebuilt
+2019-12-28T07:34:14.968Z - info: Site data built
+2019-12-28T07:34:22.460Z - info: [3:34:22 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:34:23.464Z - info: Rebuilding affected source files
+2019-12-28T07:34:23.467Z - info: Rebuilding 1 pages
+2019-12-28T07:34:23.520Z - info: Pages rebuilt
+2019-12-28T07:34:23.527Z - info: Site data built
+2019-12-28T07:34:52.124Z - info: [3:34:52 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:34:53.129Z - info: Rebuilding affected source files
+2019-12-28T07:34:53.130Z - info: Rebuilding 1 pages
+2019-12-28T07:34:53.242Z - info: Pages rebuilt
+2019-12-28T07:34:53.246Z - info: Site data built
+2019-12-28T07:35:20.912Z - info: [3:35:20 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:35:21.914Z - info: Rebuilding affected source files
+2019-12-28T07:35:21.918Z - info: Rebuilding 1 pages
+2019-12-28T07:35:22.097Z - info: Pages rebuilt
+2019-12-28T07:35:22.104Z - info: Site data built
+2019-12-28T07:36:24.700Z - info: [3:36:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:36:25.702Z - info: Rebuilding affected source files
+2019-12-28T07:36:25.703Z - info: Rebuilding 1 pages
+2019-12-28T07:36:25.835Z - info: Pages rebuilt
+2019-12-28T07:36:25.838Z - info: Site data built
+2019-12-28T07:36:32.893Z - info: [3:36:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:36:33.895Z - info: Rebuilding affected source files
+2019-12-28T07:36:33.897Z - info: Rebuilding 1 pages
+2019-12-28T07:36:34.153Z - info: Pages rebuilt
+2019-12-28T07:36:34.160Z - info: Site data built
+2019-12-28T07:37:26.657Z - info: [3:37:26 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:37:27.657Z - info: Rebuilding affected source files
+2019-12-28T07:37:27.659Z - info: Rebuilding 1 pages
+2019-12-28T07:37:27.905Z - info: Pages rebuilt
+2019-12-28T07:37:27.914Z - info: Site data built
+2019-12-28T07:37:43.213Z - info: [3:37:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:37:44.216Z - info: Rebuilding affected source files
+2019-12-28T07:37:44.217Z - info: Rebuilding 1 pages
+2019-12-28T07:37:44.408Z - info: Pages rebuilt
+2019-12-28T07:37:44.413Z - info: Site data built
+2019-12-28T07:38:02.109Z - info: [3:38:02 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:38:03.113Z - info: Rebuilding affected source files
+2019-12-28T07:38:03.116Z - info: Rebuilding 1 pages
+2019-12-28T07:38:03.311Z - info: Pages rebuilt
+2019-12-28T07:38:03.316Z - info: Site data built
+2019-12-28T07:38:06.705Z - info: [3:38:06 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:38:07.709Z - info: Rebuilding affected source files
+2019-12-28T07:38:07.710Z - info: Rebuilding 1 pages
+2019-12-28T07:38:07.897Z - info: Pages rebuilt
+2019-12-28T07:38:07.902Z - info: Site data built
+2019-12-28T07:38:30.522Z - info: [3:38:30 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:38:31.526Z - info: Rebuilding affected source files
+2019-12-28T07:38:31.528Z - info: Rebuilding 1 pages
+2019-12-28T07:38:31.654Z - info: Pages rebuilt
+2019-12-28T07:38:31.658Z - info: Site data built
+2019-12-28T07:38:41.284Z - info: [3:38:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:38:42.286Z - info: Rebuilding affected source files
+2019-12-28T07:38:42.287Z - info: Rebuilding 1 pages
+2019-12-28T07:38:42.394Z - info: Pages rebuilt
+2019-12-28T07:38:42.398Z - info: Site data built
+2019-12-28T07:39:03.897Z - info: [3:39:03 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:39:04.900Z - info: Rebuilding affected source files
+2019-12-28T07:39:04.903Z - info: Rebuilding 1 pages
+2019-12-28T07:39:05.185Z - info: Pages rebuilt
+2019-12-28T07:39:05.188Z - info: Site data built
+2019-12-28T07:39:24.963Z - info: [3:39:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:39:25.970Z - info: Rebuilding affected source files
+2019-12-28T07:39:25.971Z - info: Rebuilding 1 pages
+2019-12-28T07:39:26.127Z - info: Pages rebuilt
+2019-12-28T07:39:26.130Z - info: Site data built
+2019-12-28T07:39:59.697Z - info: [3:39:59 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:40:00.699Z - info: Rebuilding affected source files
+2019-12-28T07:40:00.700Z - info: Rebuilding 1 pages
+2019-12-28T07:40:00.833Z - info: Pages rebuilt
+2019-12-28T07:40:00.836Z - info: Site data built
+2019-12-28T07:40:37.756Z - info: [3:40:37 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:40:38.759Z - info: Rebuilding affected source files
+2019-12-28T07:40:38.763Z - info: Rebuilding 1 pages
+2019-12-28T07:40:38.879Z - info: Pages rebuilt
+2019-12-28T07:40:38.884Z - info: Site data built
+2019-12-28T07:41:11.237Z - info: [3:41:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:41:12.241Z - info: Rebuilding affected source files
+2019-12-28T07:41:12.242Z - info: Rebuilding 1 pages
+2019-12-28T07:41:12.385Z - info: Pages rebuilt
+2019-12-28T07:41:12.388Z - info: Site data built
+2019-12-28T07:41:20.917Z - info: [3:41:20 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:41:21.921Z - info: Rebuilding affected source files
+2019-12-28T07:41:21.922Z - info: Rebuilding 1 pages
+2019-12-28T07:41:22.064Z - info: Pages rebuilt
+2019-12-28T07:41:22.067Z - info: Site data built
+2019-12-28T07:41:41.227Z - info: [3:41:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:41:42.232Z - info: Rebuilding affected source files
+2019-12-28T07:41:42.235Z - info: Rebuilding 1 pages
+2019-12-28T07:41:42.381Z - info: Pages rebuilt
+2019-12-28T07:41:42.385Z - info: Site data built
+2019-12-28T07:41:57.296Z - info: [3:41:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:41:58.299Z - info: Rebuilding affected source files
+2019-12-28T07:41:58.300Z - info: Rebuilding 1 pages
+2019-12-28T07:41:58.504Z - info: Pages rebuilt
+2019-12-28T07:41:58.510Z - info: Site data built
+2019-12-28T07:42:29.774Z - info: [3:42:29 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:42:30.777Z - info: Rebuilding affected source files
+2019-12-28T07:42:30.777Z - info: Rebuilding 1 pages
+2019-12-28T07:42:30.981Z - info: Pages rebuilt
+2019-12-28T07:42:30.987Z - info: Site data built
+2019-12-28T07:42:46.584Z - info: [3:42:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:42:47.588Z - info: Rebuilding affected source files
+2019-12-28T07:42:47.591Z - info: Rebuilding 1 pages
+2019-12-28T07:42:47.665Z - info: Pages rebuilt
+2019-12-28T07:42:47.673Z - info: Site data built
+2019-12-28T07:42:59.536Z - info: [3:42:59 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:43:00.539Z - info: Rebuilding affected source files
+2019-12-28T07:43:00.540Z - info: Rebuilding 1 pages
+2019-12-28T07:43:00.592Z - info: Pages rebuilt
+2019-12-28T07:43:00.596Z - info: Site data built
+2019-12-28T07:43:37.275Z - info: [3:43:37 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:43:38.277Z - info: Rebuilding affected source files
+2019-12-28T07:43:38.278Z - info: Rebuilding 1 pages
+2019-12-28T07:43:38.331Z - info: Pages rebuilt
+2019-12-28T07:43:38.334Z - info: Site data built
+2019-12-28T07:43:57.082Z - info: [3:43:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:43:58.084Z - info: Rebuilding affected source files
+2019-12-28T07:43:58.085Z - info: Rebuilding 1 pages
+2019-12-28T07:43:58.163Z - info: Pages rebuilt
+2019-12-28T07:43:58.170Z - info: Site data built
+2019-12-28T07:44:32.016Z - info: [3:44:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:44:33.019Z - info: Rebuilding affected source files
+2019-12-28T07:44:33.021Z - info: Rebuilding 1 pages
+2019-12-28T07:44:33.100Z - info: Pages rebuilt
+2019-12-28T07:44:33.104Z - info: Site data built
+2019-12-28T07:44:39.816Z - info: [3:44:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:44:40.829Z - info: Rebuilding affected source files
+2019-12-28T07:44:40.832Z - info: Rebuilding 1 pages
+2019-12-28T07:44:40.918Z - info: Pages rebuilt
+2019-12-28T07:44:40.922Z - info: Site data built
+2019-12-28T07:44:58.546Z - info: [3:44:58 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:44:59.550Z - info: Rebuilding affected source files
+2019-12-28T07:44:59.551Z - info: Rebuilding 1 pages
+2019-12-28T07:44:59.644Z - info: Pages rebuilt
+2019-12-28T07:44:59.650Z - info: Site data built
+2019-12-28T07:45:19.723Z - info: [3:45:19 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:45:20.725Z - info: Rebuilding affected source files
+2019-12-28T07:45:20.726Z - info: Rebuilding 1 pages
+2019-12-28T07:45:20.784Z - info: Pages rebuilt
+2019-12-28T07:45:20.788Z - info: Site data built
+2019-12-28T07:45:25.812Z - info: [3:45:25 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:45:26.815Z - info: Rebuilding affected source files
+2019-12-28T07:45:26.818Z - info: Rebuilding 1 pages
+2019-12-28T07:45:26.888Z - info: Pages rebuilt
+2019-12-28T07:45:26.894Z - info: Site data built
+2019-12-28T07:53:38.321Z - info: [3:53:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:53:39.326Z - info: Rebuilding affected source files
+2019-12-28T07:53:39.330Z - info: Rebuilding 1 pages
+2019-12-28T07:53:39.422Z - info: Pages rebuilt
+2019-12-28T07:53:39.425Z - info: Site data built
+2019-12-28T07:54:15.400Z - info: [3:54:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:54:15.409Z - info: [3:54:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:54:16.404Z - info: Rebuilding affected source files
+2019-12-28T07:54:16.405Z - info: Rebuilding 2 pages
+2019-12-28T07:54:16.597Z - info: Pages rebuilt
+2019-12-28T07:54:16.604Z - info: Site data built
+2019-12-28T07:55:43.188Z - info: [3:55:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:55:44.193Z - info: Rebuilding affected source files
+2019-12-28T07:55:44.196Z - info: Rebuilding 1 pages
+2019-12-28T07:55:44.344Z - info: Pages rebuilt
+2019-12-28T07:55:44.347Z - info: Site data built
+2019-12-28T07:56:06.831Z - info: [3:56:06 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:56:07.835Z - info: Rebuilding affected source files
+2019-12-28T07:56:07.838Z - info: Rebuilding 1 pages
+2019-12-28T07:56:07.968Z - info: Pages rebuilt
+2019-12-28T07:56:07.972Z - info: Site data built
+2019-12-28T07:56:20.969Z - info: [3:56:20 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:56:21.972Z - info: Rebuilding affected source files
+2019-12-28T07:56:21.973Z - info: Rebuilding 1 pages
+2019-12-28T07:56:22.202Z - info: Pages rebuilt
+2019-12-28T07:56:22.208Z - info: Site data built
+2019-12-28T07:56:28.387Z - info: [3:56:28 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:56:29.390Z - info: Rebuilding affected source files
+2019-12-28T07:56:29.390Z - info: Rebuilding 1 pages
+2019-12-28T07:56:29.449Z - info: Pages rebuilt
+2019-12-28T07:56:29.452Z - info: Site data built
+2019-12-28T07:56:57.816Z - info: [3:56:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T07:56:58.819Z - info: Rebuilding affected source files
+2019-12-28T07:56:58.819Z - info: Rebuilding 1 pages
+2019-12-28T07:56:58.915Z - info: Pages rebuilt
+2019-12-28T07:56:58.921Z - info: Site data built
+2019-12-28T07:57:24.335Z - info: [3:57:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T07:57:25.341Z - info: Rebuilding affected source files
+2019-12-28T07:57:25.342Z - info: Rebuilding 1 pages
+2019-12-28T07:57:25.550Z - info: Pages rebuilt
+2019-12-28T07:57:25.556Z - info: Site data built
+2019-12-28T08:02:38.473Z - info: [4:02:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:02:38.480Z - info: [4:02:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:02:39.476Z - info: Rebuilding affected source files
+2019-12-28T08:02:39.477Z - info: Rebuilding 2 pages
+2019-12-28T08:02:39.724Z - info: Pages rebuilt
+2019-12-28T08:02:39.730Z - info: Site data built
+2019-12-28T08:02:50.698Z - info: [4:02:50 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:02:51.699Z - info: Rebuilding affected source files
+2019-12-28T08:02:51.703Z - info: Rebuilding 1 pages
+2019-12-28T08:02:51.939Z - info: Pages rebuilt
+2019-12-28T08:02:51.945Z - info: Site data built
+2019-12-28T08:02:59.042Z - info: [4:02:59 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:03:00.045Z - info: Rebuilding affected source files
+2019-12-28T08:03:00.046Z - info: Rebuilding 1 pages
+2019-12-28T08:03:00.201Z - info: Pages rebuilt
+2019-12-28T08:03:00.206Z - info: Site data built
+2019-12-28T08:03:45.039Z - info: [4:03:45 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:03:46.043Z - info: Rebuilding affected source files
+2019-12-28T08:03:46.047Z - info: Rebuilding 1 pages
+2019-12-28T08:03:46.140Z - info: Pages rebuilt
+2019-12-28T08:03:46.143Z - info: Site data built
+2019-12-28T08:03:51.673Z - info: [4:03:51 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:03:52.677Z - info: Rebuilding affected source files
+2019-12-28T08:03:52.678Z - info: Rebuilding 1 pages
+2019-12-28T08:03:52.756Z - info: Pages rebuilt
+2019-12-28T08:03:52.762Z - info: Site data built
+2019-12-28T08:04:47.671Z - info: [4:04:47 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:04:48.677Z - info: Rebuilding affected source files
+2019-12-28T08:04:48.678Z - info: Rebuilding 1 pages
+2019-12-28T08:04:48.854Z - info: Pages rebuilt
+2019-12-28T08:04:48.861Z - info: Site data built
+2019-12-28T08:07:21.967Z - info: [4:07:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:07:22.969Z - info: Rebuilding affected source files
+2019-12-28T08:07:22.970Z - info: Rebuilding 1 pages
+2019-12-28T08:07:23.140Z - info: Pages rebuilt
+2019-12-28T08:07:23.145Z - info: Site data built
+2019-12-28T08:07:38.423Z - info: [4:07:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:07:39.427Z - info: Rebuilding affected source files
+2019-12-28T08:07:39.430Z - info: Rebuilding 1 pages
+2019-12-28T08:07:39.663Z - info: Pages rebuilt
+2019-12-28T08:07:39.666Z - info: Site data built
+2019-12-28T08:08:14.416Z - info: [4:08:14 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:08:15.420Z - info: Rebuilding affected source files
+2019-12-28T08:08:15.421Z - info: Rebuilding 1 pages
+2019-12-28T08:08:15.519Z - info: Pages rebuilt
+2019-12-28T08:08:15.528Z - info: Site data built
+2019-12-28T08:09:08.269Z - info: [4:09:08 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:09:09.272Z - info: Rebuilding affected source files
+2019-12-28T08:09:09.273Z - info: Rebuilding 1 pages
+2019-12-28T08:09:09.426Z - info: Pages rebuilt
+2019-12-28T08:09:09.432Z - info: Site data built
+2019-12-28T08:09:24.794Z - info: [4:09:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:09:25.796Z - info: Rebuilding affected source files
+2019-12-28T08:09:25.797Z - info: Rebuilding 1 pages
+2019-12-28T08:09:25.950Z - info: Pages rebuilt
+2019-12-28T08:09:25.955Z - info: Site data built
+2019-12-28T08:09:31.834Z - info: [4:09:31 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:09:32.837Z - info: Rebuilding affected source files
+2019-12-28T08:09:32.838Z - info: Rebuilding 1 pages
+2019-12-28T08:09:32.974Z - info: Pages rebuilt
+2019-12-28T08:09:32.980Z - info: Site data built
+2019-12-28T08:10:32.406Z - info: [4:10:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:10:33.410Z - info: Rebuilding affected source files
+2019-12-28T08:10:33.414Z - info: Rebuilding 1 pages
+2019-12-28T08:10:33.574Z - info: Pages rebuilt
+2019-12-28T08:10:33.580Z - info: Site data built
+2019-12-28T08:11:02.627Z - info: [4:11:02 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:11:03.630Z - info: Rebuilding affected source files
+2019-12-28T08:11:03.631Z - info: Rebuilding 1 pages
+2019-12-28T08:11:03.727Z - info: Pages rebuilt
+2019-12-28T08:11:03.730Z - info: Site data built
+2019-12-28T08:11:17.271Z - info: [4:11:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:11:18.277Z - info: Rebuilding affected source files
+2019-12-28T08:11:18.278Z - info: Rebuilding 1 pages
+2019-12-28T08:11:18.435Z - info: Pages rebuilt
+2019-12-28T08:11:18.441Z - info: Site data built
+2019-12-28T08:11:25.630Z - info: [4:11:25 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:11:26.632Z - info: Rebuilding affected source files
+2019-12-28T08:11:26.633Z - info: Rebuilding 1 pages
+2019-12-28T08:11:26.775Z - info: Pages rebuilt
+2019-12-28T08:11:26.781Z - info: Site data built
+2019-12-28T08:11:33.159Z - info: [4:11:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:11:34.163Z - info: Rebuilding affected source files
+2019-12-28T08:11:34.171Z - info: Rebuilding 1 pages
+2019-12-28T08:11:34.306Z - info: Pages rebuilt
+2019-12-28T08:11:34.310Z - info: Site data built
+2019-12-28T08:13:50.811Z - info: [4:13:50 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:13:50.819Z - info: [4:13:50 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:13:51.813Z - info: Rebuilding affected source files
+2019-12-28T08:13:51.814Z - info: Rebuilding 2 pages
+2019-12-28T08:13:52.025Z - info: Pages rebuilt
+2019-12-28T08:13:52.028Z - info: Site data built
+2019-12-28T08:15:09.139Z - info: [4:15:09 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:15:10.141Z - info: Rebuilding affected source files
+2019-12-28T08:15:10.142Z - info: Rebuilding 1 pages
+2019-12-28T08:15:10.485Z - info: Pages rebuilt
+2019-12-28T08:15:10.491Z - info: Site data built
+2019-12-28T08:15:34.803Z - info: [4:15:34 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:15:35.805Z - info: Rebuilding affected source files
+2019-12-28T08:15:35.806Z - info: Rebuilding 1 pages
+2019-12-28T08:15:35.963Z - info: Pages rebuilt
+2019-12-28T08:15:35.967Z - info: Site data built
+2019-12-28T08:15:41.438Z - info: [4:15:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:15:42.439Z - info: Rebuilding affected source files
+2019-12-28T08:15:42.440Z - info: Rebuilding 1 pages
+2019-12-28T08:15:42.574Z - info: Pages rebuilt
+2019-12-28T08:15:42.578Z - info: Site data built
+2019-12-28T08:15:56.100Z - info: [4:15:56 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:15:57.102Z - info: Rebuilding affected source files
+2019-12-28T08:15:57.103Z - info: Rebuilding 1 pages
+2019-12-28T08:15:57.243Z - info: Pages rebuilt
+2019-12-28T08:15:57.246Z - info: Site data built
+2019-12-28T08:16:10.060Z - info: [4:16:10 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:16:11.063Z - info: Rebuilding affected source files
+2019-12-28T08:16:11.065Z - info: Rebuilding 1 pages
+2019-12-28T08:16:11.181Z - info: Pages rebuilt
+2019-12-28T08:16:11.185Z - info: Site data built
+2019-12-28T08:16:18.978Z - info: [4:16:18 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:16:19.981Z - info: Rebuilding affected source files
+2019-12-28T08:16:19.981Z - info: Rebuilding 1 pages
+2019-12-28T08:16:20.107Z - info: Pages rebuilt
+2019-12-28T08:16:20.110Z - info: Site data built
+2019-12-28T08:17:19.104Z - info: [4:17:19 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:17:20.108Z - info: Rebuilding affected source files
+2019-12-28T08:17:20.109Z - info: Rebuilding 1 pages
+2019-12-28T08:17:20.227Z - info: Pages rebuilt
+2019-12-28T08:17:20.230Z - info: Site data built
+2019-12-28T08:17:44.264Z - info: [4:17:44 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:17:45.267Z - info: Rebuilding affected source files
+2019-12-28T08:17:45.269Z - info: Rebuilding 1 pages
+2019-12-28T08:17:45.412Z - info: Pages rebuilt
+2019-12-28T08:17:45.415Z - info: Site data built
+2019-12-28T08:18:16.779Z - info: [4:18:16 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:18:17.784Z - info: Rebuilding affected source files
+2019-12-28T08:18:17.785Z - info: Rebuilding 1 pages
+2019-12-28T08:18:17.907Z - info: Pages rebuilt
+2019-12-28T08:18:17.910Z - info: Site data built
+2019-12-28T08:18:24.420Z - info: [4:18:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:18:25.422Z - info: Rebuilding affected source files
+2019-12-28T08:18:25.423Z - info: Rebuilding 1 pages
+2019-12-28T08:18:25.766Z - info: Pages rebuilt
+2019-12-28T08:18:25.772Z - info: Site data built
+2019-12-28T08:18:53.172Z - info: [4:18:53 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:18:54.175Z - info: Rebuilding affected source files
+2019-12-28T08:18:54.176Z - info: Rebuilding 1 pages
+2019-12-28T08:18:54.305Z - info: Pages rebuilt
+2019-12-28T08:18:54.308Z - info: Site data built
+2019-12-28T08:19:39.206Z - info: [4:19:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:19:39.235Z - info: [4:19:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:19:40.209Z - info: Rebuilding affected source files
+2019-12-28T08:19:40.210Z - info: Rebuilding 2 pages
+2019-12-28T08:19:40.450Z - info: Pages rebuilt
+2019-12-28T08:19:40.454Z - info: Site data built
+2019-12-28T08:20:08.361Z - info: [4:20:08 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbookTopics.md
+2019-12-28T08:20:09.364Z - info: Rebuilding affected source files
+2019-12-28T08:20:09.365Z - info: Rebuilding 1 pages
+2019-12-28T08:20:09.501Z - info: Pages rebuilt
+2019-12-28T08:20:09.504Z - info: Site data built
+2019-12-28T08:20:39.278Z - info: [4:20:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:20:40.281Z - info: Rebuilding affected source files
+2019-12-28T08:20:40.281Z - info: Rebuilding 1 pages
+2019-12-28T08:20:40.409Z - info: Pages rebuilt
+2019-12-28T08:20:40.412Z - info: Site data built
+2019-12-28T08:20:51.219Z - info: [4:20:51 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\textbook\textbook.md
+2019-12-28T08:20:52.224Z - info: Rebuilding affected source files
+2019-12-28T08:20:52.225Z - info: Rebuilding 1 pages
+2019-12-28T08:20:52.494Z - info: Pages rebuilt
+2019-12-28T08:20:52.497Z - info: Site data built
