@@ -7,7 +7,7 @@
 
 <br> 
 
-# JShell Introduction
+# Static Vs Dynamic Typing
 [Edit This Chapter Here! :fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture01/staticVsDynamicTyping.md)
 <hr>
 
