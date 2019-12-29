@@ -1228,7 +1228,6 @@
     },
     {
       "headings": {
-        "textbook": "Textbook",
         "lecture-1": "Lecture 1",
         "lecture-2": "Lecture 2",
         "lecture-3": "Lecture 3",
@@ -1240,7 +1239,8 @@
         "lecture-9": "Lecture 9",
         "lecture-10": "Lecture 10",
         "lecture-11": "Lecture 11",
-        "lecture-12": "Lecture 12"
+        "lecture-12": "Lecture 12",
+        "textbook": "Textbook"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -1252,7 +1252,6 @@
     },
     {
       "headings": {
-        "textbook": "Textbook",
         "oop-and-java-introduction": "OOP and Java Introduction",
         "oop-fundamentals": "OOP Fundamentals",
         "oop-concepts": "OOP Concepts",
@@ -1262,9 +1261,10 @@
         "java-wildcards": "Java Wildcards",
         "exceptions": "Exceptions",
         "streams": "Streams",
-        "parallel-streams": "Parallel Streams",
+        "parallel-streams": "Parallel Streams ",
         "fork-join": "Fork Join",
-        "asynchronous-programming": "Asynchronous Programming"
+        "asynchronous-programming": "Asynchronous Programming",
+        "textbook": "Textbook"
       },
       "pageNav": 2,
       "header": "header.md",
