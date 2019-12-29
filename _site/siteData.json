@@ -2,7 +2,9 @@
   "enableSearch": true,
   "pages": [
     {
-      "headings": {},
+      "headings": {
+        "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
+      },
       "header": "header.md",
       "footer": "footer.md",
       "pageNav": 2,
@@ -12,37 +14,17 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "ay1920-s2": "ay1920-s2"
+      },
       "src": "README.md",
       "title": "",
       "layout": "default"
     },
     {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/footer.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/head.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/header.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/navigation.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
+      "headings": {
+        "peer-learning-segment": "Peer Learning Segment"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -52,7 +34,9 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "peer-learning-task": "Peer Learning Task"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -62,7 +46,9 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "piazza-participation": "Piazza Participation"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -72,7 +58,10 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "textbook-contributions": "Textbook Contributions",
+        "tutorial": "Tutorial"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -82,7 +71,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "abstraction": "Abstraction",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -92,7 +88,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "encapsulation": "Encapsulation",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -102,7 +105,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "introduction-to-object-oriented-programming": "Introduction to Object-Oriented Programming",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -112,7 +122,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "static-vs-dynamic-typing": "Static Vs Dynamic Typing",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -122,7 +139,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "using-factory-methods": "Using Factory Methods",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -132,7 +156,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "introduction-to-jshell": "Introduction to JShell",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -142,7 +173,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "cyclic-dependencies": "Cyclic Dependencies",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -152,7 +190,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "immutability": "Immutability",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -162,7 +207,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "inheritance": "Inheritance",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -172,7 +224,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "testing-java-classes": "Testing Java Classes",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -182,7 +241,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "liskov-substitution-principle-lsp": "Liskov Substitution Principle (LSP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -192,7 +258,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "overloading-vs-overriding": "Overloading vs Overriding",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -202,7 +275,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "polymorphism": "Polymorphism",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -212,7 +292,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "static-vs-dynamic-binding": "Static Vs Dynamic Binding",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -222,7 +309,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "abstract-classes": "Abstract Classes",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -232,7 +326,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "dependency-inversion-principle-srp": "Dependency Inversion Principle (SRP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -242,7 +343,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "final-keyword": "Final Keyword",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -252,7 +360,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "interfaces": "Interfaces",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -262,7 +377,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "interface-segregation-principle-isp": "Interface Segregation Principle (ISP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -272,7 +394,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "open-closed-principle-ocp": "Open-Closed Principle (OCP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -282,7 +411,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "single-responsibility-principle-srp": "Single Responsibility Principle (SRP)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -292,7 +428,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "stubs": "Stubs",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -302,7 +445,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "anonymous-inner-classes": "Anonymous Inner Classes",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -312,7 +462,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "auto-boxing-and-unboxing": "Auto-Boxing and Unboxing",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -322,7 +479,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "collections": "Collections",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -332,7 +496,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "comparator": "Comparator",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -342,7 +513,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "introduction-to-generics": "Introduction to Generics",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -352,7 +530,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "producer-extends-consumer-super-pecs": "Producer Extends, Consumer Super (PECS)",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -362,7 +547,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "variance-of-types": "Variance of Types",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -372,7 +564,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "wild-cards": "Wild Cards",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -382,7 +581,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "access-modifiers": "Access Modifiers",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -392,7 +598,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "assertions": "Assertions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -402,7 +615,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "enumerations": "Enumerations",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -412,7 +632,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "exceptions-control-flow": "Exceptions Control Flow",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -422,7 +649,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "introduction-to-exceptions": "Introduction to Exceptions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -432,7 +666,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "handling-exceptions": "Handling Exceptions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -442,7 +683,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "packages": "Packages",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -452,7 +700,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "static-keyword": "Static Keyword",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -462,7 +717,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "throwing-exceptions": "Throwing Exceptions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -472,7 +734,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "flatmap": "FlatMap",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -482,7 +751,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "lambda-expressions": "Lambda Expressions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -492,7 +768,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "local-class-and-variable-capture": "Local Class and Variable Capture",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -502,7 +785,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "map": "Map",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -512,7 +802,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "java-s-optional-class": "Java's Optional Class",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -522,7 +819,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "functions": "Functions",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -532,7 +836,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "functors": "Functors",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -542,7 +853,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "intermediate-vs-terminal-operations": "Intermediate Vs Terminal Operations",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -552,7 +870,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "java-s-function-interface": "Java's Function Interface",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -562,7 +887,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "monad": "Monad",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -572,7 +904,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "stateless-vs-stateful-operations": "Stateless Vs Stateful Operations",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -582,7 +921,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "streams-and-pipelines": "Streams and Pipelines",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -592,7 +938,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "lazy-evaluation": "Lazy Evaluation",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -602,7 +955,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "accumulator-and-combiner": "Accumulator and Combiner",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -612,7 +972,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "correctness-of-parallel-streams": "Correctness of Parallel Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -622,7 +989,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "debugging-parallel-streams": "Debugging Parallel Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -632,7 +1006,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "parallel-streams": "Parallel Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -642,7 +1023,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "parallel-vs-sequential-streams": "Parallel vs Sequential Streams",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -652,7 +1040,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "introduction-to-fork-and-join": "Introduction to Fork and Join",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -662,7 +1057,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "order-of-fork-and-join": "Order of Fork and Join",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -672,7 +1074,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "java-s-recursivetask": "Java's RecursiveTask",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -682,7 +1091,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "thread-pools": "Thread Pools",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -692,7 +1108,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "work-fetching": "Work Fetching",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -702,7 +1125,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "work-stealing": "Work Stealing",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -712,7 +1142,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "callable-interface": "Callable Interface",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -722,7 +1159,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "callbacks": "Callbacks",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -732,7 +1176,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "future-interface": "Future Interface",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -742,7 +1193,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "listeners": "Listeners",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -752,7 +1210,14 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "synchronous-vs-asynchronous-programming": "Synchronous Vs Asynchronous Programming",
+        "definition": "Definition",
+        "explanation": "Explanation",
+        "examples": "Examples",
+        "exercises": "Exercises",
+        "resources": "Resources"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -763,7 +1228,6 @@
     },
     {
       "headings": {
-        "textbook": "Textbook",
         "lecture-1": "Lecture 1",
         "lecture-2": "Lecture 2",
         "lecture-3": "Lecture 3",
@@ -775,7 +1239,8 @@
         "lecture-9": "Lecture 9",
         "lecture-10": "Lecture 10",
         "lecture-11": "Lecture 11",
-        "lecture-12": "Lecture 12"
+        "lecture-12": "Lecture 12",
+        "textbook": "Textbook"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -787,7 +1252,6 @@
     },
     {
       "headings": {
-        "textbook": "Textbook",
         "oop-and-java-introduction": "OOP and Java Introduction",
         "oop-fundamentals": "OOP Fundamentals",
         "oop-concepts": "OOP Concepts",
@@ -797,9 +1261,10 @@
         "java-wildcards": "Java Wildcards",
         "exceptions": "Exceptions",
         "streams": "Streams",
-        "parallel-streams": "Parallel Streams",
+        "parallel-streams": "Parallel Streams ",
         "fork-join": "Fork Join",
-        "asynchronous-programming": "Asynchronous Programming"
+        "asynchronous-programming": "Asynchronous Programming",
+        "textbook": "Textbook"
       },
       "pageNav": 2,
       "header": "header.md",

@@ -13,7 +13,8 @@
 
 <br>
 
-## **OOP and Java Introduction**
+<panel header="## **OOP and Java Introduction**" no-close>
+
 * [Introduction to OOP](lecture01/oopIntroduction.html) 
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture01/oopIntroduction.md)
 <a href="textbook.html#lecture-1" class="badge badge-dark">Lecture 1</a>
@@ -26,8 +27,10 @@
 * [Testing Java Classes](lecture02/javaTesting.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture02/javaTesting.md)
 <a href="textbook.html#lecture-2" class="badge badge-dark">Lecture 2</a>
+</panel>
 
-## **OOP Fundamentals**
+<panel header="## **OOP Fundamentals**" no-close>
+
 * [Abstraction](lecture01/abstraction.html) 
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture01/abstraction.md)
 <a href="textbook.html#lecture-1" class="badge badge-dark">Lecture 1</a>
@@ -46,8 +49,10 @@
 * [Cyclic Dependencies](lecture02/cyclicDependency.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture02/cyclicDependency.md)
 <a href="textbook.html#lecture-2" class="badge badge-dark">Lecture 2</a>
+</panel>
 
-## **OOP Concepts**
+<panel header="## **OOP Concepts**" no-close>
+
 * [Polymorphism](lecture03/polymorphism.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture03/polymorphism.md)
 <a href="textbook.html#lecture-3" class="badge badge-dark">Lecture 3</a>
@@ -80,8 +85,10 @@
 * [Local Class and Variable Capture](lecture07/localClassVariableCapture.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture07/localClassVariableCapture.md)
 <a href="textbook.html#lecture-7" class="badge badge-dark">Lecture 7</a>
+</panel>
 
-## **SOLID Principles**
+<panel header="## **SOLID Principles**" no-close>
+
 * [Single Responsibility Principle (SRP)](lecture04/srp.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture04/srp.md)
 <a href="textbook.html#lecture-4" class="badge badge-dark">Lecture 4</a>
@@ -97,8 +104,10 @@
 * [Dependency Inversion Principle (DIP)](lecture04/dip.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture04/dip.md)
 <a href="textbook.html#lecture-4" class="badge badge-dark">Lecture 4</a>
+</panel>
 
-## **Abstract Classes and Interfaces**
+<panel header="## **Abstract Classes and Interfaces**" no-close>
+
 * [Abstract Classes](lecture04/abstractClasses.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture04/abstractClasses.md)
 <a href="textbook.html#lecture-4" class="badge badge-dark">Lecture 4</a>
@@ -108,6 +117,9 @@
 * [Anonymous Inner Classes](lecture05/anonymousInnerClasses.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture05/anonymousInnerClasses.md)
 <a href="textbook.html#lecture-5" class="badge badge-dark">Lecture 5</a>
+</panel>
+
+<panel header="## **Java Collections**" no-close>
 
 ## **Java Collections**
 * [Collections](lecture05/collections.html)
@@ -116,6 +128,9 @@
 * [Comparator](lecture05/comparator.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture05/comparator.md)
 <a href="textbook.html#lecture-5" class="badge badge-dark">Lecture 5</a>
+</panel>
+
+<panel header="## **Java Wildcards**" no-close>
 
 ## **Java Wildcards**
 * [Introduction to Generics](lecture05/genericsIntroduction.html)
@@ -133,8 +148,11 @@
 * [Producer Extends, Consumer Super (PECS)](lecture05/pecs.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture05/pecs.md)
 <a href="textbook.html#lecture-5" class="badge badge-dark">Lecture 5</a>
+</panel>
 
-## **Exceptions**
+
+<panel header="## **Exceptions**" no-close>
+
 * [Introduction to Exceptions](lecture06/exceptionsIntroduction.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture06/exceptionsIntroduction.md)
 <a href="textbook.html#lecture-6" class="badge badge-dark">Lecture 6</a>
@@ -150,8 +168,10 @@
 * [Assertions](lecture06/assertions.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture06/assertions.md)
 <a href="textbook.html#lecture-6" class="badge badge-dark">Lecture 6</a>
+</panel>
 
-## **Streams**
+<panel header="## **Streams**" no-close>
+
 * [Lambda Expressions](lecture07/lambdas.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture07/lambdas.md)
 <a href="textbook.html#lecture-7" class="badge badge-dark">Lecture 7</a>
@@ -185,8 +205,10 @@
 * [Lazy Evaluation](lecture09/lazyEvaluation.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture09/lazyEvaluation.md)
 <a href="textbook.html#lecture-9" class="badge badge-dark">Lecture 9</a>
+</panel>
 
-## **Parallel Streams** 
+<panel header="## **Parallel Streams** " no-close>
+
 * [Parallel Streams](lecture10/parallelStreams.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture10/parallelStreams.md)
 <a href="textbook.html#lecture-10" class="badge badge-dark">Lecture 10</a>
@@ -203,7 +225,10 @@
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture10/accumulatorAndCombiner.md)
 <a href="textbook.html#lecture-10" class="badge badge-dark">Lecture 10</a>
 
-## **Fork Join**
+</panel>
+
+<panel header="## **Fork Join**" no-close>
+
 * [Introduction to Fork and Join](lecture11/forkAndJoin.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture11/forkAndJoin.md)
 <a href="textbook.html#lecture-11" class="badge badge-dark">Lecture 11</a>
@@ -222,8 +247,10 @@
 * [Order of Fork and Join](lecture11/forkJoinOrder.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture11/forkJoinOrder.md)
 <a href="textbook.html#lecture-11" class="badge badge-dark">Lecture 11</a>
+</panel>
 
-## **Asynchronous Programming**
+<panel header="## **Asynchronous Programming**" no-close>
+
 * [Synchronous Vs Asynchronous Programming](lecture12/synchronousVsAsynchronous.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture12/synchronousVsAsynchronous.md)
 <a href="textbook.html#lecture-12" class="badge badge-dark">Lecture 12</a>
@@ -239,3 +266,5 @@
 * [Future Interface](lecture12/future.html)
 [:fas-pen:](https://github.com/nus-cs-2030/ay1920-s2/edit/master/contents/textbook/lecture12/future.md)
 <a href="textbook.html#lecture-12" class="badge badge-dark">Lecture 12</a>
+
+</panel>
