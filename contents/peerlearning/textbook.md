@@ -22,6 +22,7 @@ We will be using markdown for the Collaborative Textbook.
 Please Sign Up for Github if you have not done so!
 
 ![](images/SignUps.png)
+
 </panel>
 
 <panel header="## Step 1: Finding the section to edit" no-close>
@@ -30,6 +31,7 @@ While navigating through the [textbook](https://nus-cs-2030.github.io/ay1920-s2/
 you can click on any of the pen icons to edit the page. 
 
 ![](images/Click.png)
+
 </panel>
 
 <panel header="## Step 2: Finding the section to edit" no-close>
@@ -74,4 +76,29 @@ Once you have submitted your Pull Request, you can view the changes you have mad
 ![](images/WebsiteOne.png)
 
 Now, you would have to wait for your Pull Request to be merge in order to gain points for your contribution! 
+</panel>
+
+<panel header="## Step 7: Fixing Merge Conflicts" no-close>
+
+In the event that you have merge conflicts in the file, you are required to resolve them in the event that a Lab TA 
+has not done so. 
+
+![](images/MergeConflictOne.png)
+
+You are required to make the necessary changes so that the merge conflicts are resolved. <br> 
+
+<box type="warning">
+    Not deleting the arrows and equal signs might cause an error in the compilation process. 
+</box>
+
+![](images/MergeConflictTwo.png)
+
+Once you are done, you can Mark this merge conflict as resolved. 
+
+![](images/MergeConflictThree.png)
+
+Following which, you can commit this merge.
+
+![](images/MergeConflictFour.png)
+
 </panel>
