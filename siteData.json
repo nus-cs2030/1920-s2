@@ -59,8 +59,14 @@
     },
     {
       "headings": {
-        "textbook-contributions": "Textbook Contributions",
-        "tutorial": "Tutorial"
+        "step-0-signing-up-for-github": "Step 0: Signing Up for Github",
+        "step-1-finding-the-section-to-edit": "Step 1: Finding the section to edit",
+        "step-2-finding-the-section-to-edit": "Step 2: Finding the section to edit",
+        "step-3-editing-using-the-markdown-editor": "Step 3: Editing using the Markdown editor",
+        "step-4-save-your-file-changes": "Step 4: Save your file changes",
+        "step-5-create-your-pull-request": "Step 5: Create your Pull Request",
+        "step-6-view-your-website-changes": "Step 6: View your website changes",
+        "textbook-contributions": "Textbook Contributions"
       },
       "pageNav": 2,
       "header": "header.md",
