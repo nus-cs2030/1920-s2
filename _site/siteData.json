@@ -23,6 +23,8 @@
     },
     {
       "headings": {
+        "what-do-i-do-here": "What do I do here?",
+        "how-can-i-contribute": "How can I contribute?",
         "peer-learning-segment": "Peer Learning Segment"
       },
       "pageNav": 2,
@@ -55,6 +57,7 @@
     },
     {
       "headings": {
+        "how-do-i-earn-points": "How Do I Earn Points?",
         "piazza-participation": "Piazza Participation"
       },
       "pageNav": 2,
