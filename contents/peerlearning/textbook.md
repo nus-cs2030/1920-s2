@@ -21,7 +21,7 @@ We will be using markdown for the Collaborative Textbook.
 
 Please Sign Up for Github if you have not done so!
 
-![](images/SignUps.png)
+<img src = "images/SignUps.png" />
 
 </panel>
 
@@ -30,7 +30,7 @@ Please Sign Up for Github if you have not done so!
 While navigating through the [textbook](https://nus-cs-2030.github.io/ay1920-s2/contents/textbook/textbook.html), 
 you can click on any of the pen icons to edit the page. 
 
-![](images/Click.png)
+<img src = "images/Click.png" />
 
 </panel>
 
@@ -39,7 +39,8 @@ you can click on any of the pen icons to edit the page.
 It will direct you to the Github Repository of this website. From there, you are required to create a fork of the 
 repository. 
 
-![](images/GithubFork.png)
+<img src = "images/GithubFork.png" />
+
 </panel>
 
 <panel header="## Step 3: Editing using the Markdown editor" no-close>
@@ -47,14 +48,16 @@ repository.
 You will then create a fork of this repository. Use the Markdown editor to make whatever changes you need to make 
 to that particular section! Try to add in useful information here which is covered / not covered in lectures!
 
-![](images/MarkdownEditor.png)
+<img src = "images/MarkdownEditor.png" />
+
 </panel>
 
 <panel header="## Step 4: Save your file changes" no-close>
 
 Once done, save and commit your file changes!
 
-![](images/ProposedFileChange.png)
+<img src = "images/ProposedFileChange.png" />
+
 </panel>
 
 <panel header="## Step 5: Create your Pull Request" no-close>
@@ -62,18 +65,19 @@ Once done, save and commit your file changes!
 It will now bring you back to the main repository of the website. As a result, you can create
 your own pull request to make a contribution to the website. 
 
-![](images/PRStepOne.png)
+<img src = "images/PRStepOne.png" />
 
 From which, you are required to name your Pull Request in the following format:  (full-name) : (Name of PR)
 
-![](images/PRStepTwo.png)
+<img src = "images/PRStepTwo.png" />
+
 </panel>
 
 <panel header="## Step 6: View your website changes" no-close>
 
 Once you have submitted your Pull Request, you can view the changes you have made in a preview website using Netlify!  
 
-![](images/WebsiteOne.png)
+<img src = "images/WebsiteOne.png" />
 
 Now, you would have to wait for your Pull Request to be merge in order to gain points for your contribution! 
 </panel>
@@ -83,7 +87,7 @@ Now, you would have to wait for your Pull Request to be merge in order to gain p
 In the event that you have merge conflicts in the file, you are required to resolve them in the event that a Lab TA 
 has not done so. 
 
-![](images/MergeConflictOne.png)
+<img src = "images/MergeConflictOne.png" />
 
 You are required to make the necessary changes so that the merge conflicts are resolved. <br> 
 
@@ -91,14 +95,14 @@ You are required to make the necessary changes so that the merge conflicts are r
     Not deleting the arrows and equal signs might cause an error in the compilation process. 
 </box>
 
-![](images/MergeConflictTwo.png)
+<img src = "images/MergeConflictTwp.png" />
 
 Once you are done, you can Mark this merge conflict as resolved. 
 
-![](images/MergeConflictThree.png)
+<img src = "images/MergeConflictThree.png" />
 
 Following which, you can commit this merge.
 
-![](images/MergeConflictFour.png)
+<img src = "images/MergeConflictFour.png" />
 
 </panel>
