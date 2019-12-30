@@ -21,9 +21,14 @@
             "hash": "354258feb02a033edcf338d412bab1e9"
         },
         {
-            "date": 1577630010276,
-            "name": "_markbind/logs/markbind-2019-12-29.log",
-            "hash": "c6e8263a570493462365d31e810733dd"
+            "date": 1577704247800,
+            "name": "_markbind\\logs\\markbind-2019-12-30.log",
+            "hash": "35323b1b6c789764292df3d7392a06fa"
+        },
+        {
+            "date": 1577709682286,
+            "name": "_markbind/logs/markbind-2019-12-30.log",
+            "hash": "9fe78221ba866fd1b8af8b806f51c663"
         }
     ]
 }

@@ -83,7 +83,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture01/abstraction.md",
+      "src": "contents/textbook/lecture01/abstraction/abstraction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/abstraction/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/abstraction/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/abstraction/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/abstraction/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/abstraction/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/encapsulation/definition.md",
       "title": "",
       "layout": "default"
     },
@@ -100,7 +136,55 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture01/encapsulation.md",
+      "src": "contents/textbook/lecture01/encapsulation/encapsulation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/encapsulation/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/encapsulation/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/encapsulation/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/encapsulation/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/oopIntroduction/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/oopIntroduction/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/oopIntroduction/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/oopIntroduction/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -117,7 +201,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture01/oopIntroduction.md",
+      "src": "contents/textbook/lecture01/oopIntroduction/oopIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/oopIntroduction/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -134,7 +254,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture01/staticVsDynamicTyping.md",
+      "src": "contents/textbook/lecture01/staticVsDynamicTyping/staticVsDynamicTyping.md",
       "title": "",
       "layout": "default"
     },
@@ -151,7 +271,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture02/FactoryMethods.md",
+      "src": "contents/textbook/lecture02/FactoryMethods/FactoryMethods.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/FactoryMethods/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/FactoryMethods/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/FactoryMethods/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/FactoryMethods/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/FactoryMethods/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -168,7 +318,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture02/JShellIntroduction.md",
+      "src": "contents/textbook/lecture02/JShellIntroduction/JShellIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/JShellIntroduction/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/JShellIntroduction/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/JShellIntroduction/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/JShellIntroduction/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/JShellIntroduction/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -185,7 +365,61 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture02/cyclicDependency.md",
+      "src": "contents/textbook/lecture02/cyclicDependency/cyclicDependency.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/cyclicDependency/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/cyclicDependency/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/cyclicDependency/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/cyclicDependency/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/cyclicDependency/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/immutability/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/immutability/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/immutability/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/immutability/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -202,7 +436,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture02/immutability.md",
+      "src": "contents/textbook/lecture02/immutability/immutability.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/immutability/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/inheritance/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/inheritance/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/inheritance/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/inheritance/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -219,7 +483,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture02/inheritance.md",
+      "src": "contents/textbook/lecture02/inheritance/inheritance.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/inheritance/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/javaTesting/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/javaTesting/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/javaTesting/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/javaTesting/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -236,7 +530,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture02/javaTesting.md",
+      "src": "contents/textbook/lecture02/javaTesting/javaTesting.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture02/javaTesting/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/lsp/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/lsp/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/lsp/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/lsp/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -253,7 +577,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture03/lsp.md",
+      "src": "contents/textbook/lecture03/lsp/lsp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/lsp/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/overloadingVsOverriding/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/overloadingVsOverriding/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/overloadingVsOverriding/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/overloadingVsOverriding/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -270,7 +624,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture03/overloadingVsOverriding.md",
+      "src": "contents/textbook/lecture03/overloadingVsOverriding/overloadingVsOverriding.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/overloadingVsOverriding/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/polymorphism/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/polymorphism/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/polymorphism/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/polymorphism/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -287,7 +671,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture03/polymorphism.md",
+      "src": "contents/textbook/lecture03/polymorphism/polymorphism.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/polymorphism/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -304,7 +724,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture03/staticVsDynamicBinding.md",
+      "src": "contents/textbook/lecture03/staticVsDynamicBinding/staticVsDynamicBinding.md",
       "title": "",
       "layout": "default"
     },
@@ -321,7 +741,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/abstractClasses.md",
+      "src": "contents/textbook/lecture04/abstractClasses/abstractClasses.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/abstractClasses/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/abstractClasses/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/abstractClasses/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/abstractClasses/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/abstractClasses/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/dip/definition.md",
       "title": "",
       "layout": "default"
     },
@@ -338,7 +794,55 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/dip.md",
+      "src": "contents/textbook/lecture04/dip/dip.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/dip/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/dip/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/dip/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/dip/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/finalKeyword/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/finalKeyword/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/finalKeyword/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/finalKeyword/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -355,7 +859,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/finalKeyword.md",
+      "src": "contents/textbook/lecture04/finalKeyword/finalKeyword.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/finalKeyword/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/interfaces/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/interfaces/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/interfaces/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/interfaces/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -372,7 +906,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/interfaces.md",
+      "src": "contents/textbook/lecture04/interfaces/interfaces.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/interfaces/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/isp/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/isp/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/isp/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/isp/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -389,7 +953,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/isp.md",
+      "src": "contents/textbook/lecture04/isp/isp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/isp/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/ocp/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/ocp/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/ocp/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/ocp/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -406,7 +1000,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/ocp.md",
+      "src": "contents/textbook/lecture04/ocp/ocp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/ocp/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/srp/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/srp/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/srp/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/srp/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/srp/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -423,7 +1053,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/srp.md",
+      "src": "contents/textbook/lecture04/srp/srp.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/stubs/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/stubs/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/stubs/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/stubs/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture04/stubs/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -440,7 +1100,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture04/stubs.md",
+      "src": "contents/textbook/lecture04/stubs/stubs.md",
       "title": "",
       "layout": "default"
     },
@@ -457,7 +1117,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/anonymousInnerClasses.md",
+      "src": "contents/textbook/lecture05/anonymousInnerClasses/anonymousInnerClasses.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/anonymousInnerClasses/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/anonymousInnerClasses/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/anonymousInnerClasses/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/anonymousInnerClasses/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/anonymousInnerClasses/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -474,7 +1164,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/boxing.md",
+      "src": "contents/textbook/lecture05/boxing/boxing.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/boxing/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/boxing/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/boxing/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/boxing/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/boxing/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -491,7 +1211,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/collections.md",
+      "src": "contents/textbook/lecture05/collections/collections.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/collections/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/collections/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/collections/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/collections/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/collections/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -508,7 +1258,61 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/comparator.md",
+      "src": "contents/textbook/lecture05/comparator/comparator.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/comparator/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/comparator/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/comparator/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/comparator/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/comparator/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/genericsIntroduction/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/genericsIntroduction/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/genericsIntroduction/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/genericsIntroduction/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -525,7 +1329,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/genericsIntroduction.md",
+      "src": "contents/textbook/lecture05/genericsIntroduction/genericsIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/genericsIntroduction/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/pecs/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/pecs/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/pecs/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/pecs/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -542,7 +1376,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/pecs.md",
+      "src": "contents/textbook/lecture05/pecs/pecs.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/pecs/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/varianceTypes/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/varianceTypes/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/varianceTypes/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/varianceTypes/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/varianceTypes/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -559,7 +1429,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/varianceTypes.md",
+      "src": "contents/textbook/lecture05/varianceTypes/varianceTypes.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/wildcards/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/wildcards/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/wildcards/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/wildcards/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture05/wildcards/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -576,7 +1476,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture05/wildcards.md",
+      "src": "contents/textbook/lecture05/wildcards/wildcards.md",
       "title": "",
       "layout": "default"
     },
@@ -593,7 +1493,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/accessModifiers.md",
+      "src": "contents/textbook/lecture06/accessModifiers/accessModifiers.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/accessModifiers/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/accessModifiers/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/accessModifiers/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/accessModifiers/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/accessModifiers/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -610,7 +1540,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/assertions.md",
+      "src": "contents/textbook/lecture06/assertions/assertions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/assertions/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/assertions/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/assertions/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/assertions/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/assertions/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/enumerations/definition.md",
       "title": "",
       "layout": "default"
     },
@@ -627,7 +1593,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/enumerations.md",
+      "src": "contents/textbook/lecture06/enumerations/enumerations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/enumerations/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/enumerations/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/enumerations/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/enumerations/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsControlFlow/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsControlFlow/examples.md",
       "title": "",
       "layout": "default"
     },
@@ -644,7 +1646,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/exceptionsControlFlow.md",
+      "src": "contents/textbook/lecture06/exceptionsControlFlow/exceptionsControlFlow.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsControlFlow/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsControlFlow/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsControlFlow/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsIntroduction/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsIntroduction/examples.md",
       "title": "",
       "layout": "default"
     },
@@ -661,7 +1693,49 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/exceptionsIntroduction.md",
+      "src": "contents/textbook/lecture06/exceptionsIntroduction/exceptionsIntroduction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsIntroduction/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsIntroduction/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/exceptionsIntroduction/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/handlingExceptions/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/handlingExceptions/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/handlingExceptions/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/handlingExceptions/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -678,7 +1752,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/handlingExceptions.md",
+      "src": "contents/textbook/lecture06/handlingExceptions/handlingExceptions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/handlingExceptions/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/packages/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/packages/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/packages/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/packages/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -695,7 +1799,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/packages.md",
+      "src": "contents/textbook/lecture06/packages/packages.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/packages/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/staticKeyword/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/staticKeyword/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/staticKeyword/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/staticKeyword/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/staticKeyword/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -712,7 +1852,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/staticKeyword.md",
+      "src": "contents/textbook/lecture06/staticKeyword/staticKeyword.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/throwingExceptions/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/throwingExceptions/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/throwingExceptions/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/throwingExceptions/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture06/throwingExceptions/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -729,7 +1899,31 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture06/throwingExceptions.md",
+      "src": "contents/textbook/lecture06/throwingExceptions/throwingExceptions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/flatMap/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/flatMap/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/flatMap/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/flatMap/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -746,7 +1940,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture07/flatMap.md",
+      "src": "contents/textbook/lecture07/flatMap/flatMap.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/flatMap/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/lambdas/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/lambdas/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/lambdas/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/lambdas/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -763,7 +1987,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture07/lambdas.md",
+      "src": "contents/textbook/lecture07/lambdas/lambdas.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/lambdas/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/localClassVariableCapture/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/localClassVariableCapture/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/localClassVariableCapture/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/localClassVariableCapture/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -780,7 +2034,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture07/localClassVariableCapture.md",
+      "src": "contents/textbook/lecture07/localClassVariableCapture/localClassVariableCapture.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/localClassVariableCapture/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/map/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/map/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/map/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/map/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -797,7 +2081,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture07/map.md",
+      "src": "contents/textbook/lecture07/map/map.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/map/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/optionals/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/optionals/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/optionals/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/optionals/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -814,7 +2128,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture07/optionals.md",
+      "src": "contents/textbook/lecture07/optionals/optionals.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture07/optionals/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functions/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functions/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functions/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functions/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -831,7 +2175,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture08/functions.md",
+      "src": "contents/textbook/lecture08/functions/functions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functions/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functors/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functors/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functors/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functors/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -848,7 +2222,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture08/functors.md",
+      "src": "contents/textbook/lecture08/functors/functors.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/functors/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -865,7 +2269,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations.md",
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations/intermediateVsTerminalOperations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/intermediateVsTerminalOperations/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/javaFunctions/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/javaFunctions/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/javaFunctions/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/javaFunctions/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -882,7 +2316,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture08/javaFunctions.md",
+      "src": "contents/textbook/lecture08/javaFunctions/javaFunctions.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/javaFunctions/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/monad/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/monad/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/monad/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/monad/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -899,7 +2363,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture08/monad.md",
+      "src": "contents/textbook/lecture08/monad/monad.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/monad/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -916,7 +2416,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture08/statelessVsStatefulOperations.md",
+      "src": "contents/textbook/lecture08/statelessVsStatefulOperations/statelessVsStatefulOperations.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/streamsAndPipelines/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/streamsAndPipelines/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/streamsAndPipelines/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/streamsAndPipelines/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture08/streamsAndPipelines/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -933,7 +2463,31 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture08/streamsAndPipelines.md",
+      "src": "contents/textbook/lecture08/streamsAndPipelines/streamsAndPipelines.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture09/lazyEvaluation/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture09/lazyEvaluation/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture09/lazyEvaluation/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture09/lazyEvaluation/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -950,7 +2504,13 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture09/lazyEvaluation.md",
+      "src": "contents/textbook/lecture09/lazyEvaluation/lazyEvaluation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture09/lazyEvaluation/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -967,7 +2527,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture10/accumulatorAndCombiner.md",
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner/accumulatorAndCombiner.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/accumulatorAndCombiner/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -984,7 +2574,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture10/correctnessParallelStreams.md",
+      "src": "contents/textbook/lecture10/correctnessParallelStreams/correctnessParallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/correctnessParallelStreams/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/correctnessParallelStreams/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/correctnessParallelStreams/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/correctnessParallelStreams/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/correctnessParallelStreams/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -1001,7 +2621,61 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture10/debuggingParallelStreams.md",
+      "src": "contents/textbook/lecture10/debuggingParallelStreams/debuggingParallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/debuggingParallelStreams/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/debuggingParallelStreams/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/debuggingParallelStreams/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/debuggingParallelStreams/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/debuggingParallelStreams/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelStreams/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelStreams/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelStreams/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelStreams/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -1018,7 +2692,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture10/parallelStreams.md",
+      "src": "contents/textbook/lecture10/parallelStreams/parallelStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelStreams/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -1035,7 +2739,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture10/parallelVsSequentialStreams.md",
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams/parallelVsSequentialStreams.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture10/parallelVsSequentialStreams/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkAndJoin/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkAndJoin/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkAndJoin/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkAndJoin/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -1052,7 +2786,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture11/forkAndJoin.md",
+      "src": "contents/textbook/lecture11/forkAndJoin/forkAndJoin.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkAndJoin/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkJoinOrder/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkJoinOrder/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkJoinOrder/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkJoinOrder/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -1069,7 +2833,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture11/forkJoinOrder.md",
+      "src": "contents/textbook/lecture11/forkJoinOrder/forkJoinOrder.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/forkJoinOrder/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/recursiveTask/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/recursiveTask/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/recursiveTask/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/recursiveTask/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -1086,7 +2880,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture11/recursiveTask.md",
+      "src": "contents/textbook/lecture11/recursiveTask/recursiveTask.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/recursiveTask/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/threadPools/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/threadPools/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/threadPools/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/threadPools/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/threadPools/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -1103,7 +2933,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture11/threadPools.md",
+      "src": "contents/textbook/lecture11/threadPools/threadPools.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workFetching/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workFetching/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workFetching/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workFetching/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workFetching/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -1120,7 +2980,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture11/workFetching.md",
+      "src": "contents/textbook/lecture11/workFetching/workFetching.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workStealing/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workStealing/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workStealing/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workStealing/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture11/workStealing/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -1137,7 +3027,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture11/workStealing.md",
+      "src": "contents/textbook/lecture11/workStealing/workStealing.md",
       "title": "",
       "layout": "default"
     },
@@ -1154,7 +3044,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture12/callable.md",
+      "src": "contents/textbook/lecture12/callable/callable.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callable/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callable/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callable/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callable/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callable/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -1171,7 +3091,61 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture12/callbacks.md",
+      "src": "contents/textbook/lecture12/callbacks/callbacks.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callbacks/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callbacks/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callbacks/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callbacks/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/callbacks/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/future/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/future/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/future/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/future/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -1188,7 +3162,37 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture12/future.md",
+      "src": "contents/textbook/lecture12/future/future.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/future/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/listeners/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/listeners/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/listeners/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/listeners/explanation.md",
       "title": "",
       "layout": "default"
     },
@@ -1205,7 +3209,43 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture12/listeners.md",
+      "src": "contents/textbook/lecture12/listeners/listeners.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/listeners/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous/definition.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous/examples.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous/exercises.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous/explanation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous/resources.md",
       "title": "",
       "layout": "default"
     },
@@ -1222,7 +3262,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture12/synchronousVsAsynchronous.md",
+      "src": "contents/textbook/lecture12/synchronousVsAsynchronous/synchronousVsAsynchronous.md",
       "title": "",
       "layout": "default"
     },
@@ -1247,30 +3287,6 @@
       "footer": "footer.md",
       "siteNav": "site-nav.md",
       "src": "contents/textbook/textbook.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {
-        "oop-and-java-introduction": "OOP and Java Introduction",
-        "oop-fundamentals": "OOP Fundamentals",
-        "oop-concepts": "OOP Concepts",
-        "solid-principles": "SOLID Principles",
-        "abstract-classes-and-interfaces": "Abstract Classes and Interfaces",
-        "java-collections": "Java Collections",
-        "java-wildcards": "Java Wildcards",
-        "exceptions": "Exceptions",
-        "streams": "Streams",
-        "parallel-streams": "Parallel Streams ",
-        "fork-join": "Fork Join",
-        "asynchronous-programming": "Asynchronous Programming",
-        "textbook": "Textbook"
-      },
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
-      "src": "contents/textbook/textbookTopics.md",
       "title": "",
       "layout": "default"
     }
