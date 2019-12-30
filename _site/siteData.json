@@ -35,7 +35,15 @@
     },
     {
       "headings": {
-        "peer-learning-task": "Peer Learning Task"
+        "task-creation": "Task Creation",
+        "think-of-the-problem-statement": "Think of the Problem Statement",
+        "creating-the-solution": "Creating the Solution",
+        "creating-test-input-output-files": "Creating Test Input/Output Files",
+        "preparing-your-files-for-upload": "Preparing Your Files for Upload",
+        "upload-to-codecrunch": "Upload to CodeCrunch",
+        "test-your-task": "Test your Task",
+        "final-step": "Final Step!",
+        "peer-learning-task-creation-using-codecrunch": "Peer Learning Task Creation using Codecrunch"
       },
       "pageNav": 2,
       "header": "header.md",
