@@ -13,52 +13,65 @@ Below is the Tutorial on how you can make contributions to our CS2030 Collaborat
 We will be using markdown for the Collaborative Textbook. 
 
 <box type="warning">
-    Please ensure that you have created a Github Account before making any contribution.
+    THis is a beginner's guide to the forking workflow! <br> 
+    If you had prior experience to using Github, this might not be the tutorial for you. <i class="fas fa-frown"></i>
 </box>
 
-## Tutorial 
+<panel header="## Step 0: Signing Up for Github" no-close>
 
-<panel header="Step 1: Forking the Repository" no-close>
+Please Sign Up for Github if you have not done so!
 
-By Clicking on the pen icon in the textbook, it will bring you to this website where you can fork the repository to
-make changes to the page of the textbook. 
-![](images/OnClick.png)
+![](images/SignUps.png)
 </panel>
 
-<panel header="Step 2: Making Changes Using Markdown editor" no-close>
+<panel header="## Step 1: Finding the section to edit" no-close>
 
-You are allowed to make changes to the content of the page using the markdown editor provided in Github. 
-![](images/OnFork.png)
+While navigating through the [textbook](https://nus-cs-2030.github.io/ay1920-s2/contents/textbook/textbook.html), 
+you can click on any of the pen icons to edit the page. 
+
+![](images/Click.png)
 </panel>
 
-<panel header="Step 3: Propose the file change " no-close>
+<panel header="## Step 2: Finding the section to edit" no-close>
 
-Once done, you can name your commit and propose the file change.
-![](images/FileChange.png)
+It will direct you to the Github Repository of this website. From there, you are required to create a fork of the 
+repository. 
+
+![](images/GithubFork.png)
 </panel>
 
-<panel header="Step 4: Create the Pull Request" no-close>
+<panel header="## Step 3: Editing using the Markdown editor" no-close>
 
-You can then create a new Pull Request 
-![](images/PR.png)
+You will then create a fork of this repository. Use the Markdown editor to make whatever changes you need to make 
+to that particular section! Try to add in useful information here which is covered / not covered in lectures!
 
+![](images/MarkdownEditor.png)
 </panel>
 
-<panel header="Step 5: Naming Protocol" no-close>
+<panel header="## Step 4: Save your file changes" no-close>
 
-Name your Pull Request in the form of <Full Name>: <PR Name> so that our scripts can award you credit for 
-the peer learning segment. 
-![](images/PRNaming.png)
+Once done, save and commit your file changes!
+
+![](images/ProposedFileChange.png)
 </panel>
 
-<panel header="Step 6: Website Preview" no-close>
+<panel header="## Step 5: Create your Pull Request" no-close>
 
-After Submitting your Pull Request, you can view the website with your proposed edits. 
-![](images/Preview.png)
+It will now bring you back to the main repository of the website. As a result, you can create
+your own pull request to make a contribution to the website. 
+
+![](images/PRStepOne.png)
+
+From which, you are required to name your Pull Request in the following format:  (full-name) : (Name of PR)
+
+![](images/PRStepTwo.png)
 </panel>
 
-<panel header="Step 7: Finding the Changes " no-close>
+<panel header="## Step 6: View your website changes" no-close>
 
-You can browse through the temporary website to see your prposed edits. 
-![](images/EditedWebsite.png)
+Once you have submitted your Pull Request, you can view the changes you have made in a preview website using Netlify!  
+
+![](images/WebsiteOne.png)
+
+Now, you would have to wait for your Pull Request to be merge in order to gain points for your contribution! 
 </panel>
