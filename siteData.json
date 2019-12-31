@@ -57,7 +57,7 @@
     },
     {
       "headings": {
-        "how-do-i-earn-points": "How Do I Earn Points?",
+        "how-do-i-contribute": "How Do I Contribute?",
         "piazza-participation": "Piazza Participation"
       },
       "pageNav": 2,
@@ -3287,17 +3287,6 @@
     {
       "headings": {
         "lecture-1": "Lecture 1",
-        "lecture-2": "Lecture 2",
-        "lecture-3": "Lecture 3",
-        "lecture-4": "Lecture 4",
-        "lecture-5": "Lecture 5",
-        "lecture-6": "Lecture 6",
-        "lecture-7": "Lecture 7",
-        "lecture-8": "Lecture 8",
-        "lecture-9": "Lecture 9",
-        "lecture-10": "Lecture 10",
-        "lecture-11": "Lecture 11",
-        "lecture-12": "Lecture 12",
         "textbook": "Textbook"
       },
       "pageNav": 2,
