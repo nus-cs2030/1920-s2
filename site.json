@@ -1,6 +1,6 @@
 {
   "baseUrl": "/ay1920-s2",
-  "titlePrefix": "",
+  "titlePrefix": "CS2030 AY19/20 Semester 2",
   "ignore": [
     "_markbind/layouts/*",
     "_markbind/logs/*",
@@ -15,7 +15,7 @@
   "pages": [
     {
       "src": "index.md",
-      "title": "CS2030 AY19/20 Semester 2"
+      "title": ""
     },
     {
       "glob": "**/index.md"

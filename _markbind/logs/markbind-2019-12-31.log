@@ -233,3 +233,23 @@
 2019-12-31T01:21:49.176Z - info: Rebuilding 1 pages
 2019-12-31T01:21:49.208Z - info: Pages rebuilt
 2019-12-31T01:21:49.212Z - info: Site data built
+2019-12-31T01:33:04.391Z - info: Website generation started at 9:33:04 AM
+2019-12-31T01:33:05.803Z - info: Building assets...
+2019-12-31T01:33:06.239Z - info: Assets built
+2019-12-31T01:33:06.239Z - info: Generating pages...
+2019-12-31T01:33:10.328Z - info: Pages built
+2019-12-31T01:33:11.319Z - info: Website generation complete! Total build time: 7.119s
+2019-12-31T01:33:11.396Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2019-12-31T01:33:11.398Z - info: Press CTRL+C to stop ...
+2019-12-31T01:33:11.471Z - info: Site data built
+2019-12-31T01:33:36.219Z - info: [9:33:36 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\site.json
+2019-12-31T01:33:37.224Z - info: Assets built
+2019-12-31T01:33:54.251Z - info: Website generation started at 9:33:54 AM
+2019-12-31T01:33:54.860Z - info: Building assets...
+2019-12-31T01:33:55.297Z - info: Assets built
+2019-12-31T01:33:55.298Z - info: Generating pages...
+2019-12-31T01:33:59.193Z - info: Pages built
+2019-12-31T01:33:59.779Z - info: Website generation complete! Total build time: 5.708s
+2019-12-31T01:33:59.802Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2019-12-31T01:33:59.802Z - info: Press CTRL+C to stop ...
+2019-12-31T01:33:59.832Z - info: Site data built
