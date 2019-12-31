@@ -21,7 +21,7 @@ We hope to make CS2030 a more collaborative environment for CS2030 Students to l
 
 <panel header="## How can I contribute?" no-close>
 
-There are 3 parts of the Peer Learning Component, which takes up 5% of your entire CS2030 Grade. 
+There are 3 parts of the Peer Learning Component, which takes up a certain percentage of your entire CS2030 Grade. 
 
 They are: 
 1. :fas-book: Contribution to Online TextBook

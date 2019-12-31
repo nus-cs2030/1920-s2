@@ -9,8 +9,11 @@
 
 # Textbook Contributions
 
-Below is the Tutorial on how you can make contributions to our CS2030 Collaborative Textbook Using Github.
+Below is the tutorial on how you can make contributions to our CS2030 Collaborative Textbook using Github.
 We will be using markdown for the Collaborative Textbook. 
+
+Click [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or 
+[here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) for a simple Markdown cheatsheet!
 
 <box type="warning">
     THis is a beginner's guide to the forking workflow! <br> 
@@ -84,6 +87,12 @@ Now, you would have to wait for your Pull Request to be merge in order to gain p
 
 <panel header="## Step 7: Fixing Merge Conflicts" no-close>
 
+<box type="info">
+    Merge conflicts happen when you merge branches that have competing commits due to the clashes in content, 
+    and Git needs your help to decide which changes to incorporate in the final merge. <br><br>
+    This will most likely happen when you try to edit a file someone has already edited before. 
+</box>
+
 In the event that you have merge conflicts in the file, you are required to resolve them in the event that a Lab TA 
 has not done so. 
 
@@ -95,7 +104,7 @@ You are required to make the necessary changes so that the merge conflicts are r
     Not deleting the arrows and equal signs might cause an error in the compilation process. 
 </box>
 
-<img src = "images/MergeConflictTwp.png" />
+<img src = "images/MergeConflictTwo.png" />
 
 Once you are done, you can Mark this merge conflict as resolved. 
 
