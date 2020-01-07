@@ -23,6 +23,32 @@
     },
     {
       "headings": {
+        "for-windows-users": "For Windows Users",
+        "for-macos-users": "For MacOS Users",
+        "setting-up-java": "Setting Up Java"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/guides/settingUpJava.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "setting-up-vim": "Setting Up Vim"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/guides/settingUpVim.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "what-do-i-do-here": "What do I do here?",
         "how-can-i-contribute": "How can I contribute?",
         "peer-learning-segment": "Peer Learning Segment"
