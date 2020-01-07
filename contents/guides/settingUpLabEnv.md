@@ -15,7 +15,8 @@ you face in CS2030 during your lab sessions.
 
 <box type="warning">
     This only applies to Windows Users. <br/> 
-    If you are a Mac User, you can use your terminal. But do remember to have <a href="settingUpJava.html">jdk-11 installed</a>!
+    If you are a Mac User, you can use your terminal. But do remember to have <a href="settingUpJava.html">jdk-11 installed</a>! <br /> 
+    Mac Users have to use MacVim instead of gVim. You can refer to this <a href="settingUpMacVim.html">link</a>! 
 </box>
 
 <panel header="## Setting Up Windows Subsystem for Linux (WSL)" no-close>

@@ -721,3 +721,166 @@
 2020-01-07T13:54:12.425Z - info: Rebuilding 1 pages
 2020-01-07T13:54:12.501Z - info: Pages rebuilt
 2020-01-07T13:54:12.506Z - info: Site data built
+2020-01-07T15:16:27.583Z - info: Website generation started at 11:16:27 PM
+2020-01-07T15:16:29.050Z - info: Building assets...
+2020-01-07T15:16:29.688Z - info: Assets built
+2020-01-07T15:16:29.690Z - info: Generating pages...
+2020-01-07T15:16:40.880Z - info: Pages built
+2020-01-07T15:16:44.052Z - info: Website generation complete! Total build time: 16.82s
+2020-01-07T15:16:44.280Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2020-01-07T15:16:44.282Z - info: Press CTRL+C to stop ...
+2020-01-07T15:16:44.447Z - info: Site data built
+2020-01-07T15:21:04.557Z - info: [11:21:04 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:21:05.561Z - warn: Rebuilding all source files
+2020-01-07T15:21:07.036Z - info: Assets removed
+2020-01-07T15:21:07.037Z - info: Generating pages...
+2020-01-07T15:21:13.959Z - info: Pages built
+2020-01-07T15:21:22.316Z - info: [11:21:22 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T15:21:23.318Z - info: Rebuilding affected source files
+2020-01-07T15:21:23.328Z - info: Rebuilding 77 pages
+2020-01-07T15:21:25.775Z - info: Pages rebuilt
+2020-01-07T15:21:25.786Z - info: Site data built
+2020-01-07T15:22:46.156Z - info: [11:22:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T15:22:46.164Z - info: [11:22:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:22:47.160Z - info: Rebuilding affected source files
+2020-01-07T15:22:47.162Z - info: Rebuilding 2 pages
+2020-01-07T15:22:47.380Z - info: Pages rebuilt
+2020-01-07T15:22:47.386Z - info: Site data built
+2020-01-07T15:32:07.682Z - info: Website generation started at 11:32:07 PM
+2020-01-07T15:32:08.462Z - info: Building assets...
+2020-01-07T15:32:09.004Z - info: Assets built
+2020-01-07T15:32:09.005Z - info: Generating pages...
+2020-01-07T15:32:13.628Z - info: Pages built
+2020-01-07T15:32:14.195Z - info: Website generation complete! Total build time: 6.713s
+2020-01-07T15:32:14.242Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2020-01-07T15:32:14.243Z - info: Press CTRL+C to stop ...
+2020-01-07T15:32:14.276Z - info: Site data built
+2020-01-07T15:33:08.742Z - info: [11:33:08 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:33:09.746Z - info: Rebuilding affected source files
+2020-01-07T15:33:09.749Z - info: Rebuilding 1 pages
+2020-01-07T15:33:09.873Z - info: Pages rebuilt
+2020-01-07T15:33:09.880Z - info: Site data built
+2020-01-07T15:33:14.082Z - info: [11:33:14 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:33:15.086Z - info: Rebuilding affected source files
+2020-01-07T15:33:15.087Z - info: Rebuilding 1 pages
+2020-01-07T15:33:15.134Z - info: Pages rebuilt
+2020-01-07T15:33:15.138Z - info: Site data built
+2020-01-07T15:33:39.929Z - info: [11:33:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:33:40.931Z - info: Rebuilding affected source files
+2020-01-07T15:33:40.933Z - info: Rebuilding 1 pages
+2020-01-07T15:33:40.971Z - info: Pages rebuilt
+2020-01-07T15:33:40.974Z - info: Site data built
+2020-01-07T15:34:11.315Z - info: [11:34:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:34:12.318Z - info: Rebuilding affected source files
+2020-01-07T15:34:12.319Z - info: Rebuilding 1 pages
+2020-01-07T15:34:12.369Z - info: Pages rebuilt
+2020-01-07T15:34:12.374Z - info: Site data built
+2020-01-07T15:34:50.831Z - info: [11:34:50 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:34:51.834Z - info: Rebuilding affected source files
+2020-01-07T15:34:51.836Z - info: Rebuilding 1 pages
+2020-01-07T15:34:51.881Z - info: Pages rebuilt
+2020-01-07T15:34:51.885Z - info: Site data built
+2020-01-07T15:36:00.158Z - info: [11:36:00 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:36:01.160Z - info: Rebuilding affected source files
+2020-01-07T15:36:01.162Z - info: Rebuilding 1 pages
+2020-01-07T15:36:01.219Z - info: Pages rebuilt
+2020-01-07T15:36:01.224Z - info: Site data built
+2020-01-07T15:37:41.177Z - info: [11:37:41 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\mvim00.png
+2020-01-07T15:37:41.194Z - info: [11:37:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\mvim00.png
+2020-01-07T15:37:42.185Z - info: Assets built
+2020-01-07T15:37:58.239Z - info: [11:37:58 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:37:59.241Z - info: Rebuilding affected source files
+2020-01-07T15:37:59.242Z - info: Rebuilding 1 pages
+2020-01-07T15:37:59.283Z - info: Pages rebuilt
+2020-01-07T15:37:59.286Z - info: Site data built
+2020-01-07T15:38:20.756Z - info: [11:38:20 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:38:21.759Z - info: Rebuilding affected source files
+2020-01-07T15:38:21.761Z - info: Rebuilding 1 pages
+2020-01-07T15:38:21.808Z - info: Pages rebuilt
+2020-01-07T15:38:21.812Z - info: Site data built
+2020-01-07T15:38:31.261Z - info: [11:38:31 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:38:32.264Z - info: Rebuilding affected source files
+2020-01-07T15:38:32.265Z - info: Rebuilding 1 pages
+2020-01-07T15:38:32.295Z - info: Pages rebuilt
+2020-01-07T15:38:32.299Z - info: Site data built
+2020-01-07T15:38:34.393Z - info: [11:38:34 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:38:35.397Z - info: Rebuilding affected source files
+2020-01-07T15:38:35.398Z - info: Rebuilding 1 pages
+2020-01-07T15:38:35.441Z - info: Pages rebuilt
+2020-01-07T15:38:35.448Z - info: Site data built
+2020-01-07T15:38:41.490Z - info: [11:38:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:38:42.491Z - info: Rebuilding affected source files
+2020-01-07T15:38:42.492Z - info: Rebuilding 1 pages
+2020-01-07T15:38:42.539Z - info: Pages rebuilt
+2020-01-07T15:38:42.542Z - info: Site data built
+2020-01-07T15:39:10.807Z - info: [11:39:10 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:39:11.810Z - info: Rebuilding affected source files
+2020-01-07T15:39:11.811Z - info: Rebuilding 1 pages
+2020-01-07T15:39:11.850Z - info: Pages rebuilt
+2020-01-07T15:39:11.854Z - info: Site data built
+2020-01-07T15:39:15.955Z - info: [11:39:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:39:16.959Z - info: Rebuilding affected source files
+2020-01-07T15:39:16.960Z - info: Rebuilding 1 pages
+2020-01-07T15:39:16.995Z - info: Pages rebuilt
+2020-01-07T15:39:16.999Z - info: Site data built
+2020-01-07T15:39:21.868Z - info: [11:39:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:39:22.872Z - info: Rebuilding affected source files
+2020-01-07T15:39:22.875Z - info: Rebuilding 1 pages
+2020-01-07T15:39:22.948Z - info: Pages rebuilt
+2020-01-07T15:39:22.952Z - info: Site data built
+2020-01-07T15:39:28.318Z - info: [11:39:28 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:39:29.320Z - info: Rebuilding affected source files
+2020-01-07T15:39:29.321Z - info: Rebuilding 1 pages
+2020-01-07T15:39:29.363Z - info: Pages rebuilt
+2020-01-07T15:39:29.367Z - info: Site data built
+2020-01-07T15:39:38.948Z - info: [11:39:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:39:39.952Z - info: Rebuilding affected source files
+2020-01-07T15:39:39.954Z - info: Rebuilding 1 pages
+2020-01-07T15:39:40.011Z - info: Pages rebuilt
+2020-01-07T15:39:40.015Z - info: Site data built
+2020-01-07T15:39:57.974Z - info: [11:39:57 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:39:58.977Z - info: Rebuilding affected source files
+2020-01-07T15:39:58.978Z - info: Rebuilding 1 pages
+2020-01-07T15:39:59.009Z - info: Pages rebuilt
+2020-01-07T15:39:59.013Z - info: Site data built
+2020-01-07T15:40:37.993Z - info: [11:40:37 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T15:40:38.995Z - info: Rebuilding affected source files
+2020-01-07T15:40:38.997Z - info: Rebuilding 1 pages
+2020-01-07T15:40:39.054Z - info: Pages rebuilt
+2020-01-07T15:40:39.057Z - info: Site data built
+2020-01-07T15:40:58.924Z - info: [11:40:58 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T15:40:59.927Z - info: Rebuilding affected source files
+2020-01-07T15:40:59.930Z - info: Rebuilding 1 pages
+2020-01-07T15:40:59.989Z - info: Pages rebuilt
+2020-01-07T15:40:59.994Z - info: Site data built
+2020-01-07T15:42:06.833Z - info: [11:42:06 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:42:07.837Z - info: Rebuilding affected source files
+2020-01-07T15:42:07.838Z - info: Rebuilding 1 pages
+2020-01-07T15:42:07.881Z - info: Pages rebuilt
+2020-01-07T15:42:07.886Z - info: Site data built
+2020-01-07T15:42:20.396Z - info: [11:42:20 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:42:21.400Z - info: Rebuilding affected source files
+2020-01-07T15:42:21.401Z - info: Rebuilding 1 pages
+2020-01-07T15:42:21.437Z - info: Pages rebuilt
+2020-01-07T15:42:21.442Z - info: Site data built
+2020-01-07T15:43:25.782Z - info: [11:43:25 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:43:26.786Z - info: Rebuilding affected source files
+2020-01-07T15:43:26.787Z - info: Rebuilding 1 pages
+2020-01-07T15:43:26.824Z - info: Pages rebuilt
+2020-01-07T15:43:26.828Z - info: Site data built
+2020-01-07T15:44:11.394Z - info: [11:44:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T15:44:12.397Z - info: Rebuilding affected source files
+2020-01-07T15:44:12.398Z - info: Rebuilding 1 pages
+2020-01-07T15:44:12.451Z - info: Pages rebuilt
+2020-01-07T15:44:12.459Z - info: Site data built
+2020-01-07T15:44:22.900Z - info: [11:44:22 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T15:44:22.907Z - info: [11:44:22 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-07T15:44:23.904Z - info: Rebuilding affected source files
+2020-01-07T15:44:23.906Z - info: Rebuilding 2 pages
+2020-01-07T15:44:23.967Z - info: Pages rebuilt
+2020-01-07T15:44:23.971Z - info: Site data built
+2020-01-07T15:44:31.469Z - info: [11:44:31 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T15:44:32.472Z - info: Rebuilding affected source files
+2020-01-07T15:44:32.473Z - info: Rebuilding 1 pages
+2020-01-07T15:44:32.509Z - info: Pages rebuilt
+2020-01-07T15:44:32.512Z - info: Site data built

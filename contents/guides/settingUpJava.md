@@ -11,7 +11,9 @@
 
 <br>
 
-We will mainly be using JDK 11 for CS2030. 
+<box type="warning">
+    We will be mainly using jdk-11 for CS2030!
+</box>
 
 <panel header="## For Windows Users" no-close>
 

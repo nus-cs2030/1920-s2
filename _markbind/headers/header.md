@@ -11,6 +11,7 @@
       <li><a href="{{baseUrl}}/contents/guides/settingUpLabEnv.html" class="dropdown-item">Setting Up Lab Environment</a></li>
       <li><a href="{{baseUrl}}/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
       <li><a href="{{baseUrl}}/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
+      <li><a href="{{baseUrl}}/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
     </dropdown>
     <li><a slot="brand" href="{{baseUrl}}/contents/textbook/textbook.html"class="nav-link">Textbook</a></li>
     <li><a slot="brand" href="https://github.com/nus-cs-2030/ay1920-s2" class="nav-link">Github Repo</a></li>

@@ -13,7 +13,8 @@
 
 <box type="warning">
     This only applies to Windows Users. <br/> 
-    If you are a Mac User, you will most likely have Vim pre-installed. 
+    If you are a Mac User, you will most likely have Vim pre-installed. <br />
+    If you wish to have MacVim Installed (similar functionality to gVim), please refer to <a href="settingUpMacVim.html">here</a>! 
 </box>
 
 1) To download the vim installer, go to the link [here](https://www.vim.org/download.php)
