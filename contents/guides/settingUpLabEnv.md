@@ -82,7 +82,7 @@ as you would need this to download packages for installation later!
 
 <img src = "images/ubuntu01.png" width="80%"/>
 
-3) Unfortunately, you will need to install the jdk package onto your Ubuntu environment. <br /> 
+3) You are now ready to install the jdk package onto your Ubuntu environment. <br /> 
 To do so, type in ```sudo apt install openjdk-11-jdk-headless```. 
 
 <img src = "images/ubuntu02.png" width="80%"/>
