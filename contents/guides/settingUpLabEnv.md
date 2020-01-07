@@ -56,6 +56,18 @@ you face in CS2030 during your lab sessions.
 
 <img src = "images/lab05.png" width="40%"/>
 
+3) To make sure the XMing server runs everytime you startup your computer, add a XMing,.exe shortcut to this directory: <br /> 
+```C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp```
+
+<img src = "images/xming00.png" width="80%"/>
+<br />
+
+4) It should appear under your StartUp Apps. 
+
+<img src = "images/xming01.png" width="40%"/>
+
+5) Do make sure to **restart** your computer after following this section. 
+
 </panel> 
 
 <panel header="## Downloading and Setting Up Ubuntu" no-close>
@@ -71,7 +83,7 @@ as you would need this to download packages for installation later!
 <img src = "images/ubuntu01.png" width="80%"/>
 
 3) Unfortunately, you will need to install the jdk package onto your Ubuntu environment. <br /> 
-To do so, type in ```sudo apt install openjdk-11-jre-headless```. 
+To do so, type in ```sudo apt install openjdk-11-jdk-headless```. 
 
 <img src = "images/ubuntu02.png" width="80%"/>
 

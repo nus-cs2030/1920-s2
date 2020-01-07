@@ -664,3 +664,60 @@
 2020-01-07T11:49:00.920Z - info: Rebuilding 1 pages
 2020-01-07T11:49:00.995Z - info: Pages rebuilt
 2020-01-07T11:49:01.000Z - info: Site data built
+2020-01-07T13:08:29.775Z - info: Website generation started at 9:08:29 PM
+2020-01-07T13:08:31.194Z - info: Building assets...
+2020-01-07T13:08:32.105Z - info: Assets built
+2020-01-07T13:08:32.107Z - info: Generating pages...
+2020-01-07T13:08:37.223Z - info: Pages built
+2020-01-07T13:08:38.062Z - info: Website generation complete! Total build time: 8.668s
+2020-01-07T13:08:38.108Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2020-01-07T13:08:38.108Z - info: Press CTRL+C to stop ...
+2020-01-07T13:08:38.170Z - info: Site data built
+2020-01-07T13:09:43.485Z - info: [9:09:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T13:09:44.489Z - info: Rebuilding affected source files
+2020-01-07T13:09:44.491Z - info: Rebuilding 1 pages
+2020-01-07T13:09:44.648Z - info: Pages rebuilt
+2020-01-07T13:09:44.653Z - info: Site data built
+2020-01-07T13:10:02.051Z - info: [9:10:02 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\ubuntu02.png
+2020-01-07T13:10:03.068Z - info: Assets built
+2020-01-07T13:10:37.542Z - info: [9:10:37 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\ubuntu02.png
+2020-01-07T13:10:38.563Z - info: Assets built
+2020-01-07T13:45:32.832Z - info: Website generation started at 9:45:32 PM
+2020-01-07T13:45:34.762Z - info: Building assets...
+2020-01-07T13:45:35.660Z - info: Assets built
+2020-01-07T13:45:35.662Z - info: Generating pages...
+2020-01-07T13:45:42.402Z - info: Pages built
+2020-01-07T13:45:43.343Z - info: Website generation complete! Total build time: 10.872s
+2020-01-07T13:45:43.370Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2020-01-07T13:45:43.371Z - info: Press CTRL+C to stop ...
+2020-01-07T13:45:43.415Z - info: Site data built
+2020-01-07T13:45:55.164Z - info: [9:45:55 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T13:45:56.172Z - info: Rebuilding affected source files
+2020-01-07T13:45:56.175Z - info: Rebuilding 1 pages
+2020-01-07T13:45:56.319Z - info: Pages rebuilt
+2020-01-07T13:45:56.326Z - info: Site data built
+2020-01-07T13:46:21.949Z - info: [9:46:21 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\xming01.png
+2020-01-07T13:46:21.999Z - info: [9:46:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\xming01.png
+2020-01-07T13:46:22.961Z - info: Assets built
+2020-01-07T13:47:19.333Z - info: [9:47:19 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\xming01.png
+2020-01-07T13:47:20.342Z - info: Assets built
+2020-01-07T13:47:41.558Z - info: [9:47:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T13:47:42.563Z - info: Rebuilding affected source files
+2020-01-07T13:47:42.565Z - info: Rebuilding 1 pages
+2020-01-07T13:47:42.833Z - info: Pages rebuilt
+2020-01-07T13:47:42.838Z - info: Site data built
+2020-01-07T13:48:41.707Z - info: [9:48:41 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T13:48:42.712Z - info: Rebuilding affected source files
+2020-01-07T13:48:42.713Z - info: Rebuilding 1 pages
+2020-01-07T13:48:42.874Z - info: Pages rebuilt
+2020-01-07T13:48:42.881Z - info: Site data built
+2020-01-07T13:49:30.240Z - info: [9:49:30 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T13:49:31.243Z - info: Rebuilding affected source files
+2020-01-07T13:49:31.245Z - info: Rebuilding 1 pages
+2020-01-07T13:49:31.387Z - info: Pages rebuilt
+2020-01-07T13:49:31.393Z - info: Site data built
+2020-01-07T13:54:11.421Z - info: [9:54:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpLabEnv.md
+2020-01-07T13:54:12.425Z - info: Rebuilding affected source files
+2020-01-07T13:54:12.425Z - info: Rebuilding 1 pages
+2020-01-07T13:54:12.501Z - info: Pages rebuilt
+2020-01-07T13:54:12.506Z - info: Site data built
