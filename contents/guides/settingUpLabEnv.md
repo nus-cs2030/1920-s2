@@ -111,4 +111,4 @@ syn on
 <br /> 
 
 If you follow all these instructions carefully, you should be able to access your files at this directory: <br /> 
-```C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\```
+```C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home```
