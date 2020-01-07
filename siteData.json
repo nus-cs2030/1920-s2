@@ -37,6 +37,22 @@
     },
     {
       "headings": {
+        "setting-up-windows-subsystem-for-linux-wsl": "Setting Up Windows Subsystem for Linux (WSL)",
+        "downloading-xming-for-gvim": "Downloading XMing for gVim",
+        "downloading-and-setting-up-ubuntu": "Downloading and Setting Up Ubuntu",
+        "setting-up-your-vimrc-file": "Setting up your .vimrc file",
+        "setting-up-lab-environment": "Setting Up Lab Environment"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/guides/settingUpLabEnv.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "setting-up-vim": "Setting Up Vim"
       },
       "pageNav": 2,

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.9.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2030 AY19/20 Semester 2</title>
+  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
+
+  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <navbar type="dark" class="temp-navbar">
+        <a slot="brand" href="/ay1920-s2/index.html" title="Home" class="navbar-brand">CS2030 AY19/20 Semester 2</a>
+        <div class="nav-link temp-dropdown-placeholder">Peer Learning</div>
+        <dropdown text="Peer Learning" class="nav-link temp-dropdown">
+          <li><a href="/ay1920-s2/contents/peerlearning/peerlearning.html" class="dropdown-item">Introduction</a></li>
+          <li><a href="/ay1920-s2/contents/peerlearning/textbook.html" class="dropdown-item">Textbook Contributions</a></li>
+          <li><a href="/ay1920-s2/contents/peerlearning/peerlearningtask.html" class="dropdown-item">Peer Learning Tasks</a></li>
+          <li><a href="/ay1920-s2/contents/peerlearning/piazza.html" class="dropdown-item">Piazza Participation</a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Guides</div>
+        <dropdown text="Guides" class="nav-link temp-dropdown">
+          <li><a href="/ay1920-s2/contents/guides/settingUpLabEnv.html" class="dropdown-item">Setting Up Lab Environment</a></li>
+          <li><a href="/ay1920-s2/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
+          <li><a href="/ay1920-s2/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
+        </dropdown>
+        <li><a slot="brand" href="/ay1920-s2/contents/textbook/textbook.html" class="nav-link">Textbook</a></li>
+        <li><a slot="brand" href="https://github.com/nus-cs-2030/ay1920-s2" class="nav-link">Github Repo</a></li>
+        <li><a slot="brand" href="https://piazza.com/" class="nav-link">Piazza Forum</a></li>
+        <li slot="right">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <br>
+        <h1 id="setting-up-lab-environment">Setting Up Lab Environment<a class="fa fa-anchor" href="#setting-up-lab-environment"></a></h1>
+        <br>
+        <p>From this tutorial, you should be able to set-up a Unix-like environment to simulate the actual Command-Line Interface (CLI)<br> you face in CS2030 during your lab sessions.</p>
+        <box type="warning">
+          This only applies to Windows Users. <br> If you are a Mac User, you can use your terminal. But do remember to have <a href="/ay1920-s2/contents/guides/settingUpJava.html">jdk-11 installed</a>!
+        </box>
+        <panel header="## Setting Up Windows Subsystem for Linux (WSL)<a class='fa fa-anchor' href='#setting-up-windows-subsystem-for-linux-wsl'></a>" no-close>
+          <ol>
+            <li>Go to Settings.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/lab00.png" width="80%">
+          <ol start="2">
+            <li>Go to Apps.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/lab01.png" width="80%">
+          <ol start="3">
+            <li>Under Programs and Features, click the Turn Windows features on or off option.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/lab02.png" width="80%">
+          <ol start="4">
+            <li>Tick the checkbox beside Windows Subsystem for Linux. It will prompt you to restart your computer.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/lab03.png" width="40%">
+          <ol start="5">
+            <li>Congratulations! You have installed WSL for Your Windows Computer!</li>
+          </ol>
+        </panel>
+        <panel header="## Downloading XMing for gVim<a class='fa fa-anchor' href='#downloading-xming-for-gvim'></a>" no-close>
+          <box type="warning">
+            As gVim is a Graphical User Interface (GUI) application, you would need someone else other than a Linux Subsystem to open gVim. <br> This is when XMing comes in handy!
+          </box>
+          <ol>
+            <li>Go to <a href="https://sourceforge.net/projects/xming/">this link</a> and download XMing Installer.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/lab04.png" width="80%">
+          <ol start="2">
+            <li>Open the .exe file and follow the setup.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/lab05.png" width="40%"></panel>
+        <panel header="## Downloading and Setting Up Ubuntu<a class='fa fa-anchor' href='#downloading-and-setting-up-ubuntu'></a>" no-close>
+          <ol>
+            <li>Go to <a href="https://www.microsoft.com/en-sg/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab">this link</a> and download the Ubuntu Installer! Once it has finished download, launch the application.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/ubuntu00.png" width="80%">
+          <ol start="2">
+            <li>Once you have launched the application, key in a new Unix username and password. Please remember this password as you would need this to download packages for installation later!</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/ubuntu01.png" width="80%">
+          <ol start="3">
+            <li>Unfortunately, you will need to install the jdk package onto your Ubuntu environment. <br> To do so, type in <code>sudo apt install openjdk-11-jre-headless</code>.</li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/ubuntu02.png" width="80%">
+          <ol start="4">
+            <li>
+              <p>As gVim is not installed on your Ubuntu environment, you would need to install it yourself. <br> To do so, type in <code>sudo apt update</code>, followed by <code>sudo apt install vim-gnome</code>.</p>
+            </li>
+            <li>
+              <p>Type in <code>vim .bashrc</code> and add the last line to your <code>.bashrc</code> file.</p>
+            </li>
+          </ol>
+          <img src="/ay1920-s2/contents/guides/images/ubuntu03.png" width="80%">
+          <ol start="6">
+            <li>
+              <p>Once done, exit the file and restart the Ubuntu application.</p>
+            </li>
+            <li>
+              <p>Now, gVim should work whenever you use the <code>gvim</code> command.</p>
+            </li>
+          </ol>
+        </panel>
+        <panel header="## Setting up your .vimrc file<a class='fa fa-anchor' href='#setting-up-your-vimrc-file'></a>" no-close>
+          <ol>
+            <li>
+              <p>You can change your <code>.vimrc</code> file configurations to suit your needs.</p>
+            </li>
+            <li>
+              <p>Below is a sample <code>.vimrc</code> file configration provided for you.</p>
+            </li>
+          </ol>
+          <pre><code class="hljs">filetype plugin indent on
+set lbr nu et ts=4 sw=4 ai si sc bs=2 wb nobk vb so=1 ru ls=2
+set ww=b,s,h,l,&lt;,&gt;,[,]
+set clipboard=autoselect,exclude:.*
+set fo+=r
+syn on
+</code></pre>
+          <ol start="3">
+            <li>To do so, type in <code>vim .vimrc</code>, change the configurations and save using <code>:wq</code>.</li>
+          </ol>
+        </panel>
+        <br>
+        <p>If you follow all these instructions carefully, you should be able to access your files at this directory: <br>
+          <code>C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\</code></p>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#setting-up-lab-environment">Setting Up Lab Environment&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#setting-up-windows-subsystem-for-linux-wsl">Setting Up Windows Subsystem for Linux (WSL)&#x200E;</a>
+              <a class="nav-link py-1" href="#downloading-xming-for-gvim">Downloading XMing for gVim&#x200E;</a>
+              <a class="nav-link py-1" href="#downloading-and-setting-up-ubuntu">Downloading and Setting Up Ubuntu&#x200E;</a>
+              <a class="nav-link py-1" href="#setting-up-your-vimrc-file">Setting up your .vimrc file&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+
+      <div class="text-center">
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.9.0</a> on Tue, 07 Jan 2020 11:51:07 GMT</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/vue-strap.min.js"></script>
+<script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/ay1920-s2'
+  const enableSearch = true
+</script>
+<script src="../../markbind/js/setup.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
+
+</html>
