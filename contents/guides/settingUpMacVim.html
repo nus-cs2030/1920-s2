@@ -53,28 +53,31 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="piazza-participation">Piazza Participation<a class="fa fa-anchor" href="#piazza-participation"></a></h1>
-        <p>You will be included into the CS2030 Piazza forum automatically as long as you are a CS2030 Student. <br> Link to <a href="https://piazza.com/">Piazza</a> is here!</p>
+        <h1 id="setting-up-macvim">Setting Up MacVim<a class="fa fa-anchor" href="#setting-up-macvim"></a></h1>
         <br>
-        <panel header="## How Do I Contribute?<a class='fa fa-anchor' href='#how-do-i-contribute'></a>" no-close>
-          <p>You can contribute to the Piazza Forum to help your peers through the following:</p>
-          <ol>
-            <li><strong>Post</strong> Questions or interesting topics about the module itself</li>
-            <li>Make <strong>Contributions</strong> by making posts, responses, followups, and comments to followups (i.e., everything)!</li>
-          </ol>
-          <box type="warning">
-            You can still post anonymously under Piazza! <br> Even if you post anonymously, your contributions will still be tracked by Piazza under your name! <br><br> In conclusion, if you are shy, you still can make contributions anonymously!
-          </box>
-        </panel>
+        <box type="warning">
+          This only applies to Windows Users. <br> For Windows Users, please refer to <a href="/ay1920-s2/contents/guides/settingUpVim.html">here</a>!
+        </box>
+        <ol>
+          <li>Go to the homebrew website from <a href="http://brew.sh">here</a> <br></li>
+        </ol>
+        <img src="/ay1920-s2/contents/guides/images/mvim00.png" width="80%">
+        <br>
+        <ol start="2">
+          <li>Go to Terminal and paste this following command: <br>
+            <code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></li>
+          <li>Type in <code>export PATH=/usr/local/bin:$PATH</code>.</li>
+          <li>Type in <code>brew update</code>.</li>
+          <li>Type in <code>brew install vim &amp;&amp; brew install macvim</code>.</li>
+          <li>Type in <code>brew link macvim</code>.</li>
+          <li>From there, you should be able to use MacVim via the command <code>mvim</code>.</li>
+        </ol>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#piazza-participation">Piazza Participation&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#how-do-i-contribute">How Do I Contribute?&#x200E;</a>
-            </nav>
+            <a class="nav-link py-1" href="#setting-up-macvim">Setting Up MacVim&#x200E;</a>
 
           </nav>
         </div>

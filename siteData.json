@@ -53,6 +53,18 @@
     },
     {
       "headings": {
+        "setting-up-macvim": "Setting Up MacVim"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/guides/settingUpMacVim.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "setting-up-vim": "Setting Up Vim"
       },
       "pageNav": 2,
