@@ -1,0 +1,306 @@
+2020-01-07T06:45:37.861Z - info: Website generation started at 2:45:37 PM
+2020-01-07T06:45:39.385Z - info: Building assets...
+2020-01-07T06:45:39.846Z - info: Assets built
+2020-01-07T06:45:39.846Z - info: Generating pages...
+2020-01-07T06:45:43.715Z - info: Pages built
+2020-01-07T06:45:44.378Z - info: Website generation complete! Total build time: 6.816s
+2020-01-07T06:45:44.414Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2020-01-07T06:45:44.415Z - info: Press CTRL+C to stop ...
+2020-01-07T06:45:44.454Z - info: Site data built
+2020-01-07T06:51:57.411Z - info: [2:51:57 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:51:58.413Z - warn: Rebuilding all source files
+2020-01-07T06:51:59.812Z - info: Assets removed
+2020-01-07T06:51:59.813Z - info: Generating pages...
+2020-01-07T06:52:05.556Z - info: Pages built
+2020-01-07T06:52:05.849Z - info: [2:52:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:52:06.852Z - info: Rebuilding affected source files
+2020-01-07T06:52:06.854Z - info: Rebuilding 1 pages
+2020-01-07T06:52:06.889Z - info: Pages rebuilt
+2020-01-07T06:52:06.892Z - info: Site data built
+2020-01-07T06:52:33.106Z - info: [2:52:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T06:52:34.107Z - info: Rebuilding affected source files
+2020-01-07T06:52:34.118Z - info: Rebuilding 75 pages
+2020-01-07T06:52:36.874Z - info: Pages rebuilt
+2020-01-07T06:52:36.892Z - info: Site data built
+2020-01-07T06:52:56.627Z - info: [2:52:56 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T06:52:57.637Z - info: Rebuilding affected source files
+2020-01-07T06:52:57.647Z - info: Rebuilding 75 pages
+2020-01-07T06:53:00.538Z - info: Pages rebuilt
+2020-01-07T06:53:00.556Z - info: Site data built
+2020-01-07T06:53:15.786Z - info: [2:53:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T06:53:16.792Z - info: Rebuilding affected source files
+2020-01-07T06:53:16.801Z - info: Rebuilding 75 pages
+2020-01-07T06:53:19.131Z - info: Pages rebuilt
+2020-01-07T06:53:19.141Z - info: Site data built
+2020-01-07T06:53:49.175Z - info: [2:53:49 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T06:53:50.178Z - info: Rebuilding affected source files
+2020-01-07T06:53:50.188Z - info: Rebuilding 75 pages
+2020-01-07T06:53:52.790Z - info: Pages rebuilt
+2020-01-07T06:53:52.809Z - info: Site data built
+2020-01-07T06:54:21.969Z - info: [2:54:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T06:54:22.971Z - info: Rebuilding affected source files
+2020-01-07T06:54:22.983Z - info: Rebuilding 75 pages
+2020-01-07T06:54:25.848Z - info: Pages rebuilt
+2020-01-07T06:54:25.866Z - info: Site data built
+2020-01-07T06:54:26.433Z - info: [2:54:26 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:54:27.437Z - info: Rebuilding affected source files
+2020-01-07T06:54:27.439Z - info: Rebuilding 1 pages
+2020-01-07T06:54:27.472Z - info: Pages rebuilt
+2020-01-07T06:54:27.477Z - info: Site data built
+2020-01-07T06:56:32.247Z - info: [2:56:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:56:33.250Z - info: Rebuilding affected source files
+2020-01-07T06:56:33.252Z - info: Rebuilding 1 pages
+2020-01-07T06:56:33.315Z - info: Pages rebuilt
+2020-01-07T06:56:33.320Z - info: Site data built
+2020-01-07T06:57:39.173Z - info: [2:57:39 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows.png
+2020-01-07T06:57:39.183Z - info: [2:57:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows.png
+2020-01-07T06:57:40.184Z - info: Assets built
+2020-01-07T06:58:17.311Z - info: [2:58:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:58:18.313Z - info: Rebuilding affected source files
+2020-01-07T06:58:18.314Z - info: Rebuilding 1 pages
+2020-01-07T06:58:18.356Z - info: Pages rebuilt
+2020-01-07T06:58:18.362Z - info: Site data built
+2020-01-07T06:58:42.238Z - info: [2:58:42 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows.png
+2020-01-07T06:58:43.249Z - info: Assets built
+2020-01-07T06:59:27.650Z - info: [2:59:27 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:59:28.652Z - info: Rebuilding affected source files
+2020-01-07T06:59:28.653Z - info: Rebuilding 1 pages
+2020-01-07T06:59:28.697Z - info: Pages rebuilt
+2020-01-07T06:59:28.703Z - info: Site data built
+2020-01-07T06:59:36.186Z - info: [2:59:36 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:59:37.188Z - info: Rebuilding affected source files
+2020-01-07T06:59:37.191Z - info: Rebuilding 1 pages
+2020-01-07T06:59:37.239Z - info: Pages rebuilt
+2020-01-07T06:59:37.243Z - info: Site data built
+2020-01-07T06:59:47.189Z - info: [2:59:47 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:59:48.194Z - info: Rebuilding affected source files
+2020-01-07T06:59:48.196Z - info: Rebuilding 1 pages
+2020-01-07T06:59:48.240Z - info: Pages rebuilt
+2020-01-07T06:59:48.244Z - info: Site data built
+2020-01-07T06:59:55.301Z - info: [2:59:55 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T06:59:56.304Z - info: Rebuilding affected source files
+2020-01-07T06:59:56.305Z - info: Rebuilding 1 pages
+2020-01-07T06:59:56.345Z - info: Pages rebuilt
+2020-01-07T06:59:56.349Z - info: Site data built
+2020-01-07T07:01:18.578Z - info: [3:01:18 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows2.png
+2020-01-07T07:01:18.654Z - info: [3:01:18 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows2.png
+2020-01-07T07:01:19.585Z - info: Assets built
+2020-01-07T07:01:31.757Z - info: [3:01:31 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:01:32.759Z - info: Rebuilding affected source files
+2020-01-07T07:01:32.760Z - info: Rebuilding 1 pages
+2020-01-07T07:01:32.817Z - info: Pages rebuilt
+2020-01-07T07:01:32.822Z - info: Site data built
+2020-01-07T07:01:47.201Z - info: [3:01:47 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:01:48.203Z - info: Rebuilding affected source files
+2020-01-07T07:01:48.204Z - info: Rebuilding 1 pages
+2020-01-07T07:01:48.253Z - info: Pages rebuilt
+2020-01-07T07:01:48.257Z - info: Site data built
+2020-01-07T07:01:55.662Z - info: [3:01:55 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:01:56.666Z - info: Rebuilding affected source files
+2020-01-07T07:01:56.667Z - info: Rebuilding 1 pages
+2020-01-07T07:01:56.709Z - info: Pages rebuilt
+2020-01-07T07:01:56.713Z - info: Site data built
+2020-01-07T07:02:29.131Z - info: [3:02:29 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:02:30.134Z - info: Rebuilding affected source files
+2020-01-07T07:02:30.135Z - info: Rebuilding 1 pages
+2020-01-07T07:02:30.175Z - info: Pages rebuilt
+2020-01-07T07:02:30.179Z - info: Site data built
+2020-01-07T07:02:52.100Z - info: [3:02:52 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows3.png
+2020-01-07T07:02:52.113Z - info: [3:02:52 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows3.png
+2020-01-07T07:02:53.107Z - info: Assets built
+2020-01-07T07:03:05.412Z - info: [3:03:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:03:06.414Z - info: Rebuilding affected source files
+2020-01-07T07:03:06.415Z - info: Rebuilding 1 pages
+2020-01-07T07:03:06.458Z - info: Pages rebuilt
+2020-01-07T07:03:06.463Z - info: Site data built
+2020-01-07T07:04:00.264Z - info: [3:04:00 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:04:01.267Z - info: Rebuilding affected source files
+2020-01-07T07:04:01.268Z - info: Rebuilding 1 pages
+2020-01-07T07:04:01.309Z - info: Pages rebuilt
+2020-01-07T07:04:01.313Z - info: Site data built
+2020-01-07T07:04:24.369Z - info: [3:04:24 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows4.png
+2020-01-07T07:04:24.391Z - info: [3:04:24 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows4.png
+2020-01-07T07:04:25.378Z - info: Assets built
+2020-01-07T07:04:31.610Z - info: [3:04:31 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:04:32.612Z - info: Rebuilding affected source files
+2020-01-07T07:04:32.613Z - info: Rebuilding 1 pages
+2020-01-07T07:04:32.664Z - info: Pages rebuilt
+2020-01-07T07:04:32.668Z - info: Site data built
+2020-01-07T07:04:47.565Z - info: [3:04:47 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:04:48.567Z - info: Rebuilding affected source files
+2020-01-07T07:04:48.568Z - info: Rebuilding 1 pages
+2020-01-07T07:04:48.606Z - info: Pages rebuilt
+2020-01-07T07:04:48.610Z - info: Site data built
+2020-01-07T07:07:26.766Z - info: [3:07:26 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows5.png
+2020-01-07T07:07:26.793Z - info: [3:07:26 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows5.png
+2020-01-07T07:07:27.774Z - info: Assets built
+2020-01-07T07:07:46.042Z - info: [3:07:46 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:07:47.045Z - info: Rebuilding affected source files
+2020-01-07T07:07:47.047Z - info: Rebuilding 1 pages
+2020-01-07T07:07:47.086Z - info: Pages rebuilt
+2020-01-07T07:07:47.090Z - info: Site data built
+2020-01-07T07:07:48.963Z - info: [3:07:48 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:07:49.967Z - info: Rebuilding affected source files
+2020-01-07T07:07:49.968Z - info: Rebuilding 1 pages
+2020-01-07T07:07:50.016Z - info: Pages rebuilt
+2020-01-07T07:07:50.021Z - info: Site data built
+2020-01-07T07:08:42.417Z - info: [3:08:42 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:08:43.419Z - info: Rebuilding affected source files
+2020-01-07T07:08:43.420Z - info: Rebuilding 1 pages
+2020-01-07T07:08:43.459Z - info: Pages rebuilt
+2020-01-07T07:08:43.463Z - info: Site data built
+2020-01-07T07:09:05.752Z - info: [3:09:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:09:06.755Z - info: Rebuilding affected source files
+2020-01-07T07:09:06.759Z - info: Rebuilding 1 pages
+2020-01-07T07:09:06.857Z - info: Pages rebuilt
+2020-01-07T07:09:06.862Z - info: Site data built
+2020-01-07T07:10:18.511Z - info: [3:10:18 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows6.png
+2020-01-07T07:10:18.529Z - info: [3:10:18 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows6.png
+2020-01-07T07:10:19.517Z - info: Assets built
+2020-01-07T07:10:32.471Z - info: [3:10:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:10:33.473Z - info: Rebuilding affected source files
+2020-01-07T07:10:33.475Z - info: Rebuilding 1 pages
+2020-01-07T07:10:33.522Z - info: Pages rebuilt
+2020-01-07T07:10:33.528Z - info: Site data built
+2020-01-07T07:10:59.607Z - info: [3:10:59 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:11:00.610Z - info: Rebuilding affected source files
+2020-01-07T07:11:00.611Z - info: Rebuilding 1 pages
+2020-01-07T07:11:00.673Z - info: Pages rebuilt
+2020-01-07T07:11:00.677Z - info: Site data built
+2020-01-07T07:11:21.936Z - info: [3:11:21 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:11:22.939Z - info: Rebuilding affected source files
+2020-01-07T07:11:22.940Z - info: Rebuilding 1 pages
+2020-01-07T07:11:22.978Z - info: Pages rebuilt
+2020-01-07T07:11:22.981Z - info: Site data built
+2020-01-07T07:11:32.612Z - info: [3:11:32 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:11:32.712Z - info: [3:11:32 PM] Reload for file deletion: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUp.md
+2020-01-07T07:11:33.614Z - warn: Rebuilding all source files
+2020-01-07T07:11:35.055Z - info: Assets removed
+2020-01-07T07:11:35.056Z - info: Generating pages...
+2020-01-07T07:11:36.596Z - info: [3:11:36 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T07:11:38.259Z - info: Rebuilding affected source files
+2020-01-07T07:11:38.266Z - info: Rebuilding 75 pages
+2020-01-07T07:11:41.863Z - info: Pages rebuilt
+2020-01-07T07:11:41.887Z - info: Site data built
+2020-01-07T07:11:42.094Z - info: Pages built
+2020-01-07T07:12:02.157Z - info: [3:12:02 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:12:03.160Z - info: Rebuilding affected source files
+2020-01-07T07:12:03.163Z - info: Rebuilding 1 pages
+2020-01-07T07:12:03.269Z - info: Pages rebuilt
+2020-01-07T07:12:03.273Z - info: Site data built
+2020-01-07T07:12:12.341Z - info: [3:12:12 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:12:13.342Z - info: Rebuilding affected source files
+2020-01-07T07:12:13.344Z - info: Rebuilding 1 pages
+2020-01-07T07:12:13.396Z - info: Pages rebuilt
+2020-01-07T07:12:13.400Z - info: Site data built
+2020-01-07T07:12:38.464Z - info: [3:12:38 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:12:39.467Z - info: Rebuilding affected source files
+2020-01-07T07:12:39.468Z - info: Rebuilding 1 pages
+2020-01-07T07:12:39.526Z - info: Pages rebuilt
+2020-01-07T07:12:39.530Z - info: Site data built
+2020-01-07T07:13:11.586Z - info: [3:13:11 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\macJava.png
+2020-01-07T07:13:11.610Z - info: [3:13:11 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\macJava.png
+2020-01-07T07:13:12.595Z - info: Assets built
+2020-01-07T07:13:25.690Z - info: [3:13:25 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:13:26.693Z - info: Rebuilding affected source files
+2020-01-07T07:13:26.694Z - info: Rebuilding 1 pages
+2020-01-07T07:13:26.741Z - info: Pages rebuilt
+2020-01-07T07:13:26.745Z - info: Site data built
+2020-01-07T07:15:28.574Z - info: [3:15:28 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\macJava2.png
+2020-01-07T07:15:28.591Z - info: [3:15:28 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\macJava2.png
+2020-01-07T07:15:29.581Z - info: Assets built
+2020-01-07T07:15:55.875Z - info: [3:15:55 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:15:56.878Z - info: Rebuilding affected source files
+2020-01-07T07:15:56.879Z - info: Rebuilding 1 pages
+2020-01-07T07:15:56.960Z - info: Pages rebuilt
+2020-01-07T07:15:56.964Z - info: Site data built
+2020-01-07T07:17:14.921Z - info: [3:17:14 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows1.png
+2020-01-07T07:17:14.946Z - info: [3:17:14 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\javaWindows1.png
+2020-01-07T07:17:15.931Z - info: Assets built
+2020-01-07T07:17:43.989Z - info: [3:17:43 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:17:44.991Z - info: Rebuilding affected source files
+2020-01-07T07:17:44.993Z - info: Rebuilding 1 pages
+2020-01-07T07:17:45.044Z - info: Pages rebuilt
+2020-01-07T07:17:45.051Z - info: Site data built
+2020-01-07T07:17:51.137Z - info: [3:17:51 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:17:52.140Z - info: Rebuilding affected source files
+2020-01-07T07:17:52.141Z - info: Rebuilding 1 pages
+2020-01-07T07:17:52.183Z - info: Pages rebuilt
+2020-01-07T07:17:52.187Z - info: Site data built
+2020-01-07T07:18:32.987Z - info: [3:18:32 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:18:33.988Z - warn: Rebuilding all source files
+2020-01-07T07:18:35.393Z - info: Assets removed
+2020-01-07T07:18:35.394Z - info: Generating pages...
+2020-01-07T07:18:40.504Z - info: Pages built
+2020-01-07T07:19:49.639Z - info: [3:19:49 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:19:50.644Z - info: Rebuilding affected source files
+2020-01-07T07:19:50.647Z - info: Rebuilding 1 pages
+2020-01-07T07:19:50.729Z - info: Pages rebuilt
+2020-01-07T07:19:50.733Z - info: Site data built
+2020-01-07T07:20:10.158Z - info: [3:20:10 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-07T07:20:11.159Z - info: Rebuilding affected source files
+2020-01-07T07:20:11.171Z - info: Rebuilding 76 pages
+2020-01-07T07:20:13.502Z - info: Pages rebuilt
+2020-01-07T07:20:13.525Z - info: Site data built
+2020-01-07T07:20:32.792Z - info: [3:20:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:20:33.796Z - info: Rebuilding affected source files
+2020-01-07T07:20:33.800Z - info: Rebuilding 1 pages
+2020-01-07T07:20:33.879Z - info: Pages rebuilt
+2020-01-07T07:20:33.886Z - info: Site data built
+2020-01-07T07:21:17.260Z - info: [3:21:17 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vim01.png
+2020-01-07T07:21:17.321Z - info: [3:21:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vim01.png
+2020-01-07T07:21:18.276Z - info: Assets built
+2020-01-07T07:21:21.979Z - info: [3:21:21 PM] Reload for file deletion: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vim01.png
+2020-01-07T07:21:22.982Z - info: Assets removed
+2020-01-07T07:21:28.286Z - info: [3:21:28 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vimGuide01.png
+2020-01-07T07:21:28.309Z - info: [3:21:28 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vimGuide01.png
+2020-01-07T07:21:29.296Z - info: Assets built
+2020-01-07T07:21:40.567Z - info: [3:21:40 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vimGuide01.png
+2020-01-07T07:21:41.584Z - info: Assets built
+2020-01-07T07:22:03.683Z - info: [3:22:03 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:22:03.690Z - info: [3:22:03 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpJava.md
+2020-01-07T07:22:04.686Z - info: Rebuilding affected source files
+2020-01-07T07:22:04.688Z - info: Rebuilding 2 pages
+2020-01-07T07:22:04.787Z - info: Pages rebuilt
+2020-01-07T07:22:04.791Z - info: Site data built
+2020-01-07T07:22:33.247Z - info: [3:22:33 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:22:34.249Z - info: Rebuilding affected source files
+2020-01-07T07:22:34.250Z - info: Rebuilding 1 pages
+2020-01-07T07:22:34.284Z - info: Pages rebuilt
+2020-01-07T07:22:34.288Z - info: Site data built
+2020-01-07T07:22:39.415Z - info: [3:22:39 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:22:40.417Z - info: Rebuilding affected source files
+2020-01-07T07:22:40.419Z - info: Rebuilding 1 pages
+2020-01-07T07:22:40.469Z - info: Pages rebuilt
+2020-01-07T07:22:40.483Z - info: Site data built
+2020-01-07T07:23:05.470Z - info: [3:23:05 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vimGuide02.png
+2020-01-07T07:23:05.485Z - info: [3:23:05 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vimGuide02.png
+2020-01-07T07:23:06.476Z - info: Assets built
+2020-01-07T07:23:17.874Z - info: [3:23:17 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:23:18.878Z - info: Rebuilding affected source files
+2020-01-07T07:23:18.880Z - info: Rebuilding 1 pages
+2020-01-07T07:23:18.916Z - info: Pages rebuilt
+2020-01-07T07:23:18.921Z - info: Site data built
+2020-01-07T07:23:31.250Z - info: [3:23:31 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:23:32.253Z - info: Rebuilding affected source files
+2020-01-07T07:23:32.255Z - info: Rebuilding 1 pages
+2020-01-07T07:23:32.289Z - info: Pages rebuilt
+2020-01-07T07:23:32.294Z - info: Site data built
+2020-01-07T07:23:49.595Z - info: [3:23:49 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:23:50.599Z - info: Rebuilding affected source files
+2020-01-07T07:23:50.601Z - info: Rebuilding 1 pages
+2020-01-07T07:23:50.632Z - info: Pages rebuilt
+2020-01-07T07:23:50.637Z - info: Site data built
+2020-01-07T07:26:47.595Z - info: [3:26:47 PM] Reload for file add: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vimGuide03.png
+2020-01-07T07:26:47.612Z - info: [3:26:47 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\images\vimGuide03.png
+2020-01-07T07:26:48.604Z - info: Assets built
+2020-01-07T07:27:15.261Z - info: [3:27:15 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:27:16.265Z - info: Rebuilding affected source files
+2020-01-07T07:27:16.267Z - info: Rebuilding 1 pages
+2020-01-07T07:27:16.299Z - info: Pages rebuilt
+2020-01-07T07:27:16.307Z - info: Site data built
+2020-01-07T07:27:32.003Z - info: [3:27:32 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpVim.md
+2020-01-07T07:27:33.005Z - info: Rebuilding affected source files
+2020-01-07T07:27:33.007Z - info: Rebuilding 1 pages
+2020-01-07T07:27:33.055Z - info: Pages rebuilt
+2020-01-07T07:27:33.058Z - info: Site data built

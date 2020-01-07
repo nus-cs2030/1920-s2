@@ -14,10 +14,58 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "ay1920-s2": "ay1920-s2"
-      },
+      "headings": {},
       "src": "README.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/footer.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/head.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/header.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/navigation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "for-windows-users": "For Windows Users",
+        "for-macos-users": "For MacOS Users",
+        "setting-up-java": "Setting Up Java"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/guides/settingUpJava.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "setting-up-vim": "Setting Up Vim"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/guides/settingUpVim.md",
       "title": "",
       "layout": "default"
     },
