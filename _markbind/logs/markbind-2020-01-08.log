@@ -55,3 +55,22 @@
 2020-01-08T03:44:15.640Z - info: Rebuilding 78 pages
 2020-01-08T03:44:20.046Z - info: Pages rebuilt
 2020-01-08T03:44:20.076Z - info: Site data built
+2020-01-08T04:51:45.489Z - info: Website generation started at 12:51:44 PM
+2020-01-08T04:51:47.623Z - info: Building assets...
+2020-01-08T04:51:48.518Z - info: Assets built
+2020-01-08T04:51:48.520Z - info: Generating pages...
+2020-01-08T04:51:59.194Z - info: Pages built
+2020-01-08T04:52:00.825Z - info: Website generation complete! Total build time: 16.069s
+2020-01-08T04:52:00.885Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2020-01-08T04:52:00.886Z - info: Press CTRL+C to stop ...
+2020-01-08T04:52:00.984Z - info: Site data built
+2020-01-08T05:00:53.961Z - info: [1:00:53 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\guides\settingUpMacVim.md
+2020-01-08T05:00:54.965Z - info: Rebuilding affected source files
+2020-01-08T05:00:54.969Z - info: Rebuilding 1 pages
+2020-01-08T05:00:55.184Z - info: Pages rebuilt
+2020-01-08T05:00:55.190Z - info: Site data built
+2020-01-08T05:01:13.285Z - info: [1:01:13 PM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\contents\peerlearning\textbook.md
+2020-01-08T05:01:14.288Z - info: Rebuilding affected source files
+2020-01-08T05:01:14.303Z - info: Rebuilding 1 pages
+2020-01-08T05:01:14.501Z - info: Pages rebuilt
+2020-01-08T05:01:14.516Z - info: Site data built

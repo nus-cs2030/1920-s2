@@ -37,7 +37,7 @@ you can click on any of the pen icons to edit the page.
 
 </panel>
 
-<panel header="## Step 2: Finding the section to edit" no-close>
+<panel header="## Step 2: Forking the Repository" no-close>
 
 It will direct you to the Github Repository of this website. From there, you are required to create a fork of the 
 repository. 

@@ -12,7 +12,7 @@
 <br>
 
 <box type="warning">
-    This only applies to Windows Users. <br/> 
+    This only applies to Mac Users. <br/> 
     For Windows Users, please refer to <a href="settingUpVim.html">here</a>! 
 </box>
  
