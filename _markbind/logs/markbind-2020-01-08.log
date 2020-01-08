@@ -41,3 +41,17 @@
 2020-01-08T02:16:23.623Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
 2020-01-08T02:16:23.623Z - info: Press CTRL+C to stop ...
 2020-01-08T02:16:23.686Z - info: Site data built
+2020-01-08T03:43:49.400Z - info: Website generation started at 11:43:49 AM
+2020-01-08T03:43:50.987Z - info: Building assets...
+2020-01-08T03:43:51.562Z - info: Assets built
+2020-01-08T03:43:51.563Z - info: Generating pages...
+2020-01-08T03:43:56.115Z - info: Pages built
+2020-01-08T03:43:56.705Z - info: Website generation complete! Total build time: 7.525s
+2020-01-08T03:43:56.736Z - info: Serving "C:\Users\seanl\Documents\GitHub\ay1920-s2\_site" at http://127.0.0.1:8080
+2020-01-08T03:43:56.736Z - info: Press CTRL+C to stop ...
+2020-01-08T03:43:56.783Z - info: Site data built
+2020-01-08T03:44:14.617Z - info: [11:44:14 AM] Reload for file change: C:\Users\seanl\Documents\GitHub\ay1920-s2\_markbind\headers\header.md
+2020-01-08T03:44:15.622Z - info: Rebuilding affected source files
+2020-01-08T03:44:15.640Z - info: Rebuilding 78 pages
+2020-01-08T03:44:20.046Z - info: Pages rebuilt
+2020-01-08T03:44:20.076Z - info: Site data built
