@@ -14,8 +14,11 @@
       <li><a href="{{baseUrl}}/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
     </dropdown>
     <li><a slot="brand" href="{{baseUrl}}/contents/textbook/textbook.html"class="nav-link">Textbook</a></li>
-    <li><a slot="brand" href="https://github.com/nus-cs-2030/ay1920-s2" class="nav-link">Github Repo</a></li>
-    <li><a slot="brand" href="https://piazza.com/" class="nav-link">Piazza Forum</a></li>
+    <dropdown text="Links" class="nav-link">
+        <li><a href="https://codecrunch.comp.nus.edu.sg/" class="dropdown-item">Codecrunch</a></li>
+        <li><a href="https://github.com/nus-cs-2030/ay1920-s2" class="dropdown-item">Github Repo</a></li>
+        <li><a href="https://piazza.com/" class="dropdown-item">Piazza Forum</a></li>
+    </dropdown>
     <li slot="right">
       <form class="navbar-form">
         <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
