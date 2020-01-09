@@ -16,7 +16,7 @@ Click [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) o
 [here](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) for a simple Markdown cheatsheet!
 
 <box type="warning">
-    THis is a beginner's guide to the forking workflow! <br> 
+    This is a beginner's guide to the forking workflow! <br> 
     If you had prior experience to using Github, this might not be the tutorial for you. <i class="fas fa-frown"></i>
 </box>
 
