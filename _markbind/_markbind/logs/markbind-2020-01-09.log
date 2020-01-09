@@ -1,0 +1,3 @@
+2020-01-09T00:43:50.266Z - error: Failed to read the site config file 'site.json' at/Users/ooiwt/cs2030/1920-s2/_markbind:
+ENOENT: no such file or directory, open '/Users/ooiwt/cs2030/1920-s2/_markbind/site.json'
+Please ensure the file exist or is valid
