@@ -104,7 +104,8 @@ The input file is simply the input that a human user will type during testing.
 For jshell testing, name your input file ending with a .jsh extension. 
 On the other hand for input/output testing, name your input file ending with a .in extension.
 
-* for jshell testing (e.g. test1.jsh), There is no need to specify the java files to be opened.
+* for jshell testing (e.g. test1.jsh), There is no need to specify the java files to be opened. <br /> 
+**Please run this command in bash or in your unix terminal**. 
 
 ```shell script
 Main.hello("Mickey")
@@ -164,7 +165,7 @@ You should now have the java source files, input and output files. You will need
 * input: move your input files (.jsh and .in) into this directory
 * output: move your output files (.out) into this directory
 
-The file directoy structure will look something like this:
+The file directory structure will look something like this:
 
 ```shell script
 $ ls *
