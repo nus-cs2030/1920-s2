@@ -59,3 +59,5 @@ Once you are done, click OK.
 <img src = "images/macJava2.png" width="80%"/>
 
 </panel>
+
+<br /> 

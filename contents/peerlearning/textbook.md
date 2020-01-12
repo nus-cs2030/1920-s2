@@ -28,16 +28,48 @@ Please Sign Up for Github if you have not done so!
 
 </panel>
 
-<panel header="## Step 1: Finding the section to edit" no-close>
+<panel header="## Step 1: Adding an Issue to the repository" no-close> 
 
-While navigating through the [textbook](https://nus-cs-2030.github.io/ay1920-s2/contents/textbook/textbook.html), 
+If you have seen a contribution that has not been made, you can add an issue [here](https://github.com/nus-cs2030/1920-s2/issues). 
+
+<img src = "images/AddingIssues.png" />
+
+Be sure to give it the following: 
+
+1) A suitable Title. 
+2) A suitable Description. 
+3) Tags (if necessary).
+
+Our Teaching Staff would then give a suggestion on where you can make this contribution within the textbook. 
+
+</panel> 
+
+
+<panel header="## Step 2: Searching For Issues to the Repository" no-close> 
+
+To Look for Contributions that you can make, go to [this link](https://github.com/nus-cs2030/1920-s2/issues) to find 
+an issue which was raised by the Teaching Staff / Your Fellow Peers. 
+
+<img src = "images/FindingIssues.png" />
+
+<br /> 
+
+From there, you should be able to see what kind of contribution you can make to the textbook. 
+
+<img src = "images/CheckIssue.png" />
+
+</panel> 
+
+<panel header="## Step 3: Finding the section to edit" no-close>
+
+While navigating through the [textbook](https://nus-cs2030.github.io/ay1920-s2/contents/textbook/textbook.html), 
 you can click on any of the pen icons to edit the page. 
 
 <img src = "images/Click.png" />
 
 </panel>
 
-<panel header="## Step 2: Forking the Repository" no-close>
+<panel header="## Step 4: Forking the Repository" no-close>
 
 It will direct you to the Github Repository of this website. From there, you are required to create a fork of the 
 repository. 
@@ -46,7 +78,7 @@ repository.
 
 </panel>
 
-<panel header="## Step 3: Editing using the Markdown editor" no-close>
+<panel header="## Step 5: Editing using the Markdown editor" no-close>
 
 You will then create a fork of this repository. Use the Markdown editor to make whatever changes you need to make 
 to that particular section! Try to add in useful information here which is covered / not covered in lectures!
@@ -55,7 +87,7 @@ to that particular section! Try to add in useful information here which is cover
 
 </panel>
 
-<panel header="## Step 4: Save your file changes" no-close>
+<panel header="## Step 6: Save your file changes" no-close>
 
 Once done, save and commit your file changes!
 
@@ -63,7 +95,7 @@ Once done, save and commit your file changes!
 
 </panel>
 
-<panel header="## Step 5: Create your Pull Request" no-close>
+<panel header="## Step 7: Create your Pull Request" no-close>
 
 It will now bring you back to the main repository of the website. As a result, you can create
 your own pull request to make a contribution to the website. 
@@ -76,7 +108,7 @@ From which, you are required to name your Pull Request in the following format: 
 
 </panel>
 
-<panel header="## Step 6: View your website changes" no-close>
+<panel header="## Step 8: View your website changes" no-close>
 
 Once you have submitted your Pull Request, you can view the changes you have made in a preview website using Netlify!  
 
@@ -85,7 +117,7 @@ Once you have submitted your Pull Request, you can view the changes you have mad
 Now, you would have to wait for your Pull Request to be merge in order to gain points for your contribution! 
 </panel>
 
-<panel header="## Step 7: Fixing Merge Conflicts" no-close>
+<panel header="## Step 9: Fixing Merge Conflicts" no-close>
 
 <box type="info">
     Merge conflicts happen when you merge branches that have competing commits due to the clashes in content, 
@@ -115,3 +147,5 @@ Following which, you can commit this merge.
 <img src = "images/MergeConflictFour.png" />
 
 </panel>
+
+<br /> 

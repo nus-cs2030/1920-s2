@@ -260,3 +260,4 @@ Once linked, you are still allowed to update your task, if deemed necessary.
 
 </panel>
 
+<br /> 

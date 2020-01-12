@@ -125,13 +125,15 @@
     {
       "headings": {
         "step-0-signing-up-for-github": "Step 0: Signing Up for Github",
-        "step-1-finding-the-section-to-edit": "Step 1: Finding the section to edit",
-        "step-2-forking-the-repository": "Step 2: Forking the Repository",
-        "step-3-editing-using-the-markdown-editor": "Step 3: Editing using the Markdown editor",
-        "step-4-save-your-file-changes": "Step 4: Save your file changes",
-        "step-5-create-your-pull-request": "Step 5: Create your Pull Request",
-        "step-6-view-your-website-changes": "Step 6: View your website changes",
-        "step-7-fixing-merge-conflicts": "Step 7: Fixing Merge Conflicts",
+        "step-1-adding-an-issue-to-the-repository": "Step 1: Adding an Issue to the repository",
+        "step-2-searching-for-issues-to-the-repository": "Step 2: Searching For Issues to the Repository",
+        "step-3-finding-the-section-to-edit": "Step 3: Finding the section to edit",
+        "step-4-forking-the-repository": "Step 4: Forking the Repository",
+        "step-5-editing-using-the-markdown-editor": "Step 5: Editing using the Markdown editor",
+        "step-6-save-your-file-changes": "Step 6: Save your file changes",
+        "step-7-create-your-pull-request": "Step 7: Create your Pull Request",
+        "step-8-view-your-website-changes": "Step 8: View your website changes",
+        "step-9-fixing-merge-conflicts": "Step 9: Fixing Merge Conflicts",
         "textbook-contributions": "Textbook Contributions"
       },
       "pageNav": 2,

@@ -28,3 +28,5 @@
 3) To check if you have vim installed, simple type ```vim -version``` on your terminal. 
 
 <img src = "images/vimGuide03.png" width="80%"/>
+
+<br /> 

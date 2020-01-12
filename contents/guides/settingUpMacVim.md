@@ -28,3 +28,5 @@
 5) Type in ```brew install vim && brew install macvim```.
 6) Type in ```brew link macvim```.
 7) From there, you should be able to use MacVim via the command ```mvim```.
+
+<br /> 
