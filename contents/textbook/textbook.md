@@ -11,23 +11,18 @@
 
 <br>
 
+<box type="warning">
+    New Issues and Pull Requests will help to make this textbook grow! <br />
+    To submit an issue: <a href="https://github.com/nus-cs2030/1920-s2/issues" target="_blank">here</a>  <br />
+    To submit an pull request: <a href="https://github.com/nus-cs2030/1920-s2/pulls" target="_blank">here</a>  <br />
+</box>
+
 <panel header="## **Lecture 1**" no-close>
 
-* [Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) 
-* [Java Memory Model](lecture01/javaMemoryModel/javaMemoryModel.html) 
-* [Static Vs. Dynamic Typing](lecture01/staticVsDynamicTyping/staticVsDynamicTyping.html) 
-* [Abstraction](lecture01/abstraction/abstraction.html) 
-* [Encapsulation](lecture01/encapsulation/encapsulation.html) 
-* [Abstraction Barrier](lecture01/abstractionBarrier/abstractionBarrier.html) 
+* [Introduction to Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) 
 
 </panel>
 
-<panel header="## **Lecture 2**" no-close>
-
-Topics to be confirmed... 
-
-</panel>
-
-<panel header="More Topics to come..." no-close>
+<panel header="More Lectures to be added..." no-close>
 
 </panel>

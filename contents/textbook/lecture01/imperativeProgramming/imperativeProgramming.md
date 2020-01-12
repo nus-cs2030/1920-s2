@@ -7,7 +7,7 @@
 
 <br> 
 
-# Imperative Programming
+# Introduction to Imperative Programming
 <hr>
 
 ## Definition
