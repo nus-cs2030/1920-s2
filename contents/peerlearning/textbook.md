@@ -62,7 +62,7 @@ From there, you should be able to see what kind of contributions you can make to
 
 <panel header="## Step 3: Finding the section to edit" no-close>
 
-While navigating through the [textbook](https://nus-cs2030.github.io/ay1920-s2/contents/textbook/textbook.html), 
+While navigating through the [textbook](https://nus-cs2030.github.io/1920-s2/contents/textbook/textbook.html), 
 you can click on any of the pen icons to edit the page. 
 
 <img src = "images/Click.png" />
