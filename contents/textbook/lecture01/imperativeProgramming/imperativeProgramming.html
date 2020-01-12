@@ -60,43 +60,113 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="imperative-programming">Imperative Programming<a class="fa fa-anchor" href="#imperative-programming"></a></h1>
+        <h1 id="introduction-to-imperative-programming">Introduction to Imperative Programming<a class="fa fa-anchor" href="#introduction-to-imperative-programming"></a></h1>
         <hr>
         <h2 id="definition">Definition<a class="fa fa-anchor" href="#definition"></a></h2>
         <div>
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/definition.md">Edit this Section here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+          <p>Imperative programming specifies <strong>how</strong> computational proceeds using statements that change the state of the program.</p>
         </div>
         <br>
         <h2 id="explanation">Explanation<a class="fa fa-anchor" href="#explanation"></a></h2>
         <div>
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/explanation.md">Edit this Section here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+          <p>What we will be introduced in CS2030 is the concept of <strong>Imperative Programming</strong>. What we have learnt in CS1010J / CS1010S / CS1101S is the usage of <strong>Functional Programming</strong>, which is a form of <strong>Declarative Programming</strong>.</p>
+          <p>Here some differences we can see in <strong>Imperative Programming Vs. Functional Programming</strong>.</p>
+          <div class="table-responsive">
+            <table class="markbind-table table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th style="text-align:left">Imperative</th>
+                  <th style="text-align:left">Functional</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="text-align:left">Performing tasks and Changing program state</td>
+                  <td style="text-align:left">Information and Transformations to be required</td>
+                </tr>
+                <tr>
+                  <td style="text-align:left">Mainly manipulated using classes and structures</td>
+                  <td style="text-align:left">Mainly manipulated using functions and data</td>
+                </tr>
+                <tr>
+                  <td style="text-align:left">Order of execution is important</td>
+                  <td style="text-align:left">Order of execution is not that important</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <br>
         <h2 id="examples">Examples<a class="fa fa-anchor" href="#examples"></a></h2>
         <div>
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/examples.md">Edit this Section here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+          <p>This is an example of an imperative approach:</p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FoodChecker</span> </span>{
+    <span class="hljs-keyword">int</span> numOfExpiredFoods;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">FoodChecker</span><span class="hljs-params">(List foods)</span> </span>{
+        <span class="hljs-keyword">int</span> numOfExpiredFoods = <span class="hljs-number">0</span>;
+        
+        <span class="hljs-keyword">for</span> (food : foods) {
+            <span class="hljs-keyword">if</span> (food.isExpired()) {
+                numOfExpiredFoods++;
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNumOfExpiredFoods</span><span class="hljs-params">()</span> </span>{ 
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.numOfExpiredFoods;
+    }   
+}
+</code></pre>
+          <p>This is an example of a functional approach:</p>
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">int</span> numOfExpiredFoods = foods.stream().filter(food =&gt; food.isExpired()).count();
+        
+        System.out.println(numOfExpitedFoods);
+    }
+}
+</code></pre>
         </div>
         <br>
         <h2 id="exercises">Exercises<a class="fa fa-anchor" href="#exercises"></a></h2>
         <div>
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/exercises.md">Edit this Section here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+          <question>
+            Is Functional Programming a type of Declarative Programming or Imperative Programming?
+            <div slot="hint">
+              Look at the top of the page!
+            </div>
+            <div slot="answer">
+              Declarative Programming.
+            </div>
+          </question>
         </div>
         <br>
         <h2 id="resources">Resources<a class="fa fa-anchor" href="#resources"></a></h2>
         <div>
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/resources.md">Edit this Section here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+          <p>GeeksForGeeks: <a href="https://www.geeksforgeeks.org/introduction-of-programming-paradigms/">Link</a></p>
         </div>
         <br></div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#imperative-programming">Imperative Programming&#x200E;</a>
+            <a class="nav-link py-1" href="#introduction-to-imperative-programming">Introduction to Imperative Programming&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#definition">Definition&#x200E;</a>
               <a class="nav-link py-1" href="#explanation">Explanation&#x200E;</a>
@@ -112,7 +182,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.9.0</a> on Sun, 12 Jan 2020 10:18:35 GMT</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.9.0</a> on Sun, 12 Jan 2020 13:52:21 GMT</small></div>
     </footer>
   </div>
 </body>
