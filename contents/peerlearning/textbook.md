@@ -54,7 +54,7 @@ an issue which was raised by the Teaching Staff / Your Fellow Peers.
 
 <br /> 
 
-From there, you should be able to see what kind of contribution you can make to the textbook. 
+From there, you should be able to see what kind of contributions you can make to the textbook. 
 
 <img src = "images/CheckIssue.png" />
 
