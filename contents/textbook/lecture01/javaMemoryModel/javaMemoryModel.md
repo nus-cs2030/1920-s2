@@ -7,7 +7,7 @@
 
 <br> 
 
-# Introduction to Object-Oriented Programming
+# Java Memory Model
 <hr>
 
 ## Definition

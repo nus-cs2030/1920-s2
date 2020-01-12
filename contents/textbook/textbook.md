@@ -13,7 +13,18 @@
 
 <panel header="## **Lecture 1**" no-close>
 
-Topics to be confirmed...
+* [Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) 
+* [Java Memory Model](lecture01/javaMemoryModel/javaMemoryModel.html) 
+* [Static Vs. Dynamic Typing](lecture01/staticVsDynamicTyping/staticVsDynamicTyping.html) 
+* [Abstraction](lecture01/abstraction/abstraction.html) 
+* [Encapsulation](lecture01/encapsulation/encapsulation.html) 
+* [Abstraction Barrier](lecture01/abstractionBarrier/abstractionBarrier.html) 
+
+</panel>
+
+<panel header="## **Lecture 2**" no-close>
+
+Topics to be confirmed... 
 
 </panel>
 
