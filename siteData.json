@@ -175,7 +175,7 @@
         "explanation": "Explanation",
         "examples": "Examples",
         "exercises": "Exercises",
-        "resources": "Resources"
+        "references": "References"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -187,7 +187,7 @@
     },
     {
       "headings": {},
-      "src": "contents/textbook/lecture01/imperativeProgramming/resources.md",
+      "src": "contents/textbook/lecture01/imperativeProgramming/references.md",
       "title": "",
       "layout": "default"
     },
