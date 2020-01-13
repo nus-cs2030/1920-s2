@@ -1,3 +1,6 @@
+
+<div id="content-wrapper">
+
 <!-- DO NOT DELETE THIS LINK --> 
 [Edit the exercises! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/exercises.md)
 <!-- DO NOT DELETE THIS LINK --> 
@@ -11,3 +14,4 @@
     Declarative Programming.
   </div>
 </question>
+</div>

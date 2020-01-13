@@ -30,7 +30,7 @@
 
 <br>
 
-## Resources
-<include src="resources.md" />
+## References
+<include src="references.md" />
 
 <br>
