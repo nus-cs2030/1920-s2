@@ -22,10 +22,16 @@
 
 <br>
 
+<include src="references.md" />
+
+<br>
+
+## Exercises
 <include src="exercises.md" />
 
 <br>
 
-<include src="references.md" />
+## Additional Resources 
+<include src="resources.md" />
 
 <br>
