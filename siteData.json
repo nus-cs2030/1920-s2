@@ -170,7 +170,9 @@
     },
     {
       "headings": {
-        "introduction-to-imperative-programming": "Introduction to Imperative Programming"
+        "introduction-to-imperative-programming": "Introduction to Imperative Programming",
+        "exercises": "Exercises",
+        "additional-resources": "Additional Resources"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -183,6 +185,12 @@
     {
       "headings": {},
       "src": "contents/textbook/lecture01/imperativeProgramming/references.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "contents/textbook/lecture01/imperativeProgramming/resources.md",
       "title": "",
       "layout": "default"
     },
