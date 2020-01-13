@@ -2,7 +2,9 @@
   "enableSearch": true,
   "pages": [
     {
-      "headings": {},
+      "headings": {
+        "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
+      },
       "header": "header.md",
       "footer": "footer.md",
       "pageNav": 2,
@@ -12,37 +14,19 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "ay1920-s2": "ay1920-s2"
+      },
       "src": "README.md",
       "title": "",
       "layout": "default"
     },
     {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/footer.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/head.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/header.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
-      "src": "_site/markbind/layouts/default/navigation.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {},
+      "headings": {
+        "for-windows-users": "For Windows Users",
+        "for-macos-users": "For MacOS Users",
+        "setting-up-java": "Setting Up Java"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -52,7 +36,13 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "setting-up-windows-subsystem-for-linux-wsl": "Setting Up Windows Subsystem for Linux (WSL)",
+        "downloading-xming-for-gvim": "Downloading XMing for gVim",
+        "downloading-and-setting-up-ubuntu": "Downloading and Setting Up Ubuntu",
+        "setting-up-your-vimrc-file": "Setting up your .vimrc file",
+        "setting-up-lab-environment": "Setting Up Lab Environment"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -62,7 +52,9 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "setting-up-macvim": "Setting Up MacVim"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -72,7 +64,9 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "setting-up-vim": "Setting Up Vim"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -82,7 +76,11 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "what-do-i-do-here": "What do I do here?",
+        "how-can-i-contribute": "How can I contribute?",
+        "peer-learning-segment": "Peer Learning Segment"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -92,7 +90,17 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "task-creation": "Task Creation",
+        "think-of-the-problem-statement": "Think of the Problem Statement",
+        "creating-the-solution": "Creating the Solution",
+        "creating-test-input-output-files": "Creating Test Input/Output Files",
+        "preparing-your-files-for-upload": "Preparing Your Files for Upload",
+        "upload-to-codecrunch": "Upload to CodeCrunch",
+        "test-your-task": "Test your Task",
+        "final-step": "Final Step!",
+        "peer-learning-task-creation-using-codecrunch": "Peer Learning Task Creation using Codecrunch"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -102,7 +110,10 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "how-do-i-contribute": "How Do I Contribute?",
+        "piazza-participation": "Piazza Participation"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -112,7 +123,19 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "step-0-signing-up-for-github": "Step 0: Signing Up for Github",
+        "step-1-adding-an-issue-to-the-repository": "Step 1: Adding an Issue to the repository",
+        "step-2-searching-for-issues-to-the-repository": "Step 2: Searching For Issues to the Repository",
+        "step-3-finding-the-section-to-edit": "Step 3: Finding the section to edit",
+        "step-4-forking-the-repository": "Step 4: Forking the Repository",
+        "step-5-editing-using-the-markdown-editor": "Step 5: Editing using the Markdown editor",
+        "step-6-save-your-file-changes": "Step 6: Save your file changes",
+        "step-7-create-your-pull-request": "Step 7: Create your Pull Request",
+        "step-8-view-your-website-changes": "Step 8: View your website changes",
+        "step-9-fixing-merge-conflicts": "Step 9: Fixing Merge Conflicts",
+        "textbook-contributions": "Textbook Contributions"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -147,12 +170,7 @@
     },
     {
       "headings": {
-        "introduction-to-imperative-programming": "Introduction to Imperative Programming",
-        "definition": "Definition",
-        "explanation": "Explanation",
-        "examples": "Examples",
-        "exercises": "Exercises",
-        "references": "References"
+        "introduction-to-imperative-programming": "Introduction to Imperative Programming"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -169,7 +187,10 @@
       "layout": "default"
     },
     {
-      "headings": {},
+      "headings": {
+        "lecture-1": "Lecture 1",
+        "textbook": "Textbook"
+      },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",

@@ -10,27 +10,22 @@
 # Introduction to Imperative Programming
 <hr>
 
-## Definition
 <include src="definition.md" />
 
 <br> 
 
-## Explanation
 <include src="explanation.md" />
 
 <br>
 
-## Examples
 <include src="examples.md" />
 
 <br>
 
-## Exercises
 <include src="exercises.md" />
 
 <br>
 
-## References
 <include src="references.md" />
 
 <br>
