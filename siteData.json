@@ -170,12 +170,7 @@
     },
     {
       "headings": {
-        "introduction-to-imperative-programming": "Introduction to Imperative Programming",
-        "definition": "Definition",
-        "explanation": "Explanation",
-        "examples": "Examples",
-        "exercises": "Exercises",
-        "references": "References"
+        "introduction-to-imperative-programming": "Introduction to Imperative Programming"
       },
       "pageNav": 2,
       "header": "header.md",
