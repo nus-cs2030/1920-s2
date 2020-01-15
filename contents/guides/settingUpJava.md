@@ -46,6 +46,8 @@ Once you are done, click OK.
 
 <img src = "images/javaWindows6.png" width="80%" />
 
+8) Note that you also should run User ```path``` on the terminal to check if the directory containing ```java.exe``` is there.
+
 </panel>
 
 <panel header="## For MacOS Users" no-close>

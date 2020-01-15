@@ -26,9 +26,16 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <h1 id="cs2030-ay2019-2020-semester-2">CS2030 AY2019/2020 Semester 2<a class="fa fa-anchor" href="#cs2030-ay2019-2020-semester-2"></a></h1>
+        <h2 id="setting-up-staging-env">Setting Up Staging Env<a class="fa fa-anchor" href="#setting-up-staging-env"></a></h2>
         <p>To set up a staging env on your server, follow these instructions:</p>
         <ol>
-          <li>Make sure you have the latest version of <a href="https://www.npmjs.com/get-npm">Node.js and npm</a> instaelld</li>
+          <li>Make sure you have the latest version of <a href="https://www.npmjs.com/get-npm">Node.js and npm</a> installed.</li>
+          <li>Run <code>npm install -g markbind-cli</code> in your terminal to install Markbind.</li>
+          <li>Once you are done, run <code>markbind serve</code>. You should able to see the site preview at <a href="http://127.0.0.1:8080">http://127.0.0.1:8080</a></li>
+          <li>When you are satisfied with your changes, you can run <code>markbind build &amp;&amp; markbind deploy</code> in your terminal.</li>
+          <li>You should able to see your changes in https://
+            <your-github-username>.github.io/1920-s2/</your-github-username>
+          </li>
         </ol>
       </div>
     </div>
