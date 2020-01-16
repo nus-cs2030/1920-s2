@@ -20,6 +20,7 @@
 <panel header="## **Lecture 1**" no-close>
 
 * [Introduction to Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) 
+* [Abstraction](lecture01/abstraction/abstraction.html) 
 
 </panel>
 
