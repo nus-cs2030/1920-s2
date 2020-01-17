@@ -31,7 +31,7 @@ class Main {
     public static void main(String[] args) {
         int numOfExpiredFoods = foods.stream().filter(food => food.isExpired()).count();
         
-        System.out.println(numOfExpitedFoods);
+        System.out.println(numOfExpiredFoods);
     }
 }
 ```
