@@ -147,7 +147,9 @@
     },
     {
       "headings": {
-        "abstraction": "Abstraction"
+        "abstraction": "Abstraction",
+        "": "",
+        "-2": ""
       },
       "pageNav": 2,
       "header": "header.md",
