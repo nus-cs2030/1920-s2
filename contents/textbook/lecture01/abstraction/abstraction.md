@@ -20,18 +20,18 @@ For example, let’s say that you are the owner of a soft drink factory, and you
 
 These soft drinks generally have the following characteristics:
 
-Type of container
-Volume of container
-Colour of drink
-IsCarbonated
+- Type of container
+- Volume of container
+- Colour of drink
+- IsCarbonated
 
 As the consumers of soft drinks, it makes it easier knowing that all soft drinks have the same set of features, making it easier to make a purchase decision based on my needs. 
 
 Additionally, as the factory owner, it is also more convenient for you, since every drink has the same set of features. You probably also meed a couple more details about it, such as:
 
-ExportDestinations
-Manufacturing cost
-ProfitPerUnit
+- ExportDestinations
+- Manufacturing cost
+- ProfitPerUnit
 
 Hence, we end up with a class that looks like this:
  
