@@ -147,13 +147,27 @@
     },
     {
       "headings": {
-        "abstraction": "Abstraction"
+        "abstraction": "Abstraction",
+        "": "",
+        "-2": ""
       },
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture01/abstraction/abstraction.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "abstraction-vs-encapsulation": "Abstraction Vs Encapsulation"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/abstractionVsEncapsulation/abstractionVsEncapsulation.md",
       "title": "",
       "layout": "default"
     },

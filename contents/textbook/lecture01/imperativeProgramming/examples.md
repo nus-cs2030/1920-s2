@@ -1,6 +1,6 @@
-<!-- DO NOT DELETE THIS LINK --> 
+<!-- DO NOT DELETE THIS LINK AND WRITE BELOW THIS LINK-->
 [Edit the examples! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/examples.md)
-<!-- DO NOT DELETE THIS LINK --> 
+<!-- DO NOT DELETE THIS LINK AND WRITE BELOW THIS LINK-->
 
 This is an example of an imperative approach: 
 

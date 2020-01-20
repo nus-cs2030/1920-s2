@@ -10,6 +10,10 @@
 # Abstraction
 <hr>
 
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/abstraction/abstraction.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
 ### 
 
 According to the Oxford Dictionary, the definition of the word abstraction is "the process of considering something independently of its associations or attributes." 
@@ -82,7 +86,3 @@ If you are being overloaded with information, which a soft drink factory owner(w
 
 ##
 Thank you for reading! Please drop a comment if you have questions or to give feedback.
-
-<!-- DO NOT DELETE THIS LINK --> 
-[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/abstraction/abstraction.md)
-<!-- DO NOT DELETE THIS LINK --> 
