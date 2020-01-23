@@ -44,10 +44,10 @@
 4. Commit and push your files after building and testing it locally. 
 5. Go to commits and click the yellow dot > details to see your progress.
    
-   <img src = "images/ciwait.png" width="80%"/>
+   <img src = "images/ciwait1.png" width="80%"/>
 
 6. Wait for Travis CI to run checks and push your changes to the gh-pages branch.
    
-   <img src = "images/cidone.png" width="40%" />
+   <img src = "images/cidone1.png" width="40%" />
 
 7. You should see it live on the GitHub page!
