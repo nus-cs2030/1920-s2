@@ -1,5 +1,3 @@
-
-
 <frontmatter>
   pageNav: 2
   header: header.md
