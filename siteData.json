@@ -174,7 +174,10 @@
     },
     {
       "headings": {
-        "abstraction-vs-encapsulation": "Abstraction Vs Encapsulation"
+        "abstraction-vs-encapsulation": "Abstraction Vs Encapsulation",
+        "abstraction": "Abstraction",
+        "encapsulation": "Encapsulation",
+        "example-the-student-class": "Example: The Student class"
       },
       "pageNav": 2,
       "header": "header.md",
