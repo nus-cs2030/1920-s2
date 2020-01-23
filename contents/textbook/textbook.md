@@ -22,6 +22,7 @@
 * [Introduction to Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) 
 * [Abstraction](lecture01/abstraction/abstraction.html) 
 * [Abstraction Vs Encapsulation](lecture01/abstractionVsEncapsulation/abstractionVsEncapsulation.html)
+* [Tell, Don't Ask / Private modifier](lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.html)
 
 </panel>
 
