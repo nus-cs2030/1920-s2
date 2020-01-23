@@ -84,12 +84,12 @@ as you would need this to download packages for installation later!
 <img src = "images/ubuntu01.png" width="80%"/>
 
 3) You are now ready to install the jdk package onto your Ubuntu environment. <br /> 
-To do so, type in ```sudo apt install openjdk-11-jdk-headless```. 
+To do so, type in ```sudo apt update```, followed by ```sudo apt install openjdk-11-jdk-headless```. 
 
 <img src = "images/ubuntu02.png" width="80%"/>
 
 4) As gVim is not installed on your Ubuntu environment, you would need to install it yourself. <br /> 
-To do so, type in ```sudo apt update```, followed by ```sudo apt install vim-gnome```. 
+To do so, type in ```sudo apt install vim-gnome```. 
 
 5) Type in ```vim .bashrc``` and add the last line to your ```.bashrc``` file. 
 
