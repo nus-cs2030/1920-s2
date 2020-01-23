@@ -9,3 +9,5 @@ To set up a staging env on your server, follow these instructions:
 3. Once you are done, run ```markbind serve```. You should able to see the site preview at http://127.0.0.1:8080 
 4. When you are satisfied with your changes, you can run ```markbind build && markbind deploy``` in your terminal. 
 5. You should able to see your changes in https://(your-github-username).github.io/1920-s2/
+
+[TA guide for integrating PRs](https://github.com/nus-cs2030/1920-s2/blob/master/contents/guides/taGuide.md)
