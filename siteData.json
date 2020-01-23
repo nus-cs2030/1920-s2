@@ -2,6 +2,12 @@
   "enableSearch": true,
   "pages": [
     {
+      "headings": {},
+      "src": "contents/textbook/lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
       "headings": {
         "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
       },
