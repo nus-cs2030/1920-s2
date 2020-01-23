@@ -2,7 +2,14 @@
   "enableSearch": true,
   "pages": [
     {
-      "headings": {},
+      "headings": {
+        "tell-don-t-ask": "Tell, Don't Ask",
+        "": ""
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.md",
       "title": "",
       "layout": "default"
