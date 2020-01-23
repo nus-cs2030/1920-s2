@@ -91,6 +91,17 @@
     },
     {
       "headings": {
+        "instructions-for-tas": "Instructions for TAs",
+        "approving-prs": "Approving PRs",
+        "formatting-standard": "Formatting Standard",
+        "enabling-navigation": "Enabling Navigation"
+      },
+      "src": "contents/guides/taGuide.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "what-do-i-do-here": "What do I do here?",
         "how-can-i-contribute": "How can I contribute?",
         "peer-learning-segment": "Peer Learning Segment"
