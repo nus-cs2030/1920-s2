@@ -56,18 +56,23 @@ class Student {
    * Return the name of the student.
    */
   public double getName() {
-    return name;
+    return this.name;
   }
 
   /**
    * Change the student’s name to a new name(newName)
    */
   public void setName(String newName) {
-    name = newName;
+    this.name = newName;
   }
 }
 ```
 
 The variable name is declared as a private field inside the class Student. As such, they can only be accessed and modified with the class that it was encapsulated within (inside the abstraction barrier), such as in the methods getName and setName.
                 
+# Abstraction vs Encapsulation
 
+|              |Abstraction                                 |Encapsulation                                 |
+|:------------:|:------------------------------------------:|:--------------------------------------------:|
+|Purpose       |To show relevant data and hide unwanted data|To hide the internal workings and data from the outside world|
+|Implementation|Using abstract class and interface          |Wrap the data and code into a single unit using class and protect data using access modifiers (Public, Protected and Private)|
