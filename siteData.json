@@ -171,6 +171,16 @@
     },
     {
       "headings": {
+        "definition-of-factory-method": "Definition of Factory Method:",
+        "application-in-lecture-notes": "Application in lecture notes:",
+        "advantages-of-factory-methods": "Advantages of Factory Methods:"
+      },
+      "src": "contents/textbook/Lecture02/Factory Method.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "abstraction": "Abstraction",
         "": "",
         "-2": ""
