@@ -152,14 +152,14 @@ Now suppose we have a class URL that extends FormattedText.
 
 ```
 class URL extends FormattedText {
-	public URL() {
-		isUnderlined = true;
-	}
+    public URL() {
+        isUnderlined = true;
+    }
 	
-	@Override
-	public void toggleUnderline() {
-		return;
-	}
+    @Override
+    public void toggleUnderline() {
+        return;
+    }
 }
 ```
 
