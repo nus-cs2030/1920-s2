@@ -26,6 +26,24 @@
 
 </panel>
 
+<panel header="## **Lecture 2**" no-close>
+
+* [Factory Methods](lecture02/factoryMethods/factoryMethods.html) 
+
+</panel>
+
+<panel header="## **Lecture 3**" no-close>
+
+Do add content via a Pull Reuqest!
+
+</panel>
+
+<panel header="## **Lecture 4**" no-close>
+
+Do add content via a Pull Reuqest!
+
+</panel>
+
 <panel header="More Lectures to be added..." no-close>
 
 </panel>
