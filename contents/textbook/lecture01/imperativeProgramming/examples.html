@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -29,7 +29,8 @@
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/examples.md">Edit the examples! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
         <p>This is an example of an imperative approach:</p>
-        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FoodChecker</span> </span>{
+        <div class="code-block">
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FoodChecker</span> </span>{
     <span class="hljs-keyword">int</span> numOfExpiredFoods;
 
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">FoodChecker</span><span class="hljs-params">(List foods)</span> </span>{
@@ -47,8 +48,11 @@
     }   
 }
 </code></pre>
+          <div class="code-block-lang"><span>java</span></div>
+        </div>
         <p>This is an example of a functional approach:</p>
-        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+        <div class="code-block">
+          <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
     <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
         <span class="hljs-keyword">int</span> numOfExpiredFoods = foods.stream().filter(food =&gt; food.isExpired()).count();
         
@@ -56,6 +60,8 @@
     }
 }
 </code></pre>
+          <div class="code-block-lang"><span>java</span></div>
+        </div>
       </div>
     </div>
   </div>

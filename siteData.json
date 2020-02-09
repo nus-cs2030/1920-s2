@@ -91,6 +91,22 @@
     },
     {
       "headings": {
+        "basic-requirements": "Basic Requirements",
+        "ssh-into-pe-nodes-using-terminal": "SSH into PE Nodes Using Terminal",
+        "ssh-into-pe-nodes-using-port-forwarding": "SSH into PE Nodes Using Port Forwarding",
+        "getting-files-from-remote-server-to-local-server": "Getting files from Remote Server to Local Server",
+        "setting-up-sunfire-and-accessing-pe-nodes": "Setting Up Sunfire and Accessing PE Nodes"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/guides/sunfireLabs.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "instructions-for-tas": "Instructions for TAs",
         "approving-prs": "Approving PRs",
         "formatting-standard": "Formatting Standard",
@@ -261,6 +277,19 @@
       "footer": "footer.md",
       "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture02/factoryMethods/factoryMethods.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "solid-principles": "SOLID Principles",
+        "single-responsibility-principle": "Single Responsibility Principle",
+        "open-closed-principle": "Open-Closed Principle",
+        "liskov-substitution-principle": "Liskov Substitution Principle",
+        "interface-segregation-principle": "Interface Segregation Principle",
+        "dependency-inversion-principle": "Dependency Inversion Principle"
+      },
+      "src": "contents/textbook/lecture04/solidprinciples/solidprinciples.md",
       "title": "",
       "layout": "default"
     },

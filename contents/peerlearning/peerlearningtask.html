@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.9.1">
+  <meta name="generator" content="MarkBind 2.8.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -39,6 +39,7 @@
           <li><a href="/1920-s2/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
           <li><a href="/1920-s2/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
           <li><a href="/1920-s2/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
+          <li><a href="/1920-s2/contents/guides/sunfireLabs.html" class="dropdown-item">Setting Up Sunfire and PE Nodes</a></li>
         </dropdown>
         <li><a slot="brand" href="/1920-s2/contents/textbook/textbook.html" class="nav-link">Textbook</a></li>
         <div class="nav-link temp-dropdown-placeholder">Links</div>
@@ -80,7 +81,8 @@
         </panel>
         <panel header="## Creating the Solution<a class='fa fa-anchor' href='#creating-the-solution'></a>" no-close>
           <p>Let's use the following as the solution of a task. You may create as many class files as you like, but do note that if you wish to test program input/output via a main method, this method must reside in the Main class.</p>
-          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
+          <div class="code-block">
+            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
@@ -99,14 +101,20 @@
 }
 
 </code></pre>
+            <div class="code-block-lang"><span>java</span></div>
+          </div>
           <p>After a successful compilation,</p>
-          <pre><code class="hljs shell">javac Main.java
+          <div class="code-block">
+            <pre><code class="hljs shell">javac Main.java
 </code></pre>
+            <div class="code-block-lang"><span>shell</span></div>
+          </div>
           <p>think of what you want to set as tests. In the above, you can either</p>
           <ul>
             <li>test a method using jshell</li>
           </ul>
-          <pre><code class="hljs">$ jshell Main.java
+          <div class="code-block">
+            <pre><code class="hljs">$ jshell Main.java
 jshell&gt; Main.hello(&quot;Mickey&quot;)
 $.. ==&gt; &quot;Hello Mickey&quot;
 
@@ -114,13 +122,18 @@ $.. ==&gt; &quot;Hello Mickey&quot;
 jshell&gt; /exit
 |  Goodbye
 </code></pre>
+            <div class="code-block-lang"><span>jshelllanguage</span></div>
+          </div>
           <ul>
             <li>run the program via input/output</li>
           </ul>
-          <pre><code class="hljs">$ java Main
+          <div class="code-block">
+            <pre><code class="hljs">$ java Main
 What's your names? Mickey
 Hello Mickey
 </code></pre>
+            <div class="code-block-lang"><span>jshelllanguage</span></div>
+          </div>
           <p>Before proceeding, compile your solution, test and run your program to make sure that you have a working solution.</p>
         </panel>
         <panel header="## Creating Test Input/Output Files<a class='fa fa-anchor' href='#creating-test-input-output-files'></a>" no-close>
@@ -130,26 +143,38 @@ Hello Mickey
             <li>for jshell testing (e.g. test1.jsh), There is no need to specify the java files to be opened. <br>
               <strong>Please run this command in bash or in your unix terminal</strong>.</li>
           </ul>
-          <pre><code class="hljs shell">Main.hello("Mickey")
+          <div class="code-block">
+            <pre><code class="hljs shell">Main.hello("Mickey")
 /exit
 </code></pre>
+            <div class="code-block-lang"><span>shell</span></div>
+          </div>
           <ul>
             <li>for input/output testing (e.g. <a href="http://test2.in">test2.in</a>),</li>
           </ul>
-          <pre><code class="hljs shell">Mickey
+          <div class="code-block">
+            <pre><code class="hljs shell">Mickey
 </code></pre>
+            <div class="code-block-lang"><span>shell</span></div>
+          </div>
           <p>Using the input files, you can redirect the output of the test to the corresponding output file. These files should end with .out extension.</p>
           <ul>
             <li>for jshell testing, say using test1.jsh</li>
           </ul>
-          <pre><code class="hljs shell">jshell -q Main.java &lt; test1.jsh | dos2unix &gt; test1.out
+          <div class="code-block">
+            <pre><code class="hljs shell">jshell -q Main.java &lt; test1.jsh | dos2unix &gt; test1.out
 </code></pre>
+            <div class="code-block-lang"><span>shell</span></div>
+          </div>
           <ul>
             <li>for input/output testing, say using <a href="http://test2.in">test2.in</a></li>
           </ul>
-          <pre><code class="hljs shell">java Main &lt; test2.in | dos2unix &gt; test2.out
+          <div class="code-block">
+            <pre><code class="hljs shell">java Main &lt; test2.in | dos2unix &gt; test2.out
 Mickey
 </code></pre>
+            <div class="code-block-lang"><span>shell</span></div>
+          </div>
           <p>Take note of the following:</p>
           <ul>
             <li>If you would like to replace an output file that has been generated previously, force the redirection by using &gt;| instead of &gt;</li>
@@ -174,7 +199,8 @@ Mickey
             <li>output: move your output files (.out) into this directory</li>
           </ul>
           <p>The file directory structure will look something like this:</p>
-          <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> ls *</span>
+          <div class="code-block">
+            <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> ls *</span>
 Main.class
 
 input:
@@ -186,8 +212,11 @@ test1.out  test2.out
 solution:
 Main.java
 </code></pre>
+            <div class="code-block-lang"><span>shell</span></div>
+          </div>
           <p>Now zip the three directories using your favourite zip utility. For example, using zip in unix/linux:</p>
-          <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> zip -r hello.zip input output solution</span>
+          <div class="code-block">
+            <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> zip -r hello.zip input output solution</span>
   adding: input/ (stored 0%)
   adding: input/test1.jsh (stored 0%)
   adding: input/test2.in (stored 0%)
@@ -209,6 +238,8 @@ test1.out  test2.out
 solution:
 Main.java
 </code></pre>
+            <div class="code-block-lang"><span>shell</span></div>
+          </div>
         </panel>
         <panel header="## Upload to CodeCrunch<a class='fa fa-anchor' href='#upload-to-codecrunch'></a>" no-close>
           <p>Now, log in to CodeCrunch. You have been given superuser access to the course CS2030P in order to create tasks.</p>
@@ -271,7 +302,7 @@ Main.java
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.9.1</a> on Fri, 07 Feb 2020 15:58:50 GMT</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.8.0</a> on Sun, 09 Feb 2020 07:27:31 GMT</small></div>
     </footer>
   </div>
 </body>
