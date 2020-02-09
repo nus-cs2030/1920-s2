@@ -12,6 +12,7 @@
       <li><a href="{{baseUrl}}/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
       <li><a href="{{baseUrl}}/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
       <li><a href="{{baseUrl}}/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
+      <li><a href="{{baseUrl}}/contents/guides/sunfireLabs.html" class="dropdown-item">Setting Up Sunfire and PE Nodes</a></li>
     </dropdown>
     <li><a slot="brand" href="{{baseUrl}}/contents/textbook/textbook.html"class="nav-link">Textbook</a></li>
     <dropdown text="Links" class="nav-link">
