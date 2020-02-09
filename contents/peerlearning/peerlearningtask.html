@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.8.0">
+  <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -15,9 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-
 
 </head>
 
@@ -59,12 +57,13 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
         <h1 id="peer-learning-task-creation-using-codecrunch">Peer Learning Task Creation using Codecrunch<a class="fa fa-anchor" href="#peer-learning-task-creation-using-codecrunch"></a></h1>
         <p>Link to <a href="https://codecrunch.comp.nus.edu.sg/index.php">Codecrunch</a> is here!</p>
         <br>
-        <panel header="## Task Creation<a class='fa fa-anchor' href='#task-creation'></a>" no-close>
+        <panel no-close id="task-creation"><template slot="_header"><h2 id="task-creation">Task Creation<a class="fa fa-anchor" href="#task-creation"></a></h2></template>
           <p>Creating a task for CodeCrunch involves the following steps:</p>
           <ul>
             <li>Think of the problem statement</li>
@@ -75,14 +74,13 @@
             <li>Test your task</li>
           </ul>
         </panel>
-        <panel header="## Think of the Problem Statement<a class='fa fa-anchor' href='#think-of-the-problem-statement'></a>" no-close>
+        <panel no-close id="think-of-the-problem-statement"><template slot="_header"><h2 id="think-of-the-problem-statement">Think of the Problem Statement<a class="fa fa-anchor" href="#think-of-the-problem-statement"></a></h2></template>
           <p>You first need to decide on the statement of the problem. <br> This could be in the form of testing a particular concept taught in class, or solving a full-fledged problem. You will also need to decide on how the program is to be tested, either
             using jshell, by running the program via input/output, or both.</p>
         </panel>
-        <panel header="## Creating the Solution<a class='fa fa-anchor' href='#creating-the-solution'></a>" no-close>
+        <panel no-close id="creating-the-solution"><template slot="_header"><h2 id="creating-the-solution">Creating the Solution<a class="fa fa-anchor" href="#creating-the-solution"></a></h2></template>
           <p>Let's use the following as the solution of a task. You may create as many class files as you like, but do note that if you wish to test program input/output via a main method, this method must reside in the Main class.</p>
-          <div class="code-block">
-            <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
+          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
 
@@ -101,20 +99,14 @@
 }
 
 </code></pre>
-            <div class="code-block-lang"><span>java</span></div>
-          </div>
           <p>After a successful compilation,</p>
-          <div class="code-block">
-            <pre><code class="hljs shell">javac Main.java
+          <pre><code class="hljs shell">javac Main.java
 </code></pre>
-            <div class="code-block-lang"><span>shell</span></div>
-          </div>
           <p>think of what you want to set as tests. In the above, you can either</p>
           <ul>
             <li>test a method using jshell</li>
           </ul>
-          <div class="code-block">
-            <pre><code class="hljs">$ jshell Main.java
+          <pre><code class="hljs">$ jshell Main.java
 jshell&gt; Main.hello(&quot;Mickey&quot;)
 $.. ==&gt; &quot;Hello Mickey&quot;
 
@@ -122,59 +114,42 @@ $.. ==&gt; &quot;Hello Mickey&quot;
 jshell&gt; /exit
 |  Goodbye
 </code></pre>
-            <div class="code-block-lang"><span>jshelllanguage</span></div>
-          </div>
           <ul>
             <li>run the program via input/output</li>
           </ul>
-          <div class="code-block">
-            <pre><code class="hljs">$ java Main
+          <pre><code class="hljs">$ java Main
 What's your names? Mickey
 Hello Mickey
 </code></pre>
-            <div class="code-block-lang"><span>jshelllanguage</span></div>
-          </div>
           <p>Before proceeding, compile your solution, test and run your program to make sure that you have a working solution.</p>
         </panel>
-        <panel header="## Creating Test Input/Output Files<a class='fa fa-anchor' href='#creating-test-input-output-files'></a>" no-close>
+        <panel no-close id="creating-test-input-output-files"><template slot="_header"><h2 id="creating-test-input-output-files">Creating Test Input/Output Files<a class="fa fa-anchor" href="#creating-test-input-output-files"></a></h2></template>
           <p>In order to make your program available for your peers to practise, you need to also provide input/output files. Let's use the same two test examples above.</p>
           <p>The input file is simply the input that a human user will type during testing. For jshell testing, name your input file ending with a .jsh extension. On the other hand for input/output testing, name your input file ending with a .in extension.</p>
           <ul>
             <li>for jshell testing (e.g. test1.jsh), There is no need to specify the java files to be opened. <br>
               <strong>Please run this command in bash or in your unix terminal</strong>.</li>
           </ul>
-          <div class="code-block">
-            <pre><code class="hljs shell">Main.hello("Mickey")
+          <pre><code class="hljs shell">Main.hello("Mickey")
 /exit
 </code></pre>
-            <div class="code-block-lang"><span>shell</span></div>
-          </div>
           <ul>
             <li>for input/output testing (e.g. <a href="http://test2.in">test2.in</a>),</li>
           </ul>
-          <div class="code-block">
-            <pre><code class="hljs shell">Mickey
+          <pre><code class="hljs shell">Mickey
 </code></pre>
-            <div class="code-block-lang"><span>shell</span></div>
-          </div>
           <p>Using the input files, you can redirect the output of the test to the corresponding output file. These files should end with .out extension.</p>
           <ul>
             <li>for jshell testing, say using test1.jsh</li>
           </ul>
-          <div class="code-block">
-            <pre><code class="hljs shell">jshell -q Main.java &lt; test1.jsh | dos2unix &gt; test1.out
+          <pre><code class="hljs shell">jshell -q Main.java &lt; test1.jsh | dos2unix &gt; test1.out
 </code></pre>
-            <div class="code-block-lang"><span>shell</span></div>
-          </div>
           <ul>
             <li>for input/output testing, say using <a href="http://test2.in">test2.in</a></li>
           </ul>
-          <div class="code-block">
-            <pre><code class="hljs shell">java Main &lt; test2.in | dos2unix &gt; test2.out
+          <pre><code class="hljs shell">java Main &lt; test2.in | dos2unix &gt; test2.out
 Mickey
 </code></pre>
-            <div class="code-block-lang"><span>shell</span></div>
-          </div>
           <p>Take note of the following:</p>
           <ul>
             <li>If you would like to replace an output file that has been generated previously, force the redirection by using &gt;| instead of &gt;</li>
@@ -191,7 +166,7 @@ Mickey
 </code></pre>
           </box>
         </panel>
-        <panel header="## Preparing Your Files for Upload<a class='fa fa-anchor' href='#preparing-your-files-for-upload'></a>" no-close>
+        <panel no-close id="preparing-your-files-for-upload"><template slot="_header"><h2 id="preparing-your-files-for-upload">Preparing Your Files for Upload<a class="fa fa-anchor" href="#preparing-your-files-for-upload"></a></h2></template>
           <p>You should now have the java source files, input and output files. You will need to create three directories:</p>
           <ul>
             <li>solution: move your .java files into this directory</li>
@@ -199,8 +174,7 @@ Mickey
             <li>output: move your output files (.out) into this directory</li>
           </ul>
           <p>The file directory structure will look something like this:</p>
-          <div class="code-block">
-            <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> ls *</span>
+          <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> ls *</span>
 Main.class
 
 input:
@@ -212,11 +186,8 @@ test1.out  test2.out
 solution:
 Main.java
 </code></pre>
-            <div class="code-block-lang"><span>shell</span></div>
-          </div>
           <p>Now zip the three directories using your favourite zip utility. For example, using zip in unix/linux:</p>
-          <div class="code-block">
-            <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> zip -r hello.zip input output solution</span>
+          <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> zip -r hello.zip input output solution</span>
   adding: input/ (stored 0%)
   adding: input/test1.jsh (stored 0%)
   adding: input/test2.in (stored 0%)
@@ -238,10 +209,8 @@ test1.out  test2.out
 solution:
 Main.java
 </code></pre>
-            <div class="code-block-lang"><span>shell</span></div>
-          </div>
         </panel>
-        <panel header="## Upload to CodeCrunch<a class='fa fa-anchor' href='#upload-to-codecrunch'></a>" no-close>
+        <panel no-close id="upload-to-codecrunch"><template slot="_header"><h2 id="upload-to-codecrunch">Upload to CodeCrunch<a class="fa fa-anchor" href="#upload-to-codecrunch"></a></h2></template>
           <p>Now, log in to CodeCrunch. You have been given superuser access to the course CS2030P in order to create tasks.</p>
           <ol>
             <li>Click on the Tasks tab</li>
@@ -258,7 +227,7 @@ Main.java
             <li>Remember to click Save Changes (best to do it periodically)</li>
           </ol>
           <img src="/1920-s2/contents/peerlearning/images/CCThree.png"></panel>
-        <panel header="## Test your Task<a class='fa fa-anchor' href='#test-your-task'></a>" no-close>
+        <panel no-close id="test-your-task"><template slot="_header"><h2 id="test-your-task">Test your Task<a class="fa fa-anchor" href="#test-your-task"></a></h2></template>
           <p>Before making the task available for your peers, you should test it at least once.</p>
           <ul>
             <li>Go to the Settings tab and enter the following for the Compile and Test commands:
@@ -273,7 +242,7 @@ Main.java
           <img src="/1920-s2/contents/peerlearning/images/CCFour.png">
           <p>Now click on the Tasks tab again, and click View. Upload your solutions the usual way, and view you submission to see if everything works.</p>
         </panel>
-        <panel header="## Final Step!<a class='fa fa-anchor' href='#final-step'></a>" no-close>
+        <panel no-close id="final-step"><template slot="_header"><h2 id="final-step">Final Step!<a class="fa fa-anchor" href="#final-step"></a></h2></template>
           <p>When you are ready to release your task in the course CS2030, edit your task again, and click the Categories tab. Select Peer Learning and click Link.</p>
           <img src="/1920-s2/contents/peerlearning/images/CCFive.png">
           <p>CodeCrunch has been set to periodically look for new tasks with the Peer Learning category and link them to the main CS2030 course. Once linked, you are still allowed to update your task, if deemed necessary.</p>
@@ -302,7 +271,7 @@ Main.java
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.8.0</a> on Sun, 09 Feb 2020 07:27:31 GMT</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.10.0</a> on Sun, 09 Feb 2020 08:41:39 GMT</small></div>
     </footer>
   </div>
 </body>
@@ -316,6 +285,7 @@ Main.java
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

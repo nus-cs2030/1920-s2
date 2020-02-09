@@ -3,19 +3,6 @@
   "pages": [
     {
       "headings": {
-        "tell-don-t-ask": "Tell, Don't Ask",
-        "": ""
-      },
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {
         "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
       },
       "header": "header.md",
@@ -187,9 +174,7 @@
     },
     {
       "headings": {
-        "abstraction": "Abstraction",
-        "": "",
-        "-2": ""
+        "abstraction": "Abstraction"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -267,6 +252,18 @@
     },
     {
       "headings": {
+        "tell-don-t-ask": "Tell, Don't Ask"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/tellDontAsk/tellDontAsk.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "factory-methods": "Factory Methods",
         "definition-of-factory-method": "Definition of Factory Method:",
         "application-in-lecture-notes": "Application in lecture notes:",
@@ -289,6 +286,10 @@
         "interface-segregation-principle": "Interface Segregation Principle",
         "dependency-inversion-principle": "Dependency Inversion Principle"
       },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture04/solidprinciples/solidprinciples.md",
       "title": "",
       "layout": "default"
