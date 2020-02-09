@@ -22,7 +22,7 @@
 * [Introduction to Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) 
 * [Abstraction](lecture01/abstraction/abstraction.html) 
 * [Abstraction Vs Encapsulation](lecture01/abstractionVsEncapsulation/abstractionVsEncapsulation.html)
-* [Tell, Don't Ask / Private modifier](lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.html)
+* [Tell, Don't Ask Principle](lecture01/tellDontAsk/index.html)
 
 </panel>
 
@@ -40,7 +40,7 @@ Do add content via a Pull Reuqest!
 
 <panel header="## **Lecture 4**" no-close>
 
-Do add content via a Pull Reuqest!
+* [SOLID Principles](lecture04/solidprinciples/solidprinciples.html)
 
 </panel>
 

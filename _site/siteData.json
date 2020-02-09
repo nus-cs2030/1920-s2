@@ -10,7 +10,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.md",
+      "src": "contents/textbook/lecture01/tellDontAsk/index.md",
       "title": "",
       "layout": "default"
     },
@@ -289,6 +289,10 @@
         "interface-segregation-principle": "Interface Segregation Principle",
         "dependency-inversion-principle": "Dependency Inversion Principle"
       },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture04/solidprinciples/solidprinciples.md",
       "title": "",
       "layout": "default"
