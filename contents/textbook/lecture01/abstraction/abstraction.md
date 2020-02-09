@@ -14,9 +14,7 @@
 [Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/abstraction/abstraction.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
-### 
-
-According to the Oxford Dictionary, the definition of the word abstraction is "the process of considering something independently of its associations or attributes." 
+According to the Oxford Dictionary, the definition of the word abstraction is the process of considering something independently of its associations or attributes.
 
 What can we learn from this and apply it to computer science? Well, as we have found out, abstraction is the ability to think about something without the details of its specific features. 
 
@@ -61,6 +59,7 @@ class SoftDrink {
 ```
 
 Abstractions gives us a template that allow us to simply punch in the details of the object that I want to create, instead of creating something entirely different. For example, I want to create the Coke drink:
+
 ```
     public static void main(String[] args) {
         SoftDrink Coke = new SoftDrink("Can", 330, "Red", true);
@@ -84,5 +83,4 @@ If you are being overloaded with information, which a soft drink factory owner(w
 
 **END**
 
-##
 Thank you for reading! Please drop a comment if you have questions or to give feedback.

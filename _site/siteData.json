@@ -174,9 +174,7 @@
     },
     {
       "headings": {
-        "abstraction": "Abstraction",
-        "": "",
-        "-2": ""
+        "abstraction": "Abstraction"
       },
       "pageNav": 2,
       "header": "header.md",
@@ -254,8 +252,7 @@
     },
     {
       "headings": {
-        "tell-don-t-ask": "Tell, Don't Ask",
-        "": ""
+        "tell-don-t-ask": "Tell, Don't Ask"
       },
       "pageNav": 2,
       "header": "header.md",

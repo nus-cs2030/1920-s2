@@ -14,8 +14,6 @@
 [Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/tellDontAsk/tellDontAsk.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
-### 
-
 In the lecture, the professor gave the following example :
 
 ```java
