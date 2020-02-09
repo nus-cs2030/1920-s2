@@ -3,19 +3,6 @@
   "pages": [
     {
       "headings": {
-        "tell-don-t-ask": "Tell, Don't Ask",
-        "": ""
-      },
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
-      "src": "contents/textbook/lecture01/tellDontAsk/index.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {
         "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
       },
       "header": "header.md",
@@ -262,6 +249,19 @@
     {
       "headings": {},
       "src": "contents/textbook/lecture01/imperativeProgramming/resources.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "tell-don-t-ask": "Tell, Don't Ask",
+        "": ""
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture01/tellDontAsk/tellDontAsk.md",
       "title": "",
       "layout": "default"
     },
