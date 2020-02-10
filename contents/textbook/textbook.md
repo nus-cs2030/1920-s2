@@ -21,6 +21,26 @@
 
 * [Introduction to Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) 
 * [Abstraction](lecture01/abstraction/abstraction.html) 
+* [Abstraction Vs Encapsulation](lecture01/abstractionVsEncapsulation/abstractionVsEncapsulation.html)
+* [Tell, Don't Ask Principle](lecture01/tellDontAsk/tellDontAsk.html)
+
+</panel>
+
+<panel header="## **Lecture 2**" no-close>
+
+* [Factory Methods](lecture02/factoryMethods/factoryMethods.html) 
+
+</panel>
+
+<panel header="## **Lecture 3**" no-close>
+
+Do add content via a Pull Reuqest!
+
+</panel>
+
+<panel header="## **Lecture 4**" no-close>
+
+* [SOLID Principles](lecture04/solidprinciples/solidprinciples.html)
 
 </panel>
 
