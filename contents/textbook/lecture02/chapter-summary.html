@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.10.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2030 AY19/20 Semester 2</title>
+  <link rel="stylesheet" href="../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../../markbind/layouts/default/styles.css">
+
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="flex-body">
+
+      <div id="content-wrapper">
+        <p>A benefit of making objects immutable is that they can be used in a sort of &quot;testing&quot; framework. No matter how many &quot;test methods&quot; are applied to the object, it will come out the same at the end of the day.</p>
+        <p>For exaple, if we structure our Point.java file like so :</p>
+        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+
+	<span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> x;
+	<span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> y;
+	
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Point</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y)</span> </span>{
+		<span class="hljs-keyword">this</span>.x = x;
+		<span class="hljs-keyword">this</span>.y = y;
+	}
+	
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getX</span><span class="hljs-params">()</span> </span>{
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.x;
+	}
+	
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getY</span><span class="hljs-params">()</span> </span>{
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.y;
+	}
+	
+	<span class="hljs-function"><span class="hljs-keyword">public</span> Point <span class="hljs-title">setX</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Point(x, <span class="hljs-keyword">this</span>.y);
+	}
+	
+	<span class="hljs-function"><span class="hljs-keyword">public</span> Point <span class="hljs-title">setY</span><span class="hljs-params">(<span class="hljs-keyword">double</span> y)</span> </span>{
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Point(<span class="hljs-keyword">this</span>.x, y);
+	}
+}
+</code></pre>
+        <p>In this case, if a series of setX and setY are executed on a point, then that same series of methods calls will always give back the same result when applied to the original point. One can envision how useful this might be in a testing context;
+          I make one point called p, then perform a series of sets on it to &quot;transform&quot; it, then call a &quot;testing&quot; function on it to test something.</p>
+        <p>I then want to change the conditions under which the testing function is called, so I pass in different values to setX and do not setY altogether. Since p is immutable, however, I do not need to make a new Point p class in order to reset my y
+          value - I can simply call setX on p, knowing that p has not changed state due to the previous state.</p>
+        <p>My testing will look like a series of one-liner method-chains that are <strong>independent</strong> of one another.</p>
+        <p>&quot;Bottom up testing&quot; is recommended; start with zero-dependency classes and move up the ladder. But in order to do so, you need to structure your code to be hierarchical and not cyclical.</p>
+        <p>Fascinating new concept of static &quot;factory&quot; methods. If we want to check for the validity of the arguments to a constructor before actually deciding whether to make a class or not, we can do the following :</p>
+        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
+
+	<span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> x;
+	<span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span> y;
+	
+	<span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Point</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y)</span> </span>{
+		<span class="hljs-keyword">this</span>.x = x;
+		<span class="hljs-keyword">this</span>.y = y;
+	}
+	
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Point <span class="hljs-title">createPoint</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y)</span> </span>{
+		<span class="hljs-keyword">if</span>(x &lt; <span class="hljs-number">0</span> || y &lt; <span class="hljs-number">0</span>) {
+			<span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+		} <span class="hljs-keyword">else</span> {
+			<span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Point(x, y);
+		}
+	}
+}
+</code></pre>
+        <p>Make the constructor private, then implement the createPoint factory method.</p>
+        <h2 id="inheritance">Inheritance<a class="fa fa-anchor" href="#inheritance"></a></h2>
+        <p>Let's say I have a Circle class and a child UnitCircle class :</p>
+        <pre><code class="hljs java">
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
+	<span class="hljs-keyword">protected</span> Point center;
+	<span class="hljs-keyword">protected</span> <span class="hljs-keyword">double</span> radius;
+
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Circle</span><span class="hljs-params">(Point center, <span class="hljs-keyword">double</span> radius)</span> </span>{
+		<span class="hljs-keyword">this</span>.center = center;
+		<span class="hljs-keyword">this</span>.radius = radius;
+	}
+	
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Circle <span class="hljs-title">getCircle</span><span class="hljs-params">(Point center, <span class="hljs-keyword">double</span> radius)</span> </span>{
+		<span class="hljs-keyword">if</span>(radius &lt;= <span class="hljs-number">0</span>) {
+			<span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+		}
+		Circle newCircle = <span class="hljs-keyword">new</span> Circle(center, radius);
+		<span class="hljs-keyword">return</span> newCircle;
+	}
+}
+
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UnitCircle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Circle</span></span>{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">UnitCircle</span><span class="hljs-params">(Point center)</span> </span>{
+		<span class="hljs-keyword">super</span>.center = center;
+		<span class="hljs-keyword">super</span>.radius = <span class="hljs-number">1</span>;
+	}
+}
+</code></pre>
+        <p>In this case, UnitCircle does not compile because it is not passing any arguments into super() in its constructor.</p>
+        <blockquote>
+          <p>There is an implicit call to super() with no arguments for all classes that have a parent - which is every user defined class in Java - so calling it explicitly is usually not required. However, you may use the call to super() with arguments
+            if the parent's constructor takes parameters, and you wish to specify them. Moreover, if the parent's constructor takes parameters, and it has no default parameter-less constructor, you will need to call super() with argument(s).</p>
+        </blockquote>
+        <p>So rather than manually getting the parent variables with super.center and super.radius, we can just use the conventional method :</p>
+        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UnitCircle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Circle</span></span>{
+
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">UnitCircle</span><span class="hljs-params">(Point center)</span> </span>{
+		<span class="hljs-keyword">super</span>(center, <span class="hljs-number">1</span>);
+	}
+}
+</code></pre>
+        <p>Something insanely cool : you can automatically generate javadoc documentation by inserting special comments into your java code.
+          <a href="https://www.comp.nus.edu.sg/~cs2030/javadoc/">Here's</a> a quick guide on the proper way to generate javadocs.</p>
+        <p>The purpose of &quot;annotators&quot; have finally been made clear : if I add an &quot;@Override&quot; annotator above a method, an error will be called if that method does not override a method from its parent class. It basically acts as a checker
+          to ensure that the method is doing what I intend it to be doing.</p>
+        <p>Below is the proper way to override the equals method (for the Point class)</p>
+        <pre><code class="hljs java"><span class="hljs-meta">@Override</span>
+	<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object obj)</span> </span>{
+	<span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span> == obj) {
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+	} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (obj <span class="hljs-keyword">instanceof</span> Point) {
+		Point p = (Point) obj;
+		<span class="hljs-keyword">return</span> Math.abs(<span class="hljs-keyword">this</span>.x - p.x) &lt; <span class="hljs-number">1E-15</span> &amp;&amp;
+		Math.abs(<span class="hljs-keyword">this</span>.y - p.y) &lt; <span class="hljs-number">1E-15</span>;
+	} <span class="hljs-keyword">else</span> {
+		<span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+	}
+}
+</code></pre>
+        <p>You can avoid cyclic dependency by adding another more &quot;intangible&quot; class to solidify some sort of relationship between the two original classes. E.g : add the &quot;Loan&quot; class in order to prevent cyclic dependency between the
+          Student and Book class.</p>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<script src="../../../markbind/js/vue.min.js"></script>
+<script src="../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/1920-s2'
+  const enableSearch = true
+</script>
+<script src="../../../markbind/js/setup.js"></script>
+
+<script src="../../../markbind/layouts/default/scripts.js"></script>
+
+</html>

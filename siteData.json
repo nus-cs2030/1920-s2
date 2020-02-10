@@ -264,6 +264,14 @@
     },
     {
       "headings": {
+        "inheritance": "Inheritance"
+      },
+      "src": "contents/textbook/lecture02/chapter-summary.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "factory-methods": "Factory Methods",
         "definition-of-factory-method": "Definition of Factory Method:",
         "application-in-lecture-notes": "Application in lecture notes:",
