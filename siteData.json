@@ -286,6 +286,12 @@
       "layout": "default"
     },
     {
+      "headings": {},
+      "src": "contents/textbook/lecture03/LSP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
       "headings": {
         "solid-principles": "SOLID Principles",
         "single-responsibility-principle": "Single Responsibility Principle",
