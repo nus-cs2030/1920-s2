@@ -2,9 +2,7 @@
   "enableSearch": true,
   "pages": [
     {
-      "headings": {
-        "cs2030-programming-methodology-ii": "CS2030: Programming Methodology II"
-      },
+      "headings": {},
       "header": "header.md",
       "footer": "footer.md",
       "pageNav": 2,
@@ -14,20 +12,37 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "cs2030-ay2019-2020-semester-2": "CS2030 AY2019/2020 Semester 2",
-        "setting-up-staging-env": "Setting Up Staging Env"
-      },
+      "headings": {},
       "src": "README.md",
       "title": "",
       "layout": "default"
     },
     {
-      "headings": {
-        "for-windows-users": "For Windows Users",
-        "for-macos-users": "For MacOS Users",
-        "setting-up-java": "Setting Up Java"
-      },
+      "headings": {},
+      "src": "_site/markbind/layouts/default/footer.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/head.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/header.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "src": "_site/markbind/layouts/default/navigation.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -37,13 +52,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "setting-up-windows-subsystem-for-linux-wsl": "Setting Up Windows Subsystem for Linux (WSL)",
-        "downloading-xming-for-gvim": "Downloading XMing for gVim",
-        "downloading-and-setting-up-ubuntu": "Downloading and Setting Up Ubuntu",
-        "setting-up-your-vimrc-file": "Setting up your .vimrc file",
-        "setting-up-lab-environment": "Setting Up Lab Environment"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -53,9 +62,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "setting-up-macvim": "Setting Up MacVim"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -65,9 +72,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "setting-up-vim": "Setting Up Vim"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -77,13 +82,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "basic-requirements": "Basic Requirements",
-        "ssh-into-pe-nodes-using-terminal": "SSH into PE Nodes Using Terminal",
-        "ssh-into-pe-nodes-using-port-forwarding": "SSH into PE Nodes Using Port Forwarding",
-        "getting-files-from-remote-server-to-local-server": "Getting files from Remote Server to Local Server",
-        "setting-up-sunfire-and-accessing-pe-nodes": "Setting Up Sunfire and Accessing PE Nodes"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -93,22 +92,13 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "instructions-for-tas": "Instructions for TAs",
-        "approving-prs": "Approving PRs",
-        "formatting-standard": "Formatting Standard",
-        "enabling-navigation": "Enabling Navigation"
-      },
+      "headings": {},
       "src": "contents/guides/taGuide.md",
       "title": "",
       "layout": "default"
     },
     {
-      "headings": {
-        "what-do-i-do-here": "What do I do here?",
-        "how-can-i-contribute": "How can I contribute?",
-        "peer-learning-segment": "Peer Learning Segment"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -118,17 +108,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "task-creation": "Task Creation",
-        "think-of-the-problem-statement": "Think of the Problem Statement",
-        "creating-the-solution": "Creating the Solution",
-        "creating-test-input-output-files": "Creating Test Input/Output Files",
-        "preparing-your-files-for-upload": "Preparing Your Files for Upload",
-        "upload-to-codecrunch": "Upload to CodeCrunch",
-        "test-your-task": "Test your Task",
-        "final-step": "Final Step!",
-        "peer-learning-task-creation-using-codecrunch": "Peer Learning Task Creation using Codecrunch"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -138,10 +118,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "how-do-i-contribute": "How Do I Contribute?",
-        "piazza-participation": "Piazza Participation"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -151,19 +128,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "step-0-signing-up-for-github": "Step 0: Signing Up for Github",
-        "step-1-adding-an-issue-to-the-repository": "Step 1: Adding an Issue to the repository",
-        "step-2-searching-for-issues-to-the-repository": "Step 2: Searching For Issues to the Repository",
-        "step-3-finding-the-section-to-edit": "Step 3: Finding the section to edit",
-        "step-4-forking-the-repository": "Step 4: Forking the Repository",
-        "step-5-editing-using-the-markdown-editor": "Step 5: Editing using the Markdown editor",
-        "step-6-save-your-file-changes": "Step 6: Save your file changes",
-        "step-7-create-your-pull-request": "Step 7: Create your Pull Request",
-        "step-8-view-your-website-changes": "Step 8: View your website changes",
-        "step-9-fixing-merge-conflicts": "Step 9: Fixing Merge Conflicts",
-        "textbook-contributions": "Textbook Contributions"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -173,9 +138,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "abstraction": "Abstraction"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -185,13 +148,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "abstraction-vs-encapsulation": "Abstraction Vs Encapsulation",
-        "abstraction": "Abstraction",
-        "encapsulation": "Encapsulation",
-        "example-the-student-class": "Example: The Student class",
-        "abstraction-vs-encapsulation-2": "Abstraction vs Encapsulation"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -225,11 +182,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "introduction-to-imperative-programming": "Introduction to Imperative Programming",
-        "exercises": "Exercises",
-        "additional-resources": "Additional Resources"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -251,9 +204,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "tell-don-t-ask": "Tell, Don't Ask"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -263,12 +214,7 @@
       "layout": "default"
     },
     {
-      "headings": {
-        "factory-methods": "Factory Methods",
-        "definition-of-factory-method": "Definition of Factory Method:",
-        "application-in-lecture-notes": "Application in lecture notes:",
-        "advantages-of-factory-methods": "Advantages of Factory Methods:"
-      },
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -279,13 +225,69 @@
     },
     {
       "headings": {
-        "solid-principles": "SOLID Principles",
-        "single-responsibility-principle": "Single Responsibility Principle",
-        "open-closed-principle": "Open-Closed Principle",
-        "liskov-substitution-principle": "Liskov Substitution Principle",
-        "interface-segregation-principle": "Interface Segregation Principle",
-        "dependency-inversion-principle": "Dependency Inversion Principle"
+        "lecture-2-summary": "Lecture 2 Summary",
+        "inheritance": "Inheritance"
       },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/summary/chapter-summary.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/DIP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/ISP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/LSP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/OCP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/SRP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {},
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
@@ -300,6 +302,8 @@
         "lecture-2": "Lecture 2",
         "lecture-3": "Lecture 3",
         "lecture-4": "Lecture 4",
+        "lecture-5": "Lecture 5",
+        "lecture-6": "Lecture 6",
         "textbook": "Textbook"
       },
       "pageNav": 2,

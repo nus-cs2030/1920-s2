@@ -76,179 +76,12 @@
           <li><strong>I</strong>nterface Segregation Principle</li>
           <li><strong>D</strong>ependency Inversion Principle</li>
         </ul>
-        <h1 id="single-responsibility-principle">Single Responsibility Principle<a class="fa fa-anchor" href="#single-responsibility-principle"></a></h1>
-        <p>The Single Responsibility Principle states that:</p>
-        <blockquote>
-          <p>A class should only have one reason to change.</p>
-        </blockquote>
-        <p>In other words, a class should only have a single responsibility.</p>
-        <p>For example, say we have a class Circle with three methods, getArea, getPerimeter and print.</p>
-        <pre><code class="hljs">class Circle {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
-    double getArea() {
-        return Math.PI * radius * radius;    
-    }
-    
-    double getPerimeter() {
-        return 2 * Math.PI * radius;
-    }
-
-    void print() {
-        System.out.println(“Area “ + getArea() + “ and perimeter “ + getPerimeter();
-    }
-}
-</code></pre>
-        <p>The Circle class can be seen as having 2 separate responsibilities:</p>
-        <ol>
-          <li>Circle related properties and methods.</li>
-          <li>Output redirection (where to print to).</li>
-        </ol>
-        <p>This violates the Single Responsibility Principle as the class should only have one single responsibility. In this case, dealing with the circle’s properties is the main responsibility of the Circle class. Any secondary responsibilities (e.g.
-          output redirection) should instead be abstracted away into separate classes.</p>
-        <p>For example, the print method could return a string instead, and let the client implement the responsibility of output redirection (e.g. print to file instead of to the user’s screen).</p>
-        <pre><code class="hljs">class Circle {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
-    double getArea() {
-        return Math.PI * radius * radius;    
-    }
-    
-    double getPerimeter(){
-        return 2 * Math.PI * radius;
-    }
-
-    String print() {
-        return “Area “ + String.format(“%.2f”, getArea()) + “ and perimeter “ +
-            String.format(“%.2f”, getPerimeter());
-    }
-}
-</code></pre>
-        <h1 id="open-closed-principle">Open-Closed Principle<a class="fa fa-anchor" href="#open-closed-principle"></a></h1>
-        <p>The Open-Closed Principle states that:</p>
-        <blockquote>
-          <p>A class should be open to extension but closed to modification.</p>
-        </blockquote>
-        <p>This means that a class should be easily extendable without having to modify the class itself.</p>
-        <p>For example, say we have a class Rectangle that extends from a class Shape. Now we would like to create a class CalculateArea that calculates the total area of shapes in an array.</p>
-        <pre><code class="hljs">public class CalculateArea {
-    public double Area(Shapes[] shapes) {
-        double area = 0;
-        for(Shape s : shapes) { 
-            area += r.width * r.height;
-        }
-        return area;
-    }
-}
-</code></pre>
-        <p>Now what if we had another class Circle that we would like to add to the array? We would have to modify the CalculateArea class for the program to be able to run correctly.</p>
-        <pre><code class="hljs">public class CalculateArea {
-    public double Area(Shape[] shapes) {
-        double area = 0;
-        for (Shape s : shapes) {
-            if (s instanceof Rectangle) {
-                area += s.width * s.height;
-            } else if (s instanceof Circle) {
-                area += s.radius * s.radius * Math.PI;
-            } 
-        }
-        return area;
-    }
-}
-</code></pre>
-        <p>This violates the open-close principle as CalculateArea class isn’t closed to modification. We needed to modify it in order to extend it.</p>
-        <p>Instead, the responsibility for calculating the individual shape's area should be left to the shape class. In this way, we can extend a new shape (e.g. Triangle) without having to modify the client’s implementation of CalculateArea.</p>
-        <pre><code class="hljs">public class CalculateArea {
-    public double Area(Shape[] shapes) {
-        double area = 0;
-        for (Shape s : shapes) {
-            area += s.getArea();
-        }
-        return area;
-    }
-}
-</code></pre>
-        <h1 id="liskov-substitution-principle">Liskov Substitution Principle<a class="fa fa-anchor" href="#liskov-substitution-principle"></a></h1>
-        <p>The Liskov Substitution Principle states that:</p>
-        <blockquote>
-          <p>If S is a subclass of T, then an object of type T can be replaced by that of type S without changing the desirable property of the program.</p>
-        </blockquote>
-        <p>As an example, if Filled Circle is a subclass of Circle, then anywhere where we can expect a Circle, we can replace it with a Filled Circle.</p>
-        <p>For example, we may have a FormattedText class:</p>
-        <pre><code class="hljs">class FormattedText {
-    public String text;
-    public boolean isUnderlined;
-
-    public void toggleUnderline() {
-        isUnderlined = (!isUnderlined);
-	}
-}
-</code></pre>
-        <p>The FormattedText class has the method toggleUnderline that toggles the variable isUnderlined between true and false.</p>
-        <p>Now suppose we have a class URL that extends FormattedText.</p>
-        <pre><code class="hljs">class URL extends FormattedText {
-    public URL() {
-        isUnderlined = true;
-    }
-	
-    @Override
-    public void toggleUnderline() {
-        return;
-    }
-}
-</code></pre>
-        <p>In the URL class, the method toggleUnderline overrides the method in the parent class. It has been modified to not toggle the variable isUnderlined between true and false.</p>
-        <p>However, this violates the Substitution principle as we cannot substitute FormattedText object for URL object, as doing so may result in a change in behaviour (unable to toggle underline) of the program.</p>
-        <h1 id="interface-segregation-principle">Interface Segregation Principle<a class="fa fa-anchor" href="#interface-segregation-principle"></a></h1>
-        <p>The Interface Segregation Principle states that:</p>
-        <blockquote>
-          <p>A client should not be forced to depend on methods it does not use.</p>
-        </blockquote>
-        <p>This means that:</p>
-        <ol>
-          <li>Classes should not implement methods that they can’t</li>
-          <li>Clients should not know of methods they don’t need.</li>
-        </ol>
-        <p>For example, we may have an abstract class Shape with methods to get shape properties as well as scale a shape.</p>
-        <pre><code class="hljs">abstract class Shape {
-    abstract double getArea();
-    abstract double getPerimeter();
-    abstract Shape scale(double factor);
-}
-</code></pre>
-        <p>However, this would violate the Interface Segregation Principle as some classes might want to implement scale but are unable to implement getArea and getPerimeter (e.g. 3D Objects). In addition clients might need to implement getArea and getPerimeter
-          without needing to implement scale.</p>
-        <p>It would be better to separate the the methods dealing with shapes properties from methods dealing with scaling into different interfaces to avoid violating the Interface Segregation Principle.</p>
-        <pre><code class="hljs">interface Scalable {
-    Scalable scale(double factor);
-}	
-</code></pre>
-        <pre><code class="hljs">abstract class Shape {
-    abstract double getArea();
-    abstract double getPerimeter();
-}
-</code></pre>
-        <p>This way, shapes can choose to implement scalable only if needed.</p>
-        <pre><code class="hljs">class Circle extends Shape implements Scalable {…}
-</code></pre>
-        <h1 id="dependency-inversion-principle">Dependency Inversion Principle<a class="fa fa-anchor" href="#dependency-inversion-principle"></a></h1>
-        <p>The Dependency Inversion Principle states that:</p>
-        <blockquote>
-          <p>High-level modules should not depend on low-level modules. Both should depend on abstractions.</p>
-        </blockquote>
-        <blockquote>
-          <p>Abstractions should not depend on details. Details should depend on abstractions.</p>
-        </blockquote>
-        <p>In other words, there should be no dependencies between the client and the implementer. Instead, the client should have a dependency on an interface and the implementer should be a subclass of that interface. This will allow the higher level modules
-          (client) to be unaffected by changes to lower level modules (implementer).</p>
+        <p>Click the links to find out more!</p>
+        <h1 id="single-responsibility-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/SRP.html">Single Responsibility Principle</a><a class="fa fa-anchor" href="#single-responsibility-principle"></a></h1>
+        <h1 id="open-closed-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/OCP.html">Open-Closed Principle</a><a class="fa fa-anchor" href="#open-closed-principle"></a></h1>
+        <h1 id="liskov-substitution-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/LSP.html">Liskov Substitution Principle</a><a class="fa fa-anchor" href="#liskov-substitution-principle"></a></h1>
+        <h1 id="interface-segregation-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/ISP.html">Interface Segregation Principle</a><a class="fa fa-anchor" href="#interface-segregation-principle"></a></h1>
+        <h1 id="dependency-inversion-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/DIP.html">Dependency Inversion Principle</a><a class="fa fa-anchor" href="#dependency-inversion-principle"></a></h1>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
@@ -268,7 +101,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.8.0</a> on Sun, 09 Feb 2020 08:39:41 GMT</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.8.0</a> on Tue, 18 Feb 2020 03:46:16 GMT</small></div>
     </footer>
   </div>
 </body>
