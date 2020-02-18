@@ -28,6 +28,7 @@
 
 <panel header="## **Lecture 2**" no-close>
 
+* [Lecture 2 Summary](lecture02/summary/chapter-summary.html) 
 * [Factory Methods](lecture02/factoryMethods/factoryMethods.html) 
 
 </panel>
@@ -41,6 +42,18 @@ Do add content via a Pull Reuqest!
 <panel header="## **Lecture 4**" no-close>
 
 * [SOLID Principles](lecture04/solidprinciples/solidprinciples.html)
+
+</panel>
+
+<panel header="## **Lecture 5**" no-close>
+
+Do add content via a Pull Reuqest!
+
+</panel>
+
+<panel header="## **Lecture 6**" no-close>
+
+Do add content via a Pull Reuqest!
 
 </panel>
 
