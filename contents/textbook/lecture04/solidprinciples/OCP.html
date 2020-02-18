@@ -8,14 +8,14 @@
   <meta name="generator" content="MarkBind 2.10.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
-  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
-  <link rel="stylesheet" href="../../markbind/css/github.min.css">
-  <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 
 </head>
 
@@ -60,32 +60,60 @@
 
       <div id="content-wrapper">
         <br>
-        <h1 id="peer-learning-segment">Peer Learning Segment<a class="fa fa-anchor" href="#peer-learning-segment"></a></h1>
+        <h1 id="open-closed-principle">Open-Closed Principle<a class="fa fa-anchor" href="#open-closed-principle"></a></h1>
         <br>
-        <panel no-close id="what-do-i-do-here"><template slot="_header"><h2 id="what-do-i-do-here">What do I do here?<a class="fa fa-anchor" href="#what-do-i-do-here"></a></h2></template>
-          <p>Well, the main reason for the creation of this website is to facilitate Peer Learning.</p>
-          <p>We hope to make CS2030 a more collaborative environment for CS2030 Students to learn from one another.</p>
-        </panel>
-        <panel no-close id="how-can-i-contribute"><template slot="_header"><h2 id="how-can-i-contribute">How can I contribute?<a class="fa fa-anchor" href="#how-can-i-contribute"></a></h2></template>
-          <p>There are 3 parts of the Peer Learning Component, which takes up a certain percentage of your entire CS2030 Grade.</p>
-          <p>They are:</p>
-          <ol>
-            <li><span aria-hidden="true" class="fas fa-book"></span> Contribution to Online TextBook</li>
-            <li><span aria-hidden="true" class="fas fa-pen"></span> Contribution via CodeCrunch Peer Learning Tasks.</li>
-            <li><span aria-hidden="true" class="fas fa-question"></span> Piazza Participation.</li>
-          </ol>
-          <p>Click under the Peer Learning Tab to find out more about each of these components!</p>
-        </panel>
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/OCP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+        <p>The Open-Closed Principle states that:</p>
+        <blockquote>
+          <p>A class should be open to extension but closed to modification.</p>
+        </blockquote>
+        <p>This means that a class should be easily extendable without having to modify the class itself.</p>
+        <p>For example, say we have a class Rectangle that extends from a class Shape. Now we would like to create a class CalculateArea that calculates the total area of shapes in an array.</p>
+        <pre><code class="hljs">public class CalculateArea {
+    public double Area(Shapes[] shapes) {
+        double area = 0;
+        for(Shape s : shapes) { 
+            area += r.width * r.height;
+        }
+        return area;
+    }
+}
+</code></pre>
+        <p>Now what if we had another class Circle that we would like to add to the array? We would have to modify the CalculateArea class for the program to be able to run correctly.</p>
+        <pre><code class="hljs">public class CalculateArea {
+    public double Area(Shape[] shapes) {
+        double area = 0;
+        for (Shape s : shapes) {
+            if (s instanceof Rectangle) {
+                area += s.width * s.height;
+            } else if (s instanceof Circle) {
+                area += s.radius * s.radius * Math.PI;
+            } 
+        }
+        return area;
+    }
+}
+</code></pre>
+        <p>This violates the open-close principle as CalculateArea class isn’t closed to modification. We needed to modify it in order to extend it.</p>
+        <p>Instead, the responsibility for calculating the individual shape's area should be left to the shape class. In this way, we can extend a new shape (e.g. Triangle) without having to modify the client’s implementation of CalculateArea.</p>
+        <pre><code class="hljs">public class CalculateArea {
+    public double Area(Shape[] shapes) {
+        double area = 0;
+        for (Shape s : shapes) {
+            area += s.getArea();
+        }
+        return area;
+    }
+}
+</code></pre>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#peer-learning-segment">Peer Learning Segment&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#what-do-i-do-here">What do I do here?&#x200E;</a>
-              <a class="nav-link py-1" href="#how-can-i-contribute">How can I contribute?&#x200E;</a>
-            </nav>
+            <a class="nav-link py-1" href="#open-closed-principle">Open-Closed Principle&#x200E;</a>
 
           </nav>
         </div>
@@ -98,17 +126,17 @@
     </footer>
   </div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/vue-strap.min.js"></script>
-<script src="../../markbind/js/bootstrap-utility.min.js"></script>
-<script src="../../markbind/js/polyfill.min.js"></script>
-<script src="../../markbind/js/bootstrap-vue.min.js"></script>
+<script src="../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/1920-s2'
   const enableSearch = true
 </script>
-<script src="../../markbind/js/setup.js"></script>
+<script src="../../../../markbind/js/setup.js"></script>
 
-<script src="../../markbind/layouts/default/scripts.js"></script>
+<script src="../../../../markbind/layouts/default/scripts.js"></script>
 
 </html>

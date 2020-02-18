@@ -264,14 +264,6 @@
     },
     {
       "headings": {
-        "inheritance": "Inheritance"
-      },
-      "src": "contents/textbook/lecture02/chapter-summary.md",
-      "title": "",
-      "layout": "default"
-    },
-    {
-      "headings": {
         "factory-methods": "Factory Methods",
         "definition-of-factory-method": "Definition of Factory Method:",
         "application-in-lecture-notes": "Application in lecture notes:",
@@ -286,8 +278,76 @@
       "layout": "default"
     },
     {
-      "headings": {},
-      "src": "contents/textbook/lecture03/LSP.md",
+      "headings": {
+        "lecture-2-summary": "Lecture 2 Summary",
+        "inheritance": "Inheritance"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture02/summary/chapter-summary.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "dependency-inversion-principle": "Dependency Inversion Principle"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/DIP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "interface-segregation-principle": "Interface Segregation Principle"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/ISP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "liskov-substitution-principle": "Liskov Substitution Principle",
+        "alternative-example": "Alternative Example"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/LSP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "open-closed-principle": "Open-Closed Principle"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/OCP.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "single-responsibility-principle": "Single Responsibility Principle"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture04/solidprinciples/SRP.md",
       "title": "",
       "layout": "default"
     },
@@ -314,6 +374,8 @@
         "lecture-2": "Lecture 2",
         "lecture-3": "Lecture 3",
         "lecture-4": "Lecture 4",
+        "lecture-5": "Lecture 5",
+        "lecture-6": "Lecture 6",
         "textbook": "Textbook"
       },
       "pageNav": 2,
