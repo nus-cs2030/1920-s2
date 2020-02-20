@@ -292,6 +292,15 @@
     },
     {
       "headings": {
+        "substitutability-in-object-oriented-programming": "Substitutability in Object Oriented Programming",
+        "type-sub-type-consistency": "Type/Sub-type Consistency"
+      },
+      "src": "contents/textbook/lecture03/chapterSummary/chapter-summary.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "dependency-inversion-principle": "Dependency Inversion Principle"
       },
       "pageNav": 2,
