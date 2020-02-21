@@ -15,15 +15,56 @@
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
-
+    <header>
+      <navbar type="dark" class="temp-navbar">
+        <a slot="brand" href="/1920-s2/index.html" title="Home" class="navbar-brand">CS2030 AY19/20 Semester 2</a>
+        <div class="nav-link temp-dropdown-placeholder">Peer Learning</div>
+        <dropdown text="Peer Learning" class="nav-link temp-dropdown">
+          <li><a href="/1920-s2/contents/peerlearning/peerlearning.html" class="dropdown-item">Introduction</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/textbook.html" class="dropdown-item">Textbook Contributions</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearningtask.html" class="dropdown-item">Peer Learning Tasks</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/piazza.html" class="dropdown-item">Piazza Participation</a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Guides</div>
+        <dropdown text="Guides" class="nav-link temp-dropdown">
+          <li><a href="/1920-s2/contents/guides/settingUpLabEnv.html" class="dropdown-item">Setting Up Lab Environment</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
+          <li><a href="/1920-s2/contents/guides/sunfireLabs.html" class="dropdown-item">Setting Up Sunfire and PE Nodes</a></li>
+        </dropdown>
+        <li><a slot="brand" href="/1920-s2/contents/textbook/textbook.html" class="nav-link">Textbook</a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown text="Links" class="nav-link temp-dropdown">
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/style/" class="dropdown-item" target="_blank">CS2030 Java Style Guide</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/javadoc/" class="dropdown-item" target="_blank">CS2030 Javadoc Specification</a></li>
+          <li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html" class="dropdown-item" target="_blank">JDK 11 Download Link</a></li>
+          <li><a href="https://codecrunch.comp.nus.edu.sg/" class="dropdown-item" target="_blank">Codecrunch</a></li>
+          <li><a href="https://github.com/nus-cs2030/1920-s2" class="dropdown-item" target="_blank">Github Repo</a></li>
+          <li><a href="https://piazza.com/class/k54zo22zq1t2zc" class="dropdown-item" target="_blank">Piazza Forum</a></li>
+        </dropdown>
+        <li slot="right">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
     <div id="flex-body">
 
       <div id="content-wrapper">
+        <br>
+        <h1 id="lecture-3-summary">Lecture 3 Summary<a class="fa fa-anchor" href="#lecture-3-summary"></a></h1>
+        <br>
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture03/summary/chapter-summary.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
         <h2 id="substitutability-in-object-oriented-programming">Substitutability in Object Oriented Programming<a class="fa fa-anchor" href="#substitutability-in-object-oriented-programming"></a></h2>
         <p>&quot;Composition&quot; describes a &quot;has-a&quot; relationship, while inheritance describes an &quot;is-a&quot; relationship.</p>
         <p>In jshell, the order in which you declare your Java files matters. Declare the class with no dependencies first, then move up.</p>
@@ -176,9 +217,25 @@ b.foo(<span class="hljs-number">5</span>);
 </code></pre>
         <p>Here, only the first call to foo will use B's implementation of foo. The second one will use A's implementation. If foo had been properly overriden in B, and not overloaded, the second foo would also have called B's implementation.</p>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#lecture-3-summary">Lecture 3 Summary&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#substitutability-in-object-oriented-programming">Substitutability in Object Oriented Programming&#x200E;</a>
+              <a class="nav-link py-1" href="#type-sub-type-consistency">Type/Sub-type Consistency&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
 
+      <div class="text-center">
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.10.0</a> on Fri, 21 Feb 2020 03:36:27 GMT</small></div>
+    </footer>
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>

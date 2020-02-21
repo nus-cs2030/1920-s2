@@ -280,6 +280,7 @@
     {
       "headings": {
         "lecture-2-summary": "Lecture 2 Summary",
+        "immutability": "Immutability",
         "inheritance": "Inheritance"
       },
       "pageNav": 2,
@@ -292,10 +293,15 @@
     },
     {
       "headings": {
+        "lecture-3-summary": "Lecture 3 Summary",
         "substitutability-in-object-oriented-programming": "Substitutability in Object Oriented Programming",
         "type-sub-type-consistency": "Type/Sub-type Consistency"
       },
-      "src": "contents/textbook/lecture03/chapterSummary/chapter-summary.md",
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture03/summary/chapter-summary.md",
       "title": "",
       "layout": "default"
     },
