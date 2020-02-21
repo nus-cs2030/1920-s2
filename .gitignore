@@ -1,6 +1,6 @@
 # Log
 _markbind/logs
-_site
+_site/
 
 # Gradle build files
 /.gradle/
