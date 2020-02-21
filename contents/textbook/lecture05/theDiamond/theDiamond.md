@@ -1,6 +1,6 @@
 <br> 
 
-# The Diamond
+# The Diamond Operator
 <hr>
 
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
@@ -10,11 +10,13 @@
 You can replace the type arguments required to invoke the constructor of a generic class with an empty set of type parameters (<>) as long as the compiler can infer the type arguments from the context.  
 
 ```java
-Box<Burger> boxofBurger = new Burger<>();
+Box<Burger> boxofBurger = new Box();  // type: raw
+Box<Burger> boxofBurger = new Box<Burger>();  // type: Burger
+Box<Burger> boxofBurger = new Box<>();  // type: Burger
 ```
 
 However, if we create a new object using the <> diamond operator without assigning it to another variable, the type argument is inferred to be of type Object.
 
 ```java
-Box boxofBurger = new Burger<>();
-```
+Box boxofBurger = new Burger<>();  // type taken to be Object
+```  
