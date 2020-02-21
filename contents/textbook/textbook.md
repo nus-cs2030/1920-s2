@@ -47,7 +47,8 @@
 
 <panel header="## **Lecture 5**" no-close>
 
-Do add content via a Pull Reuqest!
+* [Unbounded Wildcards](lecture05/unboundWildcards/unboundWildcards.html)
+* [Generics in Static Methods](lecture05/staticGenerics/staticGenerics.html)
 
 </panel>
 
