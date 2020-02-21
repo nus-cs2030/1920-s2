@@ -1,3 +1,19 @@
+<frontmatter>
+  pageNav: 2
+  header: header.md
+  footer: footer.md
+  siteNav: site-nav.md
+</frontmatter>
+
+<br> 
+
+# Lecture 3 Summary
+<br> 
+
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture03/summary/chapter-summary.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
 ## Substitutability in Object Oriented Programming
 
 "Composition" describes a "has-a" relationship, while

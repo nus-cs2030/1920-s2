@@ -11,8 +11,10 @@
 <br> 
 
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
-[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/summary/chapter-summary.md)
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture02/summary/chapter-summary.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
+## Immutability
 
 A benefit of making objects immutable is that they can be used in a sort of "testing" framework. No matter how many "test methods" are 
 applied to the object, it will come out the same at the end of the day. 

@@ -35,7 +35,7 @@
 
 <panel header="## **Lecture 3**" no-close>
 
-Do add content via a Pull Reuqest!
+* [Lecture 3 Summary](lecture03/summary/chapter-summary.html) 
 
 </panel>
 
