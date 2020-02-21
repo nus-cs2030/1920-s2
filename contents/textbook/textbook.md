@@ -47,7 +47,7 @@
 
 <panel header="## **Lecture 5**" no-close>
 
-Do add content via a Pull Reuqest!
+* [Generics in Static Methods](lecture05/staticGenerics/staticGenerics.html)
 
 </panel>
 
