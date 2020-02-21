@@ -14,7 +14,7 @@
 [Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/unboundWildcards/unboundWildcards.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
-This was adapted from [The Java tutorial](https://docs.oracle.com/javase/tutorial/java/generics/upperBounded.html) and [Question 445](https://piazza.com/class/k54zo22zq1t2zc?cid=445) from Piazza.
+This is adapted from [The Java tutorial](https://docs.oracle.com/javase/tutorial/java/generics/upperBounded.html) and [Question 445](https://piazza.com/class/k54zo22zq1t2zc?cid=445) from Piazza.
 
 > **upper-bounded wildcard**
 
