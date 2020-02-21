@@ -385,6 +385,30 @@
     },
     {
       "headings": {
+        "declaration-of-generics-in-static-methods": "Declaration of Generics in Static Methods"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/staticGenerics/staticGenerics.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "unbounded-wildcards": "Unbounded Wildcards"
+      },
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/unboundWildcards/unboundWildcards.md",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
         "lecture-1": "Lecture 1",
         "lecture-2": "Lecture 2",
         "lecture-3": "Lecture 3",

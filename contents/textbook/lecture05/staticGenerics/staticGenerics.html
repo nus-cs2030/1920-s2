@@ -60,72 +60,32 @@
 
       <div id="content-wrapper">
         <br>
-        <h1 id="single-responsibility-principle">Single Responsibility Principle<a class="fa fa-anchor" href="#single-responsibility-principle"></a></h1>
-        <br>
+        <h1 id="declaration-of-generics-in-static-methods">Declaration of Generics in Static Methods<a class="fa fa-anchor" href="#declaration-of-generics-in-static-methods"></a></h1>
+        <hr>
 
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/SRP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/staticGenerics/staticGenerics.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>The Single Responsibility Principle states that:</p>
-        <blockquote>
-          <p>A class should only have one reason to change.</p>
-        </blockquote>
-        <p>In other words, a class should only have a single responsibility.</p>
-        <p>For example, say we have a class Circle with three methods, getArea, getPerimeter and print.</p>
-        <pre><code class="hljs">class Circle {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
-    double getArea() {
-        return Math.PI * radius * radius;    
-    }
-    
-    double getPerimeter() {
-        return 2 * Math.PI * radius;
-    }
-
-    void print() {
-        System.out.println(“Area “ + getArea() + “ and perimeter “ + getPerimeter();
-    }
+        <p>This was adapted from <a href="https://piazza.com/class/k54zo22zq1t2zc?cid=521">Question 521</a> from Piazza.</p>
+        <p>Given the following set of code:</p>
+        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;T&gt; <span class="hljs-function">Box&lt;T&gt;  <span class="hljs-title">of</span> <span class="hljs-params">()</span> </span>{}; 
 }
 </code></pre>
-        <p>The Circle class can be seen as having 2 separate responsibilities:</p>
-        <ol>
-          <li>Circle related properties and methods.</li>
-          <li>Output redirection (where to print to).</li>
-        </ol>
-        <p>This violates the Single Responsibility Principle as the class should only have one single responsibility. In this case, dealing with the circle’s properties is the main responsibility of the Circle class. Any secondary responsibilities (e.g.
-          output redirection) should instead be abstracted away into separate classes.</p>
-        <p>For example, the print method could return a string instead, and let the client implement the responsibility of output redirection (e.g. print to file instead of to the user’s screen).</p>
-        <pre><code class="hljs">class Circle {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
-    double getArea() {
-        return Math.PI * radius * radius;    
-    }
-    
-    double getPerimeter(){
-        return 2 * Math.PI * radius;
-    }
-
-    String print() {
-        return “Area “ + String.format(“%.2f”, getArea()) + “ and perimeter “ +
-            String.format(“%.2f”, getPerimeter());
-    }
-}
-</code></pre>
+        <p>We discover that we will need to declare <code>&lt;T&gt;</code> once again. Is there a particular reason why <code>&lt;T&gt;</code> needs to be added before <code>Box&lt;T&gt;</code> for static methods as shown above?</p>
+        <p>Well as we remmeber, tatic methods belong to the class, while non-static methods belong to the instance of the class.</p>
+        <p>Different instances of the class Box, may have different type parameters <code>&lt;T&gt;</code>, i.e. Box of different types, <code>Box&lt;Integer&gt;</code>, <code>Box&lt;String&gt;</code> etc. However, static methods, as well as static variables,
+          are <strong>class level</strong> so all instances of the class Box have access to the same static of() method.</p>
+        <p>That <strong>would not be possible</strong> if the type parameter of the static method is referring to the class type parameter <code>&lt;T&gt;</code>, since <code>&lt;T&gt;</code> may differ across instances of the class Box. Therefore, what
+          we need to do is to define a <strong>local type parameter</strong> specific to the scope of the static method.</p>
+        <p>The type parameter <code>U</code> created in static <code>&lt;U&gt;</code>, is then infered by Java for <code>U</code> in <code>Box&lt;U&gt;</code> ,U in argument (U u), and <code>U</code> in the return type of new <code>Box&lt;U&gt;()</code>,
+          or just new <code>Box&lt;&gt;()</code> for short</p>
+        <p>In conclusion, as stated in the lecture note, the <code>&lt;T&gt;</code>in the static method <strong>has no relation</strong> with the class type <code>&lt;T&gt;</code> in <code>Box &lt;T&gt;</code>.</p>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#single-responsibility-principle">Single Responsibility Principle&#x200E;</a>
+            <a class="nav-link py-1" href="#declaration-of-generics-in-static-methods">Declaration of Generics in Static Methods&#x200E;</a>
 
           </nav>
         </div>

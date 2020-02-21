@@ -60,72 +60,24 @@
 
       <div id="content-wrapper">
         <br>
-        <h1 id="single-responsibility-principle">Single Responsibility Principle<a class="fa fa-anchor" href="#single-responsibility-principle"></a></h1>
+        <h1 id="unbounded-wildcards">Unbounded Wildcards<a class="fa fa-anchor" href="#unbounded-wildcards"></a></h1>
         <br>
 
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/SRP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/unboundWildcards/unboundWildcards.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>The Single Responsibility Principle states that:</p>
-        <blockquote>
-          <p>A class should only have one reason to change.</p>
-        </blockquote>
-        <p>In other words, a class should only have a single responsibility.</p>
-        <p>For example, say we have a class Circle with three methods, getArea, getPerimeter and print.</p>
-        <pre><code class="hljs">class Circle {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
-    double getArea() {
-        return Math.PI * radius * radius;    
-    }
-    
-    double getPerimeter() {
-        return 2 * Math.PI * radius;
-    }
-
-    void print() {
-        System.out.println(“Area “ + getArea() + “ and perimeter “ + getPerimeter();
-    }
-}
-</code></pre>
-        <p>The Circle class can be seen as having 2 separate responsibilities:</p>
-        <ol>
-          <li>Circle related properties and methods.</li>
-          <li>Output redirection (where to print to).</li>
-        </ol>
-        <p>This violates the Single Responsibility Principle as the class should only have one single responsibility. In this case, dealing with the circle’s properties is the main responsibility of the Circle class. Any secondary responsibilities (e.g.
-          output redirection) should instead be abstracted away into separate classes.</p>
-        <p>For example, the print method could return a string instead, and let the client implement the responsibility of output redirection (e.g. print to file instead of to the user’s screen).</p>
-        <pre><code class="hljs">class Circle {
-    double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
-    double getArea() {
-        return Math.PI * radius * radius;    
-    }
-    
-    double getPerimeter(){
-        return 2 * Math.PI * radius;
-    }
-
-    String print() {
-        return “Area “ + String.format(“%.2f”, getArea()) + “ and perimeter “ +
-            String.format(“%.2f”, getPerimeter());
-    }
-}
-</code></pre>
+        <p>This was adapted from <a href="https://piazza.com/class/k54zo22zq1t2zc?cid=462">Question 462</a> from Piazza.</p>
+        <p><code>&lt;?&gt;</code> is known as the unbounded wildcard. This is used to infer to unknown types. So, <code>List&lt;?&gt;</code> inherently means <strong>a List of unknown types</strong> This be the mantra of the day.</p>
+        <p>Let us break it down. <code>List&lt;?&gt;</code> means a List of unknown types. If it is a List of unknown types, you should be able to insert a string into this list. However, this means you are inserting an object with a <strong>known type</strong>,
+          which makes the mantra. <code>List&lt;?&gt;</code> has almost the same meaning as <code>List&lt;? extends Object&gt;</code>, which means you are only able to <strong>take out objects</strong> of which you do not know the data type.</p>
+        <p>As a result, you only can add <code>null</code> values into <code>List&lt;?&gt;</code>, since <code>null</code> is actually an unknown dara type. As a result, we should not use <code>List&lt;?&gt;</code> to insert data into it. We should only
+          use it when we want to refer to something of unknown data type inside the <code>List&lt;?&gt;</code></p>
+        <p>You can read more about <code>&lt;?&gt;</code> in the <a href="https://docs.oracle.com/javase/tutorial/java/generics/unboundedWildcards.html">Java documentation</a>!</p>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#single-responsibility-principle">Single Responsibility Principle&#x200E;</a>
+            <a class="nav-link py-1" href="#unbounded-wildcards">Unbounded Wildcards&#x200E;</a>
 
           </nav>
         </div>
