@@ -9,7 +9,7 @@ class FoodChecker {
     int numOfExpiredFoods;
 
     public FoodChecker(List foods) {
-        int numOfExpiredFoods = 0;
+        numOfExpiredFoods = 0;
         
         for (food : foods) {
             if (food.isExpired()) {
