@@ -1,7 +1,7 @@
 <br> 
 
 # Wrapper Classes
-<hr>
+<br>
 
 A wrapper class is a class that contains a primitive type, and allows us to use primitive types as objects. 
 Since primitive types are not allowed as type arguments for generic classes, wrapper classes can be used in place of them.
@@ -21,7 +21,7 @@ Each primitive type has a corresponding wrapper class as shown in the following 
 <br> 
 
 ## Autoboxing
-<hr>
+<br>
 
 Autoboxing allows primitive types to be automatically converted into wrapper class objects.
 When an instance of a wrapper class is expected and its corresponding primitive type is passed in instead, the primitive type is
