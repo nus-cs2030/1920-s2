@@ -36,5 +36,13 @@ According to my understanding, factory method is defined as static so that it ca
 1. Constructors cannot be named, while readable names can be assigned to factory methods.
 2. Constructors can only return same type as the class name, however, factory methods can return other objects
 3. Factory methods promote the idea of using interface instead of implementation, and would generate more flexible codes.
-
+4. Unlike constructors, factory methods doesn't require a new object to be created everytime they are called.
+   - Instantiate a static object as a default value, say an empty box
+   - `private static final BOX EMPTY_BOX = new BOX();`
+   - Factory method just has to return this specific instance of empty box whenever required instead of creating tons of new empty boxes
+      ```
+      public static Box empty() {
+          return EMPTY_BOX;
+      }
+      ```
 Please feel free to edit if I have made any mistakes or add on more content.:smile:
