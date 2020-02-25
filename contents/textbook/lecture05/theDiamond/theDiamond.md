@@ -1,10 +1,17 @@
+<frontmatter>
+  pageNav: 2
+  header: header.md
+  footer: footer.md
+  siteNav: site-nav.md
+</frontmatter>
+
 <br> 
 
 # The Diamond Operator
 <hr>
 
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
-[Edit the material here!](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/staticGenerics/staticGenerics.md)
+[Edit the material here!](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/theDiamond/theDiamond.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
 You can replace the type arguments required to invoke the constructor of a generic class with an empty set of type parameters (<>) as long as the compiler can infer the type arguments from the context.  
