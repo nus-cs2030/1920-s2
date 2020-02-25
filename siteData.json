@@ -428,6 +428,10 @@
       "headingKeywords": {}
     },
     {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture05/theDiamond/theDiamond.md",
       "title": "",
       "layout": "default",
