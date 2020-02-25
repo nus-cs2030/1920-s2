@@ -415,6 +415,15 @@
       "headingKeywords": {}
     },
     {
+      "src": "contents/textbook/lecture05/genericSubtypes/genericSubtypes.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "generic-subtypes": "Generic Subtypes"
+      },
+      "headingKeywords": {}
+    },
+    {
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",

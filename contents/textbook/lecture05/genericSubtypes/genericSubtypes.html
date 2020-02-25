@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2030 AY19/20 Semester 2</title>
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <h2 id="generic-subtypes">Generic Subtypes<a class="fa fa-anchor" href="#generic-subtypes"></a></h2>
+        <p>We know that <strong>Integer</strong> is a subtype of <strong>Number</strong>. Consider the following lines of codes</p>
+        <pre><code class="hljs java">  <span class="hljs-comment">// Integer is a subtype of Object</span>
+  Number n = <span class="hljs-number">1</span>; <span class="hljs-comment">// polymorphism here. okay.</span>
+  System.out.println(n); <span class="hljs-comment">// 1</span>
+  
+  <span class="hljs-comment">// But ArrayList&lt;Integer&gt; is not a subtype of ArrayList&lt;Number&gt;</span>
+  ArrayList&lt;Integer&gt; lst = <span class="hljs-keyword">new</span> ArrayList&lt;Number&gt;();
+  <span class="hljs-comment">// compilation error : incompatible types: ArrayList&lt;Number&gt; cannot be converted to ArrayList&lt;Integer&gt;</span>
+  
+</code></pre>
+        <p>When we try to upcast ArrayList
+          <integer> to ArrayList
+            <number>, it triggers a compilation error &quot;incompatible types&quot;. This is because ArrayList
+              <integer> is NOT a subtype of ArrayList
+                <number>, eventhough Integer is a subtype of Number.</number>
+              </integer>
+            </number>
+          </integer>
+        </p>
+        <p>This error may seem strange. Why?</p>
+        <pre><code class="hljs java">  List&lt;Integer&gt; intLst = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+  List&lt;Number&gt; numLst = intLst; <span class="hljs-comment">// incompatible types: ArrayList&lt;Number&gt; cannot be converted to ArrayList&lt;Integer&gt;.</span>
+</code></pre>
+        <p>Why do we get a compilation error in line 2? Suppose it succeeds, and some other number (e.g. Double or Float) are added into intLst, then intLst will get &quot;corrupted&quot; since it no longer only contains <strong>Integers</strong>, as references
+          of <strong>numLst</strong> and <strong>intLst</strong> share the same value.</p>
+        <p>On the other hand, the following is valid.</p>
+        <pre><code class="hljs java">  <span class="hljs-comment">// ArrayList is a subtype of List</span>
+  List&lt;Number&gt; lst = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+</code></pre>
+        <p>That is, ArrayList
+          <number> is a subtype of List
+            <number>, since ArrayList is a subtype of List and both have the same parametric type <strong>Number</strong></number>
+          </number>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/1920-s2'
+  const enableSearch = true
+</script>
+<script src="../../../../markbind/js/setup.js"></script>
+<script src="../../../../markbind/layouts/default/scripts.js"></script>
+
+</html>
