@@ -463,6 +463,16 @@
       "headingKeywords": {}
     },
     {
+      "src": "contents/textbook/lecture05/wrapperClass.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "wrapper-classes": "Wrapper Classes",
+        "autoboxing": "Autoboxing"
+      },
+      "headingKeywords": {}
+    },
+    {
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",
