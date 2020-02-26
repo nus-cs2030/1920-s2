@@ -428,10 +428,16 @@
       "headingKeywords": {}
     },
     {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture05/generics/generics.md",
       "title": "",
       "layout": "default",
-      "headings": {},
+      "headings": {
+        "introduction-to-generics": "Introduction to Generics"
+      },
       "headingKeywords": {}
     },
     {

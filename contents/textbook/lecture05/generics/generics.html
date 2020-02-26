@@ -16,67 +16,109 @@
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
+    <header>
+      <navbar type="dark" class="temp-navbar">
+        <a slot="brand" href="/1920-s2/index.html" title="Home" class="navbar-brand">CS2030 AY19/20 Semester 2</a>
+        <div class="nav-link temp-dropdown-placeholder">Peer Learning</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Peer Learning</template>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearning.html" class="dropdown-item">Introduction</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/textbook.html" class="dropdown-item">Textbook Contributions</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearningtask.html" class="dropdown-item">Peer Learning Tasks</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/piazza.html" class="dropdown-item">Piazza Participation</a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Guides</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Guides</template>
+          <li><a href="/1920-s2/contents/guides/settingUpLabEnv.html" class="dropdown-item">Setting Up Lab Environment</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
+          <li><a href="/1920-s2/contents/guides/sunfireLabs.html" class="dropdown-item">Setting Up Sunfire and PE Nodes</a></li>
+        </dropdown>
+        <li><a slot="brand" href="/1920-s2/contents/textbook/textbook.html" class="nav-link">Textbook</a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Links</template>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/style/" class="dropdown-item" target="_blank">CS2030 Java Style Guide</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/javadoc/" class="dropdown-item" target="_blank">CS2030 Javadoc Specification</a></li>
+          <li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html" class="dropdown-item" target="_blank">JDK 11 Download Link</a></li>
+          <li><a href="https://codecrunch.comp.nus.edu.sg/" class="dropdown-item" target="_blank">Codecrunch</a></li>
+          <li><a href="https://github.com/nus-cs2030/1920-s2" class="dropdown-item" target="_blank">Github Repo</a></li>
+          <li><a href="https://piazza.com/class/k54zo22zq1t2zc" class="dropdown-item" target="_blank">Piazza Forum</a></li>
+        </dropdown>
+        <li slot="right">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
     <div id="flex-body">
       <div id="content-wrapper">
+        <br>
+        <h1 id="introduction-to-generics">Introduction to Generics<a class="fa fa-anchor" href="#introduction-to-generics"></a></h1>
+        <hr>
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/generics/generics.md">Edit the material here!</a></p>
+
         <p>Imagine that we want to create a new class that encapsulates a queue of customers that visits a particular store. We will write :</p>
-        <pre><code class="hljs">class CustomerQueue {
-  private Customer[] customers;
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CustomerQueue</span> </span>{
+  <span class="hljs-keyword">private</span> Customer[] customers;
    :
-  public CustomerQueue(int size) {...}
-  public boolean isFull() {...}
-  public boolean isEmpty() {...}
-  public void insert(Customer c) {...}
-  public Customer remove() {...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CustomerQueue</span><span class="hljs-params">(<span class="hljs-keyword">int</span> size)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isFull</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(Customer c)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Customer <span class="hljs-title">remove</span><span class="hljs-params">()</span> </span>{...}
 }
 </code></pre>
         <p>Let say each customer travels using their own car when visiting the store. We might then need a new class that encapsulates a queue of cars to keep track of the parking record. We will write:</p>
-        <pre><code class="hljs">class CarQueue {
-  private Car[] cars;
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CarQueue</span> </span>{
+  <span class="hljs-keyword">private</span> Car[] cars;
    :
-  public CarQueue(int size) {...}
-  public boolean isFull() {...}
-  public boolean isEmpty() {...}
-  public void insert(Car c) {...}
-  public Car remove() {...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">CarQueue</span><span class="hljs-params">(<span class="hljs-keyword">int</span> size)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isFull</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(Car c)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Car <span class="hljs-title">remove</span><span class="hljs-params">()</span> </span>{...}
 }
 </code></pre>
         <p>We will then realise that there are actually many repetition in our code. By referring back to the <em>abstraction principle</em>, which states that &quot;<em>Where similar functions are carried out by distinct pieces of code, it is generally beneficial to combine them into one by abstracting out the varying parts.</em>&quot;,
           we should instead create a more generalised queue of Objects to replace the two class above.</p>
-        <pre><code class="hljs">class ObjectQueue {
-  private Object[] objects;
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ObjectQueue</span> </span>{
+  <span class="hljs-keyword">private</span> Object[] objects;
    :
-  public ObjectQueue(int size) {...}
-  public boolean isFull() {...}
-  public boolean isEmpty() {...}
-  public void insert(Object c) {...}
-  public Object remove() {...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">ObjectQueue</span><span class="hljs-params">(<span class="hljs-keyword">int</span> size)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isFull</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(Object c)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Object <span class="hljs-title">remove</span><span class="hljs-params">()</span> </span>{...}
 }
 </code></pre>
         <p>With this, we have a generalised class that is able to store objects of any kind, including its subclass such as a queue of strings, a queue of integers, etc.</p>
         <p>Lets say the Customer and Car classes are :</p>
-        <pre><code class="hljs">class Customer {
- private Car carOwned;
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Customer</span> </span>{
+ <span class="hljs-keyword">private</span> Car carOwned;
  Customer(Car car) {
   carOwned = car;
  }
  :
 }
 </code></pre>
-        <pre><code class="hljs">class Car {
- private String licensePlate;
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Car</span> </span>{
+ <span class="hljs-keyword">private</span> String licensePlate;
  Car(String string) {
   licensePlate = string;
  }
 }
 </code></pre>
         <p>To create a queue of 5 customers and further add more customers, we can do :</p>
-        <pre><code class="hljs">ObjectQueue cq = new ObjectQueue(5);
-cq.insert(new Customer(new Car(&quot;ABC&quot;));
-cq.insert(new Customer(new Car(&quot;CDE&quot;));
+        <pre><code class="hljs java">ObjectQueue cq = <span class="hljs-keyword">new</span> ObjectQueue(<span class="hljs-number">5</span>);
+cq.insert(<span class="hljs-keyword">new</span> Customer(<span class="hljs-keyword">new</span> Car(<span class="hljs-string">"ABC"</span>));
+cq.insert(<span class="hljs-keyword">new</span> Customer(<span class="hljs-keyword">new</span> Car(<span class="hljs-string">"CDE"</span>));
  : 
 </code></pre>
         <p>We can get the customer out of the queue by :</p>
@@ -85,39 +127,53 @@ cq.insert(new Customer(new Car(&quot;CDE&quot;));
         <p><code>Customer c = (Customer)cq.remove();</code></p>
         <p>This would work if the queue solely consists of only Customer. However, the code above might result in a runtime <code>ClassCastException</code> if there is an object in the queue that is not <code>Customer</code> or it's subclass. In order to
           avoid this, we can check the type of the object first:</p>
-        <pre><code class="hljs">Object o = cq.remove();
-if (o instanceof Customer) {
+        <pre><code class="hljs java">Object o = cq.remove();
+<span class="hljs-keyword">if</span> (o <span class="hljs-keyword">instanceof</span> Customer) {
  Customer c = (Customer) o;
 }
 </code></pre>
         <p>However, this is troublesome as we need to check for the type of the object all the time in order to ensure that there is no complication error.<br> Luckily for us Java 5 introduces generics and it is able to solve this issue. By allows a generic
           class or generic interface of some type T to be written:</p>
-        <pre><code class="hljs">class Queue&lt;T&gt; {
-  private T[] objects;
+        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Queue</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
+  <span class="hljs-keyword">private</span> T[] objects;
    :
-  public Queue(int size) {...}
-  public boolean isFull() {...}
-  public boolean isEmpty() {...}
-  public void insert(T o) {...}
-  public T remove() {...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Queue</span><span class="hljs-params">(<span class="hljs-keyword">int</span> size)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isFull</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isEmpty</span><span class="hljs-params">()</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insert</span><span class="hljs-params">(T o)</span> </span>{...}
+  <span class="hljs-function"><span class="hljs-keyword">public</span> T <span class="hljs-title">remove</span><span class="hljs-params">()</span> </span>{...}
 }
 </code></pre>
         <p><code>T</code> is known as type parameter. The same code previously can be rewritten as :</p>
-        <pre><code class="hljs">Queue&lt;Customer&gt; cq = new Queue&lt;Customer&gt;(5);
-cq.insert(new Customer(new Car(&quot;ABC&quot;));
-cq.insert(new Customer(new Car(&quot;CDE&quot;));
+        <pre><code class="hljs java">Queue&lt;Customer&gt; cq = <span class="hljs-keyword">new</span> Queue&lt;Customer&gt;(<span class="hljs-number">5</span>);
+cq.insert(<span class="hljs-keyword">new</span> Customer(<span class="hljs-keyword">new</span> Car(<span class="hljs-string">"ABC"</span>));
+cq.insert(<span class="hljs-keyword">new</span> Customer(<span class="hljs-keyword">new</span> Car(<span class="hljs-string">"CDE"</span>));
  : 
 Customer c = cq.remove();
 </code></pre>
         <p>In the code above, we set the type parameter <code>T</code> as <code>Customer</code>, creating a <em>parameterised type</em> <code>Queue&lt;Customer&gt;</code>. In Line 4, we no longer need to type cast, because there is no longer any danger of
           running into runtime error due to the possibility of an object of the wrong class added to the queue. This is because:</p>
-        <pre><code class="hljs">Queue&lt;Customer&gt; cq = new Queue&lt;Customer&gt;(3);
-cq.insert(new Car(&quot;ABC&quot;));
+        <pre><code class="hljs java">Queue&lt;Customer&gt; cq = <span class="hljs-keyword">new</span> Queue&lt;Customer&gt;(<span class="hljs-number">3</span>);
+cq.insert(<span class="hljs-keyword">new</span> Car(<span class="hljs-string">"ABC"</span>));
 </code></pre>
         <p>This will generate a complie-time error. Hence, we are able to enable the complier to produce an error if we try to insert a non-<code>Customer</code> into our queue of <code>Customer</code> objects.</p>
         <p>In conclusion: Generic typing is a type of polymorphism and it is also known as parametric polymorphism.</p>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#introduction-to-generics">Introduction to Generics&#x200E;</a>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+
+      <div class="text-center">
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.11.0</a> on Wed, 26 Feb 2020 16:55:22 GMT</small></div>
+    </footer>
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
