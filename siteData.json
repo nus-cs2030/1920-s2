@@ -415,6 +415,10 @@
       "headingKeywords": {}
     },
     {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture05/genericSubtypes/genericSubtypes.md",
       "title": "",
       "layout": "default",
@@ -454,6 +458,20 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/typeErasure/typeErasure.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "type-erasure": "Type Erasure",
+        "what-happens-when-your-java-generics-code-compiles": "What happens when your Java generics code compiles"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture05/unboundWildcards/unboundWildcards.md",
       "title": "",
       "layout": "default",
@@ -463,7 +481,11 @@
       "headingKeywords": {}
     },
     {
-      "src": "contents/textbook/lecture05/wrapperClass.md",
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/wrapperClass/wrapperClass.md",
       "title": "",
       "layout": "default",
       "headings": {

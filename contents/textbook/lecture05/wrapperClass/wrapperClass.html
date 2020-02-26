@@ -59,33 +59,80 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="declaration-of-generics-in-static-methods">Declaration of Generics in Static Methods<a class="fa fa-anchor" href="#declaration-of-generics-in-static-methods"></a></h1>
+        <h1 id="wrapper-classes">Wrapper Classes<a class="fa fa-anchor" href="#wrapper-classes"></a></h1>
         <hr>
 
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/staticGenerics/staticGenerics.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/wrapperClasses/wrapperClasses.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>This was adapted from <a href="https://piazza.com/class/k54zo22zq1t2zc?cid=521">Question 521</a> from Piazza.</p>
-        <p>Given the following set of code:</p>
-        <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>&lt;<span class="hljs-title">T</span>&gt; </span>{
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> &lt;T&gt; <span class="hljs-function">Box&lt;T&gt;  <span class="hljs-title">of</span> <span class="hljs-params">()</span> </span>{}; 
-}
+        <p>A wrapper class is a class that contains a primitive type, and allows us to use primitive types as objects. Since primitive types are not allowed as type arguments for generic classes, wrapper classes can be used in place of them. Each primitive
+          type has a corresponding wrapper class as shown in the following table.</p>
+        <div class="table-responsive">
+          <table class="markbind-table table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Primitive Type</th>
+                <th>Wrapper Class</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>boolean</td>
+                <td>Boolean</td>
+              </tr>
+              <tr>
+                <td>char</td>
+                <td>Character</td>
+              </tr>
+              <tr>
+                <td>byte</td>
+                <td>Byte</td>
+              </tr>
+              <tr>
+                <td>short</td>
+                <td>Short</td>
+              </tr>
+              <tr>
+                <td>int</td>
+                <td>Integer</td>
+              </tr>
+              <tr>
+                <td>long</td>
+                <td>Long</td>
+              </tr>
+              <tr>
+                <td>float</td>
+                <td>Float</td>
+              </tr>
+              <tr>
+                <td>double</td>
+                <td>Double</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><br>
+        <h2 id="autoboxing">Autoboxing<a class="fa fa-anchor" href="#autoboxing"></a></h2>
+        <br>
+        <p>Autoboxing allows primitive types to be automatically converted into wrapper class objects. When an instance of a wrapper class is expected and its corresponding primitive type is passed in instead, the primitive type is automatically converted
+          into an instance of the corresponding wrapper class.</p>
+        <p>Similarly, auto-unboxing allows instances of a wrapper class to be automatically converted into the corresponding primitive type.</p>
+        <p>Therefore, instead of writing:</p>
+        <pre><code class="hljs">Integer a = new Integer(123);
+int b = new Integer(123).intValue();
 </code></pre>
-        <p>We discover that we will need to declare <code>&lt;T&gt;</code> once again. Is there a particular reason why <code>&lt;T&gt;</code> needs to be added before <code>Box&lt;T&gt;</code> for static methods as shown above?</p>
-        <p>Well as we remmeber, static methods belong to the class, while non-static methods belong to the instance of the class.</p>
-        <p>Different instances of the class Box, may have different type parameters <code>&lt;T&gt;</code>, i.e. Box of different types, <code>Box&lt;Integer&gt;</code>, <code>Box&lt;String&gt;</code> etc. However, static methods, as well as static variables,
-          are <strong>class level</strong> so all instances of the class Box have access to the same static of() method.</p>
-        <p>That <strong>would not be possible</strong> if the type parameter of the static method is referring to the class type parameter <code>&lt;T&gt;</code>, since <code>&lt;T&gt;</code> may differ across instances of the class Box. Therefore, what
-          we need to do is to define a <strong>local type parameter</strong> specific to the scope of the static method.</p>
-        <p>The type parameter <code>U</code> created in static <code>&lt;U&gt;</code>, is then infered by Java for <code>U</code> in <code>Box&lt;U&gt;</code> ,U in argument (U u), and <code>U</code> in the return type of new <code>Box&lt;U&gt;()</code>,
-          or just new <code>Box&lt;&gt;()</code> for short.</p>
-        <p>In conclusion, as stated in the lecture note, the <code>&lt;T&gt;</code>in the static method <strong>has no relation</strong> with the class type <code>&lt;T&gt;</code> in <code>Box &lt;T&gt;</code>. To minimize confusion, a different letter may
-          be used for your static method (eg. <code>&lt;U&gt;</code>), in contract to the type parameter(eg. <code>&lt;T&gt;</code>) in you main class.</p>
+        <p>We can write:</p>
+        <pre><code class="hljs">Integer a = 123;
+int b = new Integer(123);
+</code></pre>
+        <p>Although autoboxing is convenient, it comes with a cost to performance. Furthermore, wrapper classes are immutable, and this can lead to many objects being created on the heap. Therefore, wrapper classes should only be used when necessary.</p>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#declaration-of-generics-in-static-methods">Declaration of Generics in Static Methods&#x200E;</a>
+            <a class="nav-link py-1" href="#wrapper-classes">Wrapper Classes&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#autoboxing">Autoboxing&#x200E;</a>
+            </nav>
 
           </nav>
         </div>
