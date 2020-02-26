@@ -14,7 +14,7 @@
 [Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/GenericAndParameterisedType/GenericAndParameterisedtype.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
-This was adapted from [Question 557](https://piazza.com/class/k54zo22zq1t2zc?cid=556) from Piazza.
+This was adapted from [Question 556](https://piazza.com/class/k54zo22zq1t2zc?cid=556) from Piazza.
 
 - Consider `class Box<T> { }`. `Box` is a generic type. `T` is a type parameter.
 - Now consider `Box<Integer> box = new Box<>();`. `Box<Integer>` is a parameterised type. `Integer` is the type argument.
