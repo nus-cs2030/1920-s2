@@ -428,6 +428,13 @@
       "headingKeywords": {}
     },
     {
+      "src": "contents/textbook/lecture05/generics/generics.md",
+      "title": "",
+      "layout": "default",
+      "headings": {},
+      "headingKeywords": {}
+    },
+    {
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",

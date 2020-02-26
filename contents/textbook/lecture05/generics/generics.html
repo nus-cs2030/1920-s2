@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2030 AY19/20 Semester 2</title>
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <p>Imagine that we want to create a new class that encapsulates a queue of customers that visits a particular store. We will write :</p>
+        <pre><code class="hljs">class CustomerQueue {
+  private Customer[] customers;
+   :
+  public CustomerQueue(int size) {...}
+  public boolean isFull() {...}
+  public boolean isEmpty() {...}
+  public void insert(Customer c) {...}
+  public Customer remove() {...}
+}
+</code></pre>
+        <p>Let say each customer travels using their own car when visiting the store. We might then need a new class that encapsulates a queue of cars to keep track of the parking record. We will write:</p>
+        <pre><code class="hljs">class CarQueue {
+  private Car[] cars;
+   :
+  public CarQueue(int size) {...}
+  public boolean isFull() {...}
+  public boolean isEmpty() {...}
+  public void insert(Car c) {...}
+  public Car remove() {...}
+}
+</code></pre>
+        <p>We will then realise that there are actually many repetition in our code. By referring back to the <em>abstraction principle</em>, which states that &quot;<em>Where similar functions are carried out by distinct pieces of code, it is generally beneficial to combine them into one by abstracting out the varying parts.</em>&quot;,
+          we should instead create a more generalised queue of Objects to replace the two class above.</p>
+        <pre><code class="hljs">class ObjectQueue {
+  private Object[] objects;
+   :
+  public ObjectQueue(int size) {...}
+  public boolean isFull() {...}
+  public boolean isEmpty() {...}
+  public void insert(Object c) {...}
+  public Object remove() {...}
+}
+</code></pre>
+        <p>With this, we have a generalised class that is able to store objects of any kind, including its subclass such as a queue of strings, a queue of integers, etc.</p>
+        <p>Lets say the Customer and Car classes are :</p>
+        <pre><code class="hljs">class Customer {
+ private Car carOwned;
+ Customer(Car car) {
+  carOwned = car;
+ }
+ :
+}
+</code></pre>
+        <pre><code class="hljs">class Car {
+ private String licensePlate;
+ Car(String string) {
+  licensePlate = string;
+ }
+}
+</code></pre>
+        <p>To create a queue of 5 customers and further add more customers, we can do :</p>
+        <pre><code class="hljs">ObjectQueue cq = new ObjectQueue(5);
+cq.insert(new Customer(new Car(&quot;ABC&quot;));
+cq.insert(new Customer(new Car(&quot;CDE&quot;));
+ : 
+</code></pre>
+        <p>We can get the customer out of the queue by :</p>
+        <p><code>Customer c = cq.remove();</code></p>
+        <p>However, we will get a compilation error, since we are trying to perform a narrowing reference conversion. We cannot assign a variable of type <code>Object</code> to a variable of type <code>Customer</code> without type casting :</p>
+        <p><code>Customer c = (Customer)cq.remove();</code></p>
+        <p>This would work if the queue solely consists of only Customer. However, the code above might result in a runtime <code>ClassCastException</code> if there is an object in the queue that is not <code>Customer</code> or it's subclass. In order to
+          avoid this, we can check the type of the object first:</p>
+        <pre><code class="hljs">Object o = cq.remove();
+if (o instanceof Customer) {
+ Customer c = (Customer) o;
+}
+</code></pre>
+        <p>However, this is troublesome as we need to check for the type of the object all the time in order to ensure that there is no complication error.<br> Luckily for us Java 5 introduces generics and it is able to solve this issue. By allows a generic
+          class or generic interface of some type T to be written:</p>
+        <pre><code class="hljs">class Queue&lt;T&gt; {
+  private T[] objects;
+   :
+  public Queue(int size) {...}
+  public boolean isFull() {...}
+  public boolean isEmpty() {...}
+  public void insert(T o) {...}
+  public T remove() {...}
+}
+</code></pre>
+        <p><code>T</code> is known as type parameter. The same code previously can be rewritten as :</p>
+        <pre><code class="hljs">Queue&lt;Customer&gt; cq = new Queue&lt;Customer&gt;(5);
+cq.insert(new Customer(new Car(&quot;ABC&quot;));
+cq.insert(new Customer(new Car(&quot;CDE&quot;));
+ : 
+Customer c = cq.remove();
+</code></pre>
+        <p>In the code above, we set the type parameter <code>T</code> as <code>Customer</code>, creating a <em>parameterised type</em> <code>Queue&lt;Customer&gt;</code>. In Line 4, we no longer need to type cast, because there is no longer any danger of
+          running into runtime error due to the possibility of an object of the wrong class added to the queue. This is because:</p>
+        <pre><code class="hljs">Queue&lt;Customer&gt; cq = new Queue&lt;Customer&gt;(3);
+cq.insert(new Car(&quot;ABC&quot;));
+</code></pre>
+        <p>This will generate a complie-time error. Hence, we are able to enable the complier to produce an error if we try to insert a non-<code>Customer</code> into our queue of <code>Customer</code> objects.</p>
+        <p>In conclusion: Generic typing is a type of polymorphism and it is also known as parametric polymorphism.</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/1920-s2'
+  const enableSearch = true
+</script>
+<script src="../../../../markbind/js/setup.js"></script>
+<script src="../../../../markbind/layouts/default/scripts.js"></script>
+
+</html>
