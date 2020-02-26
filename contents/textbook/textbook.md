@@ -47,11 +47,13 @@
 
 <panel header="## **Lecture 5**" no-close>
 
+* [Introduction to Generics](lecture05/generics/generics.html)
 * [Unbounded Wildcards](lecture05/unboundWildcards/unboundWildcards.html)
 * [Generics in Static Methods](lecture05/staticGenerics/staticGenerics.html)
 * [The Diamond Operator](lecture05/theDiamond/theDiamond.html)
 * [Type Erasure](lecture05/typeErasire/typeErasure.html)
 * [Wrapper Classes](lecture05/wrapperClass/wrapperClass.html)
+* [Generic Subtypes](lecture05/genericSubtypes/genericSubtypes.html)
 
 </panel>
 
