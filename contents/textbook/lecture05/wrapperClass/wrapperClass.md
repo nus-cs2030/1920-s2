@@ -1,7 +1,18 @@
+<frontmatter>
+  pageNav: 2
+  header: header.md
+  footer: footer.md
+  siteNav: site-nav.md
+</frontmatter>
+
 <br> 
 
 # Wrapper Classes
-<br>
+<hr>
+
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/wrapperClasses/wrapperClasses.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
 A wrapper class is a class that contains a primitive type, and allows us to use primitive types as objects. 
 Since primitive types are not allowed as type arguments for generic classes, wrapper classes can be used in place of them.

@@ -1,3 +1,19 @@
+<frontmatter>
+  pageNav: 2
+  header: header.md
+  footer: footer.md
+  siteNav: site-nav.md
+</frontmatter>
+
+<br> 
+
+# Type Erasure
+<hr>
+
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/typeErasure/typeErasure.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
 ## What happens when your Java generics code compiles
 
 #This is a brief summary of type erasure that takes references from Javadocs, https://docs.oracle.com/javase/tutorial/java/generics/erasure.html
