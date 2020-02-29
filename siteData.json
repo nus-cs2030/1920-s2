@@ -432,6 +432,19 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/boundedWildcards/bounedWildcards.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "bounded-wildcards": "bounded Wildcards"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture05/genericSubtypes/genericSubtypes.md",
       "title": "",
       "layout": "default",

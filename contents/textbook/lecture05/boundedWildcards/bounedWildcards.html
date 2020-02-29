@@ -60,80 +60,58 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="wrapper-classes">Wrapper Classes<a class="fa fa-anchor" href="#wrapper-classes"></a></h1>
-        <hr>
-
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/wrapperClasses/wrapperClasses.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
-
-        <p>A wrapper class is a class that contains a primitive type, and allows us to use primitive types as objects. Since primitive types are not allowed as type arguments for generic classes, wrapper classes can be used in place of them. Each primitive
-          type has a corresponding wrapper class as shown in the following table.</p>
-        <div class="table-responsive">
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Primitive Type</th>
-                <th>Wrapper Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>boolean</td>
-                <td>Boolean</td>
-              </tr>
-              <tr>
-                <td>char</td>
-                <td>Character</td>
-              </tr>
-              <tr>
-                <td>byte</td>
-                <td>Byte</td>
-              </tr>
-              <tr>
-                <td>short</td>
-                <td>Short</td>
-              </tr>
-              <tr>
-                <td>int</td>
-                <td>Integer</td>
-              </tr>
-              <tr>
-                <td>long</td>
-                <td>Long</td>
-              </tr>
-              <tr>
-                <td>float</td>
-                <td>Float</td>
-              </tr>
-              <tr>
-                <td>double</td>
-                <td>Double</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><br>
-        <h2 id="autoboxing">Autoboxing<a class="fa fa-anchor" href="#autoboxing"></a></h2>
+        <h1 id="bounded-wildcards">bounded Wildcards<a class="fa fa-anchor" href="#bounded-wildcards"></a></h1>
         <br>
-        <p>Autoboxing allows primitive types to be automatically converted into wrapper class objects. When an instance of a wrapper class is expected and its corresponding primitive type is passed in instead, the primitive type is automatically converted
-          into an instance of the corresponding wrapper class.</p>
-        <p>Similarly, auto-unboxing allows instances of a wrapper class to be automatically converted into the corresponding primitive type.</p>
-        <p>Therefore, instead of writing:</p>
-        <pre><code class="hljs">Integer a = new Integer(123);
-int b = new Integer(123).intValue();
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/unboundWildcards/unboundWildcards.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+        <p>This was adapted from <a href="https://docs.oracle.com/javase/tutorial/java/generics/upperBounded.html">The Java tutorial</a> and <a href="https://piazza.com/class/k54zo22zq1t2zc?cid=445">Question 445</a> from Piazza.</p>
+        <blockquote>
+          <p><strong>upper-bounded wildcard</strong></p>
+        </blockquote>
+        <p><code>&lt;? extends T&gt;</code> is known as the upper-bounded wildcard. This is used to relax the use of complex type to its <strong>co-variant complex types</strong>, i.e.complex types with type parameter being subtype of <code>T</code>. So,
+          <code>List&lt;? extends T&gt;</code> means <strong>a List of subtypes of T</strong>. Short example: consider the following <code>process</code> method:</p>
+        <pre><code class="hljs">public static void process(List&lt;? extends T&gt; myList) {
+    for (T ele : myList) {
+        // ...
+    }
+}
 </code></pre>
-        <p>We can write:</p>
-        <pre><code class="hljs">Integer a = 123;
-int b = new Integer(123);
+        <p><code>myList</code> is the a list of <strong>T</strong> or <strong>subtype of T</strong>, thus no matter what runtime-type <code>ele</code> is, we can always assign compile time type <strong>T</strong> to it.</p>
+        <blockquote>
+          <p><strong>lower-bounded wildcard</strong></p>
+        </blockquote>
+        <p>Similarly, <code>&lt;? super T&gt;</code> is known as the lowwer-bounded wildcard, which relaxs the use of complex type to its <strong>contra-variant complex types</strong>, i.e.complex types with type parameter being supertype of <code>T</code>.
+          So,
+          <code>List&lt;? super T&gt;</code> means <strong>a List of supertypes of T</strong>. Short example: consider the following <code>adding</code> method:</p>
+        <pre><code class="hljs">public static void adding(List&lt;? super T&gt; myList) {
+    myList.add(new T());
+}
 </code></pre>
-        <p>Although autoboxing is convenient, it comes with a cost to performance. Furthermore, wrapper classes are immutable, and this can lead to many objects being created on the heap. Therefore, wrapper classes should only be used when necessary.</p>
+        <p><code>myList</code> is the a list of <strong>T</strong> or <strong>supertype of T</strong>, thus it is always compatible to add object of type <strong>T</strong> into it since <strong>T</strong> is the subtype of <strong>supertype of T</strong></p>
+        <h4 id="guidelines-for-wildcard-use">Guidelines for Wildcard use<a class="fa fa-anchor" href="#guidelines-for-wildcard-use"></a></h4>
+        <p>One of the more confusing aspects when learning to program with generics is determining when to use an upper bounded wildcard and when to use a lower bounded wildcard. This page provides some guidelines to follow when designing your code.</p>
+        <p>For purposes of this discussion, it is helpful to think of variables as providing one of two functions:</p>
+        <p><strong>An &quot;In&quot; Variable</strong> An &quot;in&quot; variable serves up data to the code. Imagine a copy method with two arguments: copy(src, dest). The src argument provides the data to be copied, so it is the &quot;in&quot; parameter.
+          <strong>An &quot;Out&quot; Variable</strong> An &quot;out&quot; variable holds data for use elsewhere. In the copy example, copy(src, dest), the dest argument accepts data, so it is the &quot;out&quot; parameter.</p>
+        <p>Of course, some variables are used both for &quot;in&quot; and &quot;out&quot; purposes — this scenario is also addressed in the guidelines.</p>
+        <p>You can use the &quot;in&quot; and &quot;out&quot; principle when deciding whether to use a wildcard and what type of wildcard is appropriate. The following list provides the guidelines to follow:</p>
+        <blockquote>
+          <p><strong>Wildcard Guidelines:</strong></p>
+        </blockquote>
+        <ul>
+          <li>An &quot;in&quot; variable is defined with an upper bounded wildcard, using the extends keyword.</li>
+          <li>An &quot;out&quot; variable is defined with a lower bounded wildcard, using the super keyword.</li>
+          <li>In the case where the &quot;in&quot; variable can be accessed using methods defined in the Object class, use an unbounded wildcard.</li>
+          <li>In the case where the code needs to access the variable as both an &quot;in&quot; and an &quot;out&quot; variable, do not use a wildcard.</li>
+        </ul>
+        <p>More quetions and exercises on <a href="https://docs.oracle.com/javase/tutorial/java/generics/QandE/generics-questions.html">Java tutorial</a></p>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#wrapper-classes">Wrapper Classes&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#autoboxing">Autoboxing&#x200E;</a>
-            </nav>
+            <a class="nav-link py-1" href="#bounded-wildcards">bounded Wildcards&#x200E;</a>
 
           </nav>
         </div>
