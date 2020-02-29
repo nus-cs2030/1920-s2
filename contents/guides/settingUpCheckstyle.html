@@ -60,32 +60,65 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="peer-learning-segment">Peer Learning Segment<a class="fa fa-anchor" href="#peer-learning-segment"></a></h1>
+        <h1 id="setting-up-checkstyle">Setting Up Checkstyle<a class="fa fa-anchor" href="#setting-up-checkstyle"></a></h1>
         <br>
-        <panel no-close id="what-do-i-do-here"><template slot="_header"><h2 id="what-do-i-do-here">What do I do here?<a class="fa fa-anchor" href="#what-do-i-do-here"></a></h2></template>
-          <p>Well, the main reason for the creation of this website is to facilitate Peer Learning.</p>
-          <p>We hope to make CS2030 a more collaborative environment for CS2030 Students to learn from one another.</p>
-        </panel>
-        <panel no-close id="how-can-i-contribute"><template slot="_header"><h2 id="how-can-i-contribute">How can I contribute?<a class="fa fa-anchor" href="#how-can-i-contribute"></a></h2></template>
-          <p>There are 3 parts of the Peer Learning Component, which takes up a certain percentage of your entire CS2030 Grade.</p>
-          <p>They are:</p>
-          <ol>
-            <li><span aria-hidden="true" class="fas fa-book"></span> Contribution to Online TextBook</li>
-            <li><span aria-hidden="true" class="fas fa-pen"></span> Contribution via CodeCrunch Peer Learning Tasks.</li>
-            <li><span aria-hidden="true" class="fas fa-question"></span> Piazza Participation.</li>
-          </ol>
-          <p>Click under the Peer Learning Tab to find out more about each of these components!</p>
-        </panel>
-      </div>
+        <img src="/1920-s2/contents/guides/images/checkstyle_0.png" style="display: block; margin: 0 auto;" width="60%">
+        <br>
+        <ol>
+          <li>Go to CS2030 Luminus and download the 2 files under Files &gt; Miscellaneous:</li>
+        </ol>
+        <ul>
+          <li><code>checkstyle-8.2-all.jar</code> - this provides the actual checkstyle program</li>
+          <li><code>cs2030_checks.xml</code> - this provides the configuration file specifically for CS2030 for checkstyle</li>
+        </ul>
+        <p>Make sure you save them to a directory that you can remember. In this case, I chose to save them to <code>~/checkstyle_files</code>.</p>
+        <p><img src="/1920-s2/contents/guides/images/checkstyle_1.png" style="display: block; margin: 0 auto;" width="60%"><br></p>
+        <ol start="2">
+          <li>
+            <p>In the shell, change directory to the folder where you saved the files, with <code>cd /place/where/you/saved/the/files</code>.</p>
+          </li>
+          <li>
+            <p>Check that the files are there with <code>ls</code>.</p>
+          </li>
+          <li>
+            <p>Your download files should already have the right read permissions, but we will set it again just to be sure. Run <code>chmod u+r checkstyle-8.2-all.jar cs2030_checks.xml</code>. What this command does is that it <strong>CH</strong>anges the
+              <strong>MOD</strong>e of the files (i.e. its permissions), and adds <strong>r</strong>ead (<code>+r</code>) to the <strong>u</strong>ser (<code>u+r</code>).</p>
+          </li>
+          <li>
+            <p>To help us accurately determine the location of the files later, run <code>realpath -e checkstyle-8.2-all.jar cs2030_checks.xml</code> (yes I missed out the <code>-e</code> switch in the screenshot above). <code>realpath</code> outputs the
+              full absolute file path while the <code>-e</code> switch ensures it checks for file existence first.</p>
+          </li>
+        </ol>
+        <p><img src="/1920-s2/contents/guides/images/checkstyle_2.png" style="display: block; margin: 0 auto;" width="60%"><br></p>
+        <ol start="6">
+          <li>Now that we know the absolute location of the two files, we can create our very own <code>checkstyle</code> command. Run, in a single command, <code>echo 'alias checkstyle=&quot;java -jar your/full/filepath/here/checkstyle-8.2-all.jar -c your/full/filepath/here/cs2030_checks.xml *.java&quot;' &gt;&gt; ~/.bashrc</code>.</li>
+        </ol>
+        <ul>
+          <li>remember to swap out the directories in the command above with your actual directories you found in step 5</li>
+          <li>make sure you have TWO right brackets <code>&gt;&gt;</code> instead of one. the two right brackets ensures it appends to the <code>~/.bashrc</code> file instead of rewriting it.</li>
+          <li>if you use any other shell like <code>zsh</code> or <code>fish</code>, please change the command to work with your respective shell configuration files, e.g. <code>~/.zshrc</code></li>
+        </ul>
+        <p>For me, I ran <code>echo 'alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;' &gt;&gt; ~/.bashrc</code>.</p>
+        <p>What this command does is that it appends the line <code>alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;</code> to the end of your shell configuration
+          file (commonly <code>~/.bashrc</code>). Your shell configuration file is ran (or more accurately, sourced) whenever you start your shell.</p>
+        <p>As for <code>alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;</code>, what this does is that it sets a command alias called <code>checkstyle</code>,
+          so that whenever you run <code>checkstyle</code> in your shell, it will run <code>java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java</code>, which is the command to properly
+          run checkstyle and load the configuration file in java.</p>
+        <ol start="7">
+          <li>
+            <p>Restart your shell, i.e. close it and start it again. (alternatively, you can just run <code>source ~/.bashrc</code>)</p>
+          </li>
+          <li>
+            <p>Change directory to a directory with <code>.java</code> files and run <code>checkstyle</code>. It should work now.</p>
+          </li>
+        </ol>
+        <p><img src="/1920-s2/contents/guides/images/checkstyle_3.png" style="display: block; margin: 0 auto;" width="60%"><br></p>
+        <br></div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#peer-learning-segment">Peer Learning Segment&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#what-do-i-do-here">What do I do here?&#x200E;</a>
-              <a class="nav-link py-1" href="#how-can-i-contribute">How can I contribute?&#x200E;</a>
-            </nav>
+            <a class="nav-link py-1" href="#setting-up-checkstyle">Setting Up Checkstyle&#x200E;</a>
 
           </nav>
         </div>

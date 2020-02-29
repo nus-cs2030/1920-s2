@@ -29,6 +29,19 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/guides/settingUpCheckstyle.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "setting-up-checkstyle": "Setting Up Checkstyle"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/guides/settingUpJava.md",
       "title": "",
       "layout": "default",
