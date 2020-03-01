@@ -65,6 +65,14 @@ This however will generate an `ClassCastException` error at run-time because the
 
 Assuming that we want the list of `food` to contain only `String` which is the name of the `food`, we could still use a raw type and manually check every entry, and then manually cast to `String` every item from `food`. This is however, time-consuming and error prone. We could instead utilise Java generics in this case to let the complier to do all the work for us.
 
+```
+List<String> names = new ArrayList<String>();
+names.add("Pizza");
+names.add("Cake");
+names.add(123); // Compilation error
+```
+In the scenario that we really want to add an object which is not of type `String` we can use `<Object>` instead for the above example.
+    
 # How to suppress warnings due to Usage of Raw Type
 Warning generated due to usage of raw type can be suppressed by implementing @SuppressWarning above the code.
 Using the above example: 
@@ -122,4 +130,6 @@ Outer<Integer>.Inner x = null; // illegal
 This is the opposite of the example discussed above. 
 It is a compile-time error to attempt to use a type member of a parameterized type as a raw type
 
-In conclusion : It is not recommended to use raw types unless you are absolutely certain in what you are doing. Unchecked errors can be suppressed by `@SuppressWarnings` . However, unforeseenable circumstances might lead to runtime errors as a result. It would be preferred to have complilation type error compared to runtime type error, so it is recommended not to suppress anyform or warnings.
+In conclusion : It is not recommended to use raw types unless you are absolutely certain in what you are doing. Unchecked errors can be suppressed by `@SuppressWarnings` . However, unforeseenable circumstances might lead to runtime errors as a result. It would be preferred to have complilation type error compared to runtime type error, so it is recommended not to suppress any forms of warnings.
+
+More Readup on: https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.8
