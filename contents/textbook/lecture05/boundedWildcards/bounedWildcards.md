@@ -32,7 +32,7 @@ public static void process(List<? extends T> myList) {
 
 > **lower-bounded wildcard**
 
-Similarly, `<? super T>` is known as the lowwer-bounded wildcard, which relaxs the use of complex type to its **contra-variant complex types**, i.e.complex types with type parameter being supertype of `T`.  So, `List<? super T>` means **a List of supertypes of T**.
+Similarly, `<? super T>` is known as the lower-bounded wildcard, which relaxes the use of complex type to its **contra-variant complex types**, i.e.complex types with type parameter being supertype of `T`.  So, `List<? super T>` means **a List of supertypes of T**.
 Short example:
 consider the following `adding` method:
 ```
