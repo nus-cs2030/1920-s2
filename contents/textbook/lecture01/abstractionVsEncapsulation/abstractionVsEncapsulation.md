@@ -55,7 +55,7 @@ class Student {
   /**
    * Return the name of the student.
    */
-  public double getName() {
+  public String getName() {
     return this.name;
   }
 
