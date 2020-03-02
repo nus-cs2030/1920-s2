@@ -1,4 +1,18 @@
-## Generic Subtypes
+<frontmatter>
+  pageNav: 2
+  header: header.md
+  footer: footer.md
+  siteNav: site-nav.md
+</frontmatter>
+
+<br> 
+
+# Generic Subtypes
+<hr>
+
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/genericSubtypes/genericSubtypes.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
 We know that **Integer** is a subtype of **Number**. Consider the following lines of codes
 ```java
