@@ -34,7 +34,7 @@ class Point {
 }
 ```
 
-The fields x and y are public, and therefore can be accessed like so :
+The fields x and y are of default access level since no access modifier is provided, and therefore can be accessed like so :
 
 ```java {2-3}
 Point p = new Point(1, 2);

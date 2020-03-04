@@ -19,7 +19,7 @@
 A benefit of making objects immutable is that they can be used in a sort of "testing" framework. No matter how many "test methods" are 
 applied to the object, it will come out the same at the end of the day. 
 
-For exaple, if we structure our Point.java file like so :
+For example, if we structure our Point.java file like so :
 
 ```java
 public class Point {
