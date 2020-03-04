@@ -60,80 +60,36 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="wrapper-classes">Wrapper Classes<a class="fa fa-anchor" href="#wrapper-classes"></a></h1>
-        <hr>
-
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/wrapperClasses/wrapperClasses.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
-
-        <p>A wrapper class is a class that contains a primitive type, and allows us to use primitive types as objects. Since primitive types are not allowed as type arguments for generic classes, wrapper classes can be used in place of them. Each primitive
-          type has a corresponding wrapper class as shown in the following table.</p>
-        <div class="table-responsive">
-          <table class="markbind-table table table-bordered table-striped">
-            <thead>
-              <tr>
-                <th>Primitive Type</th>
-                <th>Wrapper Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>boolean</td>
-                <td>Boolean</td>
-              </tr>
-              <tr>
-                <td>char</td>
-                <td>Character</td>
-              </tr>
-              <tr>
-                <td>byte</td>
-                <td>Byte</td>
-              </tr>
-              <tr>
-                <td>short</td>
-                <td>Short</td>
-              </tr>
-              <tr>
-                <td>int</td>
-                <td>Integer</td>
-              </tr>
-              <tr>
-                <td>long</td>
-                <td>Long</td>
-              </tr>
-              <tr>
-                <td>float</td>
-                <td>Float</td>
-              </tr>
-              <tr>
-                <td>double</td>
-                <td>Double</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><br>
-        <h2 id="autoboxing">Autoboxing<a class="fa fa-anchor" href="#autoboxing"></a></h2>
+        <h1 id="generic-type-and-parameterised-type">Generic Type and Parameterised Type<a class="fa fa-anchor" href="#generic-type-and-parameterised-type"></a></h1>
         <br>
-        <p>Autoboxing allows primitive types to be automatically converted into wrapper class objects. When an instance of a wrapper class is expected and its corresponding primitive type is passed in instead, the primitive type is automatically converted
-          into an instance of the corresponding wrapper class.</p>
-        <p>Similarly, auto-unboxing allows instances of a wrapper class to be automatically converted into the corresponding primitive type.</p>
-        <p>Therefore, instead of writing:</p>
-        <pre><code class="hljs">Integer a = new Integer(123);
-int b = new Integer(123).intValue();
-</code></pre>
-        <p>We can write:</p>
-        <pre><code class="hljs">Integer a = 123;
-int b = new Integer(123);
-</code></pre>
-        <p>Although autoboxing is convenient, it comes with a cost to performance. Furthermore, wrapper classes are immutable, and this can lead to many objects being created on the heap. Therefore, wrapper classes should only be used when necessary.</p>
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/GenericAndParameterisedType/GenericAndParameterisedtype.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+        <p>This was adapted from <a href="https://piazza.com/class/k54zo22zq1t2zc?cid=556">Question 556</a> from Piazza.</p>
+        <p>Question:</p>
+        <ul>
+          <li>What is generic type and parameterized type referring to exactly? For example, in the case of <code>Box&lt;T&gt;</code>, is <code>&lt;T&gt;</code> the parameterized type, and <code>Box&lt;T&gt;</code> itself the generic type? Does &quot;parameterized
+            type&quot; derive its name because it needs to be &quot;parameterized&quot;, i.e. needs the type to be passed to it through instantiation or inference, etc?</li>
+        </ul>
+        <p>Answer:</p>
+        <ul>
+          <li>Consider <code>class Box&lt;T&gt; { }</code>. <code>Box</code> is a generic type. <code>T</code> is a type parameter.</li>
+          <li>Now consider <code>Box&lt;Integer&gt; box = new Box&lt;&gt;();</code>. <code>Box&lt;Integer&gt;</code> is a parameterised type. <code>Integer</code> is the type argument.</li>
+          <li>We instantiate a parameterised type by replacing a type parameter of a generic type with a type argument.</li>
+        </ul>
+        <p>To put it more specifically,</p>
+        <ul>
+          <li>A generic type is the declaration with formal type parameter(s).</li>
+          <li>A parameterized type is the declaration with formal type parameter(s).</li>
+          <li>A raw type is the declaration of a generic type with no actual type argument(s). (reference from <a href="https://stackoverflow.com/questions/12551674/what-is-meant-by-parameterized-type">stackoverflow</a>)</li>
+        </ul>
+        <p>Read more on Generic Types and Parameterised Types in the <a href="https://docs.oracle.com/javase/tutorial/java/generics/types.html">Java Documentation</a>!</p>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#wrapper-classes">Wrapper Classes&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#autoboxing">Autoboxing&#x200E;</a>
-            </nav>
+            <a class="nav-link py-1" href="#generic-type-and-parameterised-type">Generic Type and Parameterised Type&#x200E;</a>
 
           </nav>
         </div>
