@@ -51,17 +51,30 @@
 * [Unbounded Wildcards](lecture05/unboundWildcards/unboundWildcards.html)
 * [Generics in Static Methods](lecture05/staticGenerics/staticGenerics.html)
 * [The Diamond Operator](lecture05/theDiamond/theDiamond.html)
-* [Type Erasure](lecture05/typeErasure/typeErasure.html)
 * [Wrapper Classes](lecture05/wrapperClass/wrapperClass.html)
 * [Generic Subtypes](lecture05/genericSubtypes/genericSubtypes.html)
+* [Generic Type and Parameterised Type](lecture05/GenericAndParameterisdType/GenericAndParameterisedType.html)
+* [Bounded Wildcards](lecture05/boundedWildcards/bounedWildcards.html)
 
 </panel>
 
 <panel header="## **Lecture 6**" no-close>
-
-* [Functional Interfaces](lecture06/functionalInterfaces/functionalInterfaces.html)
+  
+* [Type Erasure](lecture05/typeErasure/typeErasure.html)
 * [Assertions](lecture06/errorHandling/assertions.html)
 * [Exception Handling](lecture06/errorHandling/errorHandling.html)
+
+</panel>
+
+<panel header="## **Lecture 7**" no-close>
+  
+* [Functional Interfaces](lecture06/functionalInterfaces/functionalInterfaces.html)
+
+</panel>
+
+<panel header="## **Lecture 8**" no-close>
+
+Do add content via a Pull Request!
 
 </panel>
 
@@ -69,12 +82,6 @@
 
 * [Accessing files in WSL](misc/filesWSL/filesWSL.html)
 * [A look into PriorityQueue](misc/priorityQueue/priorityQueue.html)
-
-</panel>
-
-<panel header="## **Lecture 7**" no-close>
-
-Do add content via a Pull Request!
 
 </panel>
 
