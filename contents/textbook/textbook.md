@@ -60,7 +60,8 @@
 <panel header="## **Lecture 6**" no-close>
 
 * [Functional Interfaces](lecture06/functionalInterfaces/functionalInterfaces.html)
-* [Assertions and Error Handling](lecture06/errorHandling/errorHandling.html)
+* [Assertions](lecture06/errorHandling/assertions.html)
+* [Exception Handling](lecture06/errorHandling/errorHandling.html)
 
 </panel>
 
