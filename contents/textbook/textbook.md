@@ -51,7 +51,7 @@
 * [Unbounded Wildcards](lecture05/unboundWildcards/unboundWildcards.html)
 * [Generics in Static Methods](lecture05/staticGenerics/staticGenerics.html)
 * [The Diamond Operator](lecture05/theDiamond/theDiamond.html)
-* [Type Erasure](lecture05/typeErasire/typeErasure.html)
+* [Type Erasure](lecture05/typeErasure/typeErasure.html)
 * [Wrapper Classes](lecture05/wrapperClass/wrapperClass.html)
 * [Generic Subtypes](lecture05/genericSubtypes/genericSubtypes.html)
 
