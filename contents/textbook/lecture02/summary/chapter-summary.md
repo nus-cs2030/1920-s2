@@ -62,6 +62,13 @@ My testing will look like a series of one-liner method-chains that are **indepen
 "Bottom up testing" is recommended; start with zero-dependency classes and move up the ladder. But in order to do so,
 you need to structure your code to be hierarchical and not cyclical.
 
+To add on, to better ensure immutability, an attribute/ variable should be declared as **final** such that the value cannot be modified 
+after initialisation. 
+
+For example, the mutation of this.x = 100 within a method of the same class will be prevented when the keyword **final** is used, 
+adhering to the concept of immutability. Also, if the access modifier used is "protected" instead of "private", other classes within the 
+same package will not be able to modify the attributes/variables declared as **final**.
+
 Fascinating new concept of static "factory" methods. If we want
 to check for the validity of the arguments to a constructor before actually deciding whether to make a class or not,
 we can do the following :
