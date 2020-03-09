@@ -68,7 +68,7 @@
 
 <panel header="## **Lecture 7**" no-close>
   
-* [Functional Interfaces](lecture06/functionalInterfaces/functionalInterfaces.html)
+* [Functional Interfaces](lecture07/functionalInterfaces/functionalInterfaces.html)
 
 </panel>
 
@@ -81,7 +81,6 @@ Do add content via a Pull Request!
 <panel header="## **Supplemental Readings**" no-close>
 
 * [Accessing files in WSL](misc/filesWSL/filesWSL.html)
-* [A look into PriorityQueue](misc/priorityQueue/priorityQueue.html)
 
 </panel>
 
