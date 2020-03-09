@@ -63,6 +63,7 @@
 * [Type Erasure](lecture05/typeErasure/typeErasure.html)
 * [Assertions](lecture06/errorHandling/assertions.html)
 * [Exception Handling](lecture06/errorHandling/errorHandling.html)
+* [Throwing Exceptions](lecture06/errorHandling/throwingExceptions.html)
 
 </panel>
 
