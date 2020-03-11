@@ -441,6 +441,17 @@
       "headingKeywords": {}
     },
     {
+      "src": "contents/textbook/lecture05/What is raw type/raw type.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "what-are-raw-types": "What are raw types?",
+        "how-to-suppress-warnings-due-to-usage-of-raw-type": "How to suppress warnings due to Usage of Raw Type",
+        "why-non-static-type-member-of-a-raw-type-is-considered-raw": "Why non-static type member of a raw type is considered raw?"
+      },
+      "headingKeywords": {}
+    },
+    {
       "pageNav": 2,
       "header": "header.md",
       "footer": "footer.md",

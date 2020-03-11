@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -66,75 +66,22 @@
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/tellDontAsk/tellDontAsk.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
         <p>In the lecture, the professor gave the following example :</p>
-        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
-    <span class="hljs-keyword">double</span> x;
-    <span class="hljs-keyword">double</span> y;
-
-    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {
-        <span class="hljs-keyword">this</span>.x = x;
-        <span class="hljs-keyword">this</span>.y = y;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{
-        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.x - otherpoint.x;
-        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.y - otherpoint.y;
-        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);
-    }
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{</span><span>    <span class="hljs-keyword">double</span> x;</span><span>    <span class="hljs-keyword">double</span> y;</span><span>&#x200B;</span><span>    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {</span><span>        <span class="hljs-keyword">this</span>.x = x;</span><span>        <span class="hljs-keyword">this</span>.y = y;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{</span><span>        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.x - otherpoint.x;</span><span>        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.y - otherpoint.y;</span><span>        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);</span><span>    }</span><span>}</span></code></pre>
         <p>The fields x and y are of default access level since no access modifier is provided, and therefore can be accessed like so :</p>
-        <pre><code class="hljs java">Point p = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
-p.x;
-p.y;
-</code></pre>
+        <pre><code 2-3 class="hljs java"><span>Point p = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);</span><span>p.x;</span><span>p.y;</span></code></pre>
         <p>Then the Circle class was introduced :</p>
-        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
-    Point center;
-    <span class="hljs-keyword">double</span> radius;
-
-    Circle(Point center, <span class="hljs-keyword">double</span> radius) {
-        <span class="hljs-keyword">this</span>.center = center;
-        <span class="hljs-keyword">this</span>.radius = radius;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point p)</span></span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.center.distanceTo(p) &lt; <span class="hljs-keyword">this</span>.radius;
-    }
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{</span><span>    Point center;</span><span>    <span class="hljs-keyword">double</span> radius;</span><span>&#x200B;</span><span>    Circle(Point center, <span class="hljs-keyword">double</span> radius) {</span><span>        <span class="hljs-keyword">this</span>.center = center;</span><span>        <span class="hljs-keyword">this</span>.radius = radius;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point p)</span></span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.center.distanceTo(p) &lt; <span class="hljs-keyword">this</span>.radius;</span><span>    }</span><span>}</span></code></pre>
         <p>If someone wanted to find out if a point was contained in a circle, he would type :</p>
-        <pre><code class="hljs java">Circle circle = <span class="hljs-keyword">new</span> Circle(<span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">5</span>);
-Point myPoint = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>);
-<span class="hljs-keyword">boolean</span> circleContainsMyPoint = circle.contains(myPoint);
-</code></pre>
+        <pre><code class="hljs java"><span>Circle circle = <span class="hljs-keyword">new</span> Circle(<span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">5</span>);</span><span>Point myPoint = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>);</span><span><span class="hljs-keyword">boolean</span> circleContainsMyPoint = circle.contains(myPoint);</span></code></pre>
         <p>The above code is adhering to the &quot;Tell Don't Ask&quot; principle. In the Circle class, the contains method could have just as easily been :</p>
-        <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point point)</span> </span>{
-    <span class="hljs-keyword">double</span> dx = center.x - point.x;
-    <span class="hljs-keyword">double</span> dy = center.y - point.y;
-    <span class="hljs-keyword">return</span> Math.sqrt(dx * dx + dy * dy) &lt; <span class="hljs-keyword">this</span>.radius;
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point point)</span> </span>{</span><span>    <span class="hljs-keyword">double</span> dx = center.x - point.x;</span><span>    <span class="hljs-keyword">double</span> dy = center.y - point.y;</span><span>    <span class="hljs-keyword">return</span> Math.sqrt(dx * dx + dy * dy) &lt; <span class="hljs-keyword">this</span>.radius;</span><span>}</span></code></pre>
         <p>In this case, Circle is asking Point for its x and y coordinates, then doing the square root calculations itself. Instead of <strong>asking</strong> for values and doing the work yourself like in this exmaple, classes should <strong>tell</strong>          each other what to do in their own classes.</p>
         <p>This brings up an important point. Let's say I changed the implementation of Point :</p>
-        <pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{
-    <span class="hljs-keyword">double</span>[] coord;
-
-    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {
-        <span class="hljs-keyword">this</span>.coord = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[]{x, y};
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{
-        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">0</span>] - otherpoint.coord[<span class="hljs-number">0</span>];
-        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">1</span>] - otherpoint.coord[<span class="hljs-number">1</span>];
-        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);
-    }
-}
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{</span><span>    <span class="hljs-keyword">double</span>[] coord;</span><span>&#x200B;</span><span>    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {</span><span>        <span class="hljs-keyword">this</span>.coord = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[]{x, y};</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{</span><span>        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">0</span>] - otherpoint.coord[<span class="hljs-number">0</span>];</span><span>        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">1</span>] - otherpoint.coord[<span class="hljs-number">1</span>];</span><span>        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);</span><span>    }</span><span>}</span></code></pre>
         <p>If Circle had been adhering to &quot;Tell Don't Ask&quot;, it wouldn't face any problems, since it is not working directly with the values inside Point. But if it decides to implement the contains method by directly asking for values from Point,
           it runs into some trouble since point.x, center.y, etc. do not work anymore.</p>
         <p>To prevent these sort of problems, classes can choose to hide their values using access modifiers. Outside classes will only be able to access exposed functionalities, giving the original class freedom to change its implementation however it likes.</p>
-        <pre><code class="hljs java"><span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span>[] coord;
-</code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span>[] coord;</span></code></pre>
         <p>Getters can be used if a class wants to expose its fields without making them public. As long as I write my Getters to properly clean or transform my class fields for the outside world to access, dependencies on my class will not break no matter
           my implementation.
         </p>
@@ -161,7 +108,7 @@ Point myPoint = <span class="hljs-keyword">new</span> Point(<span class="hljs-nu
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.11.0</a> on Wed, 04 Mar 2020 17:25:47 GMT</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.12.0</a> on Wed, Mar 11, 2020, 3:47:20 PM UTC</small></div>
     </footer>
   </div>
 </body>

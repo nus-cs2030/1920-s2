@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -80,47 +80,18 @@
         </panel>
         <panel no-close id="creating-the-solution"><template slot="_header"><h2 id="creating-the-solution">Creating the Solution<a class="fa fa-anchor" href="#creating-the-solution"></a></h2></template>
           <p>Let's use the following as the solution of a task. You may create as many class files as you like, but do note that if you wish to test program input/output via a main method, this method must reside in the Main class.</p>
-          <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
-
-    <span class="hljs-function"><span class="hljs-keyword">static</span> String <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>{
-        System.out.print(<span class="hljs-string">"What's your name? "</span>);
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Scanner(System.in).next();
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">static</span> String <span class="hljs-title">hello</span><span class="hljs-params">(String name)</span> </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello "</span> + name;
-    }
-
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-        System.out.println(hello(read()));
-    }
-}
-
-</code></pre>
+          <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.Scanner;</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">static</span> String <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>{</span><span>        System.out.print(<span class="hljs-string">"What's your name? "</span>);</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Scanner(System.in).next();</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">static</span> String <span class="hljs-title">hello</span><span class="hljs-params">(String name)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Hello "</span> + name;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        System.out.println(hello(read()));</span><span>    }</span><span>}</span><span>&#x200B;</span></code></pre>
           <p>After a successful compilation,</p>
-          <pre><code class="hljs shell">javac Main.java
-</code></pre>
+          <pre><code class="hljs"><span>javac Main.java</span></code></pre>
           <p>think of what you want to set as tests. In the above, you can either</p>
           <ul>
             <li>test a method using jshell</li>
           </ul>
-          <pre><code class="hljs">$ jshell Main.java
-jshell&gt; Main.hello(&quot;Mickey&quot;)
-$.. ==&gt; &quot;Hello Mickey&quot;
-
-
-jshell&gt; /exit
-|  Goodbye
-</code></pre>
+          <pre><code class="hljs"><span>$ jshell Main.java</span><span>jshell&gt; Main.hello(&quot;Mickey&quot;)</span><span>$.. ==&gt; &quot;Hello Mickey&quot;</span><span>&#x200B;</span><span>&#x200B;</span><span>jshell&gt; /exit</span><span>|  Goodbye</span></code></pre>
           <ul>
             <li>run the program via input/output</li>
           </ul>
-          <pre><code class="hljs">$ java Main
-What's your names? Mickey
-Hello Mickey
-</code></pre>
+          <pre><code class="hljs"><span>$ java Main</span><span>What's your names? Mickey</span><span>Hello Mickey</span></code></pre>
           <p>Before proceeding, compile your solution, test and run your program to make sure that you have a working solution.</p>
         </panel>
         <panel no-close id="creating-test-input-output-files"><template slot="_header"><h2 id="creating-test-input-output-files">Creating Test Input/Output Files<a class="fa fa-anchor" href="#creating-test-input-output-files"></a></h2></template>
@@ -130,26 +101,20 @@ Hello Mickey
             <li>for jshell testing (e.g. test1.jsh), There is no need to specify the java files to be opened. <br>
               <strong>Please run this command in bash or in your unix terminal</strong>.</li>
           </ul>
-          <pre><code class="hljs shell">Main.hello("Mickey")
-/exit
-</code></pre>
+          <pre><code class="hljs"><span>Main.hello(&quot;Mickey&quot;)</span><span>/exit</span></code></pre>
           <ul>
             <li>for input/output testing (e.g. <a href="http://test2.in">test2.in</a>),</li>
           </ul>
-          <pre><code class="hljs shell">Mickey
-</code></pre>
+          <pre><code class="hljs"><span>Mickey</span></code></pre>
           <p>Using the input files, you can redirect the output of the test to the corresponding output file. These files should end with .out extension.</p>
           <ul>
             <li>for jshell testing, say using test1.jsh</li>
           </ul>
-          <pre><code class="hljs shell">jshell -q Main.java &lt; test1.jsh | dos2unix &gt; test1.out
-</code></pre>
+          <pre><code class="hljs"><span>jshell -q Main.java &lt; test1.jsh | dos2unix &gt; test1.out</span></code></pre>
           <ul>
             <li>for input/output testing, say using <a href="http://test2.in">test2.in</a></li>
           </ul>
-          <pre><code class="hljs shell">java Main &lt; test2.in | dos2unix &gt; test2.out
-Mickey
-</code></pre>
+          <pre><code class="hljs"><span>java Main &lt; test2.in | dos2unix &gt; test2.out</span><span>Mickey</span></code></pre>
           <p>Take note of the following:</p>
           <ul>
             <li>If you would like to replace an output file that has been generated previously, force the redirection by using &gt;| instead of &gt;</li>
@@ -174,41 +139,9 @@ Mickey
             <li>output: move your output files (.out) into this directory</li>
           </ul>
           <p>The file directory structure will look something like this:</p>
-          <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> ls *</span>
-Main.class
-
-input:
-test1.jsh  test2.in
-
-output:
-test1.out  test2.out
-
-solution:
-Main.java
-</code></pre>
+          <pre><code class="hljs"><span>$ ls *</span><span>Main.class</span><span>&#x200B;</span><span>input:</span><span>test1.jsh  test2.in</span><span>&#x200B;</span><span>output:</span><span>test1.out  test2.out</span><span>&#x200B;</span><span>solution:</span><span>Main.java</span></code></pre>
           <p>Now zip the three directories using your favourite zip utility. For example, using zip in unix/linux:</p>
-          <pre><code class="hljs shell"><span class="hljs-meta">$</span><span class="bash"> zip -r hello.zip input output solution</span>
-  adding: input/ (stored 0%)
-  adding: input/test1.jsh (stored 0%)
-  adding: input/test2.in (stored 0%)
-  adding: output/ (stored 0%)
-  adding: output/test1.out (deflated 21%)
-  adding: output/test2.out (stored 0%)
-  adding: solution/ (stored 0%)
-  adding: solution/Main.java (deflated 45%)
-<span class="hljs-meta">
-$</span><span class="bash"> ls *</span>
-hello.zip   Main.class
-
-input:
-test1.jsh  test2.in
-
-output:
-test1.out  test2.out
-
-solution:
-Main.java
-</code></pre>
+          <pre><code class="hljs"><span>$ zip -r hello.zip input output solution</span><span>  adding: input/ (stored 0%)</span><span>  adding: input/test1.jsh (stored 0%)</span><span>  adding: input/test2.in (stored 0%)</span><span>  adding: output/ (stored 0%)</span><span>  adding: output/test1.out (deflated 21%)</span><span>  adding: output/test2.out (stored 0%)</span><span>  adding: solution/ (stored 0%)</span><span>  adding: solution/Main.java (deflated 45%)</span><span>&#x200B;</span><span>$ ls *</span><span>hello.zip   Main.class</span><span>&#x200B;</span><span>input:</span><span>test1.jsh  test2.in</span><span>&#x200B;</span><span>output:</span><span>test1.out  test2.out</span><span>&#x200B;</span><span>solution:</span><span>Main.java</span></code></pre>
         </panel>
         <panel no-close id="upload-to-codecrunch"><template slot="_header"><h2 id="upload-to-codecrunch">Upload to CodeCrunch<a class="fa fa-anchor" href="#upload-to-codecrunch"></a></h2></template>
           <p>Now, log in to CodeCrunch. You have been given superuser access to the course CS2030P in order to create tasks.</p>
@@ -271,7 +204,7 @@ Main.java
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.11.0</a> on Wed, 04 Mar 2020 17:25:47 GMT</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.12.0</a> on Wed, Mar 11, 2020, 3:47:20 PM UTC</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.11.0">
+  <meta name="generator" content="MarkBind 2.12.0">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -69,95 +69,27 @@
         <p>&quot;Composition&quot; describes a &quot;has-a&quot; relationship, while inheritance describes an &quot;is-a&quot; relationship.</p>
         <p>In jshell, the order in which you declare your Java files matters. Declare the class with no dependencies first, then move up.</p>
         <p>A misconception I had long been guilty of was cleared up. I assumed that when I did the following :</p>
-        <pre><code class="hljs Java">Circle c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">2</span>);
-c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);
-</code></pre>
+        <pre><code class="hljs Java"><span>Circle c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">2</span>);</span><span>c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);</span></code></pre>
         <p>I would be able to call c.getColor() (which is a method declared only in the FilledCircle child and not in the Circle parent).</p>
         <p>But that's not the case. As long as the variable is declared as type Circle, it can only call its own methods and access its own properties, and cannot automatically access those of its children.</p>
         <p>A child class can substitute a parent class, but a parent class cannot substitute a child class.</p>
         <p>However, there are cases when my child class <strong>overrides</strong> a method in my parent class. Let's say that method is getMe() :</p>
-        <pre><code class="hljs Java">
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{
-	<span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> radius;
-		Circle(<span class="hljs-keyword">double</span> radius) {
-		<span class="hljs-keyword">this</span>.radius = radius;
-	}
-
-	<span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getArea</span><span class="hljs-params">()</span> </span>{
-		<span class="hljs-keyword">return</span> Math.PI
-		* radius
-		* radius;
-	}
-
-	<span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getPerimeter</span><span class="hljs-params">()</span> </span>{
-		<span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * Math.PI * radius;
-	}
-
-	<span class="hljs-meta">@Override</span>
-	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
-		<span class="hljs-keyword">return</span> <span class="hljs-string">"circle: area "</span> + String.format(<span class="hljs-string">"%.2f"</span>, getArea()) +
-		<span class="hljs-string">", perimeter "</span> + String.format(<span class="hljs-string">"%.2f"</span>, getPerimeter());
-	}
-
-	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMe</span><span class="hljs-params">()</span></span>{
-		<span class="hljs-keyword">return</span> <span class="hljs-string">"I'm a Circle"</span>;
-	}
-}
-
-
-<span class="hljs-keyword">import</span> java.awt.Color;
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilledCircle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Circle</span> </span>{
-	<span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Color color;
-
-	FilledCircle(<span class="hljs-keyword">double</span> radius, Color color) {
-		<span class="hljs-keyword">super</span>(radius);
-		<span class="hljs-keyword">this</span>.color = color;
-	}
-
-	<span class="hljs-function">Color <span class="hljs-title">getColor</span><span class="hljs-params">()</span> </span>{
-		<span class="hljs-keyword">return</span> color;
-	}
-
-	<span class="hljs-meta">@Override</span>
-	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{
-		<span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">", "</span> + getColor();
-	}
-
-	<span class="hljs-meta">@Override</span> 
-	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMe</span><span class="hljs-params">()</span></span>{
-		<span class="hljs-keyword">return</span> <span class="hljs-string">"I'm a Filled Circle"</span>;
-	}
-}
-</code></pre>
+        <pre><code class="hljs Java"><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{</span><span>	<span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">double</span> radius;</span><span>		Circle(<span class="hljs-keyword">double</span> radius) {</span><span>		<span class="hljs-keyword">this</span>.radius = radius;</span><span>	}</span><span>&#x200B;</span><span>	<span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getArea</span><span class="hljs-params">()</span> </span>{</span><span>		<span class="hljs-keyword">return</span> Math.PI</span><span>		* radius</span><span>		* radius;</span><span>	}</span><span>&#x200B;</span><span>	<span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">getPerimeter</span><span class="hljs-params">()</span> </span>{</span><span>		<span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * Math.PI * radius;</span><span>	}</span><span>&#x200B;</span><span>	<span class="hljs-meta">@Override</span></span><span>	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>		<span class="hljs-keyword">return</span> <span class="hljs-string">"circle: area "</span> + String.format(<span class="hljs-string">"%.2f"</span>, getArea()) +</span><span>		<span class="hljs-string">", perimeter "</span> + String.format(<span class="hljs-string">"%.2f"</span>, getPerimeter());</span><span>	}</span><span>&#x200B;</span><span>	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMe</span><span class="hljs-params">()</span></span>{</span><span>		<span class="hljs-keyword">return</span> <span class="hljs-string">"I'm a Circle"</span>;</span><span>	}</span><span>}</span><span>&#x200B;</span><span>&#x200B;</span><span><span class="hljs-keyword">import</span> java.awt.Color;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FilledCircle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Circle</span> </span>{</span><span>	<span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Color color;</span><span>&#x200B;</span><span>	FilledCircle(<span class="hljs-keyword">double</span> radius, Color color) {</span><span>		<span class="hljs-keyword">super</span>(radius);</span><span>		<span class="hljs-keyword">this</span>.color = color;</span><span>	}</span><span>&#x200B;</span><span>	<span class="hljs-function">Color <span class="hljs-title">getColor</span><span class="hljs-params">()</span> </span>{</span><span>		<span class="hljs-keyword">return</span> color;</span><span>	}</span><span>&#x200B;</span><span>	<span class="hljs-meta">@Override</span></span><span>	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>		<span class="hljs-keyword">return</span> <span class="hljs-keyword">super</span>.toString() + <span class="hljs-string">", "</span> + getColor();</span><span>	}</span><span>&#x200B;</span><span>	<span class="hljs-meta">@Override</span> </span><span>	<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getMe</span><span class="hljs-params">()</span></span>{</span><span>		<span class="hljs-keyword">return</span> <span class="hljs-string">"I'm a Filled Circle"</span>;</span><span>	}</span><span>}</span></code></pre>
         <p>Then if I execute the following code,</p>
-        <pre><code class="hljs Java">Circle c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">2</span>);
-c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);
-System.out.println(c.getMe());
-</code></pre>
+        <pre><code class="hljs Java"><span>Circle c = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">2</span>);</span><span>c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);</span><span>System.out.println(c.getMe());</span></code></pre>
         <p>The system will print &quot;I'm a Filled Circle&quot;.</p>
         <hr>
-        <pre><code class="hljs Java">Circle c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);
-FilledCircle fc = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">4</span>);
-</code></pre>
+        <pre><code class="hljs Java"><span>Circle c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);</span><span>FilledCircle fc = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">4</span>);</span></code></pre>
         <p>Line 1 is allowed, but not line 2.</p>
         <p>The same concept can be demonstrated by the Java instanceof keyword.</p>
-        <pre><code class="hljs Java"><span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">2</span>, Color.BLUE) <span class="hljs-keyword">instanceof</span> Circle;
-<span class="hljs-keyword">new</span> Circle(<span class="hljs-number">2</span>) <span class="hljs-keyword">instanceof</span> FilledCircle;
-</code></pre>
+        <pre><code class="hljs Java"><span><span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">2</span>, Color.BLUE) <span class="hljs-keyword">instanceof</span> Circle;</span><span><span class="hljs-keyword">new</span> Circle(<span class="hljs-number">2</span>) <span class="hljs-keyword">instanceof</span> FilledCircle;</span></code></pre>
         <p>The first line returns true, while the second line returns false.</p>
         <p>But what happens in the following situation? :</p>
-        <pre><code class="hljs Java">Circle c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);
-c <span class="hljs-keyword">instanceof</span> FilledCircle;
-</code></pre>
+        <pre><code class="hljs Java"><span>Circle c = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">4</span>, Color.BLUE);</span><span>c <span class="hljs-keyword">instanceof</span> FilledCircle;</span></code></pre>
         <p>The code will return true.</p>
         <p>That means that even though the variable type that new FilledCircle(4, Color.BLUE) is assigned is Circle, c's &quot;core identity&quot; will always be FilledCircle.</p>
         <p>This is also the reason why type casting works the way it does :</p>
-        <pre><code class="hljs Java">Circle c1 = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">3</span>)
-Circle c2 = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">3</span>, Color.BLUE)
-
-(FilledCircle)c1
-(FilledCircle)c2
-</code></pre>
+        <pre><code class="hljs Java"><span>Circle c1 = <span class="hljs-keyword">new</span> Circle(<span class="hljs-number">3</span>)</span><span>Circle c2 = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs-number">3</span>, Color.BLUE)</span><span>&#x200B;</span><span>(FilledCircle)c1</span><span>(FilledCircle)c2</span></code></pre>
         <p>The first cast returns an error, while the second cast is legal.</p>
         <p>Quote from an instructor :</p>
         <blockquote>
@@ -167,19 +99,9 @@ Circle c2 = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs
         <p>In more formal terms, Circle is the &quot;compile-time type&quot; of c2, while &quot;FilledCircle&quot; is the &quot;run-time type&quot; of c2</p>
         <hr>
         <p>Consider the following code :</p>
-        <pre><code class="hljs Java"><span class="hljs-keyword">for</span> (Circle circle : circles) {
-    <span class="hljs-keyword">if</span> (circle <span class="hljs-keyword">instanceof</span> FilledCircle) {
-        System.out.println((FilledCircle) circle);
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (circle <span class="hljs-keyword">instanceof</span> Circle) {
-        System.out.println((Circle) circle);
-    }
-}
-</code></pre>
+        <pre><code class="hljs Java"><span><span class="hljs-keyword">for</span> (Circle circle : circles) {</span><span>    <span class="hljs-keyword">if</span> (circle <span class="hljs-keyword">instanceof</span> FilledCircle) {</span><span>        System.out.println((FilledCircle) circle);</span><span>    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (circle <span class="hljs-keyword">instanceof</span> Circle) {</span><span>        System.out.println((Circle) circle);</span><span>    }</span><span>}</span></code></pre>
         <p>A subtlety to take note of here is the order of the if statements. If the second statement checking if circle is an instance of Circle came first, it would always return true, since both FilledCircle and Circle objects are instances of Circle.</p>
-        <pre><code class="hljs Java"><span class="hljs-keyword">for</span> (Circle circle : circles) {
-    System.out.println(circle);
-}
-</code></pre>
+        <pre><code class="hljs Java"><span><span class="hljs-keyword">for</span> (Circle circle : circles) {</span><span>    System.out.println(circle);</span><span>}</span></code></pre>
         <p>What is the difference between the first for loop and the second for loop? In the first for loop, the code makes it clear to the compiler which toString() method I want to call for each System.out.println call. This is called static binding.</p>
         <p>In the second for loop, the &quot;circle&quot; array can throw any subclass of Circle or a Circle object at the for loop; System.out.println doesn't know which version of toString() it will have to call during execution. This is called dynamic
           binding, and the beauty of it is that I can have as many subclasses of Circle I want without changing the &quot;client code&quot; which is in this case the for loop.</p>
@@ -190,31 +112,12 @@ Circle c2 = <span class="hljs-keyword">new</span> FilledCircle(<span class="hljs
         <p>Similarly, access modifier of the method in the child class can only be equal or more public, and never more private.</p>
         <p>Side note: cleared a misconception that no access modifier defaults to public. It actually defaults to the &quot;default&quot; access modifier, meaning it is only visible to the package it is in.</p>
         <p>How about the parameter type in the overriding method? Take, for example, parent class A and child class B.</p>
-        <pre><code class="hljs Java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span></span>{
-    <span class="hljs-function">Number <span class="hljs-title">foo</span><span class="hljs-params">(Number x)</span></span>{
-        System.out.println(<span class="hljs-string">"A"</span>);
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
-    }
-}
-
-<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span></span>{
-    <span class="hljs-meta">@Override</span>
-    <span class="hljs-function">Number <span class="hljs-title">foo</span><span class="hljs-params">(Integer x)</span></span>{
-        System.out.println(<span class="hljs-string">"B"</span>);
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
-    }
-}
-</code></pre>
+        <pre><code class="hljs Java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span></span>{</span><span>    <span class="hljs-function">Number <span class="hljs-title">foo</span><span class="hljs-params">(Number x)</span></span>{</span><span>        System.out.println(<span class="hljs-string">"A"</span>);</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;</span><span>    }</span><span>}</span><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span></span>{</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function">Number <span class="hljs-title">foo</span><span class="hljs-params">(Integer x)</span></span>{</span><span>        System.out.println(<span class="hljs-string">"B"</span>);</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;</span><span>    }</span><span>}</span></code></pre>
         <p>This is not legal. The compiler will return an error saying that &quot;method does not override or implement a method from a supertype&quot;. What if we replace the Integer type with Object? Wouldn't it now work since Number or any of its subclasses
           can be passed into B's foo?</p>
         <p>The moment the parameter is of a different type as compared to the parent method, method overloading takes place. More specifically, the moment the number, type, or order of parameters are different, method overloading occurs.</p>
         <p>So if I remove the @Override annotation in the above code, I would be overloading the foo method in B. Take note, however, that this new implementation will not work the same as overriding.</p>
-        <pre><code class="hljs Java">B b = <span class="hljs-keyword">new</span> B();
-b.foo(<span class="hljs-number">5</span>);
-
-A b = <span class="hljs-keyword">new</span> B();
-b.foo(<span class="hljs-number">5</span>);
-</code></pre>
+        <pre><code class="hljs Java"><span>B b = <span class="hljs-keyword">new</span> B();</span><span>b.foo(<span class="hljs-number">5</span>);</span><span>&#x200B;</span><span>A b = <span class="hljs-keyword">new</span> B();</span><span>b.foo(<span class="hljs-number">5</span>);</span></code></pre>
         <p>Here, only the first call to foo will use B's implementation of foo. The second one will use A's implementation. If foo had been properly overriden in B, and not overloaded, the second foo would also have called B's implementation.</p>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
@@ -234,7 +137,7 @@ b.foo(<span class="hljs-number">5</span>);
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.11.0</a> on Wed, 04 Mar 2020 17:25:47 GMT</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.12.0</a> on Wed, Mar 11, 2020, 3:47:20 PM UTC</small></div>
     </footer>
   </div>
 </body>

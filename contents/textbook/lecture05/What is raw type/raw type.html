@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2030 AY19/20 Semester 2</title>
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+</head>
+
+<body>
+  <div id="app">
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <p>The Java Language Specification defines a raw type as follows:</p>
+        <pre><code class="hljs"><span>A raw type is defined to be one of:</span><span>&#x200B;</span><span>1) The reference type that is formed by taking the name of a generic type declaration without </span><span>an accompanying type argument list.</span><span>&#x200B;</span><span>2) An array type whose element type is a raw type.</span><span>&#x200B;</span><span>3) A non-static member type of a raw type R that is not inherited from a superclass</span><span>or superinterface of R.</span></code></pre>
+        <p>A non-generic class or interface type is not a raw type.</p>
+        <p>An example to show the above definition:</p>
+        <pre><code class="hljs"><span>class Outer&lt;E&gt; {</span><span>    class Inner { }</span><span>    static class Nested { }</span><span>&#x200B;</span><span>    public static void main(String[] args) {</span><span>        Outer test;          // Warning: Outer is a raw type</span><span>        Outer.Inner inner;   // Warning: Outer.Inner is a raw type</span><span>&#x200B;</span><span>        Outer.Nested nested; // No Warning: not parameterized type</span><span>        Outer&lt;Object&gt; test1; // No Warning: type parameter included</span><span>        Outer&lt;?&gt; test2;      // No Warning: type parameter included (wildcard)</span><span>    }</span><span>}</span></code></pre>
+        <p>In the above example, <code>Outer&lt;E&gt;</code> is a parameterized type.</p>
+        <p><code>test</code> has a raw type (generates a Compilation warning) by the first factor in the above definition; <code>inner</code> also has a raw type by the third factor.</p>
+        <p><code>Outer.Nested</code> is not a parameterized type, despite being a member type of parameterized type <code>Outer&lt;E&gt;</code> . This is because it is static.</p>
+        <p><code>test1</code>, and <code>test2</code> are both declared with type parameters, hence they are not raw types.</p>
+        <h1 id="what-are-raw-types">What are raw types?<a class="fa fa-anchor" href="#what-are-raw-types"></a></h1>
+        <p>Raw types behaves just like they were before generics were introduced. Which means that the following example is entirely legal at compile-time.</p>
+        <pre><code class="hljs"><span>List food = new ArrayList(); // Warning: Raw Type</span><span>names.add(&quot;Pizza&quot;);</span><span>names.add(&quot;Cake&quot;);</span><span>names.add(123); // No compilation error</span></code></pre>
+        <p>The above code will run without errors. However, that we also have the following:</p>
+        <pre><code class="hljs"><span>for (Object o : food) {</span><span>    String food = (String) o;</span><span>    System.out.println(food);</span><span>} // throws ClassCastException error</span><span>  //    java.lang.Integer cannot be cast to java.lang.String</span></code></pre>
+        <p>This however will generate an <code>ClassCastException</code> error at run-time because the list of <code>food</code> contains an object which in this case an <code>Integer</code> which is not a <code>String</code>.</p>
+        <p>Assuming that we want the list of <code>food</code> to contain only <code>String</code> which is the name of the <code>food</code>, we could still use a raw type and manually check every entry, and then manually cast to <code>String</code> every
+          item from <code>food</code>. This is however, time-consuming and error prone. We could instead utilise Java generics in this case to let the complier to do all the work for us.</p>
+        <pre><code class="hljs"><span>List&lt;String&gt; names = new ArrayList&lt;String&gt;();</span><span>names.add(&quot;Pizza&quot;);</span><span>names.add(&quot;Cake&quot;);</span><span>names.add(123); // Compilation error</span></code></pre>
+        <p>In the scenario that we really want to add an object which is not of type <code>String</code> we can use <code>&lt;Object&gt;</code> instead for the above example.</p>
+        <h1 id="how-to-suppress-warnings-due-to-usage-of-raw-type">How to suppress warnings due to Usage of Raw Type<a class="fa fa-anchor" href="#how-to-suppress-warnings-due-to-usage-of-raw-type"></a></h1>
+        <p>Warning generated due to usage of raw type can be suppressed by implementing @SuppressWarning above the code. Using the above example:</p>
+        <pre><code class="hljs"><span>@SuppressWarnings</span><span>List food = new ArrayList(); // Warning: Raw Type</span><span>names.add(&quot;Pizza&quot;);</span><span>names.add(&quot;Cake&quot;);</span><span>names.add(123); // No compilation error</span></code></pre>
+        <p>However, it is not recommended as this could lead to potential run-time error.</p>
+        <h1 id="why-non-static-type-member-of-a-raw-type-is-considered-raw">Why non-static type member of a raw type is considered raw?<a class="fa fa-anchor" href="#why-non-static-type-member-of-a-raw-type-is-considered-raw"></a></h1>
+        <p>To see why a non-static type member of a raw type is considered raw, consider the following example:</p>
+        <pre><code class="hljs"><span>class Outer&lt;T&gt;{</span><span>    T t;</span><span>    class Inner {</span><span>        T setOuterT(T t1) {</span><span>          t = t1; </span><span>          return t; </span><span>          }</span><span>    }</span><span>}</span></code></pre>
+        <p>The type of the member(s) of <code>Inner</code> depends on the type parameter of <code>Outer</code> . If <code>Outer</code> is raw, <code>Inner</code> must be treated as raw as well, as there is no valid binding for <code>T</code> .</p>
+        <p>This rule applies only to type members that are not inherited. Inherited type members that depend on type variables will be inherited as raw types as a consequence of the rule that the supertypes of a raw type are erased.</p>
+        <p>Another implication of the rules above is that a generic <code>inner</code> class of a raw type can itself only be used as a raw type:</p>
+        <pre><code class="hljs"><span>class Outer&lt;T&gt;{</span><span>    class Inner&lt;S&gt; {</span><span>        S s;</span><span>    }</span><span>}</span></code></pre>
+        <p>It is not possible to access <code>Inner</code> as a partially raw type (a &quot;rare&quot; type):</p>
+        <pre><code class="hljs"><span>Outer.Inner&lt;Double&gt; x = null;  // illegal</span></code></pre>
+        <p>Given that <code>Outer</code> itself is raw, hence so are all its inner classes including Inner, it is not possible to pass any type arguments to Inner. It is a compile-time error to pass type arguments to a non-static type member of a raw type
+          that is not inherited from its superclasses or superinterfaces.</p>
+        <p>Also:</p>
+        <pre><code class="hljs"><span>Outer&lt;Integer&gt;.Inner x = null; // illegal</span></code></pre>
+        <p>This is the opposite of the example discussed above. It is a compile-time error to attempt to use a type member of a parameterized type as a raw type</p>
+        <p>In conclusion : It is not recommended to use raw types unless you are absolutely certain in what you are doing. Unchecked errors can be suppressed by <code>@SuppressWarnings</code> . However, unforeseenable circumstances might lead to runtime
+          errors as a result. It would be preferred to have complilation type error compared to runtime type error, so it is recommended not to suppress any forms of warnings.</p>
+        <p>More Readup on: <a href="https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.8">https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.8</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/1920-s2'
+  const enableSearch = true
+</script>
+<script src="../../../../markbind/js/setup.js"></script>
+<script src="../../../../markbind/layouts/default/scripts.js"></script>
+
+</html>
