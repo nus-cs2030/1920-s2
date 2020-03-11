@@ -206,7 +206,9 @@
       "title": "",
       "layout": "default",
       "headings": {
-        "abstraction": "Abstraction"
+        "abstraction": "Abstraction",
+        "data-abstraction": "Data Abstraction",
+        "functional-abstraction": "Functional Abstraction"
       },
       "headingKeywords": {}
     },
