@@ -54,12 +54,14 @@
 * [Type Erasure](lecture05/typeErasire/typeErasure.html)
 * [Wrapper Classes](lecture05/wrapperClass/wrapperClass.html)
 * [Generic Subtypes](lecture05/genericSubtypes/genericSubtypes.html)
+* [Generic and Paratemised Types](lecture05/GenericAndParameterisedType/GenericAndParameterisedType.html)
+* [Bounded Wildcards](lecture05/unboundWildcards/unboundWildcards.html)
 
 </panel>
 
 <panel header="## **Lecture 6**" no-close>
 
-Do add content via a Pull Reuqest!
+* [Raw Types](lecture06/rawTypes/rawTypes.html)
 
 </panel>
 
