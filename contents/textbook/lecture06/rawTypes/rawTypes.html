@@ -16,12 +16,55 @@
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
+    <header>
+      <navbar type="dark" class="temp-navbar">
+        <a slot="brand" href="/1920-s2/index.html" title="Home" class="navbar-brand">CS2030 AY19/20 Semester 2</a>
+        <div class="nav-link temp-dropdown-placeholder">Peer Learning</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Peer Learning</template>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearning.html" class="dropdown-item">Introduction</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/textbook.html" class="dropdown-item">Textbook Contributions</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearningtask.html" class="dropdown-item">Peer Learning Tasks</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/piazza.html" class="dropdown-item">Piazza Participation</a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Guides</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Guides</template>
+          <li><a href="/1920-s2/contents/guides/settingUpLabEnv.html" class="dropdown-item">Setting Up Lab Environment</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
+          <li><a href="/1920-s2/contents/guides/sunfireLabs.html" class="dropdown-item">Setting Up Sunfire and PE Nodes</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpCheckstyle.html" class="dropdown-item">Setting Up Checkstyle</a></li>
+        </dropdown>
+        <li><a slot="brand" href="/1920-s2/contents/textbook/textbook.html" class="nav-link">Textbook</a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Links</template>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/style/" class="dropdown-item" target="_blank">CS2030 Java Style Guide</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/javadoc/" class="dropdown-item" target="_blank">CS2030 Javadoc Specification</a></li>
+          <li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html" class="dropdown-item" target="_blank">JDK 11 Download Link</a></li>
+          <li><a href="https://codecrunch.comp.nus.edu.sg/" class="dropdown-item" target="_blank">Codecrunch</a></li>
+          <li><a href="https://github.com/nus-cs2030/1920-s2" class="dropdown-item" target="_blank">Github Repo</a></li>
+          <li><a href="https://piazza.com/class/k54zo22zq1t2zc" class="dropdown-item" target="_blank">Piazza Forum</a></li>
+        </dropdown>
+        <li slot="right">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
     <div id="flex-body">
       <div id="content-wrapper">
+        <br>
+        <h1 id="raw-types">Raw Types<a class="fa fa-anchor" href="#raw-types"></a></h1>
+        <hr>
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture06/rawTypes/rawTypes.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
         <p>The Java Language Specification defines a raw type as follows:</p>
         <pre><code class="hljs"><span>A raw type is defined to be one of:</span><span>&#x200B;</span><span>1) The reference type that is formed by taking the name of a generic type declaration without </span><span>an accompanying type argument list.</span><span>&#x200B;</span><span>2) An array type whose element type is a raw type.</span><span>&#x200B;</span><span>3) A non-static member type of a raw type R that is not inherited from a superclass</span><span>or superinterface of R.</span></code></pre>
         <p>A non-generic class or interface type is not a raw type.</p>
@@ -63,7 +106,24 @@
           errors as a result. It would be preferred to have complilation type error compared to runtime type error, so it is recommended not to suppress any forms of warnings.</p>
         <p>More Readup on: <a href="https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.8">https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.8</a></p>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#raw-types">Raw Types&#x200E;</a>
+            <a class="nav-link py-1" href="#what-are-raw-types">What are raw types?&#x200E;</a>
+            <a class="nav-link py-1" href="#how-to-suppress-warnings-due-to-usage-of-raw-type">How to suppress warnings due to Usage of Raw Type&#x200E;</a>
+            <a class="nav-link py-1" href="#why-non-static-type-member-of-a-raw-type-is-considered-raw">Why non-static type member of a raw type is considered raw?&#x200E;</a>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+
+      <div class="text-center">
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.12.0</a> on Wed, Mar 11, 2020, 4:02:11 PM UTC</small></div>
+    </footer>
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
