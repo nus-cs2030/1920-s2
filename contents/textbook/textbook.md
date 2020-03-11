@@ -60,6 +60,7 @@
 
 <panel header="## **Lecture 6**" no-close>
   
+* [Raw Types](lecture06/rawTypes/rawTypes.html)
 * [Type Erasure](lecture05/typeErasure/typeErasure.html)
 * [Assertions](lecture06/errorHandling/assertions.html)
 * [Exception Handling](lecture06/errorHandling/errorHandling.html)
