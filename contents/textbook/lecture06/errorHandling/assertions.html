@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="MarkBind 2.12.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2030 AY19/20 Semester 2</title>
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/bootstrap-vue.min.css">
+  <link rel="stylesheet" href="../../../../markbind/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="../../../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
+  <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
+  <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
+</head>
+
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
+  <div id="app">
+    <header>
+      <navbar type="dark" class="temp-navbar">
+        <a slot="brand" href="/1920-s2/index.html" title="Home" class="navbar-brand">CS2030 AY19/20 Semester 2</a>
+        <div class="nav-link temp-dropdown-placeholder">Peer Learning</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Peer Learning</template>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearning.html" class="dropdown-item">Introduction</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/textbook.html" class="dropdown-item">Textbook Contributions</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearningtask.html" class="dropdown-item">Peer Learning Tasks</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/piazza.html" class="dropdown-item">Piazza Participation</a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Guides</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Guides</template>
+          <li><a href="/1920-s2/contents/guides/settingUpLabEnv.html" class="dropdown-item">Setting Up Lab Environment</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
+          <li><a href="/1920-s2/contents/guides/sunfireLabs.html" class="dropdown-item">Setting Up Sunfire and PE Nodes</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpCheckstyle.html" class="dropdown-item">Setting Up Checkstyle</a></li>
+        </dropdown>
+        <li><a slot="brand" href="/1920-s2/contents/textbook/textbook.html" class="nav-link">Textbook</a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Links</template>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/style/" class="dropdown-item" target="_blank">CS2030 Java Style Guide</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/javadoc/" class="dropdown-item" target="_blank">CS2030 Javadoc Specification</a></li>
+          <li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html" class="dropdown-item" target="_blank">JDK 11 Download Link</a></li>
+          <li><a href="https://codecrunch.comp.nus.edu.sg/" class="dropdown-item" target="_blank">Codecrunch</a></li>
+          <li><a href="https://github.com/nus-cs2030/1920-s2" class="dropdown-item" target="_blank">Github Repo</a></li>
+          <li><a href="https://piazza.com/class/k54zo22zq1t2zc" class="dropdown-item" target="_blank">Piazza Forum</a></li>
+        </dropdown>
+        <li slot="right">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
+    <div id="flex-body">
+      <div id="content-wrapper">
+        <br>
+        <h1 id="assertions">Assertions<a class="fa fa-anchor" href="#assertions"></a></h1>
+        <br>
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture06/errorHandling/errorHandling.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
+        <p>&quot;A good code is a bug-free code,&quot; some might say. Though, it is almost impossible to write a bug-free code. What we can do is minimise the occurrence of errors, and if they do arise, handle them appropriately. In this section, we will
+          see the use of <strong>assertions</strong> in achieving so.</p>
+        <p>According to <a href="https://docs.oracle.com/javase/7/docs/technotes/guides/language/assert.html">this Java SE documentation</a>,</p>
+        <blockquote>
+          <p>An <em>assertion</em> is a statement [...] to test your <strong>assumptions</strong> about your program. [...] Writing assertions while programming is one of the quickest and most effective ways to detect and correct bugs.</p>
+        </blockquote>
+        <p><strong>Assumptions</strong> here refer to those expressions which are given by a problem. For example, a problem set can say something like <em>&quot;assume n &gt; 0&quot;</em> or
+          <em>&quot;assume the input length is always positive&quot;</em>. In this case, it might seem pointless to check for the assumptions, as (in CS1010 modules or CS1101S,) we usually assume these assumptions <strong>must always be true</strong>.</p>
+        <p>However, when we are programming at a much higher and more complex environment, assumptions may not hold across our code flow. Imagine we have multiple functions, which work together in a sequence to provide a certain functionality. Each functions
+          may have their own respective assumptions. However, for whatever reasons, <strong>it is possible that the output of one
+function did not meet the assumptions of the input of the next function.</strong> This is where assertions come in.</p>
+        <p>If the assumptions were not met, and our code crashes, that's great! Remember,
+        </p>
+        <blockquote>
+          <p>we very much prefer codes to crash at compile time, rather than during runtime. This is because, runtime error are usually hard to trace and may happen unexpectably. If we receive an error during compile time, we can debug and rectify the issue.
+            However, consider the case that given that the output of a function fails to meet the assumptions of the next function, <strong>and the function works</strong> and still give us a value. This is <strong>what we try to prevent</strong>, because
+            results which violate our assumptions are NOT valid results! It is for these reasons, we use assertions such that we are able to catch these <strong>bugs</strong> and make appropriate amendments.</p>
+        </blockquote>
+        <p>To make an assertion, we use the <code>assert</code> keyword followed by a logical test. For example,</p>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{</span><span>    <span class="hljs-keyword">assert</span> n &gt;= <span class="hljs-number">0</span>;</span><span>    <span class="hljs-keyword">int</span> output = <span class="hljs-number">1</span>;</span><span>    <span class="hljs-comment">// factorial logic code here</span></span><span>    <span class="hljs-keyword">return</span> output;</span><span>}</span></code></pre>
+        <p>When the logical test in the assertion returns <code>false</code>, the compiler throws an <code>AssertionError</code>. We also have another type of assertion with the structure
+          <code>assert (a) : (b)</code> like so,</p>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{</span><span>    <span class="hljs-keyword">assert</span> n &gt;= <span class="hljs-number">0</span> : <span class="hljs-string">"n: "</span> + n;</span><span>    <span class="hljs-keyword">int</span> output = <span class="hljs-number">1</span>;</span><span>    <span class="hljs-comment">// factorial logic code here</span></span><span>    <span class="hljs-keyword">return</span> output;</span><span>}</span></code></pre>
+        <p>The second statement <code>(b)</code> is a value which will be printed together with the thrown <code>AssertionError</code>. This is useful with codes with multiple assertions, and allow us to directly see which assertion was broken, with which
+          value. Note that assertions are <strong>not meant for the end user</strong>. Assertions are meant for developers, like us, in debugging our code. Therefore, this message need not be intuitive or user-friendly. This message should be informative,
+          succint, and contextual to the developers.</p>
+        <p>If the assertions are complex and resource-expensive to evaluate (e.g. sorting or searching with <code>O(n^2)</code> complexity), then assertions will definitely hurt our code's performance. Therefore, by default, Java <strong>disables</strong>          assertions evaluation. So, when our code is run, these assertions are just ignored. To enable assertions, we have to explicitly tell <code>java</code> that we want to see these
+          <code>AssertionError</code>s by running our code with</p>
+        <pre><code class="hljs"><span>java -ea &lt;ClassName&gt;</span></code></pre>
+        <p>where the <code>-ea</code> flag stands for <code>e</code>nable <code>a</code>ssertions. To disable assertions, you've guessed it, we can use <code>-da</code>, which stands for <code>d</code>isable <code>a</code>ssertions.</p>
+        <p>Again, note that <strong>assertions are never meant for the end user</strong>. Therefore, when releasing our program (releasing means finalising and deploying our program to the end user), we have to remove these assertions, since our finalised
+          program should not rely on <code>AssertionError</code>s to rectify bugs, i.e. they should be as bug-free as possible.</p>
+      </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#assertions">Assertions&#x200E;</a>
+
+          </nav>
+        </div>
+      </nav>
+    </div>
+    <footer>
+
+      <div class="text-center">
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.12.0</a> on Wed, Mar 11, 2020, 4:20:15 PM UTC</small></div>
+    </footer>
+  </div>
+</body>
+<script src="../../../../markbind/js/vue.min.js"></script>
+<script src="../../../../markbind/js/vue-strap.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../../../markbind/js/polyfill.min.js"></script>
+<script src="../../../../markbind/js/bootstrap-vue.min.js"></script>
+<script>
+  const baseUrl = '/1920-s2'
+  const enableSearch = true
+</script>
+<script src="../../../../markbind/js/setup.js"></script>
+<script src="../../../../markbind/layouts/default/scripts.js"></script>
+
+</html>

@@ -553,6 +553,45 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/errorHandling/assertions.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "assertions": "Assertions"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/errorHandling/errorHandling.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "exception-handling": "Exception Handling"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture06/errorHandling/throwingExceptions.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "throwing-exceptions": "Throwing Exceptions"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture06/rawTypes/rawTypes.md",
       "title": "",
       "layout": "default",
@@ -561,6 +600,32 @@
         "what-are-raw-types": "What are raw types?",
         "how-to-suppress-warnings-due-to-usage-of-raw-type": "How to suppress warnings due to Usage of Raw Type",
         "why-non-static-type-member-of-a-raw-type-is-considered-raw": "Why non-static type member of a raw type is considered raw?"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/functionalInterfaces/functionalInterfaces.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "functional-interfaces": "Functional Interfaces"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/misc/filesWSL/filesWSL.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "accessing-files-in-wsl": "Accessing files in WSL"
       },
       "headingKeywords": {}
     },
@@ -579,6 +644,9 @@
         "lecture-4": "Lecture 4",
         "lecture-5": "Lecture 5",
         "lecture-6": "Lecture 6",
+        "lecture-7": "Lecture 7",
+        "lecture-8": "Lecture 8",
+        "supplemental-readings": "Supplemental Readings",
         "textbook": "Textbook"
       },
       "headingKeywords": {}
