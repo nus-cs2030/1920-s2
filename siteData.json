@@ -29,7 +29,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/Textbook/lecture02/overrideToString/Override_toString_and_equals_method.md",
+      "src": "contents/Textbook/lecture02/overrideToString/overrideToString.md",
       "title": "",
       "layout": "default",
       "headings": {
