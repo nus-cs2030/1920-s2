@@ -30,6 +30,7 @@
 
 * [Lecture 2 Summary](lecture02/summary/chapter-summary.html) 
 * [Factory Methods](lecture02/factoryMethods/factoryMethods.html) 
+* [Overriding toString](lecture02/overrideToString/overrideToString.html)
 
 </panel>
 

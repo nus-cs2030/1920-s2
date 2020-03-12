@@ -10,6 +10,10 @@
 # Overriding toString Method
 <hr>
 
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture02/overrideToString/overrideToString.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
 By default, when a object is created, the hash code of the object is returned such as Classname@6a41eaa2 which is not meaningful. Thus, it is better to Override the toString method of the Object (every class by default inherits the toString method from class Object). Do take note that when we override, it has to be public.
 
 For example:
