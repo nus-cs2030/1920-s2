@@ -60,38 +60,34 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="solid-principles">SOLID Principles<a class="fa fa-anchor" href="#solid-principles"></a></h1>
-        <br>
-
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/solidprinciples.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
-
-        <br>
-        <p>In object-oriented computer programming, SOLID is an acronym for five design principles intended to make software designs more understandable, flexible and maintainable.</p>
-        <p>SOLID stands for:</p>
-        <ul>
-          <li><strong>S</strong>ingle Responsibility Principle</li>
-          <li><strong>O</strong>pen-closed Principle</li>
-          <li><strong>L</strong>iskov Substitution Principle</li>
-          <li><strong>I</strong>nterface Segregation Principle</li>
-          <li><strong>D</strong>ependency Inversion Principle</li>
-        </ul>
-        <p>Click the links to find out more!</p>
-        <h1 id="single-responsibility-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/SRP.html">Single Responsibility Principle</a><a class="fa fa-anchor" href="#single-responsibility-principle"></a></h1>
-        <h1 id="open-closed-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/OCP.html">Open-Closed Principle</a><a class="fa fa-anchor" href="#open-closed-principle"></a></h1>
-        <h1 id="liskov-substitution-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/LSP.html">Liskov Substitution Principle</a><a class="fa fa-anchor" href="#liskov-substitution-principle"></a></h1>
-        <h1 id="interface-segregation-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/ISP.html">Interface Segregation Principle</a><a class="fa fa-anchor" href="#interface-segregation-principle"></a></h1>
-        <h1 id="dependency-inversion-principle"><a href="/1920-s2/contents/textbook/lecture04/solidprinciples/DIP.html">Dependency Inversion Principle</a><a class="fa fa-anchor" href="#dependency-inversion-principle"></a></h1>
+        <h1 id="overriding-tostring-method">Overriding toString Method<a class="fa fa-anchor" href="#overriding-tostring-method"></a></h1>
+        <hr>
+        <p>By default, when a object is created, the hash code of the object is returned such as Classname@6a41eaa2 which is not meaningful. Thus, it is better to Override the toString method of the Object (every class by default inherits the toString method
+          from class Object). Do take note that when we override, it has to be public.</p>
+        <p>For example:</p>
+        <pre><code class="hljs"><span>public String toString() {</span><span>    return &quot;Circle has a centre of&quot; + this.centre + &quot;with a radius of&quot; + this.radius</span><span>}</span></code></pre>
+        <p>Very often as observed in labs, the questions always ask us to return in 3 decimal places. Thus, here are some useful String formats you can use when you use the method String.format(_________):</p>
+        <p>%s is for string; %f is for float; %.3f is for float to 3 decimal places; %d is for integers;</p>
+        <p>An example on how to use String.format will be :</p>
+        <pre><code class="hljs"><span>public String toString() {</span><span>    return String.format(&quot;Today I folded %d paper cranes at a rate of %.3f cranes per hour&quot;, numOfCranes, rateOfFold)</span><span>}</span></code></pre>
+        <p>where numOfCranes = 30, and rateOfFold = 5.9322 The return output of the String will be:</p>
+        <pre><code class="hljs"><span>Today I folded 30 paper cranes at a rate of 5.932 cranes per hour</span></code></pre>
+        <h1 id="overriding-equals-method">Overriding equals Method<a class="fa fa-anchor" href="#overriding-equals-method"></a></h1>
+        <p>A more correct way of comparing two object method is via the equals method.</p>
+        <ol>
+          <li>We have to check if the object is the same</li>
+          <li>We have to check if it is of the same type</li>
+          <li>We have to check if the values are equal (type casting is needed after checking if they are of the same type)</li>
+        </ol>
+        <p>An example from the lecture notes is:</p>
+        <pre><code class="hljs"><span>@Override</span><span>boolean equals(Object obj) {</span><span>    if (this == obj) {</span><span>        return true;</span><span>    } else if (obj instance of) {</span><span>        Point p = (Point) obj;</span><span>        return Math.abs(this.x - p.x) &lt; 1E-15 &amp;&amp;</span><span>            Math.abs(this.y - p.y) &lt; 1E-15;</span><span>    } else {</span><span>        return False;</span><span>    }</span><span>}</span></code></pre>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#solid-principles">SOLID Principles&#x200E;</a>
-            <a class="nav-link py-1" href="#single-responsibility-principle">Single Responsibility Principle&#x200E;</a>
-            <a class="nav-link py-1" href="#open-closed-principle">Open-Closed Principle&#x200E;</a>
-            <a class="nav-link py-1" href="#liskov-substitution-principle">Liskov Substitution Principle&#x200E;</a>
-            <a class="nav-link py-1" href="#interface-segregation-principle">Interface Segregation Principle&#x200E;</a>
-            <a class="nav-link py-1" href="#dependency-inversion-principle">Dependency Inversion Principle&#x200E;</a>
+            <a class="nav-link py-1" href="#overriding-tostring-method">Overriding toString Method&#x200E;</a>
+            <a class="nav-link py-1" href="#overriding-equals-method">Overriding equals Method&#x200E;</a>
 
           </nav>
         </div>
