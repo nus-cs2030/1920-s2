@@ -252,4 +252,65 @@ Here, only the first call to foo will use B's implementation of foo.
 The second one will use A's implementation. If foo had been properly overriden in B,
 and not overloaded, the second foo would also have called B's implementation.
 
+## Polymorphism
 
+Inheritance is used to support polymorphism.
+
+```Java
+class Animal {
+	public void animalSound() {
+		System.out.println("The animal makes a sound.");
+	}
+	public void animalLegs() {
+		System.out.println("How many legs does this animal have?");
+	}
+}
+	
+class Dog extends Animal {
+	public void animalSound() {
+		System.out.println("This animal woofs.");
+	}
+	public void animalLegs() {
+		System.out.println("This animal has 4 legs.");
+	}
+}
+
+class Bird extends Animal {
+	public void animalSound() {
+		System.out.println("This animal chirps.");
+	}
+	public void animalLegs() {
+		System.out.println("This animal has 2 legs.");
+	}
+}
+
+class Snake extends Animal {
+	public void animalSound() {
+		System.out.println("This animal hisses.");
+	}
+	public void animalLegs() {
+		System.out.println("This animal has no legs.");
+	}
+}
+
+class MainAnimal {
+	public static void main(String[] args) {
+		Animal animal = new Animal();
+		Animal dog = new Dog();
+		Animal bird = new Bird();
+		Animal snake = new Snake();
+	
+		animal.animalSound();
+		dog.animalSound();
+		bird.animalSound();
+		snake.animalSound();
+	
+		animal.animalLegs();
+		dog.animalLegs();
+		bird.animalLegs();
+		snake.animalLegs();
+	}
+}
+```
+This is the beauty of polymorphism - during compile time, animal variable is of type Animal, in runtime it is of type Dog (this transition from animal to dog is part of polymorphism).
+Imagine if polymorphism doesn't exist, you have to create multiple overloaded animalSound() and animalLegs() methods to take in different animals such as animalSound(Dog d), animalSound(Bird b).

@@ -31,10 +31,12 @@ static Circle createCircle(Point centre, double radius){
 
 Static methods belongs to a class instead of an instance of the class.
 
+Static methods is a form of encapsulate object creation. 
+
 According to my understanding, factory method is defined as static so that it can be called without the need of creating an instance.
 ## Advantages of Factory Methods:
 1. Constructors cannot be named, while readable names can be assigned to factory methods.
-2. Constructors can only return same type as the class name, however, factory methods can return other objects
+2. Constructors can only return same type as the class name, however, factory methods can return other objects.
 3. Factory methods promote the idea of using interface instead of implementation, and would generate more flexible codes.
 4. Unlike constructors, factory methods doesn't require a new object to be created everytime they are called.
    - Instantiate a static object as a default value, say an empty box
@@ -45,4 +47,9 @@ According to my understanding, factory method is defined as static so that it ca
           return EMPTY_BOX;
       }
       ```
+5. Examples of factory methods in JDK are as such:
+   - The String class
+   - The Optional class
+   - The Collections class
+   
 Please feel free to edit if I have made any mistakes or add on more content.:smile:
