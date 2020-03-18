@@ -355,7 +355,8 @@
       "headings": {
         "lecture-3-summary": "Lecture 3 Summary",
         "substitutability-in-object-oriented-programming": "Substitutability in Object Oriented Programming",
-        "type-sub-type-consistency": "Type/Sub-type Consistency"
+        "type-sub-type-consistency": "Type/Sub-type Consistency",
+        "polymorphism": "Polymorphism"
       },
       "headingKeywords": {}
     },
