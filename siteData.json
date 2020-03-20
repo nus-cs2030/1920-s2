@@ -2,6 +2,15 @@
   "enableSearch": true,
   "pages": [
     {
+      "src": "contents/textbook/lecture05/genericsManifestoPartOne/index.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "1-pecs": "1. PECS"
+      },
+      "headingKeywords": {}
+    },
+    {
       "header": "header.md",
       "footer": "footer.md",
       "pageNav": 2,
