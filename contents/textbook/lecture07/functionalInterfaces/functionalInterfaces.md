@@ -7,9 +7,10 @@
 
 
 
- 
+<br>
 
 # Functional Interfaces
+<br>
 - functional interface is an interface with only one abstract method. A lambda expression can be used to represent a functional interface. `java.util.function` has provided some common functional interfaces, for example `Consumer<T>`, `Function<T, R>`, and `Predicate<T>`.
 
 
