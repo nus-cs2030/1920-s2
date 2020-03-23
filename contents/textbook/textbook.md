@@ -90,8 +90,26 @@ Do add content via a Pull Request!
 
 <panel header="## **Lecture 10**" no-close>
 
-* [Do you want to build a monad? ](lecture10/extraMonads/extraMonads.html)
-* [Do you want to build a monad? (Part Two) ](lecture10/extraMonads/makingTheMonad.html)
+* [Do you want to build a monad? ](lecture10/monadsIntro/extraMonads.html)
+* [Do you want to build a monad? (Part Two) ](lecture10/monadsIntro/makingTheMonad.html)
+
+</panel>
+
+<panel header="## **Lecture 11**" no-close>
+
+Do add content via a Pull Request!
+
+</panel>
+
+<panel header="## **Lecture 12**" no-close>
+
+Do add content via a Pull Request!
+
+</panel>
+
+<panel header="## **Lecture 13**" no-close>
+
+Do add content via a Pull Request!
 
 </panel>
 
@@ -101,6 +119,3 @@ Do add content via a Pull Request!
 
 </panel>
 
-<panel header="More Lectures to be added..." no-close>
-
-</panel>
