@@ -82,6 +82,19 @@ Do add content via a Pull Request!
 
 </panel>
 
+<panel header="## **Lecture 9**" no-close>
+
+Do add content via a Pull Request!
+
+</panel>
+
+<panel header="## **Lecture 10**" no-close>
+
+* [Do you want to build a monad? ](lecture10/extraMonads/extraMonads.html)
+* [Do you want to build a monad? (Part Two) ](lecture10/extraMonads/makingTheMonad.html)
+
+</panel>
+
 <panel header="## **Supplemental Readings**" no-close>
 
 * [Accessing files in WSL](misc/filesWSL/filesWSL.html)
