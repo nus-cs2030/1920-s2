@@ -2,10 +2,15 @@
   "enableSearch": true,
   "pages": [
     {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture05/genericsManifestoPartOne/index.md",
       "title": "",
       "layout": "default",
       "headings": {
+        "generics-manifesto-part-one": "Generics Manifesto Part One",
         "1-pecs": "1. PECS"
       },
       "headingKeywords": {}

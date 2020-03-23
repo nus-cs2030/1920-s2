@@ -16,12 +16,55 @@
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
+  <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#page-nav" data-offset="100">
   <div id="app">
+    <header>
+      <navbar type="dark" class="temp-navbar">
+        <a slot="brand" href="/1920-s2/index.html" title="Home" class="navbar-brand">CS2030 AY19/20 Semester 2</a>
+        <div class="nav-link temp-dropdown-placeholder">Peer Learning</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Peer Learning</template>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearning.html" class="dropdown-item">Introduction</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/textbook.html" class="dropdown-item">Textbook Contributions</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/peerlearningtask.html" class="dropdown-item">Peer Learning Tasks</a></li>
+          <li><a href="/1920-s2/contents/peerlearning/piazza.html" class="dropdown-item">Piazza Participation</a></li>
+        </dropdown>
+        <div class="nav-link temp-dropdown-placeholder">Guides</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Guides</template>
+          <li><a href="/1920-s2/contents/guides/settingUpLabEnv.html" class="dropdown-item">Setting Up Lab Environment</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpJava.html" class="dropdown-item">Setting Up Java</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpVim.html" class="dropdown-item">Setting Up Vim</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpMacVim.html" class="dropdown-item">Setting Up MacVim</a></li>
+          <li><a href="/1920-s2/contents/guides/sunfireLabs.html" class="dropdown-item">Setting Up Sunfire and PE Nodes</a></li>
+          <li><a href="/1920-s2/contents/guides/settingUpCheckstyle.html" class="dropdown-item">Setting Up Checkstyle</a></li>
+        </dropdown>
+        <li><a slot="brand" href="/1920-s2/contents/textbook/textbook.html" class="nav-link">Textbook</a></li>
+        <div class="nav-link temp-dropdown-placeholder">Links</div>
+        <dropdown class="nav-link temp-dropdown"><template slot="_header">Links</template>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/style/" class="dropdown-item" target="_blank">CS2030 Java Style Guide</a></li>
+          <li><a href="https://www.comp.nus.edu.sg/~cs2030/javadoc/" class="dropdown-item" target="_blank">CS2030 Javadoc Specification</a></li>
+          <li><a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html" class="dropdown-item" target="_blank">JDK 11 Download Link</a></li>
+          <li><a href="https://codecrunch.comp.nus.edu.sg/" class="dropdown-item" target="_blank">Codecrunch</a></li>
+          <li><a href="https://github.com/nus-cs2030/1920-s2" class="dropdown-item" target="_blank">Github Repo</a></li>
+          <li><a href="https://piazza.com/class/k54zo22zq1t2zc" class="dropdown-item" target="_blank">Piazza Forum</a></li>
+        </dropdown>
+        <li slot="right">
+          <form class="navbar-form">
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+          </form>
+        </li>
+      </navbar>
+    </header>
     <div id="flex-body">
       <div id="content-wrapper">
+        <br>
+        <h1 id="generics-manifesto-part-one">Generics Manifesto Part One<a class="fa fa-anchor" href="#generics-manifesto-part-one"></a></h1>
+        <hr>
+
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/genericsManifestoPartOne/index.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+
         <p>The point of this &quot;manifesto&quot; series is to go a bit more in-depth into fundamental generic concepts, and to share some subtle insights and possibly confusing gotchas.</p>
         <h2 id="1-pecs">1. PECS<a class="fa fa-anchor" href="#1-pecs"></a></h2>
         <p>The PECS principle, which stands for Producer-Extends-Consumer-Super, is a guideline to follow when using bounded wildcards.</p>
@@ -55,7 +98,24 @@
         <pre><code class="hljs java"><span>List&lt;Car&gt; cars = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(List.of(<span class="hljs-keyword">new</span> Car(), <span class="hljs-keyword">new</span> Car()));</span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addCarsToFactory</span><span class="hljs-params">(List&lt;? <span class="hljs-keyword">super</span> Vehicle&gt; factory)</span></span>{</span><span>    <span class="hljs-keyword">for</span>(Car car : cars){</span><span>        factory.add(car);</span><span>    }</span><span>}</span><span>&#x200B;</span><span>List&lt;Vehicle&gt; factory = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();</span><span>addCarsToFactory(factory); <span class="hljs-comment">//works</span></span></code></pre>
         <p>The factory parameter in <code>addCarsToFactory</code> is a consumer, so it uses super (CS of PECS).</p>
       </div>
+      <nav id="page-nav" class="navbar navbar-light bg-transparent">
+        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+
+          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+            <a class="nav-link py-1" href="#generics-manifesto-part-one">Generics Manifesto Part One&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-pecs">1. PECS&#x200E;</a>
+            </nav>
+
+          </nav>
+        </div>
+      </nav>
     </div>
+    <footer>
+
+      <div class="text-center">
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.12.0</a> on Mon, Mar 23, 2020, 3:45:42 PM UTC</small></div>
+    </footer>
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>
