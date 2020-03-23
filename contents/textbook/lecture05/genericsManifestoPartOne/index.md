@@ -1,3 +1,20 @@
+<frontmatter>
+  pageNav: 2
+  header: header.md
+  footer: footer.md
+  siteNav: site-nav.md
+</frontmatter>
+
+<br> 
+
+# Generics Manifesto Part One
+<hr>
+
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/genericsManifestoPartOne/index.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
+
 The point of this "manifesto" series is to go a bit more in-depth
 into fundamental generic concepts, and to share some subtle insights and
 possibly confusing gotchas.

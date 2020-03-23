@@ -56,6 +56,7 @@
 * [Generic Subtypes](lecture05/genericSubtypes/genericSubtypes.html)
 * [Generic Type and Parameterised Type](lecture05/GenericAndParameterisdType/GenericAndParameterisedType.html)
 * [Bounded Wildcards](lecture05/boundedWildcards/bounedWildcards.html)
+* [Generics MANIFESTO Part One](lecture05/genericsManifestoPartOne/index.html)
 
 </panel>
 
