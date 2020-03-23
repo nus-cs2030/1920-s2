@@ -57,7 +57,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/Textbook/lecture10/extraMonads/extraMonads.md",
+      "src": "contents/Textbook/lecture10/monadsIntro/extraMonads.md",
       "title": "",
       "layout": "default",
       "headings": {
@@ -70,7 +70,7 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/Textbook/lecture10/extraMonads/makingTheMonad.md",
+      "src": "contents/Textbook/lecture10/monadsIntro/makingTheMonad.md",
       "title": "",
       "layout": "default",
       "headings": {
@@ -707,6 +707,9 @@
         "lecture-8": "Lecture 8",
         "lecture-9": "Lecture 9",
         "lecture-10": "Lecture 10",
+        "lecture-11": "Lecture 11",
+        "lecture-12": "Lecture 12",
+        "lecture-13": "Lecture 13",
         "supplemental-readings": "Supplemental Readings",
         "textbook": "Textbook"
       },
