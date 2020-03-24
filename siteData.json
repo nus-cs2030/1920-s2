@@ -43,50 +43,6 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
-      "src": "contents/Textbook/lecture02/overrideToString/overrideToString.md",
-      "title": "",
-      "layout": "default",
-      "headings": {
-        "overriding-tostring-method": "Overriding toString Method",
-        "overriding-equals-method": "Overriding equals Method"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
-      "src": "contents/Textbook/lecture10/monadsIntro/extraMonads.md",
-      "title": "",
-      "layout": "default",
-      "headings": {
-        "do-you-want-to-build-a-monad": "Do you want to build a monad?"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
-      "src": "contents/Textbook/lecture10/monadsIntro/makingTheMonad.md",
-      "title": "",
-      "layout": "default",
-      "headings": {
-        "do-you-want-to-build-a-monad-part-two": "Do you want to build a monad? (Part Two)",
-        "making-it-a-monad": "Making it a Monad",
-        "making-a-generic-monad-that-logs": "Making a Generic Monad that Logs",
-        "functor": "Functor",
-        "wait-what-is-a-monad-again": "Wait, What is a Monad Again?"
-      },
-      "headingKeywords": {}
-    },
-    {
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
       "src": "contents/guides/settingUpCheckstyle.md",
       "title": "",
       "layout": "default",
