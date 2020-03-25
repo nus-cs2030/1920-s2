@@ -1,4 +1,19 @@
+<frontmatter>
+  pageNav: 2
+  header: header.md
+  footer: footer.md
+  siteNav: site-nav.md
+</frontmatter>
+
+<br> 
+
 # Variable Capture
+<br> 
+
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture07/VariableCapture.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
 For classes that are defined within a method, variable capturing will occur. Variable capture is when the local variables within the
 local function in which the nested class is defined is being captured inside of the instance of the inner class in the heap.
 Looking at the code from Recitation 6 Q2,
