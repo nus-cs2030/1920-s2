@@ -7,7 +7,7 @@
 
 <br> 
 
-# No more NULL
+# No more Null
 <hr>
 
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
@@ -45,28 +45,28 @@ Instead of creating Maybe class, we can use java Optional class. When there is a
 like a box.
 
 Some useful methods include:
-- of(T value)
+1.of(T value)
 Putting the value in Optional
 
-- empty()
+2.empty()
 returning an Optional of empty
 
-- ofNullable(T value)
+3.ofNullable(T value)
 Returns an Optional containing the value if not null. Else, returns Optional that is empty.
 
-- flatMap(Function<? super T,? extends Optional<? extends U>> mapper)
+4.flatMap(Function<? super T,? extends Optional<? extends U>> mapper)
 Let's say you have a optional object in a optional object.
 flatMap is useful when you you want to get rid of the outer Optional casing of a Optional and inner optional, apply a given function,
 and putting it back into a Optional. The null will be passed on in the flatMap too and we do not need to
 check for null in every step.
 
-- map(Function<? super T, ? extends U> mapper)
+5.map(Function<? super T, ? extends U> mapper)
 Map just takes the value in one optional casing and apply the function and returns the Optional of the applied value.
 
-- orElseThrow()
+6.orElseThrow()
 for throwing NoSuchElementException
 
-- ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)
+7.ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)
 if value is present in the Optional, apply the action. or else perform the empty action.
 For example:
 ```
