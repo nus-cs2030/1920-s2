@@ -54,19 +54,19 @@ returning an Optional of empty
 3.ofNullable(T value)
 Returns an Optional containing the value if not null. Else, returns Optional that is empty.
 
-4.flatMap(Function<? super T,? extends Optional<? extends U>> mapper)
+4.`flatMap(Function<? super T,? extends Optional<? extends U>> mapper)`
 Let's say you have a optional object in a optional object.
 flatMap is useful when you you want to get rid of the outer Optional casing of a Optional and inner optional, apply a given function,
 and putting it back into a Optional. The null will be passed on in the flatMap too and we do not need to
 check for null in every step.
 
-5.map(Function<? super T, ? extends U> mapper)
+5.`map(Function<? super T, ? extends U> mapper)`
 Map just takes the value in one optional casing and apply the function and returns the Optional of the applied value.
 
 6.orElseThrow()
 for throwing NoSuchElementException
 
-7.ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)
+7.`ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)`
 if value is present in the Optional, apply the action. or else perform the empty action.
 For example:
 ```
