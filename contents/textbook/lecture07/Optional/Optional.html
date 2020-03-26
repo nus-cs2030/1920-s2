@@ -60,26 +60,33 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="throwing-exceptions">Throwing Exceptions<a class="fa fa-anchor" href="#throwing-exceptions"></a></h1>
-        <br>
+        <h1 id="no-more-null">No more Null<a class="fa fa-anchor" href="#no-more-null"></a></h1>
+        <hr>
 
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture06/errorHandling/throwingExceptions.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture07/Optional/Optional.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>This section is a follow up to <a href="https://github.com/purfectliterature/1920-s2/blob/master/contents/textbook/lecture06/errorHandling/errorHandling.html">Exception Handling</a>. After seeing how we handle exceptions, now maybe we wish to
-          throw exceptions ourselves. In this section, we will explore how to <strong>manually throw exceptions</strong>.</p>
-        <p>To throw exceptions, first of all, we must notify that our method is capable of throwing such error. Let's say we have this program which calculates the sum of two integers.</p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnotherDayAnotherClass</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i1, <span class="hljs-keyword">int</span> i2)</span> </span>{</span><span>        <span class="hljs-keyword">return</span> i1 + i2;</span><span>    }</span><span>}</span></code></pre>
-        <p>Really simple code. What if a user inputs a <code>null</code> object? Maybe we wish to throw a <code>NullPointerException</code>. To do this, first modify the function signature.</p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.NullPointerException;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnotherDayAnotherClass</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i1, <span class="hljs-keyword">int</span> i2)</span> <span class="hljs-keyword">throws</span> NullPointerException </span>{</span><span>        <span class="hljs-keyword">return</span> i1 + i2;</span><span>    }</span><span>}</span></code></pre>
-        <p>Then, we can use an if-clause to check if the inputs are valid.</p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.NullPointerException;</span><span>&#x200B;</span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnotherDayAnotherClass</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i1, <span class="hljs-keyword">int</span> i2)</span> <span class="hljs-keyword">throws</span> NullPointerException </span>{</span><span>        <span class="hljs-keyword">if</span> (i1 == <span class="hljs-keyword">null</span> || i2 == <span class="hljs-keyword">null</span>) {</span><span>            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> NullPointerException(<span class="hljs-string">"Don't anyhow please"</span>);</span><span>        }</span><span>        </span><span>        <span class="hljs-keyword">return</span> i1 + i2;</span><span>    }</span><span>}</span></code></pre>
-        <p>Now, if any of <code>i1</code> or <code>i2</code> are <code>null</code> objects, the <strong>method</strong> (not class!) will throw a <code>NullPointerException</code> with a message <code>Don't anyhow please</code>.</p>
+        <p>In lecture 7, we learn about the maybe class and using optional to hide the null and alse make the code more elegant by removing the need to check for null using if and else.</p>
+        <p>In the lecture notes:</p>
+        <pre><code class="hljs"><span>public class Maybe&lt;T&gt; {</span><span>  private final T thing;</span><span>  </span><span>  private Maybe() {</span><span>    thing = null;</span><span>  }</span><span>  </span><span>  public Maybe(T thing) {</span><span>    this.thing = thing;</span><span>  }</span><span>  </span><span>  public static &lt;T&gt; Maybe&lt;T&gt; empty() {</span><span>    return new Maybe&lt;T&gt;();</span><span>  }</span><span>  </span><span>  @Override</span><span>  public String toString() {</span><span>    return &quot;Maybe[&quot; + (thing == null ? &quot;empty&quot; : thing) + &quot;]&quot;;</span><span>  }</span><span>}</span></code></pre>
+        <p>Instead of creating Maybe class, we can use java Optional class. When there is a null, the optional class will just contain the null like a box.</p>
+        <p>Some useful methods include: 1.of(T value) Putting the value in Optional</p>
+        <p>2.empty() returning an Optional of empty</p>
+        <p>3.ofNullable(T value) Returns an Optional containing the value if not null. Else, returns Optional that is empty.</p>
+        <p>4.<code>flatMap(Function&lt;? super T,? extends Optional&lt;? extends U&gt;&gt; mapper)</code> Let's say you have a optional object in a optional object. flatMap is useful when you you want to get rid of the outer Optional casing of a Optional
+          and inner optional, apply a given function, and putting it back into a Optional. The null will be passed on in the flatMap too and we do not need to check for null in every step.</p>
+        <p>5.<code>map(Function&lt;? super T, ? extends U&gt; mapper)</code> Map just takes the value in one optional casing and apply the function and returns the Optional of the applied value.</p>
+        <p>6.orElseThrow() for throwing NoSuchElementException</p>
+        <p>7.<code>ifPresentOrElse(Consumer&lt;? super T&gt; action, Runnable emptyAction)</code> if value is present in the Optional, apply the action. or else perform the empty action. For example:</p>
+        <pre><code class="hljs"><span>//from recitation screencast of lab 6:</span><span>Student addModule(String code, String name, String grade) {</span><span>  this.get(code)</span><span>    .ifPresentOrElse(</span><span>      m -&gt; m.addAssessment(name, grade),</span><span>      () -&gt; this.put(new Module(code).addAssessment(name,grade)</span><span>      );</span><span>  return this;</span><span>}</span></code></pre>
+        <p>Example of the usage of methods of Optional class as shown in Lab 6 Roster class (adapted from the recitation screencast):</p>
+        <pre><code class="hljs"><span>String getGrade(String id, String code, String name) throws NoSuchRecordException {</span><span>  return this.get(id)</span><span>    .flatMap(Student -&gt; student.get(code))</span><span>    .flatMap(module -&gt; module.get(name))</span><span>    .orElseThrow(() -&gt; new NoSuchRecordException(id, code, name))</span><span>    .getGrade();</span><span>}</span></code></pre>
+        <p>Note: Avoid using methods such as get because it might invoke a NullPointerException. Also, do not use isPresent, isEmpty as it is equivalent of checking for null and it defeats the purpose of using the optional class.</p>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#throwing-exceptions">Throwing Exceptions&#x200E;</a>
+            <a class="nav-link py-1" href="#no-more-null">No more Null&#x200E;</a>
 
           </nav>
         </div>
