@@ -17,7 +17,7 @@
 For classes that are defined within a method, variable capturing will occur. Variable capture is when the local variables within the
 local function in which the nested class is defined is being captured inside of the instance of the inner class in the heap.
 Looking at the code from Recitation 6 Q2,
-```
+```java
 class B {
   void f() {
     int x = 0;
@@ -38,7 +38,7 @@ methods in class A will be able to make use of the variable x.
 ## Effectively final
 From java 8, local variables that are captured must be final or effectively final. In the example above, this means that x must be final
 or effectively final. Since variable x is captured by A, trying to change the value of x will result in a compilation error.
-```
+```java
 class B {
   void f() {
     int x = 0;
@@ -57,7 +57,7 @@ Somewhere that we often see this phenomenon is in lamba expressions. Like inner 
 variables, which is why when we use a lambda expression inside a method, we can reference the variables that are defined in the
 enclosing method within our lambda expression. Since local variables are captured by lambda expressions, this means that those
 captured variables must also be final or effectively final. For example,
-```
+```java
 class Test {
   int supplierAdd(int x, int y) {
     Supplier<Integer> s = () -> x + y; //variables x and y are captured by lambda
