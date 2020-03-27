@@ -45,12 +45,10 @@ seed and the UnaryOperator next. The rest of the values in the stream is not yet
 When we go to intermediate operations map and filter, we create a new IntStream object in the heap, that captures the the mapper 
 function that we input into the map function and a pointer to the previous IntStream object. At this point, the function mapper is not
 yet applied. Likewise for the filter operation, a new IntStream object is created in the heap, capturing the Predicate<T> and a pointer
-to the previous IntStream object created by map.
+to the previous IntStream object created by map. Every intermediate operation in our pipeline will create a new stream object in the heap that captures the operation we want to do and a pointer to the previous stream object.
 <br>
 <br>
-Only when we call a terminal operation, in this case forEach, we go upstream all the way to the source, get the current element, and
-apply every intermediate operation downstream up to the terminal operation. We need to go through this upstream-downstream process for
-each element in the stream.
+Only when we call a terminal operation, in this case forEach, we follow the pointers upstream all the way to the source, get the current element, and apply all the intermediate operations downstream up to the terminal operation. We need to go through this upstream-downstream process for each element in the stream.
 <br>
 <br>
 As in Prof Henry's lecture 9 slides, this example illustrates the laziness in streams.
@@ -90,13 +88,18 @@ map: 10
 sum is 60
 ```
 The output showing the filter and map interleaving with each other shows that the whole pipeline of intermediate operation is applied 
-to each element at a time, as we would expect from the laziness of streams causing our evaluation process to go upstream and downstream
-for each element. For contrast. if we were to use a List for the same program, the program would first filter the entire list, and then
-map the entire list, as opposed to applying the whole pipeline to one element at a time.
+to one element at a time, as we would expect from the laziness of streams causing our evaluation process to go upstream and downstream
+for each element and only generating the element and applying the operations as we need. For contrast, if we were to use a List for the
+same program, the program would first filter the entire list, and then map the entire list, as opposed to applying the whole pipeline to
+one element at a time.
 
 ## Advantages of Laziness
 We can create incomplete stream pipelines with only intermediate operations and pass it around our program to be to continue adding more
 intermediate operations or to be consumed at a later time.
 <br>
 <br>
-In addition, since data elements are only generated and consumed when needed, we can create infinite streams.
+In addition, since data elements are only generated and consumed when needed, we can create infinite streams. This is useful when we
+want to do things where we don't know how many elements we need in our data structure. For example, we can write a program to find the 
+first 100 prime numbers. If we were to use a list, we would not know how big our initial list needs to be. Using streams, we can simply
+create an infinite stream, filter with a predicate to look for prime numbers and set a limit on the number of elements we want in the
+stream.
