@@ -33,7 +33,7 @@ What differentiates streams from other data structures is that streams are lazy.
 intermediate operations are not evaluated until the terminal operation is called. Furthermore, the data from the data source is only
 generated and consumed when needed. Another example:
 ```java
-int sum = IntStream.iterate(1, 10).map(x -> x * 2).filter(x -> x % 2 == 0).forEach(System.out::println);
+int sum = IntStream.iterate(1, x -> x + 1).map(x -> x * 2).filter(x -> x % 2 == 0).forEach(System.out::println);
 //(x -> x * 2) is the Function<T,T> mapper
 //(x -> x * 2) is the Predicate<T>
 //note this program runs forever since iterate creates an infinite stream
