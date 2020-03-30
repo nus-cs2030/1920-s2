@@ -97,7 +97,8 @@ Do add content via a Pull Request!
 
 <panel header="## **Lecture 11**" no-close>
 
-Do add content via a Pull Request!
+* [Intro to Asynchronous Programming](lecture11/asyncIntro/asyncIntro.html)
+* [Intro to Asynchronous Programming (Part Two)](lecture11/asyncIntro/asyncIntro2.html)
 
 </panel>
 
