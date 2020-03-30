@@ -9,10 +9,10 @@
 
 # Streams
 <br> 
+
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 [Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture08/Streams/pipelineAndLaziness.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
-<br>
 
 Streams is a new type of data structure introduced to us in lecture 8. Unlike previous data structures, streams are mainly used for
 functional programming, and we can often manipulate the data to get what we want in a single stream pipeline.

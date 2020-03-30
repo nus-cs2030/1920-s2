@@ -73,12 +73,15 @@
 <panel header="## **Lecture 7**" no-close>
   
 * [Functional Interfaces](lecture07/functionalInterfaces/functionalInterfaces.html)
+* [No more Null](lecture07/Optional/Optional.html)
+* [Variable Capture](lecture07/VariableCapture/VariableCapture.html)
+
 
 </panel>
 
 <panel header="## **Lecture 8**" no-close>
 
-Do add content via a Pull Request!
+* [Streams](lecture08/Streams/pipelineAndLaziness.html)
 
 </panel>
 
