@@ -63,8 +63,9 @@
         <h1 id="intro-to-asynchronous-programming">Intro to Asynchronous Programming<a class="fa fa-anchor" href="#intro-to-asynchronous-programming"></a></h1>
         <br>
 
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture11/asyncIntro/asyncIntro.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/DIP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
+        <p>Original Credits go to <a href="https://nus-cs2030.github.io/1718-s2/lec11/index.html">Prof Ooi's AY2017/2018 Semester 2 CS2030 Website</a></p>
         <h2 id="synchronous-vs-asynchronous">Synchronous vs. Asynchronous<a class="fa fa-anchor" href="#synchronous-vs-asynchronous"></a></h2>
         <p>In synchronous programming, when we call a method, we expect the method to be executed, and when the method returns, the result of the method is available.</p>
         <pre><code class="hljs Java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">multiply</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{</span><span>    <span class="hljs-keyword">return</span> x * y;</span><span>}</span><span>&#x200B;</span><span><span class="hljs-keyword">int</span> z = multiply(<span class="hljs-number">3</span>, <span class="hljs-number">4</span>);</span></code></pre>
@@ -74,12 +75,6 @@
         <p>You have seen examples of asynchronous calls:</p>
         <pre><code class="hljs Java"><span>task = <span class="hljs-keyword">new</span> MatrixMultiplyerTask(m1, m2);</span><span>task.fork();</span></code></pre>
         <p>The call above returns immediately even before the matrix multiplication is complete. We can later return to this task, and call <code>task.join()</code> to get the result (waiting for it if necessary).</p>
-        <p>A <code>RecursiveTask</code> also has a <code>isDone()</code> method that it implements as part of the <code>Future</code> interface. Now, we can do something like this:</p>
-        <pre><code class="hljs Java"><span>task = <span class="hljs-keyword">new</span> MatrixMultiplyerTask(m1, m2);</span><span>task.fork();</span><span><span class="hljs-keyword">while</span> (!task.isDone()) {</span><span>    System.out.print(<span class="hljs-string">"."</span>);</span><span>    Thread.sleep(<span class="hljs-number">1000</span>);</span><span>}</span><span>System.out.print(<span class="hljs-string">"done"</span>);</span></code></pre>
-        <p>So, while the task is running, we can print out a series of &quot;.&quot;s to feedback to the users to indicate that it is running.</p>
-        <p><code>Thread.sleep(1000)</code> cause the current running thread to sleep for 1s. It might throw an <code>InterruptedException</code>, if the user interrupts the program (by Control-C). To complete the snippet, we should catch the exception and
-          cancel the task.</p>
-        <pre><code class="hljs Java"><span>task = <span class="hljs-keyword">new</span> MatrixMultiplyerTask(m1, m2);</span><span>task.fork();</span><span><span class="hljs-keyword">try</span> {</span><span>    <span class="hljs-keyword">while</span> (!task.isDone()) {</span><span>        System.out.print(<span class="hljs-string">"."</span>);</span><span>        Thread.sleep(<span class="hljs-number">1000</span>);</span><span>    }</span><span>    System.out.println(<span class="hljs-string">"done"</span>);</span><span>} <span class="hljs-keyword">catch</span> (InterruptedException e) {</span><span>    task.cancel();</span><span>    System.out.println(<span class="hljs-string">"cancelled"</span>);</span><span>}</span></code></pre>
         <h2 id="future">Future<a class="fa fa-anchor" href="#future"></a></h2>
         <p>Let's look at the <code>Future</code> interface a bit more. <code>Future&lt;T&gt;</code> represents the result (of type <code>T</code>) of an asynchronous task that may not be available yet. It has five simple operations:</p>
         <ul>
@@ -89,13 +84,11 @@
           <li><code>isCancelled()</code> returns <code>true</code> of the task has been cancelled.</li>
           <li><code>isDone()</code> returns <code>true</code> if the task has been completed.</li>
         </ul>
-        <p>Both <code>RecursiveTask</code> and <code>RecursiveAction</code> implements the <code>Future</code> interface, so you can use the above methods on your tasks.</p>
         <box type="warning">
-          Scala's `Future` is more powerful -- it allows us to specify what to do when the task completes, and it hands abnormal completions (e.g., exceptions). Python 3.2 supports `Future` through <a href="https://docs.python.org/3/library/concurrent.futures.html">concurrent.futures</a>          module. C++11 supports <a href="/1920-s2/contents/textbook/lecture11/asyncIntro/(http:/en.cppreference.com/w/cpp/thread/future">std::future</a></box>
+          Scala's <code>Future</code> is more powerful -- it allows us to specify what to do when the task completes, and it hands abnormal completions (e.g., exceptions). Python 3.2 supports <code>Future</code> through <a href="https://docs.python.org/3/library/concurrent.futures.html">concurrent.futures</a>          module. C++11 supports <a href="/1920-s2/contents/textbook/lecture11/asyncIntro/(http:/en.cppreference.com/w/cpp/thread/future">std::future</a></box>
         <h2 id="completablefuture">CompletableFuture<a class="fa fa-anchor" href="#completablefuture"></a></h2>
-        <p>The example code above tries every second to see if task is done. For some applications, the response time is critical, and we would like to know as soon as a task is done. For instance, response time is important in stock trading applications
-          and web services.
-        </p>
+        <p>We can try to check every second to see if the task is done. However, this <strong>might not be optimal</strong>.</p>
+        <p>For some applications, the response time is critical, and we would like to know as soon as a task is done. For instance, response time is important in stock trading applications and web services.</p>
         <p>One way to do so, is to sleep for a shorter duration. Or even not sleeping all together:</p>
         <pre><code class="hljs Java"><span>task.fork();</span><span><span class="hljs-keyword">while</span> (!task.isDone()) {</span><span>    System.out.print(<span class="hljs-string">"."</span>);</span><span>}</span><span>System.out.print(<span class="hljs-string">"done"</span>);</span></code></pre>
         <p>This is problematic in many ways, besides printing out too many dots:</p>
@@ -146,7 +139,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.0</a> on Mon, Mar 30, 2020, 2:21:10 PM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.0</a> on Mon, Mar 30, 2020, 2:34:26 PM UTC</small></div>
     </footer>
   </div>
 </body>
