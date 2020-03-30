@@ -723,6 +723,40 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/asyncIntro/asyncIntro.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "intro-to-asynchronous-programming": "Intro to Asynchronous Programming",
+        "synchronous-vs-asynchronous": "Synchronous vs. Asynchronous",
+        "future": "Future",
+        "completablefuture": "CompletableFuture",
+        "waiting-for-completion": "Waiting for Completion"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture11/asyncIntro/asyncIntro2.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "intro-to-asynchronous-programming-part-two": "Intro to Asynchronous Programming (Part Two)",
+        "recap": "Recap",
+        "functors-and-monads-with-completablefuture": "Functors and Monads with CompletableFuture",
+        "variations": "Variations",
+        "handling-exceptions": "Handling Exceptions"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/misc/filesWSL/filesWSL.md",
       "title": "",
       "layout": "default",
