@@ -11,8 +11,10 @@
 <br> 
 
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
-[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture11/asyncIntro/asyncIntro.md)
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/DIP.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
+Original Credits go to [Prof Ooi's AY2017/2018 Semester 2 CS2030 Website](https://nus-cs2030.github.io/1718-s2/lec11/index.html)
 
 ## Synchronous vs. Asynchronous
 
@@ -41,37 +43,6 @@ task.fork();
 
 The call above returns immediately even before the matrix multiplication is complete.  We can later return to this task, and call `task.join()` to get the result (waiting for it if necessary).  
 
-A `RecursiveTask` also has a `isDone()` method that it implements as part of the `Future` interface.  Now, we can do something like this:
-
-```Java
-task = new MatrixMultiplyerTask(m1, m2);
-task.fork();
-while (!task.isDone()) {
-    System.out.print(".");
-    Thread.sleep(1000);
-}
-System.out.print("done");
-```
-
-So, while the task is running, we can print out a series of "."s to feedback to the users to indicate that it is running.
-
-`Thread.sleep(1000)` cause the current running thread to sleep for 1s.  It might throw an `InterruptedException`, if the user interrupts the program (by Control-C).  To complete the snippet, we should catch the exception and cancel the task. 
-
-```Java
-task = new MatrixMultiplyerTask(m1, m2);
-task.fork();
-try {
-    while (!task.isDone()) {
-        System.out.print(".");
-        Thread.sleep(1000);
-    }
-    System.out.println("done");
-} catch (InterruptedException e) {
-    task.cancel();
-    System.out.println("cancelled");
-}
-```
-
 ## Future
 Let's look at the `Future` interface a bit more.  `Future<T>` represents the result (of type `T`) of an asynchronous task that may not be available yet.  It has five simple operations:
 
@@ -81,17 +52,17 @@ Let's look at the `Future` interface a bit more.  `Future<T>` represents the res
 - `isCancelled()` returns `true` of the task has been cancelled.
 - `isDone()` returns `true` if the task has been completed.
 
-Both `RecursiveTask` and `RecursiveAction` implements the `Future` interface, so you can use the above methods on your tasks.
-
 <box type="warning">
-    Scala's `Future` is more powerful -- it allows us to specify what to do when the task completes, and it hands abnormal completions (e.g., exceptions). 
-        Python 3.2 supports `Future` through <a href = "https://docs.python.org/3/library/concurrent.futures.html">concurrent.futures</a> module.  
+    Scala's <code>Future</code> is more powerful -- it allows us to specify what to do when the task completes, and it hands abnormal completions (e.g., exceptions). 
+        Python 3.2 supports <code>Future</code> through <a href = "https://docs.python.org/3/library/concurrent.futures.html">concurrent.futures</a> module.  
         C++11 supports <a href = "(http://en.cppreference.com/w/cpp/thread/future">std::future</a> 
 </box>
 
 ## CompletableFuture
 
-The example code above tries every second to see if task is done.  For some applications, the response time is critical, and we would like to know as soon as a task is done.  For instance, response time is important in stock trading applications and web services.  
+We can try to check every second to see if the task is done. However, this **might not be optimal**.
+
+For some applications, the response time is critical, and we would like to know as soon as a task is done.  For instance, response time is important in stock trading applications and web services.  
 
 One way to do so, is to sleep for a shorter duration.  Or even not sleeping all together:
 

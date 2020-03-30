@@ -14,6 +14,8 @@
 [Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture11/asyncIntro/asyncIntro2.md)
 <!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
 
+Original Credits go to [Prof Ooi's AY2017/2018 Semester 2 CS2030 Website](https://nus-cs2030.github.io/1718-s2/lec11/index.html)
+
 ## Recap
 
 We recall that we have covered the concept of `CompletableFuture` in the [previous segment](asyncIntro.html)
