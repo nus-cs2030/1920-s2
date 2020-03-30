@@ -60,48 +60,33 @@
     <div id="flex-body">
       <div id="content-wrapper">
         <br>
-        <h1 id="accessing-files-in-wsl">Accessing files in WSL<a class="fa fa-anchor" href="#accessing-files-in-wsl"></a></h1>
+        <h1 id="variable-capture">Variable Capture<a class="fa fa-anchor" href="#variable-capture"></a></h1>
         <br>
 
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/misc/filesWSL/filesWSL.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture07/VariableCapture/VariableCapture.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <blockquote>
-          <p>If you are NOT a Windows user, you can safely ignore this section.</p>
-        </blockquote>
-        <p>If you are using Windows for CS2030, chances are you are using Windows Subsystem for Linux. You might be wondering: where do you find your files? Where should you keep your files?</p>
-        <p>First of all, we need to understand that WSL is a completely different system from Windows. Windows is based on (for argument's sake, due to the long history of Windows), the Windows NT kernel, while Linux is based on, well, Linux kernel. Let's
-          just say Linux is Unix-like.</p>
-        <p>As such, the ways they manage their files (filesystem) are very different as well. Windows prefers NTFS (the Windows NT File System), while Linux prefers ext4 or other filesystems.</p>
-        <p>These filesystems affect the properties of a file/folder, called <strong>metadata</strong>. They are managed by filesystems, and contain information such as date modified, date created, or
-          <strong>permissions</strong>. The latter is bold because that is the most important aspect in a file's metadata.
+        <p>For classes that are defined within a method, variable capturing will occur. Variable capture is when the local variables within the local function in which the nested class is defined is being captured inside of the instance of the inner class
+          in the heap. Looking at the code from Recitation 6 Q2,</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{</span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>;</span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{</span><span>      <span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>;</span><span>      A() {</span><span>        y = x + <span class="hljs-number">1</span>;</span><span>      }</span><span>    }</span><span>    A a = <span class="hljs-keyword">new</span> A();</span><span>  }</span><span>}</span></code></pre>
+        <p>In this example, the variable int x is defined in the enclosing function in which the class A is defined. This means that the variable x is a local variable, and will be captured inside every instance of A in the heap, even if not explicitly declared
+          in A. This means that methods in class A will be able to make use of the variable x.</p>
+        <h2 id="effectively-final">Effectively final<a class="fa fa-anchor" href="#effectively-final"></a></h2>
+        <p>From java 8, local variables that are captured must be final or effectively final. In the example above, this means that x must be final or effectively final. Since variable x is captured by A, trying to change the value of x will result in a
+          compilation error.
         </p>
-        <p>One can imagine that modifying Linux files in Windows may result in Windows <strong>not</strong> meeting the metadata requirements of Linux's filesystem, such that when the file/folder is accessed with WSL (Linux), errors such as file lock, insufficient
-          permissions, or even corruption may occur.</p>
-        <p>Therefore, even though one knows that the <code>home</code> (or, tilde <code>~</code>) directory for WSL is located at
-        </p>
-        <pre><code class="hljs"><span>C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home</span></code></pre>
-        <p>this directory <strong>shall never be touched or accessed through Windows' File Explorer</strong> as Windows may unintentionally replace the metadata of whatever related to that directory, causing problems later in WSL. An experienced WSL user
-          always knows this.</p>
-        <p>Now, you may ask, how do we access our files then? There are two ways to access WSL files safely and <strong>correctly</strong>, as advised by Microsoft:</p>
-        <ol>
-          <li>
-            <p>Accessing the root filesystem <code>/</code> directory with <code>\\wsl$\&lt;DistroName&gt;\</code> (e.g. <code>\\wsl$\Ubuntu\</code> for Ubuntu users, <code>\\wsl$\Kali\</code> users, etc). This will create a specialised P9 fileserver, which
-              will expose the Linux file system as a local network directory in Windows. Whatever you do there will be properly adjusted by the magic of Windows x WSL.</p>
-          </li>
-          <li>
-            <p>Accessing the Linux directory by invoking <code>explorer.exe .</code> (yes, the last <code>.</code> there is NOT a typo) <strong>in WSL</strong>. This will open up a File Explorer window and redirect you to your current working directory.
-              The directory opened is also a form of the aforementioned P9 fileserver.</p>
-          </li>
-        </ol>
-        <p>If the problems caused by accessing the Linux files through <code>AppData</code> is just a permissions mismatch, one can fix by using <code>chmod</code>. But, if the problem is file corruption, there might not be a way back. Therefore, this section
-          intends to disseminate <strong>the correct way</strong> of accessing files in WSL. I hope you will become one of the informed ones.</p>
-        <p>You can read more about this issue in <a href="https://devblogs.microsoft.com/commandline/do-not-change-linux-files-using-windows-apps-and-tools/">this Microsoft DevBlogs article</a>.</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{</span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>;</span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{</span><span>      <span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>;</span><span>      A() {</span><span>        y = x + <span class="hljs-number">1</span>;</span><span>      }</span><span>    }</span><span>    x = <span class="hljs-number">1</span>; <span class="hljs-comment">//results in an error</span></span><span>    A a = <span class="hljs-keyword">new</span> A();</span><span>  }</span><span>}</span></code></pre>
+        <p>Somewhere that we often see this phenomenon is in lamba expressions. Like inner classes, lambda expressions also captures local variables, which is why when we use a lambda expression inside a method, we can reference the variables that are defined
+          in the enclosing method within our lambda expression. Since local variables are captured by lambda expressions, this means that those captured variables must also be final or effectively final. For example,</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> </span>{</span><span>  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">supplierAdd</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{</span><span>    Supplier&lt;Integer&gt; s = () -&gt; x + y; <span class="hljs-comment">//variables x and y are captured by lambda</span></span><span>    x++; <span class="hljs-comment">//this results in a compilation error</span></span><span>    <span class="hljs-keyword">return</span> s.get()</span><span>  }</span><span>}</span></code></pre>
       </div>
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#accessing-files-in-wsl">Accessing files in WSL&#x200E;</a>
+            <a class="nav-link py-1" href="#variable-capture">Variable Capture&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#effectively-final">Effectively final&#x200E;</a>
+            </nav>
 
           </nav>
         </div>

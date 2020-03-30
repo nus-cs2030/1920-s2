@@ -650,11 +650,41 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture07/VariableCapture/VariableCapture.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "variable-capture": "Variable Capture",
+        "effectively-final": "Effectively final"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture07/functionalInterfaces/functionalInterfaces.md",
       "title": "",
       "layout": "default",
       "headings": {
         "functional-interfaces": "Functional Interfaces"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture08/Streams/pipelineAndLaziness.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "streams": "Streams",
+        "stream-pipeline": "Stream Pipeline",
+        "laziness": "Laziness",
+        "advantages-of-laziness": "Advantages of Laziness"
       },
       "headingKeywords": {}
     },
