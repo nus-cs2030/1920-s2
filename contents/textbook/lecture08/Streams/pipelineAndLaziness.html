@@ -98,27 +98,63 @@
           can write a program to find the first 100 prime numbers. If we were to use a list, we would not know how big our initial list needs to be. Using streams, we can simply create an infinite stream, filter with a predicate to look for prime numbers
           and set a limit on the number of elements we want in the stream.
         </p>
+        <h2 id="converting-between-streams-arrays-and-arraylists">Converting Between Streams, Arrays and ArrayLists<a class="fa fa-anchor" href="#converting-between-streams-arrays-and-arraylists"></a></h2>
+        <p>From Array to ArrayList</p>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.Arrays;</span><span><span class="hljs-keyword">import</span> java.util.ArrayList;</span><span><span class="hljs-keyword">import</span> java.util.stream.IntStream;</span><span><span class="hljs-keyword">import</span> java.util.stream.Collectors;</span><span>&#x200B;</span><span><span class="hljs-comment">/*</span></span><span><span class="hljs-comment">Integer[] -&gt; ArrayList&lt;Integer&gt;</span></span><span><span class="hljs-comment">Works with any Object instead of Integer as well.</span></span><span><span class="hljs-comment">Does not work for primitive int[] array as Arrays.asList() method does not deal</span></span><span><span class="hljs-comment">with autoboxing and it will just create a List&lt;int[]&gt;</span></span><span><span class="hljs-comment">*/</span></span><span>Integer[] integerArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(Arrays.asList(integerArray));</span><span>&#x200B;</span><span><span class="hljs-comment">// int[] -&gt; ArrayList&lt;Integer&gt;</span></span><span><span class="hljs-keyword">int</span>[] intArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span><span class="hljs-comment">// boxed method converts primitive int to Integer</span></span><span>ArrayList&lt;Integer&gt; intArrayList = IntStream.of(intArray).boxed() </span><span>  .collect(Collectors.toCollection(ArrayList::<span class="hljs-keyword">new</span>));</span></code></pre>
+        <p>From Array to Stream</p>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// Integer -&gt; Stream&lt;Integer&gt;</span></span><span>Integer[] integerArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span>Stream&lt;Integer&gt; integerStream = Arrays.stream(integerArray);</span><span><span class="hljs-comment">// int -&gt; IntStream</span></span><span><span class="hljs-keyword">int</span>[] intArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span>IntStream intStream = Arrays.stream(intArray);</span></code></pre>
+        <p>From ArrayList to Array</p>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; Integer[]</span></span><span>Integer[] integerArray = <span class="hljs-keyword">new</span> Integer[integerArrayList.size()];</span><span>integerArray = integerArrayList.toArray(integerArray);</span><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; int[]</span></span><span><span class="hljs-keyword">int</span>[] intArray = integerArrayList.stream().mapToInt(Integer::intValue).toArray();</span><span><span class="hljs-comment">// IntStream -&gt; int[]</span></span><span><span class="hljs-keyword">int</span>[] intArray = intStream.toArray();</span></code></pre>
+        <p>From ArrayList to Stream</p>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; Stream&lt;Integer&gt;</span></span><span>Stream&lt;Integer&gt; integerStream = integerArrayList.stream();</span><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; IntStream</span></span><span>IntStream intStream = integerArrayList.stream().mapToInt(Integer::intValue);</span></code></pre>
+        <p>From Stream to Array</p>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// Stream&lt;Integer&gt; -&gt; Integer[]</span></span><span>Integer[] integerArray = integerStream.toArray(Integer[]::<span class="hljs-keyword">new</span>);</span><span><span class="hljs-comment">// intStream -&gt; int[]</span></span><span><span class="hljs-keyword">int</span>[] intArray = intStream.toArray();</span></code></pre>
+        <p>From Stream to ArrayList</p>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// Stream&lt;Integer&gt; -&gt; ArrayList&lt;Integer&gt;</span></span><span>List&lt;Integer&gt; integerList = integerStream.collect(Collectors.toList());</span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(integerList);</span><span><span class="hljs-comment">// intStream -&gt; ArrayList&lt;Integer&gt;</span></span><span>List&lt;Integer&gt; integerList = intStream.boxed().collect(Collectors.toList());</span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(integerList);</span><span>```&lt;/T&gt;</span><span>&lt;/div&gt;</span><span>&lt;footer&gt;</span><span>  &lt;!-- Support MarkBind by including a link to us on your landing page! --&gt;</span><span>  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"text-center"</span>&gt;</span><span>    &lt;small&gt;Generated by &lt;a href=<span class="hljs-string">"https://markbind.org/"</span>&gt;MarkBind <span class="hljs-number">2.13</span><span class="hljs-number">.1</span>&lt;/a&gt; on Sun, Apr <span class="hljs-number">12</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">9</span>:<span class="hljs-number">50</span>:<span class="hljs-number">32</span> AM UTC&lt;/small&gt;</span><span>  &lt;/div&gt;</span><span>&lt;/footer&gt;</span></code></pre>
+        </span>
+        </code>
+        </pre>
       </div>
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+      </span>
+      </code>
+      </pre>
+    </div>
+    </span>
+    </code>
+    </pre>
+  </div>
+  </span>
+  </code>
+  </pre>
+  </div>
+  </span>
+  </code>
+  </pre>
+  </div>
+  </span>
+  </code>
+  </pre>
+  </div>
+  </span>
+  </code>
+  </pre>
+  </div>
+  <nav id="page-nav" class="navbar navbar-light bg-transparent">
+    <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#streams">Streams&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#stream-pipeline">Stream Pipeline&#x200E;</a>
-              <a class="nav-link py-1" href="#laziness">Laziness&#x200E;</a>
-              <a class="nav-link py-1" href="#advantages-of-laziness">Advantages of Laziness&#x200E;</a>
-            </nav>
+      <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+        <a class="nav-link py-1" href="#streams">Streams&#x200E;</a>
+        <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+          <a class="nav-link py-1" href="#stream-pipeline">Stream Pipeline&#x200E;</a>
+          <a class="nav-link py-1" href="#laziness">Laziness&#x200E;</a>
+          <a class="nav-link py-1" href="#advantages-of-laziness">Advantages of Laziness&#x200E;</a>
+          <a class="nav-link py-1" href="#converting-between-streams-arrays-and-arraylists">Converting Between Streams, Arrays and ArrayLists&#x200E;</a>
+        </nav>
 
-          </nav>
-        </div>
       </nav>
     </div>
-    <footer>
-
-      <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 4:32:28 AM UTC</small></div>
-    </footer>
+  </nav>
+  </div>
   </div>
 </body>
 <script src="../../../../markbind/js/vue.min.js"></script>

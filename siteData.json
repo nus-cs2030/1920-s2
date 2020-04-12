@@ -685,7 +685,8 @@
         "streams": "Streams",
         "stream-pipeline": "Stream Pipeline",
         "laziness": "Laziness",
-        "advantages-of-laziness": "Advantages of Laziness"
+        "advantages-of-laziness": "Advantages of Laziness",
+        "converting-between-streams-arrays-and-arraylists": "Converting Between Streams, Arrays and ArrayLists"
       },
       "headingKeywords": {}
     },
