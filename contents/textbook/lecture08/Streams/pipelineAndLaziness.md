@@ -103,3 +103,81 @@ want to do things where we don't know how many elements we need in our data stru
 first 100 prime numbers. If we were to use a list, we would not know how big our initial list needs to be. Using streams, we can simply
 create an infinite stream, filter with a predicate to look for prime numbers and set a limit on the number of elements we want in the
 stream.
+
+## Converting Between Streams, Arrays and ArrayLists
+
+From Array to ArrayList
+
+```java
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.stream.IntStream;
+import java.util.stream.Collectors;
+
+/*
+Integer[] -> ArrayList<Integer>
+Works with any Object instead of Integer as well.
+Does not work for primitive int[] array as Arrays.asList() method does not deal
+with autoboxing and it will just create a List<int[]>
+*/
+Integer[] integerArray = {0, 1, 2, 3};
+ArrayList<Integer> integerArrayList = new ArrayList<>(Arrays.asList(integerArray));
+
+// int[] -> ArrayList<Integer>
+int[] intArray = {0, 1, 2, 3};
+// boxed method converts primitive int to Integer
+ArrayList<Integer> intArrayList = IntStream.of(intArray).boxed() 
+  .collect(Collectors.toCollection(ArrayList::new));
+```
+
+From Array to Stream
+
+```java
+// Integer -> Stream<Integer>
+Integer[] integerArray = {0, 1, 2, 3};
+Stream<Integer> integerStream = Arrays.stream(integerArray);
+// int -> IntStream
+int[] intArray = {0, 1, 2, 3};
+IntStream intStream = Arrays.stream(intArray);
+```
+
+From ArrayList to Array
+
+```java
+// ArrayList<Integer> -> Integer[]
+Integer[] integerArray = new Integer[integerArrayList.size()];
+integerArray = integerArrayList.toArray(integerArray);
+// ArrayList<Integer> -> int[]
+int[] intArray = integerArrayList.stream().mapToInt(Integer::intValue).toArray();
+// IntStream -> int[]
+int[] intArray = intStream.toArray();
+```
+
+From ArrayList to Stream
+
+```java
+// ArrayList<Integer> -> Stream<Integer>
+Stream<Integer> integerStream = integerArrayList.stream();
+// ArrayList<Integer> -> IntStream
+IntStream intStream = integerArrayList.stream().mapToInt(Integer::intValue);
+```
+
+From Stream to Array
+
+```java
+// Stream<Integer> -> Integer[]
+Integer[] integerArray = integerStream.toArray(Integer[]::new);
+// intStream -> int[]
+int[] intArray = intStream.toArray();
+```
+
+From Stream to ArrayList
+
+```java
+// Stream<Integer> -> ArrayList<Integer>
+List<Integer> integerList = integerStream.collect(Collectors.toList());
+ArrayList<Integer> integerArrayList = new ArrayList<>(integerList);
+// intStream -> ArrayList<Integer>
+List<Integer> integerList = intStream.boxed().collect(Collectors.toList());
+ArrayList<Integer> integerArrayList = new ArrayList<>(integerList);
+```
