@@ -655,6 +655,7 @@
       "layout": "default",
       "headings": {
         "variable-capture": "Variable Capture",
+        "qualified-this": "Qualified this",
         "effectively-final": "Effectively final"
       },
       "headingKeywords": {}
