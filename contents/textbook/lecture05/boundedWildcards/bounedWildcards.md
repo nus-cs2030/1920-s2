@@ -30,6 +30,13 @@ public static void process(List<? extends T> myList) {
 ```
 `myList` is the a list of **T** or **subtype of T**, thus no matter what runtime-type `ele` is, we can always assign compile time type **T** to it.
 
+Notice, however, that it is better not to initialize a list with an upper-bounded wild card.
+```
+ArrayList<? extends Number> list = new ArrayList<>();
+list.add(1);
+```
+The code above will actually give rise to an error of incompatible types. One possible explanation is that the type parameter of list is not determined, which can be of type Integer, Double, or any other subtypes of Number. Since it is possible for the type to be of type Double, storing an integer into the list will be invalid as an integer is not a double value. The same applies for the reason why a double value cannot be added to the list.
+
 > **lower-bounded wildcard**
 
 Similarly, `<? super T>` is known as the lower-bounded wildcard, which relaxes the use of complex type to its **contra-variant complex types**, i.e.complex types with type parameter being supertype of `T`.  So, `List<? super T>` means **a List of supertypes of T**.
