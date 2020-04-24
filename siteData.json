@@ -528,6 +528,19 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture05/javaContainers/List.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "java-util-liste": "java.util.List&lt;E&gt;"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/lecture05/staticGenerics/staticGenerics.md",
       "title": "",
       "layout": "default",
