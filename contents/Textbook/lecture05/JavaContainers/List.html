@@ -62,28 +62,46 @@
 
       <div id="content-wrapper">
         <br>
-        <h1 id="interface-segregation-principle">Interface Segregation Principle<a class="fa fa-anchor" href="#interface-segregation-principle" onclick="event.stopPropagation()"></a></h1>
+        <h1 id="java-util-liste">java.util.List&lt;E&gt;<a class="fa fa-anchor" href="#java-util-liste" onclick="event.stopPropagation()"></a></h1>
         <br>
 
-        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/ISP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
+        <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/unboundWildcards/unboundWildcards.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>The Interface Segregation Principle states that:</p>
-        <blockquote>
-          <p>A client should not be forced to depend on methods it does not use.</p>
-        </blockquote>
-        <p>This means that:</p>
-        <ol>
-          <li>Classes should not implement methods that they can’t</li>
-          <li>Clients should not know of methods they don’t need.</li>
-        </ol>
-        <p>For example, we may have an abstract class Shape with methods to get shape properties as well as scale a shape.</p>
-        <pre><code class="hljs"><span>abstract class Shape {<br></span><span>    abstract double getArea();<br></span><span>    abstract double getPerimeter();<br></span><span>    abstract Shape scale(double factor);<br></span><span>}<br></span></code></pre>
-        <p>However, this would violate the Interface Segregation Principle as some classes might want to implement scale but are unable to implement getArea and getPerimeter (e.g. 3D Objects). In addition clients might need to implement getArea and getPerimeter without needing to implement scale.</p>
-        <p>It would be better to separate the the methods dealing with shapes properties from methods dealing with scaling into different interfaces to avoid violating the Interface Segregation Principle.</p>
-        <pre><code class="hljs"><span>interface Scalable {<br></span><span>    Scalable scale(double factor);<br></span><span>}	<br></span></code></pre>
-        <pre><code class="hljs"><span>abstract class Shape {<br></span><span>    abstract double getArea();<br></span><span>    abstract double getPerimeter();<br></span><span>}<br></span></code></pre>
-        <p>This way, shapes can choose to implement scalable only if needed.</p>
-        <pre><code class="hljs"><span>class Circle extends Shape implements Scalable {…}<br></span></code></pre>
+        <h4 id="java-s-generic-collection-type-liste">Java's generic Collection type List&lt;E&gt;<a class="fa fa-anchor" href="#java-s-generic-collection-type-liste" onclick="event.stopPropagation()"></a></h4>
+        <p>A List is a ordered Collection allowing duplicate elements with undefined length.
+          handy classes that implement List&lt;E&gt; includes:</p>
+        <ul>
+          <li>ArrayList&lt;E&gt;, which is implemented by resizing array.</li>
+          <li>LinkedList&lt;E&gt;, which is implemented by chaining nodes.</li>
+        </ul>
+        <p>The above two List classes have nearly no difference in usage but have differentiated performance features. (ArrayList is more prefered for large scale of data.)
+          <strong>Constructor:</strong></p>
+        <ul>
+          <li><code>ArrayList()</code> instantiates an ArrayList with initial capacity of ten.</li>
+          <li><code>ArrayList(int capacity)</code> instantiates it with specified capacity.</li>
+          <li><code>ArrayList(Collection&lt;? extends E&gt; c)</code> instantiates it with an existing Collection of subtypes of E.</li>
+        </ul>
+        <p><strong>Basic methods:</strong></p>
+        <ul>
+          <li><code>add(E e)</code> appends an element to the tail of list.</li>
+          <li><code>add(int index, E e)</code> inserts an element to specified index position.</li>
+          <li><code>get(int index)</code> returns the element on the specified index position.</li>
+          <li><code>remove(int index)</code> removes the element on the specified index position.</li>
+          <li><code>remove(Object o)</code> removes the first occurence of the argument if it presents.</li>
+          <li><code>set(int index, E e)</code> set the element of the specified index position as the given argument.</li>
+          <li><code>clear()</code> removes all the elements in the list.</li>
+          <li><code>size()</code> returns current number of elements the list contains.</li>
+          <li><code>contains(Object o)</code> returns a boolean value indicating if the argument is in the list.</li>
+          <li><code>indexOf(Object o)</code> returns index of the first occurence of the argument, or -1 if the list does not contain the argument.</li>
+          <li><code>toArray(T[] a)</code> returns an array of specified type containing all the elements, if the specified type is incompatible, ArrayStoreException will be thrown.</li>
+        </ul>
+        <p><strong>Iterator of List:</strong>
+          Use <code>.iterator()</code> to aquire an Iterator&lt;E&gt; of the list.
+          An iterator must implement two methods: <code>hasNext()</code> and <code>next()</code>.
+          We can thus use an iterator to access elements of the list sequentially</p>
+        <pre><code class="hljs java"><span>List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br></span><span><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>; i&lt;<span class="hljs-number">6</span>; i++) list.add(i);<br></span><span>Iterator&lt;Integer&gt; iterator = list.iterator();<br></span><span><span class="hljs-keyword">while</span> (iterator.hasNext())<br></span><span>    System.out.print(iterator.next());<br></span><span><span class="hljs-comment">// Output: 12345</span><br></span></code></pre>
+        <p><a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html">For full information, please reffer to Java SE 11 &amp; SDK 11</a></p>
+        <p>&lt;/E&gt;&lt;/E&gt;&lt;/E&gt;&lt;/E&gt;&lt;/E&gt;&lt;/E&gt;</p>
       </div>
 
 
@@ -91,7 +109,7 @@
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#interface-segregation-principle">Interface Segregation Principle&#x200E;</a>
+            <a class="nav-link py-1" href="#java-util-liste">java.util.List&lt;E&gt;&#x200E;</a>
 
           </nav>
         </div>

@@ -43,6 +43,19 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/Textbook/lecture05/JavaContainers/List.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "java-util-liste": "java.util.List&lt;E&gt;"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/guides/settingUpCheckstyle.md",
       "title": "",
       "layout": "default",
