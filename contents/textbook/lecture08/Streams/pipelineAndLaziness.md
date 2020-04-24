@@ -189,22 +189,23 @@ Do note that these are not exhaustive but what I feel is the most common(for thi
 
 | Obtaining a Stream | Intermediate Operations | Terminal Operations |
 | --- | --- | --- |
-|[Stream.of(...)](#streamof) | [filter(Predicate <? super T> pred)](#filter) | [forEach(Consumer<? super T> action](#foreachconsumer-super-t-action) |
-| [Stream.of(T t)](#streamof) | [map(Function<? super T, ? extends R> mapper)](#map) | [toArray()](#converting-between-streams-arrays-and-arraylists) |
-| [Stream.generate(Supplier<? extends T> s)](#streamgenerate) | [flatMap(Function<? super T,? extends Stream<? extends R>> mapper)](#flatmap) | [noneMatch(Predicate<? super T> pred)](#nonematch-allmatch-anymatchpredicate-super-t-predicate) |
-| [Stream.iterate(T seed, UnaryOperator<T> next)](#streamiterate) | [sorted()](#sorted) | [allMatch(Predicate<? super T> pred)](#nonematch-allmatch-anymatchpredicate-super-t-predicate) |
-| [Stream.iterate(T seed, Predicate <? super T> hasNext, UnaryOperator<T> next)](#streamiterate) | [limit(long maxSize)](#limitlong-maxsize) | [anyMatch(Predicate<? super T> predicate)](#nonematch-allmatch-anymatchpredicate-super-t-predicate) |
-| [Stream.concat(Stream<? extends T> a, Stream<? extends T> b)](#streamconcat) | [skip(long n)](#skiplong-n) | [count()](#count) |
-| [IntStream.rangeClosed(int startInclusive, int endInclusive)](#intstreamrangeclosed--intstreamrange) | [distinct()](#distinct) | [min(Comparator<? super T> comparator)/ max(Comparator<? super T> comparator)](#min-and-max) |
-| [IntStream.ranged(int startInclusive, int endInclusive)](#intstreamrangeclosed--intstreamrange) | [mapToObj/mapToInt/mapToLong](#maptoobj-maptolong-maptodouble) | [reduce(BinaryOperator<T> accumulator)](#min-and-max) |
-| | [peek(Consumer<? super T> action)](#peekconsumer-super-t-action) | 	[reduce(T identity, BinaryOperator<T> accumulator)](#reduce) | 
-| | | [collect(Collector<? super T,A,R> collector)](#converting-between-streams-arrays-and-arraylists) | 
+|[`Stream.of(...)`](#streamof) | [`filter(Predicate <? super T> pred)`](#filter) | [`forEach(Consumer<? super T> action`](#foreach-consumer-action) |
+| [`Stream.of(T t)`](#streamof) | [`map(Function<? super T, ? extends R> mapper)`](#map) | [`toArray()`](#converting-between-streams-arrays-and-arraylists) |
+| [`Stream.generate(Supplier<? extends T> s)`](#streamgenerate) | [`flatMap(Function<? super T,? extends Stream<? extends R>> mapper)`](#flatmap) | [`noneMatch(Predicate<? super T> pred)`](#nonematch-allmatch-anymatchpredicate-super-t-predicate) |
+| [`Stream.iterate(T seed, UnaryOperator<T> next)`](#streamiterate) | [`sorted()`](#sorted) | [`allMatch(Predicate<? super T> pred)`](#nonematch-allmatch-anymatchpredicate-super-t-predicate) |
+| [`Stream.iterate(T seed, Predicate <? super T> hasNext, UnaryOperator<T> next)`](#streamiterate) | [`limit(long maxSize)`](#limitlong-maxsize) | [`anyMatch(Predicate<? super T> predicate)`](#nonematch-allmatch-anymatchpredicate-predicate) |
+| [`Stream.concat(Stream<? extends T> a, Stream<? extends T> b)`](#streamconcat) | [`skip(long n)`](#skiplong-n) | [`count()`](#count) |
+| [`IntStream.rangeClosed(int startInclusive, int endInclusive)`](#intstreamrangeclosed--intstreamrange) | [`distinct()`](#distinct) | [`min(Comparator<? super T> comparator)/ max(Comparator<? super T> comparator)`](#min-and-max) |
+| [`IntStream.ranged(int startInclusive, int endInclusive)`](#intstreamrangeclosed--intstreamrange) | [`mapToObj/mapToInt/mapToLong`](#maptoobj-maptolong-maptodouble) | [`reduce(BinaryOperator<T> accumulator)`](#min-and-max) |
+| | [`peek(Consumer<? super T> action)`](#peek-consumer-action) | 	[`reduce(T identity, BinaryOperator<T> accumulator)`](#reduce) | 
+| | | [`collect(Collector<? super T,A,R> collector)`](#converting-between-streams-arrays-and-arraylists) | 
 
 Also, the Stream API is [here](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Stream.html) and IntStream is [here](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/IntStream.html)
 
 #### Stream.of
 Making a Stream out of individual values or an array or a list.
 <br>
+
 ```java
 //From a bunch of digits
 Stream<Integer> stream = Stream.of(1, 2, 3, 5, 7, 11);
@@ -395,7 +396,7 @@ IntStream.iterate(2, x -> x + 2).skip(2).limit(5).forEach(System.out::println);
 
 [back to summary](#summary-for-streams)
 
-#### peek(Consumer<? super T> action)
+#### peek(Consumer action)
 Stream peek(Consumer action) returns a stream consisting of the elements of this stream, additionally performing the provided action on each element as elements are consumed from the resulting stream. This is an intermediate operation i.e, it creates a new stream that, when traversed, contains the elements of the initial stream that match the given predicate. Therefore, using peek without any terminal operation would do nothing. 
 <br>
 This method exists mainly to support debugging, where you want to see the elements as they flow past a certain point in a pipeline.
@@ -413,7 +414,7 @@ IntStream.iterate(2, x -> x + 2).limit(5).peek(System.out::println).count();
 
 [back to summary](#summary-for-streams)
 
-#### 	forEach(Consumer<? super T> action)	
+#### 	forEach(Consumer action)	
 Performs an action for each element of this stream. It is a terminal operation. 
 
 ```java
@@ -424,7 +425,7 @@ IntStream.range(4, 9).forEach(System.out::println);
 
 [back to summary](#summary-for-streams)
 
-#### noneMatch/ allMatch/ anyMatch(Predicate<? super T> predicate)
+#### noneMatch/ allMatch/ anyMatch(Predicate predicate)
 These operations return a boolean result.
 noneMatch returns true if none of the elements pass the given predicate
 allMatch returns true if every element passes the given predicate
@@ -474,7 +475,7 @@ IntStream.rangeClosed(3,6).reduce((x, y) -> x + y);
 // this will produce an optional of 3 + 4 + 5 + 6 which is Optional(18)
 
 //However, if we input an empty stream
-IntStream.rangeClosed(3,3).filter(x -> x<2).reduce((x,y)-> x+y)
+IntStream.rangeClosed(3,3).filter(x -> x < 2).reduce((x,y)-> x+y)
 // you will get an optional empty
 
 //If there is only 1 element
