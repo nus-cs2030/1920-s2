@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="bounded-wildcards">bounded Wildcards<a class="fa fa-anchor" href="#bounded-wildcards"></a></h1>
+        <h1 id="bounded-wildcards">bounded Wildcards<a class="fa fa-anchor" href="#bounded-wildcards" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/unboundWildcards/unboundWildcards.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
@@ -69,23 +71,29 @@
         <blockquote>
           <p><strong>upper-bounded wildcard</strong></p>
         </blockquote>
-        <p><code>&lt;? extends T&gt;</code> is known as the upper-bounded wildcard. This is used to relax the use of complex type to its <strong>co-variant complex types</strong>, i.e.complex types with type parameter being subtype of <code>T</code>. So,
-          <code>List&lt;? extends T&gt;</code> means <strong>a List of subtypes of T</strong>. Short example: consider the following <code>process</code> method:</p>
-        <pre><code class="hljs"><span>public static void process(List&lt;? extends T&gt; myList) {</span><span>    for (T ele : myList) {</span><span>        // ...</span><span>    }</span><span>}</span></code></pre>
+        <p><code>&lt;? extends T&gt;</code> is known as the upper-bounded wildcard. This is used to relax the use of complex type to its <strong>co-variant complex types</strong>, i.e.complex types with type parameter being subtype of <code>T</code>. So, <code>List&lt;? extends T&gt;</code> means <strong>a List of subtypes of T</strong>.
+          Short example:
+          consider the following <code>process</code> method:</p>
+        <pre><code class="hljs"><span>public static void process(List&lt;? extends T&gt; myList) {<br></span><span>    for (T ele : myList) {<br></span><span>        // ...<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p><code>myList</code> is the a list of <strong>T</strong> or <strong>subtype of T</strong>, thus no matter what runtime-type <code>ele</code> is, we can always assign compile time type <strong>T</strong> to it.</p>
+        <p>Notice, however, that it is better not to initialize a list with an upper-bounded wild card.</p>
+        <pre><code class="hljs"><span>ArrayList&lt;? extends Number&gt; list = new ArrayList&lt;&gt;();<br></span><span>list.add(1);<br></span></code></pre>
+        <p>The code above will actually give rise to an error of incompatible types. One possible explanation is that the type parameter of list is not determined, which can be of type Integer, Double, or any other subtypes of Number. Since it is possible for the type to be of type Double, storing an integer into the list will be invalid as an integer is not a double value. The same applies for the reason why a double value cannot be added to the list.</p>
         <blockquote>
           <p><strong>lower-bounded wildcard</strong></p>
         </blockquote>
-        <p>Similarly, <code>&lt;? super T&gt;</code> is known as the lower-bounded wildcard, which relaxes the use of complex type to its <strong>contra-variant complex types</strong>, i.e.complex types with type parameter being supertype of <code>T</code>.
-          So,
-          <code>List&lt;? super T&gt;</code> means <strong>a List of supertypes of T</strong>. Short example: consider the following <code>adding</code> method:</p>
-        <pre><code class="hljs"><span>public static void adding(List&lt;? super T&gt; myList) {</span><span>    myList.add(new T());</span><span>}</span></code></pre>
+        <p>Similarly, <code>&lt;? super T&gt;</code> is known as the lower-bounded wildcard, which relaxes the use of complex type to its <strong>contra-variant complex types</strong>, i.e.complex types with type parameter being supertype of <code>T</code>. So, <code>List&lt;? super T&gt;</code> means <strong>a List of supertypes of T</strong>.
+          Short example:
+          consider the following <code>adding</code> method:</p>
+        <pre><code class="hljs"><span>public static void adding(List&lt;? super T&gt; myList) {<br></span><span>    myList.add(new T());<br></span><span>}<br></span></code></pre>
         <p><code>myList</code> is the a list of <strong>T</strong> or <strong>supertype of T</strong>, thus it is always compatible to add object of type <strong>T</strong> into it since <strong>T</strong> is the subtype of <strong>supertype of T</strong></p>
-        <h4 id="guidelines-for-wildcard-use">Guidelines for Wildcard use<a class="fa fa-anchor" href="#guidelines-for-wildcard-use"></a></h4>
+        <h4 id="guidelines-for-wildcard-use">Guidelines for Wildcard use<a class="fa fa-anchor" href="#guidelines-for-wildcard-use" onclick="event.stopPropagation()"></a></h4>
         <p>One of the more confusing aspects when learning to program with generics is determining when to use an upper bounded wildcard and when to use a lower bounded wildcard. This page provides some guidelines to follow when designing your code.</p>
         <p>For purposes of this discussion, it is helpful to think of variables as providing one of two functions:</p>
-        <p><strong>An &quot;In&quot; Variable</strong> An &quot;in&quot; variable serves up data to the code. Imagine a copy method with two arguments: copy(src, dest). The src argument provides the data to be copied, so it is the &quot;in&quot; parameter.
-          <strong>An &quot;Out&quot; Variable</strong> An &quot;out&quot; variable holds data for use elsewhere. In the copy example, copy(src, dest), the dest argument accepts data, so it is the &quot;out&quot; parameter.</p>
+        <p><strong>An &quot;In&quot; Variable</strong>
+          An &quot;in&quot; variable serves up data to the code. Imagine a copy method with two arguments: copy(src, dest). The src argument provides the data to be copied, so it is the &quot;in&quot; parameter.
+          <strong>An &quot;Out&quot; Variable</strong>
+          An &quot;out&quot; variable holds data for use elsewhere. In the copy example, copy(src, dest), the dest argument accepts data, so it is the &quot;out&quot; parameter.</p>
         <p>Of course, some variables are used both for &quot;in&quot; and &quot;out&quot; purposes — this scenario is also addressed in the guidelines.</p>
         <p>You can use the &quot;in&quot; and &quot;out&quot; principle when deciding whether to use a wildcard and what type of wildcard is appropriate. The following list provides the guidelines to follow:</p>
         <blockquote>
@@ -99,6 +107,8 @@
         </ul>
         <p>More quetions and exercises on <a href="https://docs.oracle.com/javase/tutorial/java/generics/QandE/generics-questions.html">Java tutorial</a></p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -112,7 +122,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

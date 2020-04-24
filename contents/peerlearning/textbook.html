@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
 </head>
@@ -58,18 +59,26 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="textbook-contributions">Textbook Contributions<a class="fa fa-anchor" href="#textbook-contributions"></a></h1>
-        <p>Below is the tutorial on how you can make contributions to our CS2030 Collaborative Textbook using Github. We will be using markdown for the Collaborative Textbook.</p>
+        <h1 id="textbook-contributions">Textbook Contributions<a class="fa fa-anchor" href="#textbook-contributions" onclick="event.stopPropagation()"></a></h1>
+        <p>Below is the tutorial on how you can make contributions to our CS2030 Collaborative Textbook using Github.
+          We will be using markdown for the Collaborative Textbook.</p>
         <p>Click <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">here</a> or
           <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">here</a> for a simple Markdown cheatsheet!</p>
         <box type="warning">
-          This is a beginner's guide to the forking workflow! <br> If you had prior experience to using Github, this might not be the tutorial for you. <i class="fas fa-frown"></i></box>
-        <panel no-close id="step-0-signing-up-for-github"><template slot="_header"><h2 id="step-0-signing-up-for-github">Step 0: Signing Up for Github<a class="fa fa-anchor" href="#step-0-signing-up-for-github"></a></h2></template>
+          This is a beginner's guide to the forking workflow! <br>
+          If you had prior experience to using Github, this might not be the tutorial for you. <i class="fas fa-frown"></i></box>
+        <panel no-close id="step-0-signing-up-for-github"><template slot="_header">
+            <h2 id="step-0-signing-up-for-github">Step 0: Signing Up for Github<a class="fa fa-anchor" href="#step-0-signing-up-for-github" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <p>Please Sign Up for Github if you have not done so!</p>
-          <img src="/1920-s2/contents/peerlearning/images/SignUps.png"></panel>
-        <panel no-close id="step-1-adding-an-issue-to-the-repository"><template slot="_header"><h2 id="step-1-adding-an-issue-to-the-repository">Step 1: Adding an Issue to the repository<a class="fa fa-anchor" href="#step-1-adding-an-issue-to-the-repository"></a></h2></template>
+          <img src="/1920-s2/contents/peerlearning/images/SignUps.png">
+        </panel>
+        <panel no-close id="step-1-adding-an-issue-to-the-repository"><template slot="_header">
+            <h2 id="step-1-adding-an-issue-to-the-repository">Step 1: Adding an Issue to the repository<a class="fa fa-anchor" href="#step-1-adding-an-issue-to-the-repository" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <p>If you have seen a contribution that has not been made, you can add an issue <a href="https://github.com/nus-cs2030/1920-s2/issues">here</a>.</p>
           <img src="/1920-s2/contents/peerlearning/images/AddingIssues.png">
           <p>Be sure to give it the following:</p>
@@ -80,42 +89,70 @@
           </ol>
           <p>Our Teaching Staff would then give a suggestion on where you can make this contribution within the textbook.</p>
         </panel>
-        <panel no-close id="step-2-searching-for-issues-to-the-repository"><template slot="_header"><h2 id="step-2-searching-for-issues-to-the-repository">Step 2: Searching For Issues to the Repository<a class="fa fa-anchor" href="#step-2-searching-for-issues-to-the-repository"></a></h2></template>
-          <p>To Look for Contributions that you can make, go to <a href="https://github.com/nus-cs2030/1920-s2/issues">this link</a> to find an issue which was raised by the Teaching Staff / Your Fellow Peers.</p>
+        <panel no-close id="step-2-searching-for-issues-to-the-repository"><template slot="_header">
+            <h2 id="step-2-searching-for-issues-to-the-repository">Step 2: Searching For Issues to the Repository<a class="fa fa-anchor" href="#step-2-searching-for-issues-to-the-repository" onclick="event.stopPropagation()"></a></h2>
+          </template>
+          <p>To Look for Contributions that you can make, go to <a href="https://github.com/nus-cs2030/1920-s2/issues">this link</a> to find
+            an issue which was raised by the Teaching Staff / Your Fellow Peers.</p>
           <img src="/1920-s2/contents/peerlearning/images/FindingIssues.png">
           <br>
           <p>From there, you should be able to see what kind of contributions you can make to the textbook.</p>
-          <img src="/1920-s2/contents/peerlearning/images/CheckIssue.png"></panel>
-        <panel no-close id="step-3-finding-the-section-to-edit"><template slot="_header"><h2 id="step-3-finding-the-section-to-edit">Step 3: Finding the section to edit<a class="fa fa-anchor" href="#step-3-finding-the-section-to-edit"></a></h2></template>
-          <p>While navigating through the <a href="https://nus-cs2030.github.io/1920-s2/contents/textbook/textbook.html">textbook</a>, you can click on any of the pen icons to edit the page.</p>
-          <img src="/1920-s2/contents/peerlearning/images/Click.png"></panel>
-        <panel no-close id="step-4-forking-the-repository"><template slot="_header"><h2 id="step-4-forking-the-repository">Step 4: Forking the Repository<a class="fa fa-anchor" href="#step-4-forking-the-repository"></a></h2></template>
-          <p>It will direct you to the Github Repository of this website. From there, you are required to create a fork of the repository.
-          </p>
-          <img src="/1920-s2/contents/peerlearning/images/GithubFork.png"></panel>
-        <panel no-close id="step-5-editing-using-the-markdown-editor"><template slot="_header"><h2 id="step-5-editing-using-the-markdown-editor">Step 5: Editing using the Markdown editor<a class="fa fa-anchor" href="#step-5-editing-using-the-markdown-editor"></a></h2></template>
-          <p>You will then create a fork of this repository. Use the Markdown editor to make whatever changes you need to make to that particular section! Try to add in useful information here which is covered / not covered in lectures!</p>
-          <img src="/1920-s2/contents/peerlearning/images/MarkdownEditor.png"></panel>
-        <panel no-close id="step-6-save-your-file-changes"><template slot="_header"><h2 id="step-6-save-your-file-changes">Step 6: Save your file changes<a class="fa fa-anchor" href="#step-6-save-your-file-changes"></a></h2></template>
+          <img src="/1920-s2/contents/peerlearning/images/CheckIssue.png">
+        </panel>
+        <panel no-close id="step-3-finding-the-section-to-edit"><template slot="_header">
+            <h2 id="step-3-finding-the-section-to-edit">Step 3: Finding the section to edit<a class="fa fa-anchor" href="#step-3-finding-the-section-to-edit" onclick="event.stopPropagation()"></a></h2>
+          </template>
+          <p>While navigating through the <a href="https://nus-cs2030.github.io/1920-s2/contents/textbook/textbook.html">textbook</a>,
+            you can click on any of the pen icons to edit the page.</p>
+          <img src="/1920-s2/contents/peerlearning/images/Click.png">
+        </panel>
+        <panel no-close id="step-4-forking-the-repository"><template slot="_header">
+            <h2 id="step-4-forking-the-repository">Step 4: Forking the Repository<a class="fa fa-anchor" href="#step-4-forking-the-repository" onclick="event.stopPropagation()"></a></h2>
+          </template>
+          <p>It will direct you to the Github Repository of this website. From there, you are required to create a fork of the
+            repository.</p>
+          <img src="/1920-s2/contents/peerlearning/images/GithubFork.png">
+        </panel>
+        <panel no-close id="step-5-editing-using-the-markdown-editor"><template slot="_header">
+            <h2 id="step-5-editing-using-the-markdown-editor">Step 5: Editing using the Markdown editor<a class="fa fa-anchor" href="#step-5-editing-using-the-markdown-editor" onclick="event.stopPropagation()"></a></h2>
+          </template>
+          <p>You will then create a fork of this repository. Use the Markdown editor to make whatever changes you need to make
+            to that particular section! Try to add in useful information here which is covered / not covered in lectures!</p>
+          <img src="/1920-s2/contents/peerlearning/images/MarkdownEditor.png">
+        </panel>
+        <panel no-close id="step-6-save-your-file-changes"><template slot="_header">
+            <h2 id="step-6-save-your-file-changes">Step 6: Save your file changes<a class="fa fa-anchor" href="#step-6-save-your-file-changes" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <p>Once done, save and commit your file changes!</p>
-          <img src="/1920-s2/contents/peerlearning/images/ProposedFileChange.png"></panel>
-        <panel no-close id="step-7-create-your-pull-request"><template slot="_header"><h2 id="step-7-create-your-pull-request">Step 7: Create your Pull Request<a class="fa fa-anchor" href="#step-7-create-your-pull-request"></a></h2></template>
-          <p>It will now bring you back to the main repository of the website. As a result, you can create your own pull request to make a contribution to the website.</p>
+          <img src="/1920-s2/contents/peerlearning/images/ProposedFileChange.png">
+        </panel>
+        <panel no-close id="step-7-create-your-pull-request"><template slot="_header">
+            <h2 id="step-7-create-your-pull-request">Step 7: Create your Pull Request<a class="fa fa-anchor" href="#step-7-create-your-pull-request" onclick="event.stopPropagation()"></a></h2>
+          </template>
+          <p>It will now bring you back to the main repository of the website. As a result, you can create
+            your own pull request to make a contribution to the website.</p>
           <img src="/1920-s2/contents/peerlearning/images/PRStepOne.png">
           <p>From which, you are required to name your Pull Request in the following format: (full-name) : (Name of PR)</p>
-          <img src="/1920-s2/contents/peerlearning/images/PRStepTwo.png"></panel>
-        <panel no-close id="step-8-view-your-website-changes"><template slot="_header"><h2 id="step-8-view-your-website-changes">Step 8: View your website changes<a class="fa fa-anchor" href="#step-8-view-your-website-changes"></a></h2></template>
+          <img src="/1920-s2/contents/peerlearning/images/PRStepTwo.png">
+        </panel>
+        <panel no-close id="step-8-view-your-website-changes"><template slot="_header">
+            <h2 id="step-8-view-your-website-changes">Step 8: View your website changes<a class="fa fa-anchor" href="#step-8-view-your-website-changes" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <p>Once you have submitted your Pull Request, you can view the changes you have made in a preview website using Netlify!</p>
           <img src="/1920-s2/contents/peerlearning/images/WebsiteOne.png">
           <p>Now, you would have to wait for your Pull Request to be merge in order to gain points for your contribution!
           </p>
         </panel>
-        <panel no-close id="step-9-fixing-merge-conflicts"><template slot="_header"><h2 id="step-9-fixing-merge-conflicts">Step 9: Fixing Merge Conflicts<a class="fa fa-anchor" href="#step-9-fixing-merge-conflicts"></a></h2></template>
+        <panel no-close id="step-9-fixing-merge-conflicts"><template slot="_header">
+            <h2 id="step-9-fixing-merge-conflicts">Step 9: Fixing Merge Conflicts<a class="fa fa-anchor" href="#step-9-fixing-merge-conflicts" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <box type="info">
-            Merge conflicts happen when you merge branches that have competing commits due to the clashes in content, and Git needs your help to decide which changes to incorporate in the final merge. <br><br> This will most likely happen when you try
-            to edit a file someone has already edited before.
+            Merge conflicts happen when you merge branches that have competing commits due to the clashes in content,
+            and Git needs your help to decide which changes to incorporate in the final merge. <br><br>
+            This will most likely happen when you try to edit a file someone has already edited before.
           </box>
-          <p>In the event that you have merge conflicts in the file, you are required to resolve them in the event that a Lab TA has not done so.</p>
+          <p>In the event that you have merge conflicts in the file, you are required to resolve them in the event that a Lab TA
+            has not done so.</p>
           <img src="/1920-s2/contents/peerlearning/images/MergeConflictOne.png">
           <p>You are required to make the necessary changes so that the merge conflicts are resolved. <br></p>
           <box type="warning">
@@ -125,8 +162,12 @@
           <p>Once you are done, you can Mark this merge conflict as resolved.</p>
           <img src="/1920-s2/contents/peerlearning/images/MergeConflictThree.png">
           <p>Following which, you can commit this merge.</p>
-          <img src="/1920-s2/contents/peerlearning/images/MergeConflictFour.png"></panel>
-        <br></div>
+          <img src="/1920-s2/contents/peerlearning/images/MergeConflictFour.png">
+        </panel>
+        <br>
+      </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -152,7 +193,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

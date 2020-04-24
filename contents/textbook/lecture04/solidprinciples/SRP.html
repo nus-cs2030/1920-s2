@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="single-responsibility-principle">Single Responsibility Principle<a class="fa fa-anchor" href="#single-responsibility-principle"></a></h1>
+        <h1 id="single-responsibility-principle">Single Responsibility Principle<a class="fa fa-anchor" href="#single-responsibility-principle" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/SRP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
@@ -71,17 +73,18 @@
         </blockquote>
         <p>In other words, a class should only have a single responsibility.</p>
         <p>For example, say we have a class Circle with three methods, getArea, getPerimeter and print.</p>
-        <pre><code class="hljs"><span>class Circle {</span><span>    double radius;</span><span>&#x200B;</span><span>    Circle(double radius) {</span><span>        this.radius = radius;</span><span>    }</span><span>&#x200B;</span><span>    double getArea() {</span><span>        return Math.PI * radius * radius;    </span><span>    }</span><span>    </span><span>    double getPerimeter() {</span><span>        return 2 * Math.PI * radius;</span><span>    }</span><span>&#x200B;</span><span>    void print() {</span><span>        System.out.println(“Area “ + getArea() + “ and perimeter “ + getPerimeter();</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>class Circle {<br></span><span>    double radius;<br></span><span><br></span><span>    Circle(double radius) {<br></span><span>        this.radius = radius;<br></span><span>    }<br></span><span><br></span><span>    double getArea() {<br></span><span>        return Math.PI * radius * radius;    <br></span><span>    }<br></span><span>    <br></span><span>    double getPerimeter() {<br></span><span>        return 2 * Math.PI * radius;<br></span><span>    }<br></span><span><br></span><span>    void print() {<br></span><span>        System.out.println(“Area “ + getArea() + “ and perimeter “ + getPerimeter();<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>The Circle class can be seen as having 2 separate responsibilities:</p>
         <ol>
           <li>Circle related properties and methods.</li>
           <li>Output redirection (where to print to).</li>
         </ol>
-        <p>This violates the Single Responsibility Principle as the class should only have one single responsibility. In this case, dealing with the circle’s properties is the main responsibility of the Circle class. Any secondary responsibilities (e.g.
-          output redirection) should instead be abstracted away into separate classes.</p>
+        <p>This violates the Single Responsibility Principle as the class should only have one single responsibility. In this case, dealing with the circle’s properties is the main responsibility of the Circle class. Any secondary responsibilities (e.g. output redirection) should instead be abstracted away into separate classes.</p>
         <p>For example, the print method could return a string instead, and let the client implement the responsibility of output redirection (e.g. print to file instead of to the user’s screen).</p>
-        <pre><code class="hljs"><span>class Circle {</span><span>    double radius;</span><span>&#x200B;</span><span>    Circle(double radius) {</span><span>        this.radius = radius;</span><span>    }</span><span>&#x200B;</span><span>    double getArea() {</span><span>        return Math.PI * radius * radius;    </span><span>    }</span><span>    </span><span>    double getPerimeter(){</span><span>        return 2 * Math.PI * radius;</span><span>    }</span><span>&#x200B;</span><span>    String print() {</span><span>        return “Area “ + String.format(“%.2f”, getArea()) + “ and perimeter “ +</span><span>            String.format(“%.2f”, getPerimeter());</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>class Circle {<br></span><span>    double radius;<br></span><span><br></span><span>    Circle(double radius) {<br></span><span>        this.radius = radius;<br></span><span>    }<br></span><span><br></span><span>    double getArea() {<br></span><span>        return Math.PI * radius * radius;    <br></span><span>    }<br></span><span>    <br></span><span>    double getPerimeter(){<br></span><span>        return 2 * Math.PI * radius;<br></span><span>    }<br></span><span><br></span><span>    String print() {<br></span><span>        return “Area “ + String.format(“%.2f”, getArea()) + “ and perimeter “ +<br></span><span>            String.format(“%.2f”, getPerimeter());<br></span><span>    }<br></span><span>}<br></span></code></pre>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -95,7 +98,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

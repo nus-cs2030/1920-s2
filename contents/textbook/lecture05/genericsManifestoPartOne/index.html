@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,46 +59,68 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="generics-manifesto-part-one">Generics Manifesto Part One<a class="fa fa-anchor" href="#generics-manifesto-part-one"></a></h1>
+        <h1 id="generics-manifesto-part-one">Generics Manifesto Part One<a class="fa fa-anchor" href="#generics-manifesto-part-one" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture05/genericsManifestoPartOne/index.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>The point of this &quot;manifesto&quot; series is to go a bit more in-depth into fundamental generic concepts, and to share some subtle insights and possibly confusing gotchas.</p>
-        <h2 id="1-pecs">1. PECS<a class="fa fa-anchor" href="#1-pecs"></a></h2>
-        <p>The PECS principle, which stands for Producer-Extends-Consumer-Super, is a guideline to follow when using bounded wildcards.</p>
-        <p>Consider the classes <code>Vehicle</code>, <code>Car</code>, <code>Bus</code>, and <code>Roomba</code>, where <code>Car</code> and <code>Bus</code> extends <code>Vehicle</code> and <code>Roomba</code> extends <code>Car</code>.</p>
-        <pre><code class="hljs java"><span>List&lt;? extends Vehicle&gt; garage = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();</span><span>garage.add(<span class="hljs-keyword">new</span> Vehicle());  <span class="hljs-comment">// compilation error</span></span><span>garage.add(<span class="hljs-keyword">new</span> Car());      <span class="hljs-comment">// compilation error</span></span><span>garage.add(<span class="hljs-keyword">new</span> Bus());      <span class="hljs-comment">// compilation error</span></span><span>garage.add(<span class="hljs-keyword">new</span> Roomba());   <span class="hljs-comment">// compilation error</span></span></code></pre>
+        <p>The point of this &quot;manifesto&quot; series is to go a bit more in-depth
+          into fundamental generic concepts, and to share some subtle insights and
+          possibly confusing gotchas.</p>
+        <h2 id="1-pecs">1. PECS<a class="fa fa-anchor" href="#1-pecs" onclick="event.stopPropagation()"></a></h2>
+        <p>The PECS principle, which stands for Producer-Extends-Consumer-Super,
+          is a guideline to follow when using bounded wildcards.</p>
+        <p>Consider the classes <code>Vehicle</code>, <code>Car</code>, <code>Bus</code>, and <code>Roomba</code>, where <code>Car</code> and <code>Bus</code>
+          extends <code>Vehicle</code> and <code>Roomba</code> extends <code>Car</code>.</p>
+        <pre><code class="hljs java"><span>List&lt;? extends Vehicle&gt; garage = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br></span><span>garage.add(<span class="hljs-keyword">new</span> Vehicle());  <span class="hljs-comment">// compilation error</span><br></span><span>garage.add(<span class="hljs-keyword">new</span> Car());      <span class="hljs-comment">// compilation error</span><br></span><span>garage.add(<span class="hljs-keyword">new</span> Bus());      <span class="hljs-comment">// compilation error</span><br></span><span>garage.add(<span class="hljs-keyword">new</span> Roomba());   <span class="hljs-comment">// compilation error</span><br></span></code></pre>
         <p>The errors above seem at first to be uncalled for -
-          <code>garage</code> is a List of &quot;any objects that extend Vehicle&quot; (including Vehicle itself), so it should be able to accept our Car, Bus, and Vehicle objects.</p>
-        <p>What we're missing here is that <code>List&lt;? extends Vehicle&gt;</code> doesn't actually mean a list that can contain any child objects of Vehicle.
-          <code>List&lt;? extends Vehicle&gt;</code> is in fact saying that it is a &quot;list parameterized to one concrete class that extends Vehicle&quot;.</p>
-        <p>So <code>List&lt;? extends Vehicle&gt;</code> is one of <code>List&lt;Car&gt;</code>, <code>List&lt;Truck&gt;</code>, or <code>List&lt;Roombar&gt;</code>, but the compiler does not know which. And because the compiler does not know which, it does
-          not allow the addition of, say, a Vehicle to <code>List&lt;? extends Vehicle&gt;</code> - what if the unknown identity of <code>List&lt;? extends Vehicle&gt;</code> is <code>List&lt;Car&gt;</code>? It wouldn't make sense to add a Vehicle to
-          a list of Cars. The same goes for adding a Car or Bus or Roomba to <code>List&lt;? extends Vehicle&gt;</code>.</p>
+          <code>garage</code> is a List of &quot;any objects that extend Vehicle&quot; (including
+          Vehicle itself), so it should be able to accept our Car, Bus,
+          and Vehicle objects.</p>
+        <p>What we're missing here is that <code>List&lt;? extends Vehicle&gt;</code>
+          doesn't actually mean a list that can contain any child objects of Vehicle.
+          <code>List&lt;? extends Vehicle&gt;</code> is in fact saying that it is a
+          &quot;list parameterized to one concrete class that extends Vehicle&quot;.</p>
+        <p>So <code>List&lt;? extends Vehicle&gt;</code> is one of <code>List&lt;Car&gt;</code>, <code>List&lt;Truck&gt;</code>, or <code>List&lt;Roombar&gt;</code>,
+          but the compiler does not know which. And because the compiler does not know which,
+          it does not allow the addition of, say, a Vehicle to <code>List&lt;? extends Vehicle&gt;</code> - what if the
+          unknown identity of <code>List&lt;? extends Vehicle&gt;</code> is <code>List&lt;Car&gt;</code>? It wouldn't make
+          sense to add a Vehicle to a list of Cars. The same goes for adding a Car or Bus or Roomba
+          to <code>List&lt;? extends Vehicle&gt;</code>.</p>
         <p>What if instead of trying to add to garage, we only want to get from it?</p>
-        <pre><code class="hljs java"><span>List&lt;? extends Vehicle&gt; garage = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(List.of(<span class="hljs-keyword">new</span> Car(), <span class="hljs-keyword">new</span> Bus()));</span><span>&#x200B;</span><span>Vehicle vehicleOne = garage.get(<span class="hljs-number">0</span>);</span><span>Vehicle vehicleTwo = garage.get(<span class="hljs-number">1</span>);</span></code></pre>
-        <p>We find ourselves knowing intuitively what type to declare <code>vehicleOne</code> and <code>vehicleTwo</code> as. Since we are absolutely sure that garage is a list of a subtype of Vehicle, we know that assigning its children to Vehicle will
-          work. It is in this sense that people say <code>garage</code> is a &quot;producer&quot; of sorts - it produces values, and we consume from it, but we can never insert values into it.</p>
+        <pre><code class="hljs java"><span>List&lt;? extends Vehicle&gt; garage = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(List.of(<span class="hljs-keyword">new</span> Car(), <span class="hljs-keyword">new</span> Bus()));<br></span><span><br></span><span>Vehicle vehicleOne = garage.get(<span class="hljs-number">0</span>);<br></span><span>Vehicle vehicleTwo = garage.get(<span class="hljs-number">1</span>);<br></span></code></pre>
+        <p>We find ourselves knowing intuitively what type to declare <code>vehicleOne</code> and <code>vehicleTwo</code> as.
+          Since we are absolutely sure that garage is a list of a subtype of Vehicle, we know that
+          assigning its children to Vehicle will work.
+          It is in this sense that people say <code>garage</code> is a &quot;producer&quot; of sorts - it produces values,
+          and we consume from it, but we can never insert values into it.</p>
         <p>Applying this pattern into the context of a method would look something like this :</p>
-        <pre><code class="hljs java"><span>List&lt;Vehicle&gt; factory = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();</span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addAllToFactory</span><span class="hljs-params">(List&lt;? extends Vehicle&gt; vehicles)</span></span>{</span><span>    <span class="hljs-keyword">for</span>(Vehicle oneVehicle : vehicles){</span><span>        factory.add(oneVehicle);</span><span>    }</span><span>}</span><span>&#x200B;</span><span>List&lt;Car&gt; cars = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();</span><span>cars.add(<span class="hljs-keyword">new</span> Car());</span><span>addAllToFactory(cars); <span class="hljs-comment">//works</span></span></code></pre>
-        <p>The <code>cars</code> that we pass into <code>addAllToFactory</code> now takes on the role of a &quot;producer&quot;, yielding the values inside it for the <code>factory</code> to &quot;consume&quot;. And since it a &quot;producer&quot;, the vehicles
-          parameter inside <code>addAllToFactory</code> uses the corresponding wildcard-extends (PE in PECS).</p>
+        <pre><code class="hljs java"><span>List&lt;Vehicle&gt; factory = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addAllToFactory</span><span class="hljs-params">(List&lt;? extends Vehicle&gt; vehicles)</span></span>{<br></span><span>    <span class="hljs-keyword">for</span>(Vehicle oneVehicle : vehicles){<br></span><span>        factory.add(oneVehicle);<br></span><span>    }<br></span><span>}<br></span><span><br></span><span>List&lt;Car&gt; cars = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br></span><span>cars.add(<span class="hljs-keyword">new</span> Car());<br></span><span>addAllToFactory(cars); <span class="hljs-comment">//works</span><br></span></code></pre>
+        <p>The <code>cars</code> that we pass into <code>addAllToFactory</code> now takes on the role of a &quot;producer&quot;,
+          yielding the values inside it for the <code>factory</code> to &quot;consume&quot;. And since it a &quot;producer&quot;,
+          the vehicles parameter inside <code>addAllToFactory</code> uses the corresponding wildcard-extends (PE in PECS).</p>
         <p>A similar logic applies for Consumer-Super.</p>
-        <pre><code class="hljs java"><span>List&lt;? <span class="hljs-keyword">super</span> Car&gt; garage = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();</span><span>garage.add(<span class="hljs-keyword">new</span> Car());        <span class="hljs-comment">//runs</span></span><span>garage.add(<span class="hljs-keyword">new</span> Roomba());     <span class="hljs-comment">//runs</span></span><span>garage.add(<span class="hljs-keyword">new</span> Vehicle());    <span class="hljs-comment">// compilation error</span></span></code></pre>
-        <p>The compiler knows that <code>garage</code> references a supertype of <code>Car</code>, but doesn't know which one. I can add <code>Roomba</code> and <code>Car</code> to <code>garage</code> because they're all subtypes of <code>Car</code>, but
-          <code>Vehicle</code> needs to stay out. The type of <code>garage</code> may or may not be a parent of <code>Vehicle</code> - so in order to avoid the possibility of a runtime error if garage turns out to be a subtype of <code>Vehicle</code>,
-          the compiler plays it safe and throws a compilation error.</p>
+        <pre><code class="hljs java"><span>List&lt;? <span class="hljs-keyword">super</span> Car&gt; garage = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br></span><span>garage.add(<span class="hljs-keyword">new</span> Car());        <span class="hljs-comment">//runs</span><br></span><span>garage.add(<span class="hljs-keyword">new</span> Roomba());     <span class="hljs-comment">//runs</span><br></span><span>garage.add(<span class="hljs-keyword">new</span> Vehicle());    <span class="hljs-comment">// compilation error</span><br></span></code></pre>
+        <p>The compiler knows that <code>garage</code> references a supertype of <code>Car</code>, but doesn't know which one.
+          I can add <code>Roomba</code> and <code>Car</code> to <code>garage</code> because they're all subtypes of <code>Car</code>, but <code>Vehicle</code>
+          needs to stay out. The type of <code>garage</code> may or may not be a parent of <code>Vehicle</code> - so in order to
+          avoid the possibility of a runtime error if garage turns out to be a subtype of <code>Vehicle</code>, the compiler
+          plays it safe and throws a compilation error.</p>
         <p>Adding stuff to garage makes it take on the role of a <strong>consumer</strong>; what if we want it to <strong>produce</strong>?</p>
-        <pre><code class="hljs java"><span>Car car = garage.get(<span class="hljs-number">0</span>);         <span class="hljs-comment">//error</span></span><span>Car car = (Car)garage.get(<span class="hljs-number">0</span>);    <span class="hljs-comment">//runs</span></span><span>Object object = garage.get(<span class="hljs-number">0</span>);   <span class="hljs-comment">//runs</span></span></code></pre>
-        <p>Because the compiler doesn't know the exact type of garage, it only accepts the assignment of a returned value to an <code>Object</code>, since all classes are Objects. If I want to assign it to something else, like <code>Car</code>, then I need
-          to be sure that the first element of garage if of type <code>Car</code> so I can downcast it. All these restrictions makes wildcard-super a pretty poor producer.</p>
+        <pre><code class="hljs java"><span>Car car = garage.get(<span class="hljs-number">0</span>);         <span class="hljs-comment">//error</span><br></span><span>Car car = (Car)garage.get(<span class="hljs-number">0</span>);    <span class="hljs-comment">//runs</span><br></span><span>Object object = garage.get(<span class="hljs-number">0</span>);   <span class="hljs-comment">//runs</span><br></span></code></pre>
+        <p>Because the compiler doesn't know the exact type of garage, it only accepts the assignment of a returned value
+          to an <code>Object</code>, since all classes are Objects. If I want to assign it to something else, like <code>Car</code>, then I
+          need to be sure that the first element of garage if of type <code>Car</code> so I can downcast it. All these restrictions
+          makes wildcard-super a pretty poor producer.</p>
         <p>An example of wildcard-super doing what it does best - acting as a consumer:</p>
-        <pre><code class="hljs java"><span>List&lt;Car&gt; cars = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(List.of(<span class="hljs-keyword">new</span> Car(), <span class="hljs-keyword">new</span> Car()));</span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addCarsToFactory</span><span class="hljs-params">(List&lt;? <span class="hljs-keyword">super</span> Vehicle&gt; factory)</span></span>{</span><span>    <span class="hljs-keyword">for</span>(Car car : cars){</span><span>        factory.add(car);</span><span>    }</span><span>}</span><span>&#x200B;</span><span>List&lt;Vehicle&gt; factory = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();</span><span>addCarsToFactory(factory); <span class="hljs-comment">//works</span></span></code></pre>
+        <pre><code class="hljs java"><span>List&lt;Car&gt; cars = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(List.of(<span class="hljs-keyword">new</span> Car(), <span class="hljs-keyword">new</span> Car()));<br></span><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addCarsToFactory</span><span class="hljs-params">(List&lt;? <span class="hljs-keyword">super</span> Vehicle&gt; factory)</span></span>{<br></span><span>    <span class="hljs-keyword">for</span>(Car car : cars){<br></span><span>        factory.add(car);<br></span><span>    }<br></span><span>}<br></span><span><br></span><span>List&lt;Vehicle&gt; factory = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br></span><span>addCarsToFactory(factory); <span class="hljs-comment">//works</span><br></span></code></pre>
         <p>The factory parameter in <code>addCarsToFactory</code> is a consumer, so it uses super (CS of PECS).</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -114,7 +137,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

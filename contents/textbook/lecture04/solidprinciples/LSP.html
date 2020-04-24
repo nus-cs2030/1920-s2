@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="liskov-substitution-principle">Liskov Substitution Principle<a class="fa fa-anchor" href="#liskov-substitution-principle"></a></h1>
+        <h1 id="liskov-substitution-principle">Liskov Substitution Principle<a class="fa fa-anchor" href="#liskov-substitution-principle" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/LSP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
@@ -71,19 +73,20 @@
         </blockquote>
         <p>As an example, if Filled Circle is a subclass of Circle, then anywhere where we can expect a Circle, we can replace it with a Filled Circle.</p>
         <p>For example, we may have a FormattedText class:</p>
-        <pre><code class="hljs"><span>class FormattedText {</span><span>    public String text;</span><span>    public boolean isUnderlined;</span><span>&#x200B;</span><span>    public void toggleUnderline() {</span><span>        isUnderlined = (!isUnderlined);</span><span>	}</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>class FormattedText {<br></span><span>    public String text;<br></span><span>    public boolean isUnderlined;<br></span><span><br></span><span>    public void toggleUnderline() {<br></span><span>        isUnderlined = (!isUnderlined);<br></span><span>	}<br></span><span>}<br></span></code></pre>
         <p>The FormattedText class has the method toggleUnderline that toggles the variable isUnderlined between true and false.</p>
         <p>Now suppose we have a class URL that extends FormattedText.</p>
-        <pre><code class="hljs"><span>class URL extends FormattedText {</span><span>    public URL() {</span><span>        isUnderlined = true;</span><span>    }</span><span>	</span><span>    @Override</span><span>    public void toggleUnderline() {</span><span>        return;</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>class URL extends FormattedText {<br></span><span>    public URL() {<br></span><span>        isUnderlined = true;<br></span><span>    }<br></span><span>	<br></span><span>    @Override<br></span><span>    public void toggleUnderline() {<br></span><span>        return;<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>In the URL class, the method toggleUnderline overrides the method in the parent class. It has been modified to not toggle the variable isUnderlined between true and false.</p>
         <p>However, this violates the Substitution principle as we cannot substitute FormattedText object for URL object, as doing so may result in a change in behaviour (unable to toggle underline) of the program.</p>
-        <h2 id="alternative-example">Alternative Example<a class="fa fa-anchor" href="#alternative-example"></a></h2>
-        <p>Consider that we are operating an airline, and we have 2 types of aircraft, the <code>Aircraft</code> and the <code>BigAircraft</code>. An <code>Aircraft</code> can carry 150 passengers and fly 5000km, whereas a <code>BigAircraft</code> can carry
-          300 passengers and fly 10000km. Therefore, a <code>BigAircraft</code> can replace an <code>Aircraft</code>, but the opposite cannot be performed.</p>
-        <pre><code class="hljs Java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Aircraft</span> </span>{</span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> range;</span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> numOfPassengers;</span><span>    Aircraft(<span class="hljs-keyword">int</span> range, <span class="hljs-keyword">int</span> numOfPassengers) {</span><span>        <span class="hljs-keyword">this</span>.range = range;</span><span>        <span class="hljs-keyword">this</span>.numOfPassengers = numOfPassengers;</span><span>    }</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">/*assert statement checks if the statement is true. </span></span><span><span class="hljs-comment">          If false, it will throw an error at runtime*/</span></span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.range &lt; <span class="hljs-number">5000</span>;</span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.numOfPassengers &lt; <span class="hljs-number">150</span>;</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Aircraft flying "</span> + <span class="hljs-keyword">this</span>.range + <span class="hljs-string">" km with "</span> </span><span>         + <span class="hljs-keyword">this</span>.numOfPassengers + <span class="hljs-string">" passengers!"</span>;</span><span>    }</span><span>}</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BigAircraft</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Aircraft</span></span>{</span><span>    BigAircraft(<span class="hljs-keyword">int</span> range, <span class="hljs-keyword">int</span> numOfPassengers) {</span><span>        <span class="hljs-keyword">super</span>(range, numOfPassengers);</span><span>    }</span><span>    <span class="hljs-meta">@Override</span></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{</span><span>        <span class="hljs-comment">/*assert statement checks if the statement is true. If false, </span></span><span><span class="hljs-comment">         it will throw an error at runtime*/</span></span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.range &lt; <span class="hljs-number">10000</span>;</span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.numOfPassengers &lt; <span class="hljs-number">300</span>;</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Aircraft flying "</span> + <span class="hljs-keyword">this</span>.range + <span class="hljs-string">" km with "</span> </span><span>        + <span class="hljs-keyword">this</span>.numOfPassengers + <span class="hljs-string">" passengers!"</span>;</span><span>    }</span><span>}</span></code></pre>
+        <h2 id="alternative-example">Alternative Example<a class="fa fa-anchor" href="#alternative-example" onclick="event.stopPropagation()"></a></h2>
+        <p>Consider that we are operating an airline, and we have 2 types of aircraft, the <code>Aircraft</code> and the <code>BigAircraft</code>. An <code>Aircraft</code> can carry 150 passengers and fly 5000km, whereas a <code>BigAircraft</code> can carry 300 passengers and fly 10000km. Therefore, a <code>BigAircraft</code> can replace an <code>Aircraft</code>, but the opposite cannot be performed.</p>
+        <pre><code class="hljs Java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Aircraft</span> </span>{<br></span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> range;<br></span><span>    <span class="hljs-keyword">protected</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> numOfPassengers;<br></span><span>    Aircraft(<span class="hljs-keyword">int</span> range, <span class="hljs-keyword">int</span> numOfPassengers) {<br></span><span>        <span class="hljs-keyword">this</span>.range = range;<br></span><span>        <span class="hljs-keyword">this</span>.numOfPassengers = numOfPassengers;<br></span><span>    }<br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">/*assert statement checks if the statement is true. </span><br></span><span><span class="hljs-comment">          If false, it will throw an error at runtime*/</span><br></span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.range &lt; <span class="hljs-number">5000</span>;<br></span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.numOfPassengers &lt; <span class="hljs-number">150</span>;<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Aircraft flying "</span> + <span class="hljs-keyword">this</span>.range + <span class="hljs-string">" km with "</span> <br></span><span>         + <span class="hljs-keyword">this</span>.numOfPassengers + <span class="hljs-string">" passengers!"</span>;<br></span><span>    }<br></span><span>}<br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BigAircraft</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Aircraft</span></span>{<br></span><span>    BigAircraft(<span class="hljs-keyword">int</span> range, <span class="hljs-keyword">int</span> numOfPassengers) {<br></span><span>        <span class="hljs-keyword">super</span>(range, numOfPassengers);<br></span><span>    }<br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">/*assert statement checks if the statement is true. If false, </span><br></span><span><span class="hljs-comment">         it will throw an error at runtime*/</span><br></span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.range &lt; <span class="hljs-number">10000</span>;<br></span><span>        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">this</span>.numOfPassengers &lt; <span class="hljs-number">300</span>;<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-string">"Aircraft flying "</span> + <span class="hljs-keyword">this</span>.range + <span class="hljs-string">" km with "</span> <br></span><span>        + <span class="hljs-keyword">this</span>.numOfPassengers + <span class="hljs-string">" passengers!"</span>;<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>If I try to create a <code>Aircraft</code> object that flies <code>(3000, 100)</code>, the object will still be created. If either parameter goes above its limits however, the object will not be created.</p>
         <p>LSP is demonstrated here because the <code>BigAircraft</code> class maintains the functionality of its parent class, while also adding its own functionality, hence it is substitutable for its parent class.</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -100,7 +103,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

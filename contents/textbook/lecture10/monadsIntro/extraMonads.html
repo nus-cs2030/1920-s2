@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,36 +59,39 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="do-you-want-to-build-a-monad">Do you want to build a monad?<a class="fa fa-anchor" href="#do-you-want-to-build-a-monad"></a></h1>
+        <h1 id="do-you-want-to-build-a-monad">Do you want to build a monad?<a class="fa fa-anchor" href="#do-you-want-to-build-a-monad" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture10/monadsIntro/extraMonads.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
         <p>This post was adapted from <a href="https://nus-cs2030.github.io/1718-s2/monad/index.html">Prof Ooi's CS2030 Website</a></p>
-        <p>This post was inspired by <a href="https://blog.jcoglan.com/2011/03/05/translation-from-haskell-to-javascript-of-selected-portions-of-the-best-introduction-to-monads-ive-ever-read/">The Best Introduction to Monad</a>, but is adapted to the Object-Oritented
-          way of programming with Java.</p>
+        <p>This post was inspired by <a href="https://blog.jcoglan.com/2011/03/05/translation-from-haskell-to-javascript-of-selected-portions-of-the-best-introduction-to-monads-ive-ever-read/">The Best Introduction to Monad</a>, but is adapted to the Object-Oritented way of programming with Java.</p>
         <p>Let's say we have:</p>
-        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">sin</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{</span><span>  <span class="hljs-keyword">return</span> Math.sin(x);</span><span>}</span><span>&#x200B;</span><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">cube</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{</span><span>  <span class="hljs-keyword">return</span> x * x * x;</span><span>}</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">sin</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{<br></span><span>  <span class="hljs-keyword">return</span> Math.sin(x);<br></span><span>}<br></span><span><br></span><span><span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">cube</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x)</span> </span>{<br></span><span>  <span class="hljs-keyword">return</span> x * x * x;<br></span><span>}<br></span></code></pre>
         <p>We can easily chain the methods together:</p>
-        <pre><code class="hljs"><span>sin(cube(5.0));</span><span>cube(sin(5.0));</span></code></pre>
+        <pre><code class="hljs"><span>sin(cube(5.0));<br></span><span>cube(sin(5.0));<br></span></code></pre>
         <p>But, what if we need to print something while doing this operation? We can easily do:</p>
-        <pre><code class="hljs"><span>double sin(double x) {</span><span>  System.out.println(&quot;called sin&quot;);</span><span>  return Math.sin(x);</span><span>}</span><span>&#x200B;</span><span>double cube(double x) {</span><span>  System.out.println(&quot;called cubed&quot;);</span><span>  return x*x*x;</span><span>}</span></code></pre>
-        <p>But that has side effects, so it <strong>violates the spirit of functional programming</strong>. We should concat the logs into a string. So we need a class that encapsulates the variable with its log.</p>
-        <pre><code class="hljs java"><span>&#x200B;</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DoubleString</span> </span>{</span><span>  Double x;</span><span>  String log;</span><span>&#x200B;</span><span>  DoubleString(<span class="hljs-keyword">double</span> x, String log) {</span><span>    <span class="hljs-keyword">this</span>.x = x;</span><span>    <span class="hljs-keyword">this</span>.log = log;</span><span>  }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>double sin(double x) {<br></span><span>  System.out.println(&quot;called sin&quot;);<br></span><span>  return Math.sin(x);<br></span><span>}<br></span><span><br></span><span>double cube(double x) {<br></span><span>  System.out.println(&quot;called cubed&quot;);<br></span><span>  return x*x*x;<br></span><span>}<br></span></code></pre>
+        <p>But that has side effects, so it <strong>violates the spirit of functional programming</strong>. We should concat the logs into a string.
+          So we need a class that encapsulates the variable with its log.</p>
+        <pre><code class="hljs java"><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DoubleString</span> </span>{<br></span><span>  Double x;<br></span><span>  String log;<br></span><span><br></span><span>  DoubleString(<span class="hljs-keyword">double</span> x, String log) {<br></span><span>    <span class="hljs-keyword">this</span>.x = x;<br></span><span>    <span class="hljs-keyword">this</span>.log = log;<br></span><span>  }<br></span><span>}<br></span></code></pre>
         <p>Now, we can write the methods as:</p>
-        <pre><code class="hljs"><span>DoubleString sinAndLog(double x) {</span><span>  return new DoubleString(sin(x), &quot;called sin&quot;);</span><span>}</span><span>&#x200B;</span><span>DoubleString cubeAndLog(double x) {</span><span>  return new DoubleString(cube(x), &quot;called cube&quot;);</span><span>}</span></code></pre>
-        <p>In a way, we are writing methods that take in a value <code>(double x)</code> and add some context to it (the log). We wrap both the value and its context in a box (the <code>DoubleString</code>). But these new functions <strong>do not compose</strong>          anymore. We cannot do <code>sinAndLog(cubeAndLog(x))</code></p>
+        <pre><code class="hljs"><span>DoubleString sinAndLog(double x) {<br></span><span>  return new DoubleString(sin(x), &quot;called sin&quot;);<br></span><span>}<br></span><span><br></span><span>DoubleString cubeAndLog(double x) {<br></span><span>  return new DoubleString(cube(x), &quot;called cube&quot;);<br></span><span>}<br></span></code></pre>
+        <p>In a way, we are writing methods that take in a value <code>(double x)</code> and add some context to it (the log). We wrap both the value and its context in a box (the <code>DoubleString</code>). But these new functions <strong>do not compose</strong> anymore. We cannot do <code>sinAndLog(cubeAndLog(x))</code></p>
         <p>We need methods that takes in a <code>DoubleString</code> and return a <code>DoubleString</code></p>
         <p>Great! Now we can write the methods to compose them:</p>
-        <pre><code class="hljs java"><span>sinAndLog(cubeAndLog(<span class="hljs-keyword">new</span> DoubleString(<span class="hljs-number">5.0</span>,<span class="hljs-string">""</span>)));</span></code></pre>
+        <pre><code class="hljs java"><span>sinAndLog(cubeAndLog(<span class="hljs-keyword">new</span> DoubleString(<span class="hljs-number">5.0</span>,<span class="hljs-string">""</span>)));<br></span></code></pre>
         <p>or in the <strong>Object-Oriented Way:</strong></p>
-        <pre><code class="hljs java"><span>  Double x;</span><span>  String log;</span><span>&#x200B;</span><span>  DoubleString(<span class="hljs-keyword">double</span> x, String log) {</span><span>    <span class="hljs-keyword">this</span>.x = x;</span><span>    <span class="hljs-keyword">this</span>.log = log;</span><span>  }</span><span>&#x200B;</span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">sinAndLog</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(sin(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called sin"</span>);</span><span>  }</span><span>&#x200B;</span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">cubeAndLog</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(cube(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called cube"</span>);</span><span>  }</span><span>}</span></code></pre>
+        <pre><code class="hljs java"><span>  Double x;<br></span><span>  String log;<br></span><span><br></span><span>  DoubleString(<span class="hljs-keyword">double</span> x, String log) {<br></span><span>    <span class="hljs-keyword">this</span>.x = x;<br></span><span>    <span class="hljs-keyword">this</span>.log = log;<br></span><span>  }<br></span><span><br></span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">sinAndLog</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(sin(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called sin"</span>);<br></span><span>  }<br></span><span><br></span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">cubeAndLog</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(cube(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called cube"</span>);<br></span><span>  }<br></span><span>}<br></span></code></pre>
         <p>In the <strong>Object-Oriented Way</strong>, we chain the methods together.</p>
-        <pre><code class="hljs"><span>new DoubleString(5.0, &quot;&quot;).sinAndLog().cubeAndLog();</span></code></pre>
+        <pre><code class="hljs"><span>new DoubleString(5.0, &quot;&quot;).sinAndLog().cubeAndLog();<br></span></code></pre>
         <p>So, how do we actually make it a monad? To find out more, <a href="/1920-s2/contents/textbook/lecture10/monadsIntro/makingTheMonad.html">click here!</a></p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -101,7 +105,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="setting-up-checkstyle">Setting Up Checkstyle<a class="fa fa-anchor" href="#setting-up-checkstyle"></a></h1>
+        <h1 id="setting-up-checkstyle">Setting Up Checkstyle<a class="fa fa-anchor" href="#setting-up-checkstyle" onclick="event.stopPropagation()"></a></h1>
         <br>
         <img src="/1920-s2/contents/guides/images/checkstyle_0.png" style="display: block; margin: 0 auto;" width="60%">
         <br>
@@ -81,12 +83,10 @@
             <p>Check that the files are there with <code>ls</code>.</p>
           </li>
           <li>
-            <p>Your download files should already have the right read permissions, but we will set it again just to be sure. Run <code>chmod u+r checkstyle-8.2-all.jar cs2030_checks.xml</code>. What this command does is that it <strong>CH</strong>anges the
-              <strong>MOD</strong>e of the files (i.e. its permissions), and adds <strong>r</strong>ead (<code>+r</code>) to the <strong>u</strong>ser (<code>u+r</code>).</p>
+            <p>Your download files should already have the right read permissions, but we will set it again just to be sure. Run <code>chmod u+r checkstyle-8.2-all.jar cs2030_checks.xml</code>. What this command does is that it <strong>CH</strong>anges the <strong>MOD</strong>e of the files (i.e. its permissions), and adds <strong>r</strong>ead (<code>+r</code>) to the <strong>u</strong>ser (<code>u+r</code>).</p>
           </li>
           <li>
-            <p>To help us accurately determine the location of the files later, run <code>realpath -e checkstyle-8.2-all.jar cs2030_checks.xml</code> (yes I missed out the <code>-e</code> switch in the screenshot above). <code>realpath</code> outputs the
-              full absolute file path while the <code>-e</code> switch ensures it checks for file existence first.</p>
+            <p>To help us accurately determine the location of the files later, run <code>realpath -e checkstyle-8.2-all.jar cs2030_checks.xml</code> (yes I missed out the <code>-e</code> switch in the screenshot above). <code>realpath</code> outputs the full absolute file path while the <code>-e</code> switch ensures it checks for file existence first.</p>
           </li>
         </ol>
         <p><img src="/1920-s2/contents/guides/images/checkstyle_2.png" style="display: block; margin: 0 auto;" width="60%"><br></p>
@@ -99,11 +99,8 @@
           <li>if you use any other shell like <code>zsh</code> or <code>fish</code>, please change the command to work with your respective shell configuration files, e.g. <code>~/.zshrc</code></li>
         </ul>
         <p>For me, I ran <code>echo 'alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;' &gt;&gt; ~/.bashrc</code>.</p>
-        <p>What this command does is that it appends the line <code>alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;</code> to the end of your shell configuration
-          file (commonly <code>~/.bashrc</code>). Your shell configuration file is ran (or more accurately, sourced) whenever you start your shell.</p>
-        <p>As for <code>alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;</code>, what this does is that it sets a command alias called <code>checkstyle</code>,
-          so that whenever you run <code>checkstyle</code> in your shell, it will run <code>java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java</code>, which is the command to properly
-          run checkstyle and load the configuration file in java.</p>
+        <p>What this command does is that it appends the line <code>alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;</code> to the end of your shell configuration file (commonly <code>~/.bashrc</code>). Your shell configuration file is ran (or more accurately, sourced) whenever you start your shell.</p>
+        <p>As for <code>alias checkstyle=&quot;java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java&quot;</code>, what this does is that it sets a command alias called <code>checkstyle</code>, so that whenever you run <code>checkstyle</code> in your shell, it will run <code>java -jar /home/chris/checkstyle_files/checkstyle-8.2-all.jar -c /home/chris/checkstyle_files/cs2030_checks.xml *.java</code>, which is the command to properly run checkstyle and load the configuration file in java.</p>
         <ol start="7">
           <li>
             <p>Restart your shell, i.e. close it and start it again. (alternatively, you can just run <code>source ~/.bashrc</code>)</p>
@@ -113,7 +110,10 @@
           </li>
         </ol>
         <p><img src="/1920-s2/contents/guides/images/checkstyle_3.png" style="display: block; margin: 0 auto;" width="60%"><br></p>
-        <br></div>
+        <br>
+      </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -127,7 +127,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

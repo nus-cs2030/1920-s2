@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
 </head>
@@ -58,12 +59,15 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="setting-up-sunfire-and-accessing-pe-nodes">Setting Up Sunfire and Accessing PE Nodes<a class="fa fa-anchor" href="#setting-up-sunfire-and-accessing-pe-nodes"></a></h1>
+        <h1 id="setting-up-sunfire-and-accessing-pe-nodes">Setting Up Sunfire and Accessing PE Nodes<a class="fa fa-anchor" href="#setting-up-sunfire-and-accessing-pe-nodes" onclick="event.stopPropagation()"></a></h1>
         <br>
         <p>From this tutorial, you should be able to access the PE nodes via Sunfire via SSH.</p>
-        <panel no-close id="basic-requirements"><template slot="_header"><h2 id="basic-requirements">Basic Requirements<a class="fa fa-anchor" href="#basic-requirements"></a></h2></template>
+        <panel no-close id="basic-requirements"><template slot="_header">
+            <h2 id="basic-requirements">Basic Requirements<a class="fa fa-anchor" href="#basic-requirements" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <ol>
             <li>
               <p>You will need to have an SoC UNIX Account. If you do not have an SoC UNIX Account, please apply for it <a href="https://mysoc.nus.edu.sg/~newacct/">here</a></p>
@@ -79,7 +83,9 @@
             </li>
           </ol>
         </panel>
-        <panel no-close id="ssh-into-pe-nodes-using-terminal"><template slot="_header"><h2 id="ssh-into-pe-nodes-using-terminal">SSH into PE Nodes Using Terminal<a class="fa fa-anchor" href="#ssh-into-pe-nodes-using-terminal"></a></h2></template>
+        <panel no-close id="ssh-into-pe-nodes-using-terminal"><template slot="_header">
+            <h2 id="ssh-into-pe-nodes-using-terminal">SSH into PE Nodes Using Terminal<a class="fa fa-anchor" href="#ssh-into-pe-nodes-using-terminal" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <p><strong>The Following Insturctions can be done in both Windows and Mac Terminals.</strong></p>
           <ol>
             <li>To SSH into the sunfire remote server, type in <code>ssh YOUR_UNIX_SIC_USERNAME@sunfire-r.comp.nus.edu.sg</code>. The Username should have be your <strong>SoC UNIX Account Usernane.</strong></li>
@@ -100,12 +106,13 @@
             </li>
           </ol>
         </panel>
-        <panel no-close id="ssh-into-pe-nodes-using-port-forwarding"><template slot="_header"><h2 id="ssh-into-pe-nodes-using-port-forwarding">SSH into PE Nodes Using Port Forwarding<a class="fa fa-anchor" href="#ssh-into-pe-nodes-using-port-forwarding"></a></h2></template>
+        <panel no-close id="ssh-into-pe-nodes-using-port-forwarding"><template slot="_header">
+            <h2 id="ssh-into-pe-nodes-using-port-forwarding">SSH into PE Nodes Using Port Forwarding<a class="fa fa-anchor" href="#ssh-into-pe-nodes-using-port-forwarding" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <p>Alternatively, You can use SSH Tunnels via Port Forwarding.</p>
           <ol>
             <li>
-              <p>Local port forwarding means that a port of the SSH client (your machine) is forwarded to the SSH server (<code>sunfire.comp.nus.edu.sg</code>), which opens a connection to a preset destination server (e.g. <code>pe107</code>). This method
-                causes the host to seem as if it is hosted on a local port, e.g. <code>localhost:PORT_NUMBER</code>.</p>
+              <p>Local port forwarding means that a port of the SSH client (your machine) is forwarded to the SSH server (<code>sunfire.comp.nus.edu.sg</code>), which opens a connection to a preset destination server (e.g. <code>pe107</code>). This method causes the host to seem as if it is hosted on a local port, e.g. <code>localhost:PORT_NUMBER</code>.</p>
             </li>
             <li>
               <p>To use local port forwarding, execute the following command: <br> <code>ssh -L PORT_NUMBER:peYYY.comp.nus.edu.sg:22 YOUR_UNIX_SIC_USERNAME@sunfire-r.comp.nus.edu.sg</code>
@@ -114,10 +121,13 @@
           </ol>
           <img src="/1920-s2/contents/guides/images/Tunnel1.png" width="90%">
           <ol start="3">
-            <li>Following which, you will need to to open a separate SSH connection from your machine to <code>localhost</code> at port <code>PORT_NUMBER</code> which you defined earlier. THis can be done via the following command: <br> <code>ssh plabXXXX@localhost -p PORT_NUMBER</code>              where <code>plabXXXX</code> is the userid given to you in your plab slip and <code>PORT_NUMBER</code> is the port number which you defined earlier.</li>
+            <li>Following which, you will need to to open a separate SSH connection from your machine to <code>localhost</code> at port <code>PORT_NUMBER</code> which you defined earlier. THis can be done via the following command: <br> <code>ssh plabXXXX@localhost -p PORT_NUMBER</code> where <code>plabXXXX</code> is the userid given to you in your plab slip and <code>PORT_NUMBER</code> is the port number which you defined earlier.</li>
           </ol>
-          <img src="/1920-s2/contents/guides/images/Tunnel2.png" width="90%"></panel>
-        <panel no-close id="getting-files-from-remote-server-to-local-server"><template slot="_header"><h2 id="getting-files-from-remote-server-to-local-server">Getting files from Remote Server to Local Server<a class="fa fa-anchor" href="#getting-files-from-remote-server-to-local-server"></a></h2></template>
+          <img src="/1920-s2/contents/guides/images/Tunnel2.png" width="90%">
+        </panel>
+        <panel no-close id="getting-files-from-remote-server-to-local-server"><template slot="_header">
+            <h2 id="getting-files-from-remote-server-to-local-server">Getting files from Remote Server to Local Server<a class="fa fa-anchor" href="#getting-files-from-remote-server-to-local-server" onclick="event.stopPropagation()"></a></h2>
+          </template>
           <ol>
             <li>
               <p>For example, if you wish to retrieve files from sunfire to your local directory or vice versa, you can use the <code>scp</code> command.</p>
@@ -134,8 +144,11 @@
           <ol start="4">
             <li>From here, you should be able to view it inside your local directory.</li>
           </ol>
-          <img src="/1920-s2/contents/guides/images/SSH5.png" width="90%"></panel>
+          <img src="/1920-s2/contents/guides/images/SSH5.png" width="90%">
+        </panel>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -155,7 +168,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

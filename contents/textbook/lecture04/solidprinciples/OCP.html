@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="open-closed-principle">Open-Closed Principle<a class="fa fa-anchor" href="#open-closed-principle"></a></h1>
+        <h1 id="open-closed-principle">Open-Closed Principle<a class="fa fa-anchor" href="#open-closed-principle" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture04/solidprinciples/OCP.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
@@ -71,13 +73,15 @@
         </blockquote>
         <p>This means that a class should be easily extendable without having to modify the class itself.</p>
         <p>For example, say we have a class Rectangle that extends from a class Shape. Now we would like to create a class CalculateArea that calculates the total area of shapes in an array.</p>
-        <pre><code class="hljs"><span>public class CalculateArea {</span><span>    public double Area(Shapes[] shapes) {</span><span>        double area = 0;</span><span>        for(Shape s : shapes) { </span><span>            area += r.width * r.height;</span><span>        }</span><span>        return area;</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>public class CalculateArea {<br></span><span>    public double Area(Shapes[] shapes) {<br></span><span>        double area = 0;<br></span><span>        for(Shape s : shapes) { <br></span><span>            area += r.width * r.height;<br></span><span>        }<br></span><span>        return area;<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>Now what if we had another class Circle that we would like to add to the array? We would have to modify the CalculateArea class for the program to be able to run correctly.</p>
-        <pre><code class="hljs"><span>public class CalculateArea {</span><span>    public double Area(Shape[] shapes) {</span><span>        double area = 0;</span><span>        for (Shape s : shapes) {</span><span>            if (s instanceof Rectangle) {</span><span>                area += s.width * s.height;</span><span>            } else if (s instanceof Circle) {</span><span>                area += s.radius * s.radius * Math.PI;</span><span>            } </span><span>        }</span><span>        return area;</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>public class CalculateArea {<br></span><span>    public double Area(Shape[] shapes) {<br></span><span>        double area = 0;<br></span><span>        for (Shape s : shapes) {<br></span><span>            if (s instanceof Rectangle) {<br></span><span>                area += s.width * s.height;<br></span><span>            } else if (s instanceof Circle) {<br></span><span>                area += s.radius * s.radius * Math.PI;<br></span><span>            } <br></span><span>        }<br></span><span>        return area;<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>This violates the open-close principle as CalculateArea class isn’t closed to modification. We needed to modify it in order to extend it.</p>
         <p>Instead, the responsibility for calculating the individual shape's area should be left to the shape class. In this way, we can extend a new shape (e.g. Triangle) without having to modify the client’s implementation of CalculateArea.</p>
-        <pre><code class="hljs"><span>public class CalculateArea {</span><span>    public double Area(Shape[] shapes) {</span><span>        double area = 0;</span><span>        for (Shape s : shapes) {</span><span>            area += s.getArea();</span><span>        }</span><span>        return area;</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>public class CalculateArea {<br></span><span>    public double Area(Shape[] shapes) {<br></span><span>        double area = 0;<br></span><span>        for (Shape s : shapes) {<br></span><span>            area += s.getArea();<br></span><span>        }<br></span><span>        return area;<br></span><span>    }<br></span><span>}<br></span></code></pre>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -91,7 +95,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

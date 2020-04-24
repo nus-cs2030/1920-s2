@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,43 +59,66 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="tell-don-t-ask">Tell, Don't Ask<a class="fa fa-anchor" href="#tell-don-t-ask"></a></h1>
+        <h1 id="tell-don-t-ask">Tell, Don't Ask<a class="fa fa-anchor" href="#tell-don-t-ask" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/tellDontAsk/tellDontAsk.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
         <p>In the lecture, the professor gave the following example :</p>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{</span><span>    <span class="hljs-keyword">double</span> x;</span><span>    <span class="hljs-keyword">double</span> y;</span><span>&#x200B;</span><span>    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {</span><span>        <span class="hljs-keyword">this</span>.x = x;</span><span>        <span class="hljs-keyword">this</span>.y = y;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{</span><span>        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.x - otherpoint.x;</span><span>        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.y - otherpoint.y;</span><span>        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{<br></span><span>    <span class="hljs-keyword">double</span> x;<br></span><span>    <span class="hljs-keyword">double</span> y;<br></span><span><br></span><span>    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {<br></span><span>        <span class="hljs-keyword">this</span>.x = x;<br></span><span>        <span class="hljs-keyword">this</span>.y = y;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{<br></span><span>        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.x - otherpoint.x;<br></span><span>        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.y - otherpoint.y;<br></span><span>        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>The fields x and y are of default access level since no access modifier is provided, and therefore can be accessed like so :</p>
-        <pre><code 2-3 class="hljs java"><span>Point p = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);</span><span>p.x;</span><span>p.y;</span></code></pre>
+        <pre><code 2-3 class="hljs java"><span>Point p = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);<br></span><span>p.x;<br></span><span>p.y;<br></span></code></pre>
         <p>Then the Circle class was introduced :</p>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{</span><span>    Point center;</span><span>    <span class="hljs-keyword">double</span> radius;</span><span>&#x200B;</span><span>    Circle(Point center, <span class="hljs-keyword">double</span> radius) {</span><span>        <span class="hljs-keyword">this</span>.center = center;</span><span>        <span class="hljs-keyword">this</span>.radius = radius;</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point p)</span></span>{</span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.center.distanceTo(p) &lt; <span class="hljs-keyword">this</span>.radius;</span><span>    }</span><span>}</span></code></pre>
-        <p>If someone wanted to find out if a point was contained in a circle, he would type :</p>
-        <pre><code class="hljs java"><span>Circle circle = <span class="hljs-keyword">new</span> Circle(<span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">5</span>);</span><span>Point myPoint = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>);</span><span><span class="hljs-keyword">boolean</span> circleContainsMyPoint = circle.contains(myPoint);</span></code></pre>
-        <p>The above code is adhering to the &quot;Tell Don't Ask&quot; principle. In the Circle class, the contains method could have just as easily been :</p>
-        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point point)</span> </span>{</span><span>    <span class="hljs-keyword">double</span> dx = center.x - point.x;</span><span>    <span class="hljs-keyword">double</span> dy = center.y - point.y;</span><span>    <span class="hljs-keyword">return</span> Math.sqrt(dx * dx + dy * dy) &lt; <span class="hljs-keyword">this</span>.radius;</span><span>}</span></code></pre>
-        <p>In this case, Circle is asking Point for its x and y coordinates, then doing the square root calculations itself. Instead of <strong>asking</strong> for values and doing the work yourself like in this exmaple, classes should <strong>tell</strong>          each other what to do in their own classes.</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Circle</span> </span>{<br></span><span>    Point center;<br></span><span>    <span class="hljs-keyword">double</span> radius;<br></span><span><br></span><span>    Circle(Point center, <span class="hljs-keyword">double</span> radius) {<br></span><span>        <span class="hljs-keyword">this</span>.center = center;<br></span><span>        <span class="hljs-keyword">this</span>.radius = radius;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point p)</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.center.distanceTo(p) &lt; <span class="hljs-keyword">this</span>.radius;<br></span><span>    }<br></span><span>}<br></span></code></pre>
+        <p>If someone wanted to find out if a point was contained in a circle,
+          he would type :</p>
+        <pre><code class="hljs java"><span>Circle circle = <span class="hljs-keyword">new</span> Circle(<span class="hljs-keyword">new</span> Point(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">5</span>);<br></span><span>Point myPoint = <span class="hljs-keyword">new</span> Point(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>);<br></span><span><span class="hljs-keyword">boolean</span> circleContainsMyPoint = circle.contains(myPoint);<br></span></code></pre>
+        <p>The above code is adhering to the &quot;Tell Don't Ask&quot; principle. In the Circle class,
+          the contains method could have just as easily been :</p>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">contains</span><span class="hljs-params">(Point point)</span> </span>{<br></span><span>    <span class="hljs-keyword">double</span> dx = center.x - point.x;<br></span><span>    <span class="hljs-keyword">double</span> dy = center.y - point.y;<br></span><span>    <span class="hljs-keyword">return</span> Math.sqrt(dx * dx + dy * dy) &lt; <span class="hljs-keyword">this</span>.radius;<br></span><span>}<br></span></code></pre>
+        <p>In this case, Circle is asking Point for its x and y coordinates, then doing the
+          square root calculations itself. Instead of <strong>asking</strong> for values and doing the
+          work yourself like in this exmaple, classes should <strong>tell</strong> each other what to do in their own classes.</p>
         <p>This brings up an important point. Let's say I changed the implementation of Point :</p>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{</span><span>    <span class="hljs-keyword">double</span>[] coord;</span><span>&#x200B;</span><span>    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {</span><span>        <span class="hljs-keyword">this</span>.coord = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[]{x, y};</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{</span><span>        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">0</span>] - otherpoint.coord[<span class="hljs-number">0</span>];</span><span>        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">1</span>] - otherpoint.coord[<span class="hljs-number">1</span>];</span><span>        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);</span><span>    }</span><span>}</span></code></pre>
-        <p>If Circle had been adhering to &quot;Tell Don't Ask&quot;, it wouldn't face any problems, since it is not working directly with the values inside Point. But if it decides to implement the contains method by directly asking for values from Point,
-          it runs into some trouble since point.x, center.y, etc. do not work anymore.</p>
-        <p>To prevent these sort of problems, classes can choose to hide their values using access modifiers. Outside classes will only be able to access exposed functionalities, giving the original class freedom to change its implementation however it likes.</p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span>[] coord;</span></code></pre>
-        <p>Getters can be used if a class wants to expose its fields without making them public. As long as I write my Getters to properly clean or transform my class fields for the outside world to access, dependencies on my class will not break no matter
-          my implementation.
-        </p>
-        <p>Getters ensure that even if some classes are not following &quot;Tell Don't Ask&quot;, they won't break when the implementation of the class they're &quot;asking&quot; from changes.</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Point</span> </span>{<br></span><span>    <span class="hljs-keyword">double</span>[] coord;<br></span><span><br></span><span>    Point(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">double</span> y) {<br></span><span>        <span class="hljs-keyword">this</span>.coord = <span class="hljs-keyword">new</span> <span class="hljs-keyword">double</span>[]{x, y};<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">distanceTo</span><span class="hljs-params">(Point otherpoint)</span> </span>{<br></span><span>        <span class="hljs-keyword">double</span> dispX = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">0</span>] - otherpoint.coord[<span class="hljs-number">0</span>];<br></span><span>        <span class="hljs-keyword">double</span> dispY = <span class="hljs-keyword">this</span>.coord[<span class="hljs-number">1</span>] - otherpoint.coord[<span class="hljs-number">1</span>];<br></span><span>        <span class="hljs-keyword">return</span> Math.sqrt(dispX * dispX + dispY * dispY);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+        <p>If Circle had been adhering to &quot;Tell Don't Ask&quot;, it wouldn't face any problems,
+          since it is not working directly with the values inside Point. But if it decides to
+          implement the contains method by directly asking for values from Point, it runs into some trouble since
+          point.x, center.y, etc. do not work anymore.</p>
+        <p>To prevent these sort of problems, classes can choose to hide their
+          values using access modifiers. Outside classes will only be able to access
+          exposed functionalities, giving the original class freedom to change its implementation
+          however it likes.</p>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">private</span> <span class="hljs-keyword">double</span>[] coord;<br></span></code></pre>
+        <p>Getters can be used if a class wants to expose its fields without
+          making them public. As long as I write my Getters
+          to properly clean or transform my class fields for the outside world to access,
+          dependencies on my class will not break no matter my implementation.</p>
+        <p>Getters ensure that even if some classes are not following &quot;Tell Don't Ask&quot;,
+          they won't break when the implementation of the class they're &quot;asking&quot; from changes.</p>
         <p>An excerpt from Stack Overflow summarizing the point :</p>
         <blockquote>
-          <p>Private variables help prevent people from depending on certain parts of your code. For example, say you want to implement some data structure. You want users of your data structure to not care how you implemented it, but rather just use the
-            implementation through your well defined interface. The reason is that if no one is depending on your implementation, you can change it whenever you want. For example, you can change the back-end implementation to improve performance. Any
-            other developers who depended on your implementations will break, while the interface users will be fine. Having the flexibility to change implementations without effecting the class users is a huge benefit that using private variables (and
-            more broadly, encapsulation) gives you.</p>
+          <p>Private variables help prevent people from depending on certain parts of your code.
+            For example, say you want to implement some data structure.
+            You want users of your data structure to not care how you implemented it,
+            but rather just use the implementation through your well defined interface.
+            The reason is that if no one is depending on your implementation,
+            you can change it whenever you want. For example, you can change
+            the back-end implementation to improve performance. Any other
+            developers who depended on your implementations will break,
+            while the interface users will be fine. Having the flexibility
+            to change implementations without effecting the class users is
+            a huge benefit that using private variables
+            (and more broadly, encapsulation) gives you.</p>
         </blockquote>
-        <p><a href="https://softwareengineering.stackexchange.com/questions/143736/why-do-we-need-private-variables">This</a> stack overflow thread contains other practical reasons for access modifiers.</p>
+        <p><a href="https://softwareengineering.stackexchange.com/questions/143736/why-do-we-need-private-variables">This</a>
+          stack overflow thread contains other practical reasons for access modifiers.</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -108,7 +132,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

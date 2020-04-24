@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,25 +59,24 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="do-you-want-to-build-a-monad-part-two">Do you want to build a monad? (Part Two)<a class="fa fa-anchor" href="#do-you-want-to-build-a-monad-part-two"></a></h1>
+        <h1 id="do-you-want-to-build-a-monad-part-two">Do you want to build a monad? (Part Two)<a class="fa fa-anchor" href="#do-you-want-to-build-a-monad-part-two" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture10/monadsIntro/makingTheMonad.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
         <p>This post was adapted from <a href="https://nus-cs2030.github.io/1718-s2/monad/index.html">Prof Ooi's CS2030 Website</a></p>
-        <p>This post was inspired by <a href="https://blog.jcoglan.com/2011/03/05/translation-from-haskell-to-javascript-of-selected-portions-of-the-best-introduction-to-monads-ive-ever-read/">The Best Introduction to Monad</a>, but is adapted to the Object-Oritented
-          way of programming with Java.</p>
+        <p>This post was inspired by <a href="https://blog.jcoglan.com/2011/03/05/translation-from-haskell-to-javascript-of-selected-portions-of-the-best-introduction-to-monads-ive-ever-read/">The Best Introduction to Monad</a>, but is adapted to the Object-Oritented way of programming with Java.</p>
         <p>If you have not read the first part, <a href="/1920-s2/contents/textbook/lecture10/monadsIntro/extraMonads.html">click here!</a></p>
-        <h2 id="making-it-a-monad">Making it a Monad<a class="fa fa-anchor" href="#making-it-a-monad"></a></h2>
+        <h2 id="making-it-a-monad">Making it a Monad<a class="fa fa-anchor" href="#making-it-a-monad" onclick="event.stopPropagation()"></a></h2>
         <p>Let's refer back to our code from part one.</p>
-        <pre><code class="hljs java"><span>  Double x;</span><span>  String log;</span><span>&#x200B;</span><span>  DoubleString(<span class="hljs-keyword">double</span> x, String log) {</span><span>    <span class="hljs-keyword">this</span>.x = x;</span><span>    <span class="hljs-keyword">this</span>.log = log;</span><span>  }</span><span>&#x200B;</span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">sinAndLog</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(sin(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called sin"</span>);</span><span>  }</span><span>&#x200B;</span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">cubeAndLog</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(cube(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called cube"</span>);</span><span>  }</span><span>}</span></code></pre>
-        <p>Now, here is where I jump to creating a monad. I do not want to convert all my methods that takes in <code>double</code> and returns <code>DoubleString</code> into something that takes in <code>DoubleString</code> and returns <code>DoubleString</code>.
-          Yet, I want to be able to compose them and chain them together. So I write a general method that allows that, and that is our <code>flatMap</code> method:</p>
-        <pre><code class="hljs"><span>DoubleString flatMap(Function&lt;Double, DoubleString&gt; mapper) {</span><span>    DoubleString ds = mapper.apply(x);</span><span>    return new DoubleString(ds.x, this.log + &quot;\n&quot; + ds.log);</span><span>}</span></code></pre>
+        <pre><code class="hljs java"><span>  Double x;<br></span><span>  String log;<br></span><span><br></span><span>  DoubleString(<span class="hljs-keyword">double</span> x, String log) {<br></span><span>    <span class="hljs-keyword">this</span>.x = x;<br></span><span>    <span class="hljs-keyword">this</span>.log = log;<br></span><span>  }<br></span><span><br></span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">sinAndLog</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(sin(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called sin"</span>);<br></span><span>  }<br></span><span><br></span><span>  <span class="hljs-function">DoubleString <span class="hljs-title">cubeAndLog</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> DoubleString(cube(<span class="hljs-keyword">this</span>.x), log + <span class="hljs-string">"called cube"</span>);<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <p>Now, here is where I jump to creating a monad. I do not want to convert all my methods that takes in <code>double</code> and returns <code>DoubleString</code> into something that takes in <code>DoubleString</code> and returns <code>DoubleString</code>. Yet, I want to be able to compose them and chain them together. So I write a general method that allows that, and that is our <code>flatMap</code> method:</p>
+        <pre><code class="hljs"><span>DoubleString flatMap(Function&lt;Double, DoubleString&gt; mapper) {<br></span><span>    DoubleString ds = mapper.apply(x);<br></span><span>    return new DoubleString(ds.x, this.log + &quot;\n&quot; + ds.log);<br></span><span>}<br></span></code></pre>
         <p>We can now use <code>flatMap</code> to chain different operations together.</p>
-        <pre><code class="hljs"><span>DoubleString ds = new DoubleString(5.0, &quot;&quot;)</span><span>    .flatMap(x -&gt; sinAndLog(x))</span><span>    .flatMap(x -&gt; cubeAndLog(x));</span></code></pre>
+        <pre><code class="hljs"><span>DoubleString ds = new DoubleString(5.0, &quot;&quot;)<br></span><span>    .flatMap(x -&gt; sinAndLog(x))<br></span><span>    .flatMap(x -&gt; cubeAndLog(x));<br></span></code></pre>
         <p>Now <code>DoubleString</code> is a <strong>monad</strong>!</p>
         <p>Going back to our &quot;wrap a value in a box with context&quot; explanation. If we have two such wrappers, how do we wrap twice?</p>
         <p>We have to</p>
@@ -87,17 +87,18 @@
         <p>The two lines in <code>flatMap</code> corresponds to (i) and (ii) respectively.</p>
         <p>Line <code>ds = mapper.apply(x);</code> wraps it once; The next line unwraps the value and the context (<code>ds.x</code> and <code>dx.log</code>) and wraps it again ( <code>new DoubleString(..)</code> ) with the next context (<code>this.log + &quot;\n&quot; + ds.log</code>).</p>
         <p>Here is our monad:</p>
-        <pre><code class="hljs"><span>class DoubleString {</span><span>  Double x;</span><span>  String log;</span><span>&#x200B;</span><span>  DoubleString(double x, String log) {</span><span>    this.x = x;</span><span>    this.log = log;</span><span>  }</span><span>&#x200B;</span><span>  DoubleString flatMap(Function&lt;Double, DoubleString&gt; mapper) {</span><span>    DoubleString ds = mapper.apply(x);</span><span>    return new DoubleString(ds.x, this.log + &quot;\n&quot; + ds.log);</span><span>  }</span><span>&#x200B;</span><span>  public String toString() {</span><span>    return x + &quot;\n&quot; + log;</span><span>  }</span><span>}</span></code></pre>
-        <h2 id="making-a-generic-monad-that-logs">Making a Generic Monad that Logs<a class="fa fa-anchor" href="#making-a-generic-monad-that-logs"></a></h2>
+        <pre><code class="hljs"><span>class DoubleString {<br></span><span>  Double x;<br></span><span>  String log;<br></span><span><br></span><span>  DoubleString(double x, String log) {<br></span><span>    this.x = x;<br></span><span>    this.log = log;<br></span><span>  }<br></span><span><br></span><span>  DoubleString flatMap(Function&lt;Double, DoubleString&gt; mapper) {<br></span><span>    DoubleString ds = mapper.apply(x);<br></span><span>    return new DoubleString(ds.x, this.log + &quot;\n&quot; + ds.log);<br></span><span>  }<br></span><span><br></span><span>  public String toString() {<br></span><span>    return x + &quot;\n&quot; + log;<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <h2 id="making-a-generic-monad-that-logs">Making a Generic Monad that Logs<a class="fa fa-anchor" href="#making-a-generic-monad-that-logs" onclick="event.stopPropagation()"></a></h2>
         <p>We can make <code>DoubleString</code> a <strong>generic class</strong> that logs what happen to a variable.</p>
-        <pre><code class="hljs"><span>  T x;</span><span>  String log;</span><span>&#x200B;</span><span>  Logger(T x, String log) {</span><span>    this.x = x;</span><span>    this.log = log;</span><span>  }</span><span>&#x200B;</span><span>  &lt;R&gt; Logger&lt;R&gt; flatMap(Function&lt;? super T, ? extends Logger&lt;? extends R&gt;&gt; mapper) {</span><span>    Logger&lt;R&gt; ds = mapper.apply(x);</span><span>    return new Logger&lt;&gt;(ds.x, this.log + &quot;\n&quot; + ds.log);</span><span>  }</span><span>&#x200B;</span><span>  public String toString() {</span><span>    return x + &quot;\n&quot; + log;</span><span>  }</span><span>}</span></code></pre>
-        <h2 id="functor">Functor<a class="fa fa-anchor" href="#functor"></a></h2>
-        <p>Can we do this with a functor? Note that a functor has a <code>map</code> method with type <code>Function&lt;T,R&gt;</code>. A <code>map</code> method for <code>DoubleString</code> would looks like <code>Function&lt;Double,Double&gt;</code>. So
-          it cannot do what the monad does. A functor can only change the value inside the box, but it cannot rewrap it with an updated context.</p>
-        <h2 id="wait-what-is-a-monad-again">Wait, What is a Monad Again?<a class="fa fa-anchor" href="#wait-what-is-a-monad-again"></a></h2>
+        <pre><code class="hljs"><span>  T x;<br></span><span>  String log;<br></span><span><br></span><span>  Logger(T x, String log) {<br></span><span>    this.x = x;<br></span><span>    this.log = log;<br></span><span>  }<br></span><span><br></span><span>  &lt;R&gt; Logger&lt;R&gt; flatMap(Function&lt;? super T, ? extends Logger&lt;? extends R&gt;&gt; mapper) {<br></span><span>    Logger&lt;R&gt; ds = mapper.apply(x);<br></span><span>    return new Logger&lt;&gt;(ds.x, this.log + &quot;\n&quot; + ds.log);<br></span><span>  }<br></span><span><br></span><span>  public String toString() {<br></span><span>    return x + &quot;\n&quot; + log;<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <h2 id="functor">Functor<a class="fa fa-anchor" href="#functor" onclick="event.stopPropagation()"></a></h2>
+        <p>Can we do this with a functor? Note that a functor has a <code>map</code> method with type <code>Function&lt;T,R&gt;</code>. A <code>map</code> method for <code>DoubleString</code> would looks like <code>Function&lt;Double,Double&gt;</code>. So it cannot do what the monad does. A functor can only change the value inside the box, but it cannot rewrap it with an updated context.</p>
+        <h2 id="wait-what-is-a-monad-again">Wait, What is a Monad Again?<a class="fa fa-anchor" href="#wait-what-is-a-monad-again" onclick="event.stopPropagation()"></a></h2>
         <p>I hope the example above helps explain what is a monad.</p>
         <p>It is a <strong>value wrapped in a box with context</strong>, and it allows us to compose wrappers (wrap multuple times), operate on its value and update the context if needed.</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -117,7 +118,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

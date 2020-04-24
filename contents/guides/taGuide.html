@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
 </head>
 
@@ -22,8 +23,8 @@
   <div id="app">
     <div id="flex-body">
       <div id="content-wrapper">
-        <h1 id="instructions-for-tas">Instructions for TAs<a class="fa fa-anchor" href="#instructions-for-tas"></a></h1>
-        <h2 id="approving-prs">Approving PRs<a class="fa fa-anchor" href="#approving-prs"></a></h2>
+        <h1 id="instructions-for-tas">Instructions for TAs<a class="fa fa-anchor" href="#instructions-for-tas" onclick="event.stopPropagation()"></a></h1>
+        <h2 id="approving-prs">Approving PRs<a class="fa fa-anchor" href="#approving-prs" onclick="event.stopPropagation()"></a></h2>
         <ol>
           <li>Review student's pull request and ensure that content is relevant and the right files are modified under &quot;Files Changed&quot;. The right directory should be <code>/contents</code> and not <code>/_site</code>.</li>
           <li>Check for formatting (WIP).</li>
@@ -31,9 +32,9 @@
           <li>Merge pull request!</li>
         </ol>
         <img src="/1920-s2/contents/guides/images/pullrequest.png" width="80%">
-        <h2 id="formatting-standard">Formatting Standard<a class="fa fa-anchor" href="#formatting-standard"></a></h2>
+        <h2 id="formatting-standard">Formatting Standard<a class="fa fa-anchor" href="#formatting-standard" onclick="event.stopPropagation()"></a></h2>
         <p>(WIP)</p>
-        <h2 id="enabling-navigation">Enabling Navigation<a class="fa fa-anchor" href="#enabling-navigation"></a></h2>
+        <h2 id="enabling-navigation">Enabling Navigation<a class="fa fa-anchor" href="#enabling-navigation" onclick="event.stopPropagation()"></a></h2>
         <p>(Aiming to script this process eventually)</p>
         <ol>
           <li>
@@ -41,26 +42,29 @@
           </li>
           <li>
             <p>In the student's markdown, ensure that the Navbar, heading and edit links are included. E.g.:</p>
-            <pre><code class="hljs markdown"><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">frontmatter</span>&gt;</span></span></span><span>pageNav: 2</span><span>header: header.md</span><span>footer: footer.md</span><span>siteNav: site-nav.md</span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">frontmatter</span>&gt;</span></span></span><span>&#x200B;</span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span> </span><span>&#x200B;</span><span><span class="hljs-section"># Tell, Don't Ask</span></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span></span></span><span>&#x200B;</span><span><span class="xml"><span class="hljs-comment">&lt;!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK--&gt;</span></span></span><span>[<span class="hljs-string">Edit the material here! :fas-pen:</span>](<span class="hljs-link">https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.md</span>)</span><span><span class="xml"><span class="hljs-comment">&lt;!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK--&gt;</span></span></span><span>&#x200B;</span><span><span class="hljs-section">### </span></span></code></pre>
+            <pre><code class="hljs markdown"><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">frontmatter</span>&gt;</span></span><br></span><span>pageNav: 2<br></span><span>header: header.md<br></span><span>footer: footer.md<br></span><span>siteNav: site-nav.md<br></span><span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">frontmatter</span>&gt;</span></span><br></span><span><br></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span> <br></span><span><br></span><span><span class="hljs-section"># Tell, Don't Ask</span><br></span><span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span></span><br></span><span><br></span><span><span class="xml"><span class="hljs-comment">&lt;!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK--&gt;</span></span><br></span><span>[<span class="hljs-string">Edit the material here! :fas-pen:</span>](<span class="hljs-link">https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/tellNotAskAndPrivateAccessModifiersSummary/index.md</span>)<br></span><span><span class="xml"><span class="hljs-comment">&lt;!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK--&gt;</span></span><br></span><span><br></span><span><span class="hljs-section">### </span><br></span></code></pre>
           </li>
           <li>
             <p>Add the link to the student's new document within <a href="http://textbook.md">textbook.md</a> accordingly:</p>
-            <pre><code class="hljs"><span>* [Introduction to Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) </span><span>* [Abstraction](lecture01/abstraction/abstraction.html) </span><span>* [new document title](lecture01/newPR/newPR.html)</span></code></pre>
+            <pre><code class="hljs"><span>* [Introduction to Imperative Programming](lecture01/imperativeProgramming/imperativeProgramming.html) <br></span><span>* [Abstraction](lecture01/abstraction/abstraction.html) <br></span><span>* [new document title](lecture01/newPR/newPR.html)<br></span></code></pre>
           </li>
           <li>
             <p>Commit and push your files after building and testing it locally.</p>
           </li>
           <li>
             <p>Go to commits and click the yellow dot &gt; details to see your progress.</p>
-            <img src="/1920-s2/contents/guides/images/ciwait1.png" width="80%"></li>
+            <img src="/1920-s2/contents/guides/images/ciwait1.png" width="80%">
+          </li>
           <li>
             <p>Wait for Travis CI to run checks and push your changes to the gh-pages branch.</p>
-            <img src="/1920-s2/contents/guides/images/cidone1.png" width="40%"></li>
+            <img src="/1920-s2/contents/guides/images/cidone1.png" width="40%">
+          </li>
           <li>
             <p>You should see it live on the GitHub page!</p>
           </li>
         </ol>
       </div>
+
     </div>
   </div>
 </body>

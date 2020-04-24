@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="abstraction">Abstraction<a class="fa fa-anchor" href="#abstraction"></a></h1>
+        <h1 id="abstraction">Abstraction<a class="fa fa-anchor" href="#abstraction" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/abstraction/abstraction.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
@@ -72,7 +74,7 @@
           <li>Data Abstraction</li>
           <li>Functional Abstraction</li>
         </ol>
-        <h1 id="data-abstraction">Data Abstraction<a class="fa fa-anchor" href="#data-abstraction"></a></h1>
+        <h1 id="data-abstraction">Data Abstraction<a class="fa fa-anchor" href="#data-abstraction" onclick="event.stopPropagation()"></a></h1>
         <p>For Data Abstraction example, let’s say that you are the owner of a soft drink factory, and you produce soft drinks of the following types: Coke, Pepsi, Sprite, Fanta, and Ribena.</p>
         <p>These soft drinks generally have the following characteristics:</p>
         <ul>
@@ -90,26 +92,28 @@
           <li>ProfitPerUnit</li>
         </ul>
         <p>Hence, we end up with a class that looks like this:</p>
-        <pre><code class="hljs"><span>class SoftDrink {</span><span>    String typeOfContainer;</span><span>    int volumeOfContainer;</span><span>    String colour;</span><span>    boolean isCarbonated;</span><span>    double sellingPrice;</span><span>    </span><span>    //The information below I do not want to reveal to the public</span><span>    private int numberExportCountries = 16;</span><span>    private double manufactureCost = 0.5;</span><span>    // constructor</span><span>    </span><span>    SoftDrink(String type, int vol, String col, boolean carb, double price) {</span><span>        this.typeOfContainer = type;</span><span>        this.volumeOfContainer = vol;</span><span>        this.colour = col;</span><span>        this.isCarbonated = carb;</span><span>        this.sellingPrice = price;</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>class SoftDrink {<br></span><span>    String typeOfContainer;<br></span><span>    int volumeOfContainer;<br></span><span>    String colour;<br></span><span>    boolean isCarbonated;<br></span><span>    double sellingPrice;<br></span><span>    <br></span><span>    //The information below I do not want to reveal to the public<br></span><span>    private int numberExportCountries = 16;<br></span><span>    private double manufactureCost = 0.5;<br></span><span>    // constructor<br></span><span>    <br></span><span>    SoftDrink(String type, int vol, String col, boolean carb, double price) {<br></span><span>        this.typeOfContainer = type;<br></span><span>        this.volumeOfContainer = vol;<br></span><span>        this.colour = col;<br></span><span>        this.isCarbonated = carb;<br></span><span>        this.sellingPrice = price;<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>Abstractions gives us a template that allow us to simply punch in the details of the object that I want to create, instead of creating something entirely different. For example, I want to create the Coke drink:</p>
-        <pre><code class="hljs"><span>    public static void main(String[] args) {</span><span>        SoftDrink Coke = new SoftDrink(&quot;Can&quot;, 330, &quot;Red&quot;, true, 2);</span><span>        System.out.println(Coke.colour);</span><span>    }</span></code></pre>
+        <pre><code class="hljs"><span>    public static void main(String[] args) {<br></span><span>        SoftDrink Coke = new SoftDrink(&quot;Can&quot;, 330, &quot;Red&quot;, true, 2);<br></span><span>        System.out.println(Coke.colour);<br></span><span>    }<br></span></code></pre>
         <p>Now I have created a Coke object, whose information that I inserted and made available can be accessed easily.</p>
         <p>But what about the other information that I do not want to reveal?</p>
-        <p>Firstly, they are given the access modifier <code>private</code>, which means that other classes are not able to access its information. But more importantly, we do not use these information in the constructor. Hence I am able to exclude the use
-          of these information when I construct the object.</p>
-        <h1 id="functional-abstraction">Functional Abstraction<a class="fa fa-anchor" href="#functional-abstraction"></a></h1>
+        <p>Firstly, they are given the access modifier <code>private</code>, which means that other classes are not able to access its information.
+          But more importantly, we do not use these information in the constructor. Hence I am able to exclude the use of these information
+          when I construct the object.</p>
+        <h1 id="functional-abstraction">Functional Abstraction<a class="fa fa-anchor" href="#functional-abstraction" onclick="event.stopPropagation()"></a></h1>
         <p>For Functional Abstraction example, let’s say that you are (still) the owner of a soft drink factory.</p>
         <p>What if you wanted to count the profit for each of our soft drink? You should count it by having the selling price subtracted by the manufacture cost.</p>
         <p>In order to abstract that lower level computation away, you can create a new method that can count it for you.</p>
-        <pre><code class="hljs"><span>class SoftDrink {</span><span>    String typeOfContainer;</span><span>    int volumeOfContainer;</span><span>    String colour;</span><span>    boolean isCarbonated;</span><span>    double sellingPrice;</span><span>    </span><span>    //The information below I do not want to reveal to the public</span><span>    private int numberExportCountries = 16;</span><span>    private double manufactureCost = 0.5;</span><span>    // constructor</span><span>    </span><span>    SoftDrink(String type, int vol, String col, boolean carb, double price) {</span><span>        this.typeOfContainer = type;</span><span>        this.volumeOfContainer = vol;</span><span>        this.colour = col;</span><span>        this.isCarbonated = carb;</span><span>        this.sellingPrice = price;</span><span>    }</span><span>    </span><span>    double profitPerUnit() {</span><span>        return this.manufactureCost - this.sellingPrice;</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>class SoftDrink {<br></span><span>    String typeOfContainer;<br></span><span>    int volumeOfContainer;<br></span><span>    String colour;<br></span><span>    boolean isCarbonated;<br></span><span>    double sellingPrice;<br></span><span>    <br></span><span>    //The information below I do not want to reveal to the public<br></span><span>    private int numberExportCountries = 16;<br></span><span>    private double manufactureCost = 0.5;<br></span><span>    // constructor<br></span><span>    <br></span><span>    SoftDrink(String type, int vol, String col, boolean carb, double price) {<br></span><span>        this.typeOfContainer = type;<br></span><span>        this.volumeOfContainer = vol;<br></span><span>        this.colour = col;<br></span><span>        this.isCarbonated = carb;<br></span><span>        this.sellingPrice = price;<br></span><span>    }<br></span><span>    <br></span><span>    double profitPerUnit() {<br></span><span>        return this.manufactureCost - this.sellingPrice;<br></span><span>    }<br></span><span>}<br></span></code></pre>
         <p>With this method, you can calculate the profit for any of the soft drink.</p>
         <p>But wait, is creating a soft drink really that simple? What about all the ingredients that go into the manufacturing process? Aren't those important too? Our constructor only accepts 4 arguments.</p>
-        <p>The constructor is also another important aspect of abstraction. It is like a black box. It takes in the necessary information, the information I want to specify, and ignores all other aspects and details, but produces the object anyway. This
-          way, you can afford to just focus on the details that really matter.</p>
+        <p>The constructor is also another important aspect of abstraction. It is like a black box. It takes in the necessary information, the information I want to specify, and ignores all other aspects and details, but produces the object anyway. This way, you can afford to just focus on the details that really matter.</p>
         <p>If you are being overloaded with information, which a soft drink factory owner(who also writes programmes!) definitely is, abstraction is one of the most powerful tools in his box.</p>
         <p><strong>END</strong></p>
         <p>Thank you for reading! Please drop a comment if you have questions or to give feedback.</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -125,7 +129,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

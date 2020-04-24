@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="accessing-files-in-wsl">Accessing files in WSL<a class="fa fa-anchor" href="#accessing-files-in-wsl"></a></h1>
+        <h1 id="accessing-files-in-wsl">Accessing files in WSL<a class="fa fa-anchor" href="#accessing-files-in-wsl" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/misc/filesWSL/filesWSL.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
@@ -68,35 +70,50 @@
         <blockquote>
           <p>If you are NOT a Windows user, you can safely ignore this section.</p>
         </blockquote>
-        <p>If you are using Windows for CS2030, chances are you are using Windows Subsystem for Linux. You might be wondering: where do you find your files? Where should you keep your files?</p>
-        <p>First of all, we need to understand that WSL is a completely different system from Windows. Windows is based on (for argument's sake, due to the long history of Windows), the Windows NT kernel, while Linux is based on, well, Linux kernel. Let's
-          just say Linux is Unix-like.</p>
-        <p>As such, the ways they manage their files (filesystem) are very different as well. Windows prefers NTFS (the Windows NT File System), while Linux prefers ext4 or other filesystems.</p>
-        <p>These filesystems affect the properties of a file/folder, called <strong>metadata</strong>. They are managed by filesystems, and contain information such as date modified, date created, or
-          <strong>permissions</strong>. The latter is bold because that is the most important aspect in a file's metadata.
-        </p>
-        <p>One can imagine that modifying Linux files in Windows may result in Windows <strong>not</strong> meeting the metadata requirements of Linux's filesystem, such that when the file/folder is accessed with WSL (Linux), errors such as file lock, insufficient
-          permissions, or even corruption may occur.</p>
-        <p>Therefore, even though one knows that the <code>home</code> (or, tilde <code>~</code>) directory for WSL is located at
-        </p>
-        <pre><code class="hljs"><span>C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home</span></code></pre>
-        <p>this directory <strong>shall never be touched or accessed through Windows' File Explorer</strong> as Windows may unintentionally replace the metadata of whatever related to that directory, causing problems later in WSL. An experienced WSL user
-          always knows this.</p>
-        <p>Now, you may ask, how do we access our files then? There are two ways to access WSL files safely and <strong>correctly</strong>, as advised by Microsoft:</p>
+        <p>If you are using Windows for CS2030, chances are you are using Windows Subsystem for Linux.
+          You might be wondering: where do you find your files? Where should you keep your files?</p>
+        <p>First of all, we need to understand that WSL is a completely different system from Windows.
+          Windows is based on (for argument's sake, due to the long history of Windows), the Windows
+          NT kernel, while Linux is based on, well, Linux kernel. Let's just say Linux is Unix-like.</p>
+        <p>As such, the ways they manage their files (filesystem) are very different as well. Windows
+          prefers NTFS (the Windows NT File System), while Linux prefers ext4 or other filesystems.</p>
+        <p>These filesystems affect the properties of a file/folder, called <strong>metadata</strong>. They are
+          managed by filesystems, and contain information such as date modified, date created, or
+          <strong>permissions</strong>. The latter is bold because that is the most important aspect in a file's
+          metadata.</p>
+        <p>One can imagine that modifying Linux files in Windows may result in Windows <strong>not</strong> meeting
+          the metadata requirements of Linux's filesystem, such that when the file/folder is accessed
+          with WSL (Linux), errors such as file lock, insufficient permissions, or even corruption
+          may occur.</p>
+        <p>Therefore, even though one knows that the <code>home</code> (or, tilde <code>~</code>) directory for WSL is located
+          at</p>
+        <pre><code class="hljs"><span>C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home<br></span></code></pre>
+        <p>this directory <strong>shall never be touched or accessed through Windows' File Explorer</strong> as
+          Windows may unintentionally replace the metadata of whatever related to that directory, causing
+          problems later in WSL. An experienced WSL user always knows this.</p>
+        <p>Now, you may ask, how do we access our files then? There are two ways to access WSL files
+          safely and <strong>correctly</strong>, as advised by Microsoft:</p>
         <ol>
           <li>
-            <p>Accessing the root filesystem <code>/</code> directory with <code>\\wsl$\&lt;DistroName&gt;\</code> (e.g. <code>\\wsl$\Ubuntu\</code> for Ubuntu users, <code>\\wsl$\Kali\</code> users, etc). This will create a specialised P9 fileserver, which
-              will expose the Linux file system as a local network directory in Windows. Whatever you do there will be properly adjusted by the magic of Windows x WSL.</p>
+            <p>Accessing the root filesystem <code>/</code> directory with <code>\\wsl$\&lt;DistroName&gt;\</code> (e.g. <code>\\wsl$\Ubuntu\</code>
+              for Ubuntu users, <code>\\wsl$\Kali\</code> users, etc). This will create a specialised P9 fileserver, which
+              will expose the Linux file system as a local network directory in Windows. Whatever you do there
+              will be properly adjusted by the magic of Windows x WSL.</p>
           </li>
           <li>
-            <p>Accessing the Linux directory by invoking <code>explorer.exe .</code> (yes, the last <code>.</code> there is NOT a typo) <strong>in WSL</strong>. This will open up a File Explorer window and redirect you to your current working directory.
-              The directory opened is also a form of the aforementioned P9 fileserver.</p>
+            <p>Accessing the Linux directory by invoking <code>explorer.exe .</code> (yes, the last <code>.</code> there is NOT a
+              typo) <strong>in WSL</strong>. This will open up a File Explorer window and redirect you to your current
+              working directory. The directory opened is also a form of the aforementioned P9 fileserver.</p>
           </li>
         </ol>
-        <p>If the problems caused by accessing the Linux files through <code>AppData</code> is just a permissions mismatch, one can fix by using <code>chmod</code>. But, if the problem is file corruption, there might not be a way back. Therefore, this section
-          intends to disseminate <strong>the correct way</strong> of accessing files in WSL. I hope you will become one of the informed ones.</p>
+        <p>If the problems caused by accessing the Linux files through <code>AppData</code> is just a permissions
+          mismatch, one can fix by using <code>chmod</code>. But, if the problem is file corruption, there might not
+          be a way back. Therefore, this section intends to disseminate <strong>the correct way</strong> of accessing
+          files in WSL. I hope you will become one of the informed ones.</p>
         <p>You can read more about this issue in <a href="https://devblogs.microsoft.com/commandline/do-not-change-linux-files-using-windows-apps-and-tools/">this Microsoft DevBlogs article</a>.</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -110,7 +127,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

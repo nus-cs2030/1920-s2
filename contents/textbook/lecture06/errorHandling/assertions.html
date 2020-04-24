@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,46 +59,81 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="assertions">Assertions<a class="fa fa-anchor" href="#assertions"></a></h1>
+        <h1 id="assertions">Assertions<a class="fa fa-anchor" href="#assertions" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture06/errorHandling/errorHandling.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>&quot;A good code is a bug-free code,&quot; some might say. Though, it is almost impossible to write a bug-free code. What we can do is minimise the occurrence of errors, and if they do arise, handle them appropriately. In this section, we will
-          see the use of <strong>assertions</strong> in achieving so.</p>
+        <p>&quot;A good code is a bug-free code,&quot; some might say. Though, it is almost
+          impossible to write a bug-free code. What we can do is minimise the
+          occurrence of errors, and if they do arise, handle them appropriately.
+          In this section, we will see the use of <strong>assertions</strong> in achieving so.</p>
         <p>According to <a href="https://docs.oracle.com/javase/7/docs/technotes/guides/language/assert.html">this Java SE documentation</a>,</p>
         <blockquote>
-          <p>An <em>assertion</em> is a statement [...] to test your <strong>assumptions</strong> about your program. [...] Writing assertions while programming is one of the quickest and most effective ways to detect and correct bugs.</p>
+          <p>An <em>assertion</em> is a statement [...] to test your <strong>assumptions</strong> about
+            your program. [...] Writing assertions while programming is one of the
+            quickest and most effective ways to detect and correct bugs.</p>
         </blockquote>
-        <p><strong>Assumptions</strong> here refer to those expressions which are given by a problem. For example, a problem set can say something like <em>&quot;assume n &gt; 0&quot;</em> or
-          <em>&quot;assume the input length is always positive&quot;</em>. In this case, it might seem pointless to check for the assumptions, as (in CS1010 modules or CS1101S,) we usually assume these assumptions <strong>must always be true</strong>.</p>
-        <p>However, when we are programming at a much higher and more complex environment, assumptions may not hold across our code flow. Imagine we have multiple functions, which work together in a sequence to provide a certain functionality. Each functions
-          may have their own respective assumptions. However, for whatever reasons, <strong>it is possible that the output of one
-function did not meet the assumptions of the input of the next function.</strong> This is where assertions come in.</p>
-        <p>If the assumptions were not met, and our code crashes, that's great! Remember,
-        </p>
+        <p><strong>Assumptions</strong> here refer to those expressions which are given by a problem.
+          For example, a problem set can say something like <em>&quot;assume n &gt; 0&quot;</em> or
+          <em>&quot;assume the input length is always positive&quot;</em>. In this case, it might seem
+          pointless to check for the assumptions, as (in CS1010 modules or CS1101S,)
+          we usually assume these assumptions <strong>must always be true</strong>.</p>
+        <p>However, when we are programming at a much higher and more complex
+          environment, assumptions may not hold across our code flow. Imagine we have
+          multiple functions, which work together in a sequence to provide a certain
+          functionality. Each functions may have their own respective assumptions.
+          However, for whatever reasons, <strong>it is possible that the output of one
+            function did not meet the assumptions of the input of the next function.</strong>
+          This is where assertions come in.</p>
+        <p>If the assumptions were not met, and our code crashes, that's great!
+          Remember,</p>
         <blockquote>
-          <p>we very much prefer codes to crash at compile time, rather than during runtime. This is because, runtime error are usually hard to trace and may happen unexpectably. If we receive an error during compile time, we can debug and rectify the issue.
-            However, consider the case that given that the output of a function fails to meet the assumptions of the next function, <strong>and the function works</strong> and still give us a value. This is <strong>what we try to prevent</strong>, because
-            results which violate our assumptions are NOT valid results! It is for these reasons, we use assertions such that we are able to catch these <strong>bugs</strong> and make appropriate amendments.</p>
+          <p>we very much prefer codes to crash at compile time, rather than during
+            runtime. This is because, runtime error are usually hard to trace and
+            may happen unexpectably. If we receive an error during compile time, we
+            can debug and rectify the issue.
+            However, consider the case that given that the output of a function fails
+            to meet the assumptions of the next function, <strong>and the function works</strong> and
+            still give us a value. This is <strong>what we try to prevent</strong>, because results
+            which violate our assumptions are NOT valid results! It is for these reasons,
+            we use assertions such that we are able to catch these <strong>bugs</strong> and make
+            appropriate amendments.</p>
         </blockquote>
-        <p>To make an assertion, we use the <code>assert</code> keyword followed by a logical test. For example,</p>
-        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{</span><span>    <span class="hljs-keyword">assert</span> n &gt;= <span class="hljs-number">0</span>;</span><span>    <span class="hljs-keyword">int</span> output = <span class="hljs-number">1</span>;</span><span>    <span class="hljs-comment">// factorial logic code here</span></span><span>    <span class="hljs-keyword">return</span> output;</span><span>}</span></code></pre>
-        <p>When the logical test in the assertion returns <code>false</code>, the compiler throws an <code>AssertionError</code>. We also have another type of assertion with the structure
+        <p>To make an assertion, we use the <code>assert</code> keyword followed by a logical test.
+          For example,</p>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{<br></span><span>    <span class="hljs-keyword">assert</span> n &gt;= <span class="hljs-number">0</span>;<br></span><span>    <span class="hljs-keyword">int</span> output = <span class="hljs-number">1</span>;<br></span><span>    <span class="hljs-comment">// factorial logic code here</span><br></span><span>    <span class="hljs-keyword">return</span> output;<br></span><span>}<br></span></code></pre>
+        <p>When the logical test in the assertion returns <code>false</code>, the compiler throws
+          an <code>AssertionError</code>. We also have another type of assertion with the structure
           <code>assert (a) : (b)</code> like so,</p>
-        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{</span><span>    <span class="hljs-keyword">assert</span> n &gt;= <span class="hljs-number">0</span> : <span class="hljs-string">"n: "</span> + n;</span><span>    <span class="hljs-keyword">int</span> output = <span class="hljs-number">1</span>;</span><span>    <span class="hljs-comment">// factorial logic code here</span></span><span>    <span class="hljs-keyword">return</span> output;</span><span>}</span></code></pre>
-        <p>The second statement <code>(b)</code> is a value which will be printed together with the thrown <code>AssertionError</code>. This is useful with codes with multiple assertions, and allow us to directly see which assertion was broken, with which
-          value. Note that assertions are <strong>not meant for the end user</strong>. Assertions are meant for developers, like us, in debugging our code. Therefore, this message need not be intuitive or user-friendly. This message should be informative,
-          succint, and contextual to the developers.</p>
-        <p>If the assertions are complex and resource-expensive to evaluate (e.g. sorting or searching with <code>O(n^2)</code> complexity), then assertions will definitely hurt our code's performance. Therefore, by default, Java <strong>disables</strong>          assertions evaluation. So, when our code is run, these assertions are just ignored. To enable assertions, we have to explicitly tell <code>java</code> that we want to see these
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">factorial</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>{<br></span><span>    <span class="hljs-keyword">assert</span> n &gt;= <span class="hljs-number">0</span> : <span class="hljs-string">"n: "</span> + n;<br></span><span>    <span class="hljs-keyword">int</span> output = <span class="hljs-number">1</span>;<br></span><span>    <span class="hljs-comment">// factorial logic code here</span><br></span><span>    <span class="hljs-keyword">return</span> output;<br></span><span>}<br></span></code></pre>
+        <p>The second statement <code>(b)</code> is a value which will be printed together with the
+          thrown <code>AssertionError</code>. This is useful with codes with multiple assertions,
+          and allow us to directly see which assertion was broken, with which value.
+          Note that assertions are <strong>not meant for the end user</strong>. Assertions are meant
+          for developers, like us, in debugging our code. Therefore, this message need
+          not be intuitive or user-friendly. This message should be informative, succint,
+          and contextual to the developers.</p>
+        <p>If the assertions are complex and resource-expensive to evaluate (e.g. sorting
+          or searching with <code>O(n^2)</code> complexity), then assertions will definitely hurt
+          our code's performance. Therefore, by default, Java <strong>disables</strong> assertions
+          evaluation. So, when our code is run, these assertions are just ignored. To
+          enable assertions, we have to explicitly tell <code>java</code> that we want to see these
           <code>AssertionError</code>s by running our code with</p>
-        <pre><code class="hljs"><span>java -ea &lt;ClassName&gt;</span></code></pre>
-        <p>where the <code>-ea</code> flag stands for <code>e</code>nable <code>a</code>ssertions. To disable assertions, you've guessed it, we can use <code>-da</code>, which stands for <code>d</code>isable <code>a</code>ssertions.</p>
-        <p>Again, note that <strong>assertions are never meant for the end user</strong>. Therefore, when releasing our program (releasing means finalising and deploying our program to the end user), we have to remove these assertions, since our finalised
-          program should not rely on <code>AssertionError</code>s to rectify bugs, i.e. they should be as bug-free as possible.</p>
+        <pre><code class="hljs"><span>java -ea &lt;ClassName&gt;<br></span></code></pre>
+        <p>where the <code>-ea</code> flag stands for <code>e</code>nable <code>a</code>ssertions. To disable assertions,
+          you've guessed it, we can use <code>-da</code>, which stands for <code>d</code>isable <code>a</code>ssertions.</p>
+        <p>Again, note that <strong>assertions are never meant for the end user</strong>. Therefore,
+          when releasing our program (releasing means finalising and deploying our program
+          to the end user), we have to remove these assertions, since our finalised program
+          should not rely on <code>AssertionError</code>s to rectify bugs, i.e. they should be as
+          bug-free as possible.</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -111,7 +147,7 @@ function did not meet the assumptions of the input of the next function.</strong
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

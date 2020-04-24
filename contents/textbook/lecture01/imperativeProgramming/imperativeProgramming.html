@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,9 +59,10 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="introduction-to-imperative-programming">Introduction to Imperative Programming<a class="fa fa-anchor" href="#introduction-to-imperative-programming"></a></h1>
+        <h1 id="introduction-to-imperative-programming">Introduction to Imperative Programming<a class="fa fa-anchor" href="#introduction-to-imperative-programming" onclick="event.stopPropagation()"></a></h1>
         <hr>
         <div>
 
@@ -73,7 +75,8 @@
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/explanation.md">Edit the explanation! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-          <p>What we will be introduced in CS2030 is the concept of <strong>Imperative Programming</strong>. What we have learnt in CS1010J / CS1010S / CS1101S is the usage of <strong>Functional Programming</strong>, which is a form of <strong>Declarative Programming</strong>.</p>
+          <p>What we will be introduced in CS2030 is the concept of <strong>Imperative Programming</strong>.
+            What we have learnt in CS1010J / CS1010S / CS1101S is the usage of <strong>Functional Programming</strong>, which is a form of <strong>Declarative Programming</strong>.</p>
           <p>Here some differences we can see in <strong>Imperative Programming Vs. Functional Programming</strong>.</p>
           <div class="table-responsive">
             <table class="markbind-table table table-bordered table-striped">
@@ -99,8 +102,10 @@
               </tbody>
             </table>
           </div>
-          <p>A key difference to note is that in imperative programs, Each assignment updates or changes the value of a variable, allowing variable names to refer to different values at different points within the program itself. <br> Whereas in functional
-            programs. Each function call should return a new value, and that value can be used again as an argument for another function call. Mutation of variables usually does not exit here.<sup>1</sup></p>
+          <p>A key difference to note is that in imperative programs, Each assignment updates or changes the value of a variable,
+            allowing variable names to refer to different values at different points within the program itself. <br>
+            Whereas in functional programs. Each function call should return a new value,
+            and that value can be used again as an argument for another function call. Mutation of variables usually does not exit here.<sup>1</sup></p>
         </div>
         <br>
         <div>
@@ -108,9 +113,9 @@
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/examples.md">Edit the examples! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
           <p>This is an example of an imperative approach:</p>
-          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FoodChecker</span> </span>{</span><span>    <span class="hljs-keyword">int</span> numOfExpiredFoods;</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">FoodChecker</span><span class="hljs-params">(List foods)</span> </span>{</span><span>        numOfExpiredFoods = <span class="hljs-number">0</span>;</span><span>        </span><span>        <span class="hljs-keyword">for</span> (food : foods) {</span><span>            <span class="hljs-keyword">if</span> (food.isExpired()) {</span><span>                numOfExpiredFoods++;</span><span>            }</span><span>        }</span><span>    }</span><span>&#x200B;</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNumOfExpiredFoods</span><span class="hljs-params">()</span> </span>{ </span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.numOfExpiredFoods;</span><span>    }   </span><span>}</span></code></pre>
+          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FoodChecker</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> numOfExpiredFoods;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">FoodChecker</span><span class="hljs-params">(List foods)</span> </span>{<br></span><span>        numOfExpiredFoods = <span class="hljs-number">0</span>;<br></span><span>        <br></span><span>        <span class="hljs-keyword">for</span> (food : foods) {<br></span><span>            <span class="hljs-keyword">if</span> (food.isExpired()) {<br></span><span>                numOfExpiredFoods++;<br></span><span>            }<br></span><span>        }<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getNumOfExpiredFoods</span><span class="hljs-params">()</span> </span>{ <br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.numOfExpiredFoods;<br></span><span>    }   <br></span><span>}<br></span></code></pre>
           <p>This is an example of a functional approach:</p>
-          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{</span><span>        <span class="hljs-keyword">int</span> numOfExpiredFoods = foods.stream().filter(food =&gt; food.isExpired()).count();</span><span>        </span><span>        System.out.println(numOfExpiredFoods);</span><span>    }</span><span>}</span></code></pre>
+          <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        <span class="hljs-keyword">int</span> numOfExpiredFoods = foods.stream().filter(food =&gt; food.isExpired()).count();<br></span><span>        <br></span><span>        System.out.println(numOfExpiredFoods);<br></span><span>    }<br></span><span>}<br></span></code></pre>
         </div>
         <br>
         <div>
@@ -120,7 +125,7 @@
           <p>1: <a href="https://sookocheff.com/post/fp/differences-between-imperative-and-functional/">https://sookocheff.com/post/fp/differences-between-imperative-and-functional/</a></p>
         </div>
         <br>
-        <h2 id="exercises">Exercises<a class="fa fa-anchor" href="#exercises"></a></h2>
+        <h2 id="exercises">Exercises<a class="fa fa-anchor" href="#exercises" onclick="event.stopPropagation()"></a></h2>
         <div>
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/exercises.md">Edit the exercises! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
@@ -136,12 +141,15 @@
           </question>
         </div>
         <br>
-        <h2 id="additional-resources">Additional Resources<a class="fa fa-anchor" href="#additional-resources"></a></h2>
+        <h2 id="additional-resources">Additional Resources<a class="fa fa-anchor" href="#additional-resources" onclick="event.stopPropagation()"></a></h2>
         <div>
 
           <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/imperativeProgramming/resources.md">Edit the resources here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
         </div>
-        <br></div>
+        <br>
+      </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -159,7 +167,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

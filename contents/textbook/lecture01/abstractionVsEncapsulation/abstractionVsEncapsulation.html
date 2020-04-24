@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,23 +59,21 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="abstraction-vs-encapsulation">Abstraction Vs Encapsulation<a class="fa fa-anchor" href="#abstraction-vs-encapsulation"></a></h1>
+        <h1 id="abstraction-vs-encapsulation">Abstraction Vs Encapsulation<a class="fa fa-anchor" href="#abstraction-vs-encapsulation" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture01/abstractionVsEncapsulation/abstractionVsEncapsulation.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <h1 id="abstraction">Abstraction<a class="fa fa-anchor" href="#abstraction"></a></h1>
+        <h1 id="abstraction">Abstraction<a class="fa fa-anchor" href="#abstraction" onclick="event.stopPropagation()"></a></h1>
         <p>Abstraction is &quot;the process of identifying common patterns that have systematic variations; an abstraction represents the common pattern and provides a means for specifying which variation to use&quot; (Richard Gabriel).</p>
-        <p>Instead of making an object just suitable for the programmers themselves, what abstraction is trying to achieve is actually the opposite. Abstraction strives to make the object suitable for the domain in general. Programmers are able to use abstraction
-          to construct a more generic solution that in turn solves more problems that have the same common pattern. This increases the re-usability of the components.</p>
-        <h1 id="encapsulation">Encapsulation<a class="fa fa-anchor" href="#encapsulation"></a></h1>
+        <p>Instead of making an object just suitable for the programmers themselves, what abstraction is trying to achieve is actually the opposite. Abstraction strives to make the object suitable for the domain in general. Programmers are able to use abstraction to construct a more generic solution that in turn solves more problems that have the same common pattern. This increases the re-usability of the components.</p>
+        <h1 id="encapsulation">Encapsulation<a class="fa fa-anchor" href="#encapsulation" onclick="event.stopPropagation()"></a></h1>
         <p>There are two aspects of encapsulation – packaging and information hiding.</p>
         <p>Packaging: Related data or variable can be packaged in a self-contained unit. This can be done by using Classes to package low level data. As programmers, we need to be able to store respectively data in their related object or entity.</p>
-        <p>Information hiding: Multiple Object-Oriented languages enable programmers to hide information/data from the client and grant access only through the methods provided. In our case, Java, does it through the private and public access modifiers.
-          A field or a method that is declared as private can only be accessed within the class itself, and cannot be accessed from outside the class. While, a public field or method can be accessed and even modified from outside of the class. By utilizing
-          such mechanism, it maintains the abstraction barrier.</p>
+        <p>Information hiding: Multiple Object-Oriented languages enable programmers to hide information/data from the client and grant access only through the methods provided. In our case, Java, does it through the private and public access modifiers. A field or a method that is declared as private can only be accessed within the class itself, and cannot be accessed from outside the class. While, a public field or method can be accessed and even modified from outside of the class. By utilizing such mechanism, it maintains the abstraction barrier.</p>
         <p>This might be able to better shed light on the accessibility of the modifiers:</p>
         <div class="table-responsive">
           <table class="markbind-table table table-bordered table-striped">
@@ -126,11 +125,11 @@
         </div>
         <pre><code>               + : accessible            blank : not accessible
 </code></pre>
-        <h1 id="example-the-student-class">Example: The Student class<a class="fa fa-anchor" href="#example-the-student-class"></a></h1>
+        <h1 id="example-the-student-class">Example: The Student class<a class="fa fa-anchor" href="#example-the-student-class" onclick="event.stopPropagation()"></a></h1>
         <p>Let's see how the two aspect of encapsulation work to define a Student class in Java:</p>
-        <pre><code class="hljs"><span>/**</span><span> * A Student object encapsulates their name.  </span><span> */</span><span>class Student {</span><span>  private String name;  // the name of the student  </span><span>  </span><span>  /**</span><span>   * Return the name of the student.</span><span>   */</span><span>  public String getName() {</span><span>    return this.name;</span><span>  }</span><span>&#x200B;</span><span>  /**</span><span>   * Change the student’s name to a new name(newName)</span><span>   */</span><span>  public void setName(String newName) {</span><span>    this.name = newName;</span><span>  }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>/**<br></span><span> * A Student object encapsulates their name.  <br></span><span> */<br></span><span>class Student {<br></span><span>  private String name;  // the name of the student  <br></span><span>  <br></span><span>  /**<br></span><span>   * Return the name of the student.<br></span><span>   */<br></span><span>  public String getName() {<br></span><span>    return this.name;<br></span><span>  }<br></span><span><br></span><span>  /**<br></span><span>   * Change the student’s name to a new name(newName)<br></span><span>   */<br></span><span>  public void setName(String newName) {<br></span><span>    this.name = newName;<br></span><span>  }<br></span><span>}<br></span></code></pre>
         <p>The variable name is declared as a private field inside the class Student. As such, they can only be accessed and modified with the class that it was encapsulated within (inside the abstraction barrier), such as in the methods getName and setName.</p>
-        <h1 id="abstraction-vs-encapsulation-2">Abstraction vs Encapsulation<a class="fa fa-anchor" href="#abstraction-vs-encapsulation-2"></a></h1>
+        <h1 id="abstraction-vs-encapsulation-2">Abstraction vs Encapsulation<a class="fa fa-anchor" href="#abstraction-vs-encapsulation-2" onclick="event.stopPropagation()"></a></h1>
         <div class="table-responsive">
           <table class="markbind-table table table-bordered table-striped">
             <thead>
@@ -155,6 +154,8 @@
           </table>
         </div>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -172,7 +173,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

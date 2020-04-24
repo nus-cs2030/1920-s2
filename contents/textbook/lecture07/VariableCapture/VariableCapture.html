@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,36 +59,41 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="variable-capture">Variable Capture<a class="fa fa-anchor" href="#variable-capture"></a></h1>
+        <h1 id="variable-capture">Variable Capture<a class="fa fa-anchor" href="#variable-capture" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture07/VariableCapture/VariableCapture.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>For classes that are defined within a method, variable capturing will occur. Variable capture is when the local <strong>variables</strong> within the local <strong>function</strong> in which the nested class is defined in, is being captured inside
-          of the instance of the inner class in the heap. Looking at the code from Recitation 6 Q2b,</p>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{</span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>;</span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{</span><span>      <span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>;</span><span>      A() {</span><span>        y = x + <span class="hljs-number">1</span>;</span><span>      }</span><span>    }</span><span>    A a = <span class="hljs-keyword">new</span> A();</span><span>  }</span><span>}</span></code></pre>
-        <p>In this example, the variable int x is defined in the enclosing function in which the class A is defined. This means that the variable x is a local variable, and will be captured inside every instance of A in the heap, even if not explicitly declared
-          in A. This means that methods in class A will be able to make use of the variable x.</p>
-        <p><a href="https://postimg.cc/fJRszLKm"><a href="https://i.postimg.cc/m2QgS11X/image.png" target="_self"><img src="https://i.postimg.cc/m2QgS11X/image.png" alt class="img-fluid"></a></a>
-        </p>
+        <p>For classes that are defined within a method, variable capturing will occur. Variable capture is when the local <strong>variables</strong> within the
+          local <strong>function</strong> in which the nested class is defined in, is being captured inside of the instance of the inner class in the heap.
+          Looking at the code from Recitation 6 Q2b,</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>;<br></span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{<br></span><span>      <span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>;<br></span><span>      A() {<br></span><span>        y = x + <span class="hljs-number">1</span>;<br></span><span>      }<br></span><span>    }<br></span><span>    A a = <span class="hljs-keyword">new</span> A();<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <p>In this example, the variable int x is defined in the enclosing function in which the class A is defined. This means that the variable x
+          is a local variable, and will be captured inside every instance of A in the heap, even if not explicitly declared in A. This means that
+          methods in class A will be able to make use of the variable x.</p>
+        <p><a href="https://postimg.cc/fJRszLKm"><a href="https://i.postimg.cc/m2QgS11X/image.png" target="_self"><img src="https://i.postimg.cc/m2QgS11X/image.png" alt class="img-fluid"></a></a></p>
         <p><em>Variable x is captured in the instance of A inside the heap!</em></p>
-        <h2 id="qualified-this">Qualified this<a class="fa fa-anchor" href="#qualified-this"></a></h2>
-        <p>In order for us to refer to the enclosing class, we use a <strong>qualified this</strong>, syntaxed as <code>ClassName.this</code>. In the example below, a <strong>qualified this</strong> is used to refer to a field in the enclosing class.</p>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{</span><span>  <span class="hljs-keyword">int</span> x = <span class="hljs-number">1</span>;</span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> y = <span class="hljs-number">2</span>;</span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{</span><span>      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">g</span><span class="hljs-params">()</span> </span>{</span><span>        B.<span class="hljs-keyword">this</span>.x = y;</span><span>      }</span><span>    }</span><span>    A a = <span class="hljs-keyword">new</span> A();</span><span>    a.g();</span><span>  }</span><span>}</span></code></pre>
-        <p><code>B.this.x</code> is the <strong>qualified this</strong> that refers to the variable x in the enclosing class, B. In contrast to the previous example (Recitation 6 Q2b) at the top of this page, the variable x is referenced through the <strong>qualified this</strong>          and is not captured in the instance of A. We cannot simply use <code>this.x</code> because it will refer to the instance of A.</p>
-        <p><a href="https://postimg.cc/8FRCjmKs"><a href="https://i.postimg.cc/YSVLDXQN/image.png" target="_self"><img src="https://i.postimg.cc/YSVLDXQN/image.png" alt class="img-fluid"></a></a>
-        </p>
+        <h2 id="qualified-this">Qualified this<a class="fa fa-anchor" href="#qualified-this" onclick="event.stopPropagation()"></a></h2>
+        <p>In order for us to refer to the enclosing class, we use a <strong>qualified this</strong>, syntaxed as <code>ClassName.this</code>.
+          In the example below, a <strong>qualified this</strong> is used to refer to a field in the enclosing class.</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{<br></span><span>  <span class="hljs-keyword">int</span> x = <span class="hljs-number">1</span>;<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> y = <span class="hljs-number">2</span>;<br></span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{<br></span><span>      <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">g</span><span class="hljs-params">()</span> </span>{<br></span><span>        B.<span class="hljs-keyword">this</span>.x = y;<br></span><span>      }<br></span><span>    }<br></span><span>    A a = <span class="hljs-keyword">new</span> A();<br></span><span>    a.g();<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <p><code>B.this.x</code> is the <strong>qualified this</strong> that refers to the variable x in the enclosing class, B. In contrast to the previous example (Recitation 6 Q2b) at the top of this page, the variable x is referenced through the <strong>qualified this</strong> and is not captured in the instance of A. We cannot simply use <code>this.x</code> because it will refer to the instance of A.</p>
+        <p><a href="https://postimg.cc/8FRCjmKs"><a href="https://i.postimg.cc/YSVLDXQN/image.png" target="_self"><img src="https://i.postimg.cc/YSVLDXQN/image.png" alt class="img-fluid"></a></a></p>
         <p><em><code>B.this</code> is stored in the instance of A inside the heap!</em></p>
-        <h2 id="effectively-final">Effectively final<a class="fa fa-anchor" href="#effectively-final"></a></h2>
-        <p>From java 8, local variables that are captured must be final or effectively final. In the first example above (Recitation 6 Q2b), this means that x must be final or effectively final. Since variable x is captured by A, trying to change the value
-          of x will result in a compilation error.</p>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{</span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{</span><span>    <span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>;</span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{</span><span>      <span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>;</span><span>      A() {</span><span>        y = x + <span class="hljs-number">1</span>;</span><span>      }</span><span>    }</span><span>    x = <span class="hljs-number">1</span>; <span class="hljs-comment">//results in an error</span></span><span>    A a = <span class="hljs-keyword">new</span> A();</span><span>  }</span><span>}</span></code></pre>
-        <p>Somewhere that we often see this phenomenon is in lamba expressions. Like inner classes, lambda expressions also captures local variables, which is why when we use a lambda expression inside a method, we can reference the variables that are defined
-          in the enclosing method within our lambda expression. Since local variables are captured by lambda expressions, this means that those captured variables must also be final or effectively final. For example,</p>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> </span>{</span><span>  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">supplierAdd</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{</span><span>    Supplier&lt;Integer&gt; s = () -&gt; x + y; <span class="hljs-comment">//variables x and y are captured by lambda</span></span><span>    x++; <span class="hljs-comment">//this results in a compilation error</span></span><span>    <span class="hljs-keyword">return</span> s.get()</span><span>  }</span><span>}</span></code></pre>
+        <h2 id="effectively-final">Effectively final<a class="fa fa-anchor" href="#effectively-final" onclick="event.stopPropagation()"></a></h2>
+        <p>From java 8, local variables that are captured must be final or effectively final. In the first example above (Recitation 6 Q2b), this means that x must be final or effectively final. Since variable x is captured by A, trying to change the value of x will result in a compilation error.</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> </span>{<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">f</span><span class="hljs-params">()</span> </span>{<br></span><span>    <span class="hljs-keyword">int</span> x = <span class="hljs-number">0</span>;<br></span><span>    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> </span>{<br></span><span>      <span class="hljs-keyword">int</span> y = <span class="hljs-number">0</span>;<br></span><span>      A() {<br></span><span>        y = x + <span class="hljs-number">1</span>;<br></span><span>      }<br></span><span>    }<br></span><span>    x = <span class="hljs-number">1</span>; <span class="hljs-comment">//results in an error</span><br></span><span>    A a = <span class="hljs-keyword">new</span> A();<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <p>Somewhere that we often see this phenomenon is in lamba expressions. Like inner classes, lambda expressions also captures local
+          variables, which is why when we use a lambda expression inside a method, we can reference the variables that are defined in the
+          enclosing method within our lambda expression. Since local variables are captured by lambda expressions, this means that those
+          captured variables must also be final or effectively final. For example,</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span> </span>{<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">supplierAdd</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{<br></span><span>    Supplier&lt;Integer&gt; s = () -&gt; x + y; <span class="hljs-comment">//variables x and y are captured by lambda</span><br></span><span>    x++; <span class="hljs-comment">//this results in a compilation error</span><br></span><span>    <span class="hljs-keyword">return</span> s.get()<br></span><span>  }<br></span><span>}<br></span></code></pre>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -105,7 +111,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

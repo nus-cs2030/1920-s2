@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,86 +59,78 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="streams">Streams<a class="fa fa-anchor" href="#streams"></a></h1>
+        <h1 id="streams">Streams<a class="fa fa-anchor" href="#streams" onclick="event.stopPropagation()"></a></h1>
         <br>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture08/Streams/pipelineAndLaziness.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>Streams is a new type of data structure introduced to us in lecture 8. Unlike previous data structures, streams are mainly used for functional programming, and we can often manipulate the data to get what we want in a single stream pipeline.</p>
-        <h2 id="stream-pipeline">Stream Pipeline<a class="fa fa-anchor" href="#stream-pipeline"></a></h2>
-        <p>A stream pipeline consists of a data source(e.g. generate/iterate), zero or more intermediate operations(e.g. map, filter) and a terminal operation(e.g. forEach) to end the pipeline. Once a terminal operation is called, the stream is consumed,
-          and can no longer be used. An example of a stream pipeline:</p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> sum = IntStream.range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>).map(x -&gt; x * <span class="hljs-number">2</span>).filter(x -&gt; x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>).sum();</span><span><span class="hljs-comment">//IntStream.range(1, 10) is the data source</span></span><span><span class="hljs-comment">//map and filter are intermediate operations</span></span><span><span class="hljs-comment">//sum() is the terminal reduction that ends the stream pipeline</span></span></code></pre>
-        <h2 id="laziness">Laziness<a class="fa fa-anchor" href="#laziness"></a></h2>
-        <p>What differentiates streams from other data structures is that streams are lazy. Laziness in streams means that in a stream pipeline, intermediate operations are not evaluated until the terminal operation is called. Furthermore, the data from
-          the data source is only generated and consumed when needed. Another example:</p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> sum = IntStream.iterate(<span class="hljs-number">1</span>, x -&gt; x + <span class="hljs-number">1</span>).map(x -&gt; x * <span class="hljs-number">2</span>).filter(x -&gt; x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>).forEach(System.out::println);</span><span><span class="hljs-comment">//(x -&gt; x * 2) is the Function&lt;T,T&gt; mapper</span></span><span><span class="hljs-comment">//(x -&gt; x * 2) is the Predicate&lt;T&gt;</span></span><span><span class="hljs-comment">//note this program runs forever since iterate creates an infinite stream</span></span></code></pre>
-        <p>In the above example, when we do create the source with iterate, we create a IntStream object in the heap, which captures the value of seed and the UnaryOperator next. The rest of the values in the stream is not yet generated.
+        <p>Streams is a new type of data structure introduced to us in lecture 8. Unlike previous data structures, streams are mainly used for
+          functional programming, and we can often manipulate the data to get what we want in a single stream pipeline.</p>
+        <h2 id="stream-pipeline">Stream Pipeline<a class="fa fa-anchor" href="#stream-pipeline" onclick="event.stopPropagation()"></a></h2>
+        <p>A stream pipeline consists of a data source(e.g. generate/iterate), zero or more intermediate operations(e.g. map, filter) and a
+          terminal operation(e.g. forEach) to end the pipeline. Once a terminal operation is called, the stream is consumed, and can no longer be
+          used. An example of a stream pipeline:</p>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> sum = IntStream.range(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>).map(x -&gt; x * <span class="hljs-number">2</span>).filter(x -&gt; x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>).sum();<br></span><span><span class="hljs-comment">//IntStream.range(1, 10) is the data source</span><br></span><span><span class="hljs-comment">//map and filter are intermediate operations</span><br></span><span><span class="hljs-comment">//sum() is the terminal reduction that ends the stream pipeline</span><br></span></code></pre>
+        <h2 id="laziness">Laziness<a class="fa fa-anchor" href="#laziness" onclick="event.stopPropagation()"></a></h2>
+        <p>What differentiates streams from other data structures is that streams are lazy. Laziness in streams means that in a stream pipeline,
+          intermediate operations are not evaluated until the terminal operation is called. Furthermore, the data from the data source is only
+          generated and consumed when needed. Another example:</p>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> sum = IntStream.iterate(<span class="hljs-number">1</span>, x -&gt; x + <span class="hljs-number">1</span>).map(x -&gt; x * <span class="hljs-number">2</span>).filter(x -&gt; x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>).forEach(System.out::println);<br></span><span><span class="hljs-comment">//(x -&gt; x * 2) is the Function&lt;T,T&gt; mapper</span><br></span><span><span class="hljs-comment">//(x -&gt; x * 2) is the Predicate&lt;T&gt;</span><br></span><span><span class="hljs-comment">//note this program runs forever since iterate creates an infinite stream</span><br></span></code></pre>
+        <p>In the above example, when we do create the source with iterate, we create a IntStream object in the heap, which captures the value of
+          seed and the UnaryOperator next. The rest of the values in the stream is not yet generated.
           <br>
-          <br> When we go to intermediate operations map and filter, we create a new IntStream object in the heap, that captures the the mapper function that we input into the map function and a pointer to the previous IntStream object. At this point,
-          the function mapper is not yet applied. Likewise for the filter operation, a new IntStream object is created in the heap, capturing the Predicate
-          <t> and a pointer to the previous IntStream object created by map. Every intermediate operation in our pipeline will create a new stream object in the heap that captures the operation we want to do and a pointer to the previous stream object.
+          <br>
+          When we go to intermediate operations map and filter, we create a new IntStream object in the heap, that captures the the mapper
+          function that we input into the map function and a pointer to the previous IntStream object. At this point, the function mapper is not
+          yet applied. Likewise for the filter operation, a new IntStream object is created in the heap, capturing the Predicate<t> and a pointer
+            to the previous IntStream object created by map. Every intermediate operation in our pipeline will create a new stream object in the heap that captures the operation we want to do and a pointer to the previous stream object.
             <br>
-            <br> Only when we call a terminal operation, in this case forEach, we follow the pointers upstream all the way to the source, get the current element, and apply all the intermediate operations downstream up to the terminal operation. We need
-            to go through this upstream-downstream process for each element in the stream.
             <br>
-            <br> As in Prof Henry's lecture 9 slides, this example illustrates the laziness in streams.</t>
+            Only when we call a terminal operation, in this case forEach, we follow the pointers upstream all the way to the source, get the current element, and apply all the intermediate operations downstream up to the terminal operation. We need to go through this upstream-downstream process for each element in the stream.
+            <br>
+            <br>
+            As in Prof Henry's lecture 9 slides, this example illustrates the laziness in streams.</t>
         </p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> sum = IntStream</span><span>  .rangeClosed(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)</span><span>  .filter(</span><span>    x -&gt; {</span><span>      System.out.println(<span class="hljs-string">"filter: "</span> + x);</span><span>      <span class="hljs-keyword">return</span> x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>;</span><span>    })</span><span>  .map(</span><span>     x -&gt; {</span><span>      System.out.println(<span class="hljs-string">"map: "</span> + x);</span><span>      <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * x;</span><span>     })</span><span>  .sum();</span><span>System.out.println(sum);</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">int</span> sum = IntStream<br></span><span>  .rangeClosed(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)<br></span><span>  .filter(<br></span><span>    x -&gt; {<br></span><span>      System.out.println(<span class="hljs-string">"filter: "</span> + x);<br></span><span>      <span class="hljs-keyword">return</span> x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>;<br></span><span>    })<br></span><span>  .map(<br></span><span>     x -&gt; {<br></span><span>      System.out.println(<span class="hljs-string">"map: "</span> + x);<br></span><span>      <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * x;<br></span><span>     })<br></span><span>  .sum();<br></span><span>System.out.println(sum);<br></span></code></pre>
         <p>This program prints:</p>
-        <pre><code class="hljs"><span>filter: 1</span><span>filter: 2</span><span>map: 2</span><span>filter: 3</span><span>filter: 4</span><span>map: 4</span><span>filter: 5</span><span>filter: 6</span><span>map: 6</span><span>filter: 7</span><span>filter: 8</span><span>map: 8</span><span>filter: 9</span><span>filter: 10</span><span>map: 10</span><span>sum is 60</span></code></pre>
-        <p>The output showing the filter and map interleaving with each other shows that the whole pipeline of intermediate operation is applied to one element at a time, as we would expect from the laziness of streams causing our evaluation process to go
-          upstream and downstream for each element and only generating the element and applying the operations as we need. For contrast, if we were to use a List for the same program, the program would first filter the entire list, and then map the entire
-          list, as opposed to applying the whole pipeline to one element at a time.</p>
-        <h2 id="advantages-of-laziness">Advantages of Laziness<a class="fa fa-anchor" href="#advantages-of-laziness"></a></h2>
-        <p>We can create incomplete stream pipelines with only intermediate operations and pass it around our program to be to continue adding more intermediate operations or to be consumed at a later time.
+        <pre><code class="hljs"><span>filter: 1<br></span><span>filter: 2<br></span><span>map: 2<br></span><span>filter: 3<br></span><span>filter: 4<br></span><span>map: 4<br></span><span>filter: 5<br></span><span>filter: 6<br></span><span>map: 6<br></span><span>filter: 7<br></span><span>filter: 8<br></span><span>map: 8<br></span><span>filter: 9<br></span><span>filter: 10<br></span><span>map: 10<br></span><span>sum is 60<br></span></code></pre>
+        <p>The output showing the filter and map interleaving with each other shows that the whole pipeline of intermediate operation is applied
+          to one element at a time, as we would expect from the laziness of streams causing our evaluation process to go upstream and downstream
+          for each element and only generating the element and applying the operations as we need. For contrast, if we were to use a List for the
+          same program, the program would first filter the entire list, and then map the entire list, as opposed to applying the whole pipeline to
+          one element at a time.</p>
+        <h2 id="advantages-of-laziness">Advantages of Laziness<a class="fa fa-anchor" href="#advantages-of-laziness" onclick="event.stopPropagation()"></a></h2>
+        <p>We can create incomplete stream pipelines with only intermediate operations and pass it around our program to be to continue adding more
+          intermediate operations or to be consumed at a later time.
           <br>
-          <br> In addition, since data elements are only generated and consumed when needed, we can create infinite streams. This is useful when we want to do things where we don't know how many elements we need in our data structure. For example, we
-          can write a program to find the first 100 prime numbers. If we were to use a list, we would not know how big our initial list needs to be. Using streams, we can simply create an infinite stream, filter with a predicate to look for prime numbers
-          and set a limit on the number of elements we want in the stream.
-        </p>
-        <h2 id="converting-between-streams-arrays-and-arraylists">Converting Between Streams, Arrays and ArrayLists<a class="fa fa-anchor" href="#converting-between-streams-arrays-and-arraylists"></a></h2>
+          <br>
+          In addition, since data elements are only generated and consumed when needed, we can create infinite streams. This is useful when we
+          want to do things where we don't know how many elements we need in our data structure. For example, we can write a program to find the
+          first 100 prime numbers. If we were to use a list, we would not know how big our initial list needs to be. Using streams, we can simply
+          create an infinite stream, filter with a predicate to look for prime numbers and set a limit on the number of elements we want in the
+          stream.</p>
+        <h2 id="converting-between-streams-arrays-and-arraylists">Converting Between Streams, Arrays and ArrayLists<a class="fa fa-anchor" href="#converting-between-streams-arrays-and-arraylists" onclick="event.stopPropagation()"></a></h2>
         <p>From Array to ArrayList</p>
-        <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.Arrays;</span><span><span class="hljs-keyword">import</span> java.util.ArrayList;</span><span><span class="hljs-keyword">import</span> java.util.stream.IntStream;</span><span><span class="hljs-keyword">import</span> java.util.stream.Collectors;</span><span>&#x200B;</span><span><span class="hljs-comment">/*</span></span><span><span class="hljs-comment">Integer[] -&gt; ArrayList&lt;Integer&gt;</span></span><span><span class="hljs-comment">Works with any Object instead of Integer as well.</span></span><span><span class="hljs-comment">Does not work for primitive int[] array as Arrays.asList() method does not deal</span></span><span><span class="hljs-comment">with autoboxing and it will just create a List&lt;int[]&gt;</span></span><span><span class="hljs-comment">*/</span></span><span>Integer[] integerArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(Arrays.asList(integerArray));</span><span>&#x200B;</span><span><span class="hljs-comment">// int[] -&gt; ArrayList&lt;Integer&gt;</span></span><span><span class="hljs-keyword">int</span>[] intArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span><span class="hljs-comment">// boxed method converts primitive int to Integer</span></span><span>ArrayList&lt;Integer&gt; intArrayList = IntStream.of(intArray).boxed() </span><span>  .collect(Collectors.toCollection(ArrayList::<span class="hljs-keyword">new</span>));</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.Arrays;<br></span><span><span class="hljs-keyword">import</span> java.util.ArrayList;<br></span><span><span class="hljs-keyword">import</span> java.util.stream.IntStream;<br></span><span><span class="hljs-keyword">import</span> java.util.stream.Collectors;<br></span><span><br></span><span><span class="hljs-comment">/*</span><br></span><span><span class="hljs-comment">Integer[] -&gt; ArrayList&lt;Integer&gt;</span><br></span><span><span class="hljs-comment">Works with any Object instead of Integer as well.</span><br></span><span><span class="hljs-comment">Does not work for primitive int[] array as Arrays.asList() method does not deal</span><br></span><span><span class="hljs-comment">with autoboxing and it will just create a List&lt;int[]&gt;</span><br></span><span><span class="hljs-comment">*/</span><br></span><span>Integer[] integerArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};<br></span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(Arrays.asList(integerArray));<br></span><span><br></span><span><span class="hljs-comment">// int[] -&gt; ArrayList&lt;Integer&gt;</span><br></span><span><span class="hljs-keyword">int</span>[] intArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};<br></span><span><span class="hljs-comment">// boxed method converts primitive int to Integer</span><br></span><span>ArrayList&lt;Integer&gt; intArrayList = IntStream.of(intArray).boxed() <br></span><span>  .collect(Collectors.toCollection(ArrayList::<span class="hljs-keyword">new</span>));<br></span></code></pre>
         <p>From Array to Stream</p>
-        <pre><code class="hljs java"><span><span class="hljs-comment">// Integer -&gt; Stream&lt;Integer&gt;</span></span><span>Integer[] integerArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span>Stream&lt;Integer&gt; integerStream = Arrays.stream(integerArray);</span><span><span class="hljs-comment">// int -&gt; IntStream</span></span><span><span class="hljs-keyword">int</span>[] intArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};</span><span>IntStream intStream = Arrays.stream(intArray);</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// Integer -&gt; Stream&lt;Integer&gt;</span><br></span><span>Integer[] integerArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};<br></span><span>Stream&lt;Integer&gt; integerStream = Arrays.stream(integerArray);<br></span><span><span class="hljs-comment">// int -&gt; IntStream</span><br></span><span><span class="hljs-keyword">int</span>[] intArray = {<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>};<br></span><span>IntStream intStream = Arrays.stream(intArray);<br></span></code></pre>
         <p>From ArrayList to Array</p>
-        <pre><code class="hljs java"><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; Integer[]</span></span><span>Integer[] integerArray = <span class="hljs-keyword">new</span> Integer[integerArrayList.size()];</span><span>integerArray = integerArrayList.toArray(integerArray);</span><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; int[]</span></span><span><span class="hljs-keyword">int</span>[] intArray = integerArrayList.stream().mapToInt(Integer::intValue).toArray();</span><span><span class="hljs-comment">// IntStream -&gt; int[]</span></span><span><span class="hljs-keyword">int</span>[] intArray = intStream.toArray();</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; Integer[]</span><br></span><span>Integer[] integerArray = <span class="hljs-keyword">new</span> Integer[integerArrayList.size()];<br></span><span>integerArray = integerArrayList.toArray(integerArray);<br></span><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; int[]</span><br></span><span><span class="hljs-keyword">int</span>[] intArray = integerArrayList.stream().mapToInt(Integer::intValue).toArray();<br></span><span><span class="hljs-comment">// IntStream -&gt; int[]</span><br></span><span><span class="hljs-keyword">int</span>[] intArray = intStream.toArray();<br></span></code></pre>
         <p>From ArrayList to Stream</p>
-        <pre><code class="hljs java"><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; Stream&lt;Integer&gt;</span></span><span>Stream&lt;Integer&gt; integerStream = integerArrayList.stream();</span><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; IntStream</span></span><span>IntStream intStream = integerArrayList.stream().mapToInt(Integer::intValue);</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; Stream&lt;Integer&gt;</span><br></span><span>Stream&lt;Integer&gt; integerStream = integerArrayList.stream();<br></span><span><span class="hljs-comment">// ArrayList&lt;Integer&gt; -&gt; IntStream</span><br></span><span>IntStream intStream = integerArrayList.stream().mapToInt(Integer::intValue);<br></span></code></pre>
         <p>From Stream to Array</p>
-        <pre><code class="hljs java"><span><span class="hljs-comment">// Stream&lt;Integer&gt; -&gt; Integer[]</span></span><span>Integer[] integerArray = integerStream.toArray(Integer[]::<span class="hljs-keyword">new</span>);</span><span><span class="hljs-comment">// intStream -&gt; int[]</span></span><span><span class="hljs-keyword">int</span>[] intArray = intStream.toArray();</span></code></pre>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// Stream&lt;Integer&gt; -&gt; Integer[]</span><br></span><span>Integer[] integerArray = integerStream.toArray(Integer[]::<span class="hljs-keyword">new</span>);<br></span><span><span class="hljs-comment">// intStream -&gt; int[]</span><br></span><span><span class="hljs-keyword">int</span>[] intArray = intStream.toArray();<br></span></code></pre>
         <p>From Stream to ArrayList</p>
-        <pre><code class="hljs java"><span><span class="hljs-comment">// Stream&lt;Integer&gt; -&gt; ArrayList&lt;Integer&gt;</span></span><span>List&lt;Integer&gt; integerList = integerStream.collect(Collectors.toList());</span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(integerList);</span><span><span class="hljs-comment">// intStream -&gt; ArrayList&lt;Integer&gt;</span></span><span>List&lt;Integer&gt; integerList = intStream.boxed().collect(Collectors.toList());</span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(integerList);</span><span>```&lt;/T&gt;</span><span>&lt;/div&gt;</span><span>&lt;footer&gt;</span><span>  &lt;!-- Support MarkBind by including a link to us on your landing page! --&gt;</span><span>  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"text-center"</span>&gt;</span><span>    &lt;small&gt;Generated by &lt;a href=<span class="hljs-string">"https://markbind.org/"</span>&gt;MarkBind <span class="hljs-number">2.13</span><span class="hljs-number">.1</span>&lt;/a&gt; on Sun, Apr <span class="hljs-number">12</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">9</span>:<span class="hljs-number">50</span>:<span class="hljs-number">32</span> AM UTC&lt;/small&gt;</span><span>  &lt;/div&gt;</span><span>&lt;/footer&gt;</span></code></pre>
-        </span>
-        </code>
-        </pre>
-      </div>
-      </span>
-      </code>
-      </pre>
-    </div>
-    </span>
-    </code>
-    </pre>
-  </div>
-  </span>
-  </code>
-  </pre>
-  </div>
-  </span>
-  </code>
-  </pre>
-  </div>
-  </span>
-  </code>
-  </pre>
-  </div>
-  </span>
-  </code>
-  </pre>
+        <pre><code class="hljs java"><span><span class="hljs-comment">// Stream&lt;Integer&gt; -&gt; ArrayList&lt;Integer&gt;</span><br></span><span>List&lt;Integer&gt; integerList = integerStream.collect(Collectors.toList());<br></span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(integerList);<br></span><span><span class="hljs-comment">// intStream -&gt; ArrayList&lt;Integer&gt;</span><br></span><span>List&lt;Integer&gt; integerList = intStream.boxed().collect(Collectors.toList());<br></span><span>ArrayList&lt;Integer&gt; integerArrayList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(integerList);<br></span><span>```&lt;/T&gt;<br></span><span>&lt;/div&gt;<br></span><span>&lt;footer&gt;<br></span><span>  &lt;!-- Support MarkBind by including a link to us on your landing page! --&gt;<br></span><span>  &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"text-center"</span>&gt;<br></span><span>    &lt;small&gt;Generated by &lt;a href=<span class="hljs-string">'https://markbind.org/'</span>&gt;MarkBind <span class="hljs-number">2.14</span><span class="hljs-number">.1</span>&lt;/a&gt; on Fri, Apr <span class="hljs-number">24</span>, <span class="hljs-number">2020</span>, <span class="hljs-number">2</span>:<span class="hljs-number">52</span>:<span class="hljs-number">51</span> AM UTC&lt;/small&gt;<br></span><span>  &lt;/div&gt;<br></span><span>&lt;/footer&gt;<br></span></code></pre></span></code></pre>
+      </div></span></code></pre>
+    </div></span></code></pre>
+  </div></span></code></pre>
+  </div></span></code></pre>
+  </div></span></code></pre>
+  </div></span></code></pre>
   </div>
   <nav id="page-nav" class="navbar navbar-light bg-transparent">
     <div class="border-left-grey nav-inner position-sticky slim-scroll">

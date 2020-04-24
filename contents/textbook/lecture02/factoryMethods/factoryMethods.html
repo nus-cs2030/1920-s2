@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,25 +59,24 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="factory-methods">Factory Methods<a class="fa fa-anchor" href="#factory-methods"></a></h1>
+        <h1 id="factory-methods">Factory Methods<a class="fa fa-anchor" href="#factory-methods" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture02/factoryMethods/factoryMethods.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <h2 id="definition-of-factory-method">Definition of Factory Method:<a class="fa fa-anchor" href="#definition-of-factory-method"></a></h2>
-        <p>&quot;The Factory Method pattern is a design pattern used to define a runtime interface for creating an object. It's called a factory because it creates various types of objects without necessarily knowing what kind of object it creates or how
-          to create it.&quot;
-        </p>
-        <h2 id="application-in-lecture-notes">Application in lecture notes:<a class="fa fa-anchor" href="#application-in-lecture-notes"></a></h2>
+        <h2 id="definition-of-factory-method">Definition of Factory Method:<a class="fa fa-anchor" href="#definition-of-factory-method" onclick="event.stopPropagation()"></a></h2>
+        <p>&quot;The Factory Method pattern is a design pattern used to define a runtime interface for creating an object. It's called a factory because it creates various types of objects without necessarily knowing what kind of object it creates or how to create it.&quot;</p>
+        <h2 id="application-in-lecture-notes">Application in lecture notes:<a class="fa fa-anchor" href="#application-in-lecture-notes" onclick="event.stopPropagation()"></a></h2>
         <p>The method createCircle was used to check the validity of the input parameters and prevent the creation of invalid objects.</p>
-        <pre><code class="hljs"><span>static Circle createCircle(Point centre, double radius){</span><span>  if (radius &gt; 0)</span><span>    return new Circle(centre, radius);</span><span>  else </span><span>    return null;</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>static Circle createCircle(Point centre, double radius){<br></span><span>  if (radius &gt; 0)<br></span><span>    return new Circle(centre, radius);<br></span><span>  else <br></span><span>    return null;<br></span><span>}<br></span></code></pre>
         <p><strong>Note:</strong> Factory methods is static.</p>
         <p>Static methods belongs to a class instead of an instance of the class.</p>
         <p>Static methods is a form of encapsulate object creation.</p>
         <p>According to my understanding, factory method is defined as static so that it can be called without the need of creating an instance.</p>
-        <h2 id="advantages-of-factory-methods">Advantages of Factory Methods:<a class="fa fa-anchor" href="#advantages-of-factory-methods"></a></h2>
+        <h2 id="advantages-of-factory-methods">Advantages of Factory Methods:<a class="fa fa-anchor" href="#advantages-of-factory-methods" onclick="event.stopPropagation()"></a></h2>
         <ol>
           <li>Constructors cannot be named, while readable names can be assigned to factory methods.</li>
           <li>Constructors can only return same type as the class name, however, factory methods can return other objects.</li>
@@ -86,7 +86,7 @@
               <li>Instantiate a static object as a default value, say an empty box</li>
               <li><code>private static final BOX EMPTY_BOX = new BOX();</code></li>
               <li>Factory method just has to return this specific instance of empty box whenever required instead of creating tons of new empty boxes
-                <pre><code class="hljs"><span>public static Box empty() {</span><span>    return EMPTY_BOX;</span><span>}</span></code></pre>
+                <pre><code class="hljs"><span>public static Box empty() {<br></span><span>    return EMPTY_BOX;<br></span><span>}<br></span></code></pre>
               </li>
             </ul>
           </li>
@@ -100,6 +100,8 @@
         </ol>
         <p>Please feel free to edit if I have made any mistakes or add on more content.😄</p>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -118,7 +120,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>

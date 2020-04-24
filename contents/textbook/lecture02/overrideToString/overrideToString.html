@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.13.1">
+  <meta name="generator" content="MarkBind 2.14.1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CS2030 AY19/20 Semester 2</title>
   <link rel="stylesheet" href="../../../../markbind/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="/1920-s2/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../../../markbind/css/page-nav.css">
 </head>
@@ -58,24 +59,28 @@
       </navbar>
     </header>
     <div id="flex-body">
+
       <div id="content-wrapper">
         <br>
-        <h1 id="overriding-tostring-method">Overriding toString Method<a class="fa fa-anchor" href="#overriding-tostring-method"></a></h1>
+        <h1 id="overriding-tostring-method">Overriding toString Method<a class="fa fa-anchor" href="#overriding-tostring-method" onclick="event.stopPropagation()"></a></h1>
         <hr>
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture02/overrideToString/overrideToString.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
-        <p>By default, when a object is created, the hash code of the object is returned such as Classname@6a41eaa2 which is not meaningful. Thus, it is better to Override the toString method of the Object (every class by default inherits the toString method
-          from class Object). Do take note that when we override, it has to be public.</p>
+        <p>By default, when a object is created, the hash code of the object is returned such as Classname@6a41eaa2 which is not meaningful. Thus, it is better to Override the toString method of the Object (every class by default inherits the toString method from class Object). Do take note that when we override, it has to be public.</p>
         <p>For example:</p>
-        <pre><code class="hljs"><span>public String toString() {</span><span>    return &quot;Circle has a centre of&quot; + this.centre + &quot;with a radius of&quot; + this.radius</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>public String toString() {<br></span><span>    return &quot;Circle has a centre of&quot; + this.centre + &quot;with a radius of&quot; + this.radius<br></span><span>}<br></span></code></pre>
         <p>Very often as observed in labs, the questions always ask us to return in 3 decimal places. Thus, here are some useful String formats you can use when you use the method String.format(_________):</p>
-        <p>%s is for string; %f is for float; %.3f is for float to 3 decimal places; %d is for integers;</p>
+        <p>%s is for string;
+          %f is for float;
+          %.3f is for float to 3 decimal places;
+          %d is for integers;</p>
         <p>An example on how to use String.format will be :</p>
-        <pre><code class="hljs"><span>public String toString() {</span><span>    return String.format(&quot;Today I folded %d paper cranes at a rate of %.3f cranes per hour&quot;, numOfCranes, rateOfFold)</span><span>}</span></code></pre>
-        <p>where numOfCranes = 30, and rateOfFold = 5.9322 The return output of the String will be:</p>
-        <pre><code class="hljs"><span>Today I folded 30 paper cranes at a rate of 5.932 cranes per hour</span></code></pre>
-        <h1 id="overriding-equals-method">Overriding equals Method<a class="fa fa-anchor" href="#overriding-equals-method"></a></h1>
+        <pre><code class="hljs"><span>public String toString() {<br></span><span>    return String.format(&quot;Today I folded %d paper cranes at a rate of %.3f cranes per hour&quot;, numOfCranes, rateOfFold)<br></span><span>}<br></span></code></pre>
+        <p>where numOfCranes = 30, and rateOfFold = 5.9322
+          The return output of the String will be:</p>
+        <pre><code class="hljs"><span>Today I folded 30 paper cranes at a rate of 5.932 cranes per hour<br></span></code></pre>
+        <h1 id="overriding-equals-method">Overriding equals Method<a class="fa fa-anchor" href="#overriding-equals-method" onclick="event.stopPropagation()"></a></h1>
         <p>A more correct way of comparing two object method is via the equals method.</p>
         <ol>
           <li>We have to check if the object is the same</li>
@@ -83,8 +88,10 @@
           <li>We have to check if the values are equal (type casting is needed after checking if they are of the same type)</li>
         </ol>
         <p>An example from the lecture notes is:</p>
-        <pre><code class="hljs"><span>@Override</span><span>boolean equals(Object obj) {</span><span>    if (this == obj) {</span><span>        return true;</span><span>    } else if (obj instance of) {</span><span>        Point p = (Point) obj;</span><span>        return Math.abs(this.x - p.x) &lt; 1E-15 &amp;&amp;</span><span>            Math.abs(this.y - p.y) &lt; 1E-15;</span><span>    } else {</span><span>        return False;</span><span>    }</span><span>}</span></code></pre>
+        <pre><code class="hljs"><span>@Override<br></span><span>boolean equals(Object obj) {<br></span><span>    if (this == obj) {<br></span><span>        return true;<br></span><span>    } else if (obj instance of) {<br></span><span>        Point p = (Point) obj;<br></span><span>        return Math.abs(this.x - p.x) &lt; 1E-15 &amp;&amp;<br></span><span>            Math.abs(this.y - p.y) &lt; 1E-15;<br></span><span>    } else {<br></span><span>        return False;<br></span><span>    }<br></span><span>}<br></span></code></pre>
       </div>
+
+
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
         <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -99,7 +106,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.13.1</a> on Sun, Apr 12, 2020, 9:50:32 AM UTC</small></div>
+        <small>Generated by &lt;a href=&#39;https://markbind.org/&#39;&gt;MarkBind 2.14.1&lt;/a&gt; on Fri, Apr 24, 2020, 2:52:51 AM UTC</small></div>
     </footer>
   </div>
 </body>
