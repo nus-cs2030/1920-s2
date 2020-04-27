@@ -31,12 +31,24 @@ i.toUpperCase();
 ```
 Since `i` is of type `Integer`, the type check will fail and the code will not compile. By catching such errors during compile-time, static type checking helps immensely in the writing of large and complex programs.
 
-However, the use of null references results in a pitfall that is common to many programming languages. That is, accessing a member of a null reference will result in a null reference exception, known as a `NullPointerException` in Java. Take the below code for example:
+However, the use of null references results in a pitfall that is common to many programming languages. That is, accessing a member of a null reference will result in a null reference exception, known as a `NullPointerException` in Java.
+
+Take the below code for example:
 ```
 String s = null;
 s.toUpperCase();
 ```
 It compiles without any issues, but throws a `NullPointerException` when run. While the cause of the bug might seem obvious here, `NullPointerException`s can be tricky to debug in large, complex software.
+
+## Null Safety
+
+Null safety is a guarantee within an object-oriented programming language that no object references will have null or void values. This helps dramatically reduce the occurrence of `NullPointerException`s during the execution of programs.
+
+Certain languages such as Kotlin have [null safety](https://kotlinlang.org/docs/reference/null-safety.html) built into the language. In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that cannot (non-null references). Calling a method or accessing a property on non-null references is guaranteed to always be safe. Should the programmer wish to use nullable references, they have to explicitly designate the variable as nullable.
+
+Kotlin also has a [safe call operator](https://kotlinlang.org/docs/reference/null-safety.html#safe-calls), which can be used to safely call a method or access a property on a reference without encountering a `NullPointerException`. The safe call checks if the reference is a null reference before evaluating the expression, returning `null` if called on a null reference.
+
+Although Java does not have null safety built into the language, and is unlikely to ever do so for backwards compatibility reasons, it is still possible to do away with nulls with the `Optional` class introduced in Java 8.
 
 ## Optional
 
