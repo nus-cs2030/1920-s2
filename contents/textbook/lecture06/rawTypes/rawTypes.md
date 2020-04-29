@@ -62,10 +62,10 @@ In the above example, `Outer<E>` is a parameterized type.
 Raw types behaves just like they were before generics were introduced. Which means that the following example is entirely legal at compile-time.
 
 ```
-List food = new ArrayList(); // Warning: Raw Type
-names.add("Pizza");
-names.add("Cake");
-names.add(123); // No compilation error
+List foods = new ArrayList(); // Warning: Raw Type
+foods.add("Pizza");
+foods.add("Cake");
+foods.add(123); // No compilation error
 ```
 The above code will run without errors.
 However, that we also have the following:
