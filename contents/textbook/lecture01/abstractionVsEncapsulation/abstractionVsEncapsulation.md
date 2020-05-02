@@ -77,16 +77,18 @@ The variable name is declared as a private field inside the class Student. As su
 |Purpose       |To show relevant data and hide unwanted data|To hide the internal workings and data from the outside world|
 |Implementation|Using abstract class and interface          |Wrap the data and code into a single unit using class and protect data using access modifiers (Public, Protected and Private)|
 
-
 # Java Memory Model
 
 Java Memory Model comprises three parts, which are Stack, Heap, and Non-heap(Metaspace since Java 8).
 
-##Stack
+## Stack
+
 - local variables and call frames(Primitive types and object references)
 
-##Heap
+## Heap
+
 - Dynamically allocated objects(Objects)
 
-##Metaspace
+## Metaspace
+
 - loaded classes and other meta classes
