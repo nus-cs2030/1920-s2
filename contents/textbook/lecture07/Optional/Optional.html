@@ -67,6 +67,26 @@
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture07/Optional/Optional.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
+        <h2 id="the-perils-of-null">The Perils of Null<a class="fa fa-anchor" href="#the-perils-of-null" onclick="event.stopPropagation()"></a></h2>
+        <blockquote>
+          <p>I call it my billion-dollar mistake. It was the invention of the null reference in 1965. At that time, I was designing the first comprehensive type system for references in an object oriented language (ALGOL W). My goal was to ensure that all use of references should be absolutely safe, with checking performed automatically by the compiler. But I couldn't resist the temptation to put in a null reference, simply because it was so easy to implement. This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.</p>
+          <p>-- <cite>Tony Hoare, inventor of ALGOL W</cite></p>
+        </blockquote>
+        <p>In Java, the <a href="https://docs.oracle.com/javase/specs/jls/se11/html/jls-3.html#jls-3.10.7">null literal</a> <code>null</code> represents the null reference, which is used to denote the non-existence of an object. Just like how primitive types take on a default value if declared but uninitialised (<code>int</code> takes on the value <code>0</code>, <code>boolean</code> takes on the value <code>false</code>, etc), uninitialised reference types take on the default value of <code>null</code>. Although the existence of null references might seem innocuous, it is the cause of many bugs written in programming languages without null safety.</p>
+        <p>Java is a statically typed language, meaning that the types of all variables are known at compile time. This allows the Java compiler to catch certain bugs statically (before the program is run) rather than dynamically (during the execution of the program), thus providing certain guarantees about the behaviour of the program.</p>
+        <p>For instance, let's say I have the following code:</p>
+        <pre><code class="hljs"><span>Integer i = 2030;<br></span><span>i.toUpperCase();<br></span></code></pre>
+        <p>Since <code>i</code> is of type <code>Integer</code>, the type check will fail and the code will not compile. By catching such errors during compile-time, static type checking helps immensely in the writing of large and complex programs.</p>
+        <p>However, the use of null references results in a pitfall that is common to many programming languages. That is, accessing a member of a null reference will result in a null reference exception, known as a <code>NullPointerException</code> in Java.</p>
+        <p>Take the below code for example:</p>
+        <pre><code class="hljs"><span>String s = null;<br></span><span>s.toUpperCase();<br></span></code></pre>
+        <p>It compiles without any issues, but throws a <code>NullPointerException</code> when run. While the cause of the bug might seem obvious here, <code>NullPointerException</code>s can be tricky to debug in large, complex software.</p>
+        <h2 id="null-safety">Null Safety<a class="fa fa-anchor" href="#null-safety" onclick="event.stopPropagation()"></a></h2>
+        <p>Null safety is a guarantee within an object-oriented programming language that no object references will have null or void values. This helps dramatically reduce the occurrence of <code>NullPointerException</code>s during the execution of programs.</p>
+        <p>Certain languages such as Kotlin have <a href="https://kotlinlang.org/docs/reference/null-safety.html">null safety</a> built into the language. In Kotlin, the type system distinguishes between references that can hold null (nullable references) and those that cannot (non-null references). Calling a method or accessing a property on non-null references is guaranteed to always be safe. Should the programmer wish to use nullable references, they have to explicitly designate the variable as nullable.</p>
+        <p>Kotlin also has a <a href="https://kotlinlang.org/docs/reference/null-safety.html#safe-calls">safe call operator</a>, which can be used to safely call a method or access a property on a reference without encountering a <code>NullPointerException</code>. The safe call checks if the reference is a null reference before evaluating the expression, returning <code>null</code> if called on a null reference.</p>
+        <p>Although Java does not have null safety built into the language, and is unlikely to ever do so for backwards compatibility reasons, it is still possible to do away with nulls with the <code>Optional</code> class introduced in Java 8.</p>
+        <h2 id="optional">Optional<a class="fa fa-anchor" href="#optional" onclick="event.stopPropagation()"></a></h2>
         <p>In lecture 7, we learn about the maybe class and using optional to hide the null and alse make the code more elegant by removing the need
           to check for null using if and else.</p>
         <p>In the lecture notes:</p>
@@ -105,6 +125,11 @@
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#no-more-null">No more Null&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#the-perils-of-null">The Perils of Null&#x200E;</a>
+              <a class="nav-link py-1" href="#null-safety">Null Safety&#x200E;</a>
+              <a class="nav-link py-1" href="#optional">Optional&#x200E;</a>
+            </nav>
 
           </nav>
         </div>
@@ -113,7 +138,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, Apr 24, 2020, 6:44:25 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Sun, May 3, 2020, 1:56:01 AM UTC</small></div>
     </footer>
   </div>
 </body>
