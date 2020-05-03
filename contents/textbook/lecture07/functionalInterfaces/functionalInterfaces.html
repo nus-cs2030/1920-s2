@@ -66,15 +66,19 @@
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture06/functionalInterfaces/functionalInterfaces.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
+        <p><strong>Single Abstract Methods</strong></p>
         <ul>
-          <li>
-            <p>functional interface is an interface with only one abstract method. A lambda expression can be used to represent a functional interface. <code>java.util.function</code> has provided some common functional interfaces, for example <code>Consumer&lt;T&gt;</code>, <code>Function&lt;T, R&gt;</code>, and <code>Predicate&lt;T&gt;</code>.</p>
-          </li>
-          <li>
-            <p>An example of a functional interface:</p>
-          </li>
+          <li>Previously, we have had come across lambda expressions of type Function, Predicate, Supplier, Consumer, etc.</li>
+          <li>Such interfaces are representative of what the key concept that we are going to be learning here - <em>Single Abstract Method(SAM)</em></li>
+          <li>As inferred from its name, these methods are representative of an anonymous class that implements any interface with only 1 abstract method.</li>
+          <li>Why only one abstract method? It is to ensure that the compiler can infer which method body the lambda expression implements.</li>
+          <li>By convention, we use a <strong>lambda</strong> expression(-&gt;) as a shorthand to represent them and functional interfaces in general.</li>
         </ul>
-        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Predicate</span>&lt;<span class="hljs-title">T</span>&gt; </span>{<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(T t)</span></span>;<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{<br></span><span>  Predicate&lt;Integer&gt; p = x-&gt;x &gt; <span class="hljs-number">3</span>; <span class="hljs-comment">// define a predicate</span><br></span><span>  <br></span><span>  <span class="hljs-comment">// print out all integers in range [0, 10) that are greater than 3.</span><br></span><span>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; ++i) {<br></span><span>    <span class="hljs-keyword">if</span> (p(i)) {<br></span><span>      System.out.println(i);<br></span><span>    }<br></span><span>  }<br></span><span>}<br></span><span><br></span><span><br></span><span><br></span><span><span class="hljs-comment">/* The above code is equivalent to the following */</span><br></span><span><span class="hljs-keyword">import</span> java.util.function.Predicate; <span class="hljs-comment">// using java function library</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{<br></span><span>  Predicate&lt;Integer&gt; p = x-&gt;x &gt; <span class="hljs-number">3</span>;<br></span><span>  <br></span><span>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; ++i) {<br></span><span>    <span class="hljs-keyword">if</span> (p(i)) {<br></span><span>      System.out.println(i);<br></span><span>    }<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <p>The <code>Consumer&lt;T&gt;</code>, <code>Function&lt;T, R&gt;</code>, and <code>Predicate&lt;T&gt;</code> lambdas that we may have seen earlier fall under <code>java.util.function</code></p>
+        <ul>
+          <li>Examples of functional interfaces:</li>
+        </ul>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Predicate</span>&lt;<span class="hljs-title">T</span>&gt; </span>{ <br></span><span>  <span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(T t)</span></span>; <br></span><span>}<br></span><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Consumer</span>&lt;<span class="hljs-title">T</span>&gt; </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">accept</span><span class="hljs-params">(T t)</span></span>;<br></span><span>    <span class="hljs-function">Consumer&lt;T&gt; <span class="hljs-title">andThen</span><span class="hljs-params">(Consumer&lt;? <span class="hljs-keyword">super</span> T&gt; after)</span></span>;<br></span><span>}<br></span><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Supplier</span>&lt;<span class="hljs-title">T</span>&gt; </span>{<br></span><span>    <span class="hljs-function">T <span class="hljs-title">get</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{<br></span><span>  Predicate&lt;Integer&gt; p = x-&gt;x &gt; <span class="hljs-number">3</span>; <span class="hljs-comment">// define a predicate</span><br></span><span>  <br></span><span>  <span class="hljs-comment">// print out all integers in range [0, 10) that are greater than 3.</span><br></span><span>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; ++i) {<br></span><span>    <span class="hljs-keyword">if</span> (p(i)) {<br></span><span>      System.out.println(i);<br></span><span>    }<br></span><span>  }<br></span><span>}<br></span><span><br></span><span><br></span><span><span class="hljs-comment">/* The above code is equivalent to the following */</span><br></span><span><span class="hljs-keyword">import</span> java.util.function.Predicate; <span class="hljs-comment">// using java function library</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{<br></span><span>  Predicate&lt;Integer&gt; p = x-&gt;x &gt; <span class="hljs-number">3</span>;<br></span><span>  <br></span><span>    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; ++i) {<br></span><span>    <span class="hljs-keyword">if</span> (p(i)) {<br></span><span>      System.out.println(i);<br></span><span>    }<br></span><span>  }<br></span><span>}<br></span></code></pre>
         <ul>
           <li>Use of lambda expression to represent functional interfaces:
             <ul>
@@ -83,9 +87,10 @@
           </li>
         </ul>
         <pre><code class="hljs java"><span><span class="hljs-keyword">import</span> java.util.function.Predicate; <span class="hljs-comment">// using java function library</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{<br></span><span> Predicate&lt;Integer&gt; p = <span class="hljs-keyword">new</span> Predicate&lt;Integer&gt; {<br></span><span>   <span class="hljs-meta">@Override</span><br></span><span>   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">test</span><span class="hljs-params">(Integer t)</span> </span>{<br></span><span>     <span class="hljs-keyword">return</span> t &gt; <span class="hljs-number">3</span>;<br></span><span>   }<br></span><span> };<br></span><span> <br></span><span>   <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; ++i) {<br></span><span>   <span class="hljs-keyword">if</span> (p(i)) {<br></span><span>     System.out.println(i);<br></span><span>   }<br></span><span> }<br></span><span>}<br></span></code></pre>
-        <ul>
-          <li>For more information on functional interfaces, check out java documentation <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/package-summary.html">here</a>.</li>
-        </ul>
+        <p>Additionally we can annotate a class with @FunctionalInterface to hint our intentions to the compiler and let the compiler help us catch any unintended error.</p>
+        <p>We can define our own functional interface as well.</p>
+        <pre><code class="hljs java"><span><span class="hljs-meta">@FunctionalInterface</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">GetGrade</span></span>{<br></span><span>  <span class="hljs-function">A <span class="hljs-title">takeGrade</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span><span>GetGrade good = test -&gt; test.takeGrade();<br></span></code></pre>
+        <p>For more information on functional interfaces, check out java documentation <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/package-summary.html">here</a>.</p>
       </div>
 
 
@@ -102,7 +107,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Sun, May 3, 2020, 1:56:01 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Sun, May 3, 2020, 1:58:13 AM UTC</small></div>
     </footer>
   </div>
 </body>
