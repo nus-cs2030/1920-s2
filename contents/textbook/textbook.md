@@ -55,7 +55,7 @@
 * [Wrapper Classes](lecture05/wrapperClass/wrapperClass.html)
 * [Generic Subtypes](lecture05/genericSubtypes/genericSubtypes.html)
 * [Generic Type and Parameterised Type](lecture05/GenericAndParameterisdType/GenericAndParameterisedType.html)
-* [Bounded Wildcards](lecture05/boundedWildcards/bounedWildcards.html)
+* [Bounded Wildcards](lecture05/boundedWildcards/boundedWildcards.html)
 * [Generics MANIFESTO Part One](lecture05/genericsManifestoPartOne/index.html)
 
 </panel>
