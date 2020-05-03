@@ -101,10 +101,14 @@ check for null in every step.
 5.`map(Function<? super T, ? extends U> mapper)`
 Map just takes the value in one optional casing and apply the function and returns the Optional of the applied value.
 
-6.orElseThrow()
+6.orElse(T other)
+returns value if present, else returns other.
+This is an alternative to the get() method.
+
+7.orElseThrow()
 for throwing NoSuchElementException
 
-7.`ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)`
+8.`ifPresentOrElse(Consumer<? super T> action, Runnable emptyAction)`
 if value is present in the Optional, apply the action. or else perform the empty action.
 For example:
 ```
@@ -132,4 +136,3 @@ String getGrade(String id, String code, String name) throws NoSuchRecordExceptio
 
 Note: Avoid using methods such as get because it might invoke a NullPointerException. Also, do not use isPresent, isEmpty as it is
 equivalent of checking for null and it defeats the purpose of using the optional class.
-

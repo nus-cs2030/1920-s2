@@ -18,6 +18,8 @@ This post was adapted from [Prof Ooi's CS2030 Website](https://nus-cs2030.github
 
 This post was inspired by [The Best Introduction to Monad](https://blog.jcoglan.com/2011/03/05/translation-from-haskell-to-javascript-of-selected-portions-of-the-best-introduction-to-monads-ive-ever-read/), but is adapted to the Object-Oritented way of programming with Java.
 
+For a visual introduction to functors and monads, check [this](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) out!
+
 Let's say we have:
 
 ```java
