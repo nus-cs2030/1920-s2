@@ -29,22 +29,6 @@
       "headingKeywords": {}
     },
     {
-      "pageNav": 2,
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "site-nav.md",
-      "src": "ImmutableInfiniteList.md",
-      "title": "",
-      "layout": "default",
-      "headings": {
-        "immutable-infinite-list": "Immutable Infinite List",
-        "stream-operations": "Stream Operations",
-        "important-concept": "IMPORTANT CONCEPT",
-        "variable-capture-using-java-memory-model": "Variable Capture (Using Java Memory Model)"
-      },
-      "headingKeywords": {}
-    },
-    {
       "src": "README.md",
       "title": "",
       "layout": "default",
@@ -724,6 +708,22 @@
         "advantages-of-laziness": "Advantages of Laziness",
         "converting-between-streams-arrays-and-arraylists": "Converting Between Streams, Arrays and ArrayLists",
         "summary-for-streams": "Summary for Streams"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture09/ImmutableIFL/ImmutableInfiniteList.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "immutable-infinite-list": "Immutable Infinite List",
+        "stream-operations": "Stream Operations",
+        "important-concept": "IMPORTANT CONCEPT",
+        "variable-capture-using-java-memory-model": "Variable Capture (Using Java Memory Model)"
       },
       "headingKeywords": {}
     },
