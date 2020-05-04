@@ -87,7 +87,7 @@
 
 <panel header="## **Lecture 9**" no-close>
 
-Do add content via a Pull Request!
+* [Immutable Infinite List](lecture09/ImmutableIFL/ImmutableInfiniteList.html)
 
 </panel>
 

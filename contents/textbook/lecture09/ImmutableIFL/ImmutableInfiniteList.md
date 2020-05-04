@@ -9,6 +9,10 @@
 
 # Immutable Infinite List
 
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+[Edit the material here! :fas-pen:](https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture09/ImmutableIFL/ImmutableInfiniteList.md)
+<!-- DO NOT DELETE THIS LINK AND PLEASE WRITE BELOW THIS LINK-->
+
 In Lecture 9, We learnt to appreciate the laziness of Streams by designing our own infinite list. 
 1)	An infinite list (when not empty) contains a head value and a tail list.
 2)	To make an infinite list be processed like a Stream, we can store the methods that are applicable to the infinite list in an IFL interface and create a class which implements the interface but behaves like a Stream, in a delayed manner.
