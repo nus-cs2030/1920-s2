@@ -720,8 +720,13 @@
       "title": "",
       "layout": "default",
       "headings": {
-        "immutable-infinite-list": "Immutable Infinite List",
+        "immutable-infinite-list-and-mutable-infinite-list": "Immutable Infinite List And Mutable Infinite List",
+        "mutable-infinite-list-implementation-1": "Mutable Infinite List(Implementation 1)",
+        "immutable-infinite-list-implementation-2": "Immutable Infinite List(Implementation 2)",
         "stream-operations": "Stream Operations",
+        "data-source-operations": "Data Source Operations",
+        "intermediate-operations": "Intermediate Operations",
+        "terminal-operations": "Terminal Operations",
         "important-concept": "IMPORTANT CONCEPT",
         "variable-capture-using-java-memory-model": "Variable Capture (Using Java Memory Model)"
       },
