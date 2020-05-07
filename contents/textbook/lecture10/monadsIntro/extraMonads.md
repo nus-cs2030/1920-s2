@@ -16,7 +16,7 @@
 
 ## Supplementary materials about pure functions
 
-A function is called pure function if it always returns the same result for same argument values and it has no side effects like modifying an argument (or global variable) or outputting something. The only result of calling a pure function is the return value. 
+A function is called a pure function if it always returns the same result for same argument values and it has no side effects like modifying an argument (or global variable) or outputting something. The only result of calling a pure function is the return value. 
 
 Examples of side effects:
 
@@ -34,7 +34,7 @@ int calculate(int x, int y) {
 }
 ```
 
-Explanation: x / y may throw an java.lang.ArithmeticException when y = 0, thus this belongs to the second point of side effects.
+Explanation: x / y may throw an java.lang.ArithmeticException when y = 0, thus this can cause side effects(point 2 in side effect list)
 
 ``` java
 int foo(int i) {
@@ -50,7 +50,7 @@ int addToQueue(List<Integer> queue, int i) {
 }
 ```
 
-Explanation: this method changes the external state, it modifies the queue by adding in new values to the list of Integer.
+Explanation: this method changes the external state, it modifies the queue by adding in new values to queue, which is a list of Integer.
 
 #### Example of pure function
 
@@ -60,19 +60,19 @@ int p(int x, int y) {
 }
 ```
 
-Explanation: this method does not have program input and output, it does not throw exceptions, and it does not modify external state. Thus it does have side effects. It also always returns the same result for same argument values
+Explanation: this method does not have program input and output, it does not throw exceptions, and it does not modify external state. Thus it does have side effects. It always returns the same result for same argument values, thus it is considered as a pure function
 
 ## Supplementary materials about Functor
 
-In the functional programming, it is a common to map objects and types to another types. One safe way of doing it is putting this object, stream, or data structure in a well-protected container allowing us to execute mapping operations with functions. Here is where Functors comes in.
+In functional programming, it is common to map objects and types to another type. One safe way of doing it is putting this object, stream, or data structure in a well-protected container which allows us to execute mapping operations with functions. Here is where Functors comes in.
 
-Common examples of Functors which have been covered in the module is Optional/InfiniteList. They have methods of the form: < R > Functor< R > map(Function< T, R > func)
+Common examples of Functors which have been covered in CS2030 is Optional/InfiniteList. They have methods of the form: < R > Functor< R > map(Function< T, R > func)
 
 Here is a simple implementation of a functor
 
 ```java
 class FunctorExample {
-    private double num;
+    public double num;
 
     public FunctorExample(double num) {
         this.num = num;
@@ -110,7 +110,7 @@ fe.equals(fe.map(x -> x)); // check Identity Law
 fe.map(x -> x + 2.0).map(x -> x * 3.0).equals(fe.map(x -> (x + 2.0) * 3.0)); // check Associative Law
 ```
 
-The result for the second line of code is true, and the result for the third line of code is true as well. Thus we can confirm that the above implementation is a functor.
+The result for the second line of code is true, and the result for the third line of code is true as well. Thus we can confirm that the above implementation is a functor because it obeys the two laws mentioned above
 
 
 ## How to build a monad
