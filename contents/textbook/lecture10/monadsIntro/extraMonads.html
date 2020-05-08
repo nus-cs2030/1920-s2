@@ -67,6 +67,48 @@
 
         <p><a href="https://github.com/nus-cs2030/1920-s2/edit/master/contents/textbook/lecture10/monadsIntro/extraMonads.md">Edit the material here! <span aria-hidden="true" class="fas fa-pen"></span></a></p>
 
+        <h2 id="supplementary-materials-about-pure-functions">Supplementary materials about pure functions<a class="fa fa-anchor" href="#supplementary-materials-about-pure-functions" onclick="event.stopPropagation()"></a></h2>
+        <p>A function is called a pure function if it always returns the same result for same argument values and it has no side effects like modifying an argument (or global variable) or outputting something. The only result of calling a pure function is the return value.</p>
+        <p>Examples of side effects:</p>
+        <ol>
+          <li>
+            <p>Program input and output</p>
+          </li>
+          <li>
+            <p>Throwing exceptions</p>
+          </li>
+          <li>
+            <p>Modifying external state</p>
+          </li>
+        </ol>
+        <h4 id="examples-of-impure-functions">Examples of impure functions<a class="fa fa-anchor" href="#examples-of-impure-functions" onclick="event.stopPropagation()"></a></h4>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{<br></span><span>    <span class="hljs-keyword">return</span> x / y;<br></span><span>}<br></span></code></pre>
+        <p>Explanation: x / y may throw an java.lang.ArithmeticException when y = 0, thus this can cause side effects(point 2 in side effect list)</p>
+        <pre><code class="hljs"><span>int foo(int i) {<br></span><span>    return this.count + i;<br></span><span>}<br></span></code></pre>
+        <p>Explanation: the program makes use of this.count, which is a field of the class, thus the return value of the method does not always return the same result for same argument values. It might varies with different this.count value and thus it does not have a deterministic value.</p>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">addToQueue</span><span class="hljs-params">(List&lt;Integer&gt; queue, <span class="hljs-keyword">int</span> i)</span> </span>{<br></span><span>    queue.add(i);<br></span><span>}<br></span></code></pre>
+        <p>Explanation: this method changes the external state, it modifies the queue by adding in new values to queue, which is a list of Integer.</p>
+        <h4 id="example-of-pure-function">Example of pure function<a class="fa fa-anchor" href="#example-of-pure-function" onclick="event.stopPropagation()"></a></h4>
+        <pre><code class="hljs java"><span><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">p</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span> </span>{<br></span><span>    <span class="hljs-keyword">return</span> x + y;<br></span><span>}<br></span></code></pre>
+        <p>Explanation: this method does not have program input and output, it does not throw exceptions, and it does not modify external state. Thus it does have side effects. It always returns the same result for same argument values, thus it is considered as a pure function</p>
+        <h2 id="supplementary-materials-about-functor">Supplementary materials about Functor<a class="fa fa-anchor" href="#supplementary-materials-about-functor" onclick="event.stopPropagation()"></a></h2>
+        <p>In functional programming, it is common to map objects and types to another type. One safe way of doing it is putting this object, stream, or data structure in a well-protected container which allows us to execute mapping operations with functions. Here is where Functors comes in.</p>
+        <p>Common examples of Functors which have been covered in CS2030 is Optional/InfiniteList. They have methods of the form: &lt; R &gt; Functor&lt; R &gt; map(Function&lt; T, R &gt; func)</p>
+        <p>Here is a simple implementation of a functor</p>
+        <pre><code class="hljs java"><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FunctorExample</span> </span>{<br></span><span>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">double</span> num;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">FunctorExample</span><span class="hljs-params">(<span class="hljs-keyword">double</span> num)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.num = num;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> FunctorExample <span class="hljs-title">map</span><span class="hljs-params">(Function&lt; Double, Double &gt; func)</span> </span>{<br></span><span>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> FunctorExample(func.apply(num));<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object o)</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span> (o == <span class="hljs-keyword">this</span>) {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br></span><span>        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (o <span class="hljs-keyword">instanceof</span> FunctorExample) {<br></span><span>            FunctorExample temp = (FunctorExample) o;<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.num == temp.num;<br></span><span>        } <span class="hljs-keyword">else</span> {<br></span><span>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
+        <p>A functor must obey the following two functor laws</p>
+        <ol>
+          <li>
+            <p>Identity: if func is an identity function(such as x -&gt; x), then it should not change the value of the functor.</p>
+          </li>
+          <li>
+            <p>Associative: if func is a composition of two functions(such as g ⋅ h), then the resulting functor should be the same as calling func with h and then with g.</p>
+          </li>
+        </ol>
+        <p>Referring to the previous example, let us check if it obeys the functor laws.</p>
+        <pre><code class="hljs java"><span>FunctorExample fe = <span class="hljs-keyword">new</span> FunctorExample(<span class="hljs-number">1.0</span>)<br></span><span>fe.equals(fe.map(x -&gt; x)); <span class="hljs-comment">// check Identity Law</span><br></span><span>fe.map(x -&gt; x + <span class="hljs-number">2.0</span>).map(x -&gt; x * <span class="hljs-number">3.0</span>).equals(fe.map(x -&gt; (x + <span class="hljs-number">2.0</span>) * <span class="hljs-number">3.0</span>)); <span class="hljs-comment">// check Associative Law</span><br></span></code></pre>
+        <p>The result for the second line of code is true, and the result for the third line of code is true as well. Thus we can confirm that the above implementation is a functor because it obeys the two laws mentioned above</p>
+        <h2 id="how-to-build-a-monad">How to build a monad<a class="fa fa-anchor" href="#how-to-build-a-monad" onclick="event.stopPropagation()"></a></h2>
         <p>This post was adapted from <a href="https://nus-cs2030.github.io/1718-s2/monad/index.html">Prof Ooi's CS2030 Website</a></p>
         <p>This post was inspired by <a href="https://blog.jcoglan.com/2011/03/05/translation-from-haskell-to-javascript-of-selected-portions-of-the-best-introduction-to-monads-ive-ever-read/">The Best Introduction to Monad</a>, but is adapted to the Object-Oritented way of programming with Java.</p>
         <p>For a visual introduction to functors and monads, check <a href="http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html">this</a> out!</p>
@@ -98,6 +140,11 @@
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#do-you-want-to-build-a-monad">Do you want to build a monad?&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#supplementary-materials-about-pure-functions">Supplementary materials about pure functions&#x200E;</a>
+              <a class="nav-link py-1" href="#supplementary-materials-about-functor">Supplementary materials about Functor&#x200E;</a>
+              <a class="nav-link py-1" href="#how-to-build-a-monad">How to build a monad&#x200E;</a>
+            </nav>
 
           </nav>
         </div>
@@ -106,7 +153,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Thu, May 7, 2020, 4:50:07 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, May 8, 2020, 12:05:13 AM UTC</small></div>
     </footer>
   </div>
 </body>

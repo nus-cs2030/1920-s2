@@ -741,7 +741,10 @@
       "title": "",
       "layout": "default",
       "headings": {
-        "do-you-want-to-build-a-monad": "Do you want to build a monad?"
+        "do-you-want-to-build-a-monad": "Do you want to build a monad?",
+        "supplementary-materials-about-pure-functions": "Supplementary materials about pure functions",
+        "supplementary-materials-about-functor": "Supplementary materials about Functor",
+        "how-to-build-a-monad": "How to build a monad"
       },
       "headingKeywords": {}
     },
