@@ -97,6 +97,42 @@ class DoubleString {
 }
 ```
 
+## Fulfilling the Monad laws
+
+In order for a class to act as a Monad, it is not sufficient for it to merely represent a Monad syntatically by having a `flatMap` method or an `of()` method. It also has to behave the same semantically, by fulfilling certain laws, mainly the left identity law, the right identity law and the associative law. Let's dive deeper and check whether our DoubleString class fulfills these law. 
+
+A Monad should have an unit operator, or more commonly seen as the `of()` method, which constructs a pure Monad with no context. Although our DoubleString class has no explicit `of()` method, the constructor can be seen as creating a pure DoubleString object with no context. We can achieve this by passing in **an empty String** into the constructor. So let's use the constructor with empty String as an unit operator that creates a pure DoubleString. 
+
+Note that in the following laws, there is a difference between **M**onad (with capital M), and monad. A Monad is one that has a pure context, i.e. new DoubleString(x, ""), where log is an empty String, while a monad is one that already **has some context**, i.e. DoubleString(x, "divide").
+
+Given functions `f denoted x → f(x)`, `g denoted x → g(x)`:
+
+The **left identity law** states that `Monad.of(x).flatMap(f) ≡ f.apply(x)`. 
+
+In this case, `new DoubleString(x, "").flatMap(x -> new DoubleString(x, ""))` is just `f.apply(new DoubleString(x, "").x)`, which returns us `DoubleString(x, "")`. 
+`DoubleString(x, "")` is equivalent to our pure Monad, `new DoubleString(x, "")`. 
+Hence, the left identity law holds.
+
+The **right identity law** states that `monad.flatMap(x -> Monad.of(x)) ≡ monad`. 
+
+Suppose we have `DoubleString object a`, which has some context in its String log, e.g. "divide". a is not a pure Monad as it already has some context.
+`a.flatMap(x -> new DoubleString(x, "")) = new DoubleString(a.x, a.log + "") = a`. 
+Hence, the right identity law holds.
+
+The **associative law** states that `monad.flatMap(f).flatMap(g) ≡ monad.flatMap(x -> f.apply(x).flatMap(g))`. 
+
+Suppose we have the same DoubleString object a, 
+`a.flatMap(x -> new DoubleString(x1, "action1")).flatMap(x -> new DoubleString(x2, "action2"))` 
+= `new DoubleString(x2, a.log + "action1" + "action2")`, 
+
+which is equals to 
+
+`a.flatMap(x -> f.apply(a.x).flatMap(x -> new DoubleString(x2, "action2")))` 
+= `a.flatMap(x -> new DoubleString(x2, "action1" + "action2")` 
+= `new DoubleString(x2, a.log + "action1" + "action2")`. 
+
+Hence, the associative law holds.
+
 ## Making a Generic Monad that Logs
 
 We can make `DoubleString` a **generic class** that logs what happen to a variable.
