@@ -77,6 +77,104 @@ The variable name is declared as a private field inside the class Student. As su
 |Purpose       |To show relevant data and hide unwanted data|To hide the internal workings and data from the outside world|
 |Implementation|Using abstract class and interface          |Wrap the data and code into a single unit using class and protect data using access modifiers (Public, Protected and Private)|
 
+# Example: The Circle class
+
+It could get confusing to differentiate between abstraction and encapsulation. The difference between the two is best shown using some examples to illustrate the transformation of a class that did not implement abstraction and encapsulation, to one that implements both abstraction and encapsulation. 
+
+Suppose i have a circle class: 
+
+```
+/**
+ * A circle class that contains x and y coordinates of the center point, and its radius.
+ */
+class Circle {
+  double xCoord;
+  double yCoord;
+  double radius;
+
+  //rest of the code is not shown for abrevity
+}
+```
+
+In this Circle class, the center point is stored by its x and y coordinates. There are multiple issues using this approach, as this class violates both encapsulation and abstraction. 
+
+Supppose i have another class CircleLocationTracker, which tracks the position of the center point of a Circle object, nothing is stopping me from doing:
+
+```
+class CircleLocationTracker {
+
+  double[] location(Circle c1) {
+    double [] location = new double [] {c1.xCoord, c1.yCoord};
+    //
+  }
+  
+}
+```
+
+What happens if we change the implementation of the center point such that it is stored a double array, as opposed to x and y coordinates? First, we have to change the implementation in the Circle class to store a double array containing the x and y coordinates. Next, we have to change the implementation of all classes, such as CircleLocationTracker, that directly access the x and y coordinates of Circle objects.
+
+What happens if we change the implementation to using a List instead? You can see that it becomes increasingly troublesome whenever we change our implementation of the Circle class, and as we have more classes that use a Circle object. 
+
+Let's first improve the design of this Circle class by adhering to the abstraction principle. We can do this by creating a Point class, which abstracts away the implementation details of a point.
+
+```
+class Point {
+  double xCoord;
+  double yCoord
+  
+  //rest of the code is not shown for abrevity
+}
+
+class Circle {
+  Point centerPoint;
+  double radius;
+
+  //rest of the code is not shown for abrevity
+}
+```
+
+Now, there is a HAS-A relationship between Circle and Point. Whenever we change the implementation of Point class, such as storing a double array as opposed to the x and y coordiantes, we only need to change the Point class. In this case, we can think of the Circle class as a client that uses the Point class, and the Point class is the implementor that implements the specific details of how a point should be modeled. The Circle class is not aware, and is not required to be aware of the implementation changes in the Point class, and all changes are abstracted away from the Circle class.
+
+There are added benefits as well. Suppose we want to extend the capabilities of our Point class, such as including a distanceTo method that measures the distance between 2 points. We can now include this functionality in the Point class, as opposed to changing the Circle class in our initial implementation. 
+
+However, encapsulation is not implemented yet. Nothing is preventing external classes from accessing and modifying the x and y coordinates stored within variable instance of type Point. For example, in my Circle class, i could be doing
+
+```
+class Circle {
+
+  double radius;
+  double xCoord;
+  double yCoord;
+
+  Circle(Point centerPoint, double radius) {
+    xCoord = centerPoint.xCoord;
+    yCoord = centerPoint.yCoord;
+  }
+}
+```
+
+The lack of encapsulation creates a "know-too-much implementation" implementation of the Circle class which can directly access the x and y coordinates of the Point class although the implementation detail is supposed to be abstracted away with the implementation of a Point class.
+
+To tackle this, lets adhere to the encapsulation priciple and hides away the implementation details in the point class. 
+
+```
+class Point {
+  private double xCoord;
+  private double yCoord
+  
+  //rest of the code is not shown for abrevity
+}
+
+class Circle {
+  Point centerPoint;
+  double radius;
+
+  //rest of the code is not shown for abrevity
+}
+```
+
+Now, external classes are no longer able to access the xCoord and yCoord in the Point class. We have successfully transformed the circle class to one that adheres to both encapsulation and abstraction.
+
 # Java Memory Model
 
 Java Memory Model comprises three parts, which are Stack, Heap, and Non-heap(Metaspace since Java 8).
