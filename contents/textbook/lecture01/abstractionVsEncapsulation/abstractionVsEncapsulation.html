@@ -153,6 +153,25 @@
             </tbody>
           </table>
         </div>
+        <h1 id="example-the-circle-class">Example: The Circle class<a class="fa fa-anchor" href="#example-the-circle-class" onclick="event.stopPropagation()"></a></h1>
+        <p>It could get confusing to differentiate between abstraction and encapsulation. The difference between the two is best shown using some examples to illustrate the transformation of a class that did not implement abstraction and encapsulation, to one that implements both abstraction and encapsulation.</p>
+        <p>Suppose i have a circle class:</p>
+        <pre><code class="hljs"><span>/**<br></span><span> * A circle class that contains x and y coordinates of the center point, and its radius.<br></span><span> */<br></span><span>class Circle {<br></span><span>  double xCoord;<br></span><span>  double yCoord;<br></span><span>  double radius;<br></span><span><br></span><span>  //rest of the code is not shown for abrevity<br></span><span>}<br></span></code></pre>
+        <p>In this Circle class, the center point is stored by its x and y coordinates. There are multiple issues using this approach, as this class violates both encapsulation and abstraction.</p>
+        <p>Supppose i have another class CircleLocationTracker, which tracks the position of the center point of a Circle object, nothing is stopping me from doing:</p>
+        <pre><code class="hljs"><span>class CircleLocationTracker {<br></span><span><br></span><span>  double[] location(Circle c1) {<br></span><span>    double [] location = new double [] {c1.xCoord, c1.yCoord};<br></span><span>    //<br></span><span>  }<br></span><span>  <br></span><span>}<br></span></code></pre>
+        <p>What happens if we change the implementation of the center point such that it is stored a double array, as opposed to x and y coordinates? First, we have to change the implementation in the Circle class to store a double array containing the x and y coordinates. Next, we have to change the implementation of all classes, such as CircleLocationTracker, that directly access the x and y coordinates of Circle objects.</p>
+        <p>What happens if we change the implementation to using a List instead? You can see that it becomes increasingly troublesome whenever we change our implementation of the Circle class, and as we have more classes that use a Circle object.</p>
+        <p>Let's first improve the design of this Circle class by adhering to the abstraction principle. We can do this by creating a Point class, which abstracts away the implementation details of a point.</p>
+        <pre><code class="hljs"><span>class Point {<br></span><span>  double xCoord;<br></span><span>  double yCoord<br></span><span>  <br></span><span>  //rest of the code is not shown for abrevity<br></span><span>}<br></span><span><br></span><span>class Circle {<br></span><span>  Point centerPoint;<br></span><span>  double radius;<br></span><span><br></span><span>  //rest of the code is not shown for abrevity<br></span><span>}<br></span></code></pre>
+        <p>Now, there is a HAS-A relationship between Circle and Point. Whenever we change the implementation of Point class, such as storing a double array as opposed to the x and y coordiantes, we only need to change the Point class. In this case, we can think of the Circle class as a client that uses the Point class, and the Point class is the implementor that implements the specific details of how a point should be modeled. The Circle class is not aware, and is not required to be aware of the implementation changes in the Point class, and all changes are abstracted away from the Circle class.</p>
+        <p>There are added benefits as well. Suppose we want to extend the capabilities of our Point class, such as including a distanceTo method that measures the distance between 2 points. We can now include this functionality in the Point class, as opposed to changing the Circle class in our initial implementation.</p>
+        <p>However, encapsulation is not implemented yet. Nothing is preventing external classes from accessing and modifying the x and y coordinates stored within variable instance of type Point. For example, in my Circle class, i could be doing</p>
+        <pre><code class="hljs"><span>class Circle {<br></span><span><br></span><span>  double radius;<br></span><span>  double xCoord;<br></span><span>  double yCoord;<br></span><span><br></span><span>  Circle(Point centerPoint, double radius) {<br></span><span>    xCoord = centerPoint.xCoord;<br></span><span>    yCoord = centerPoint.yCoord;<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <p>The lack of encapsulation creates a &quot;know-too-much implementation&quot; implementation of the Circle class which can directly access the x and y coordinates of the Point class although the implementation detail is supposed to be abstracted away with the implementation of a Point class.</p>
+        <p>To tackle this, lets adhere to the encapsulation priciple and hides away the implementation details in the point class.</p>
+        <pre><code class="hljs"><span>class Point {<br></span><span>  private double xCoord;<br></span><span>  private double yCoord<br></span><span>  <br></span><span>  //rest of the code is not shown for abrevity<br></span><span>}<br></span><span><br></span><span>class Circle {<br></span><span>  Point centerPoint;<br></span><span>  double radius;<br></span><span><br></span><span>  //rest of the code is not shown for abrevity<br></span><span>}<br></span></code></pre>
+        <p>Now, external classes are no longer able to access the xCoord and yCoord in the Point class. We have successfully transformed the circle class to one that adheres to both encapsulation and abstraction.</p>
         <h1 id="java-memory-model">Java Memory Model<a class="fa fa-anchor" href="#java-memory-model" onclick="event.stopPropagation()"></a></h1>
         <p>Java Memory Model comprises three parts, which are Stack, Heap, and Non-heap(Metaspace since Java 8).</p>
         <h2 id="stack">Stack<a class="fa fa-anchor" href="#stack" onclick="event.stopPropagation()"></a></h2>
@@ -179,6 +198,7 @@
             <a class="nav-link py-1" href="#encapsulation">Encapsulation&#x200E;</a>
             <a class="nav-link py-1" href="#example-the-student-class">Example: The Student class&#x200E;</a>
             <a class="nav-link py-1" href="#abstraction-vs-encapsulation-2">Abstraction vs Encapsulation&#x200E;</a>
+            <a class="nav-link py-1" href="#example-the-circle-class">Example: The Circle class&#x200E;</a>
             <a class="nav-link py-1" href="#java-memory-model">Java Memory Model&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#stack">Stack&#x200E;</a>
@@ -193,7 +213,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, May 8, 2020, 12:05:13 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, May 8, 2020, 4:50:17 AM UTC</small></div>
     </footer>
   </div>
 </body>
