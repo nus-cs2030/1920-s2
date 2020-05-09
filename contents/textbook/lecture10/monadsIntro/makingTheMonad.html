@@ -88,6 +88,28 @@
         <p>Line <code>ds = mapper.apply(x);</code> wraps it once; The next line unwraps the value and the context (<code>ds.x</code> and <code>dx.log</code>) and wraps it again ( <code>new DoubleString(..)</code> ) with the next context (<code>this.log + &quot;\n&quot; + ds.log</code>).</p>
         <p>Here is our monad:</p>
         <pre><code class="hljs"><span>class DoubleString {<br></span><span>  Double x;<br></span><span>  String log;<br></span><span><br></span><span>  DoubleString(double x, String log) {<br></span><span>    this.x = x;<br></span><span>    this.log = log;<br></span><span>  }<br></span><span><br></span><span>  DoubleString flatMap(Function&lt;Double, DoubleString&gt; mapper) {<br></span><span>    DoubleString ds = mapper.apply(x);<br></span><span>    return new DoubleString(ds.x, this.log + &quot;\n&quot; + ds.log);<br></span><span>  }<br></span><span><br></span><span>  public String toString() {<br></span><span>    return x + &quot;\n&quot; + log;<br></span><span>  }<br></span><span>}<br></span></code></pre>
+        <h2 id="fulfilling-the-monad-laws">Fulfilling the Monad laws<a class="fa fa-anchor" href="#fulfilling-the-monad-laws" onclick="event.stopPropagation()"></a></h2>
+        <p>In order for a class to act as a Monad, it is not sufficient for it to merely represent a Monad syntatically by having a <code>flatMap</code> method or an <code>of()</code> method. It also has to behave the same semantically, by fulfilling certain laws, mainly the left identity law, the right identity law and the associative law. Let's dive deeper and check whether our DoubleString class fulfills these law.</p>
+        <p>A Monad should have an unit operator, or more commonly seen as the <code>of()</code> method, which constructs a pure Monad with no context. Although our DoubleString class has no explicit <code>of()</code> method, the constructor can be seen as creating a pure DoubleString object with no context. We can achieve this by passing in <strong>an empty String</strong> into the constructor. So let's use the constructor with empty String as an unit operator that creates a pure DoubleString.</p>
+        <p>Note that in the following laws, there is a difference between <strong>M</strong>onad (with capital M), and monad. A Monad is one that has a pure context, i.e. new DoubleString(x, &quot;&quot;), where log is an empty String, while a monad is one that already <strong>has some context</strong>, i.e. DoubleString(x, &quot;divide&quot;).</p>
+        <p>Given functions <code>f denoted x → f(x)</code>, <code>g denoted x → g(x)</code>:</p>
+        <p>The <strong>left identity law</strong> states that <code>Monad.of(x).flatMap(f) ≡ f.apply(x)</code>.</p>
+        <p>In this case, <code>new DoubleString(x, &quot;&quot;).flatMap(x -&gt; new DoubleString(x, &quot;&quot;))</code> is just <code>f.apply(new DoubleString(x, &quot;&quot;).x)</code>, which returns us <code>DoubleString(x, &quot;&quot;)</code>.
+          <code>DoubleString(x, &quot;&quot;)</code> is equivalent to our pure Monad, <code>new DoubleString(x, &quot;&quot;)</code>.
+          Hence, the left identity law holds.</p>
+        <p>The <strong>right identity law</strong> states that <code>monad.flatMap(x -&gt; Monad.of(x)) ≡ monad</code>.</p>
+        <p>Suppose we have <code>DoubleString object a</code>, which has some context in its String log, e.g. &quot;divide&quot;. a is not a pure Monad as it already has some context.
+          <code>a.flatMap(x -&gt; new DoubleString(x, &quot;&quot;)) = new DoubleString(a.x, a.log + &quot;&quot;) = a</code>.
+          Hence, the right identity law holds.</p>
+        <p>The <strong>associative law</strong> states that <code>monad.flatMap(f).flatMap(g) ≡ monad.flatMap(x -&gt; f.apply(x).flatMap(g))</code>.</p>
+        <p>Suppose we have the same DoubleString object a,
+          <code>a.flatMap(x -&gt; new DoubleString(x1, &quot;action1&quot;)).flatMap(x -&gt; new DoubleString(x2, &quot;action2&quot;))</code>
+          = <code>new DoubleString(x2, a.log + &quot;action1&quot; + &quot;action2&quot;)</code>,</p>
+        <p>which is equals to</p>
+        <p><code>a.flatMap(x -&gt; f.apply(a.x).flatMap(x -&gt; new DoubleString(x2, &quot;action2&quot;)))</code>
+          = <code>a.flatMap(x -&gt; new DoubleString(x2, &quot;action1&quot; + &quot;action2&quot;)</code>
+          = <code>new DoubleString(x2, a.log + &quot;action1&quot; + &quot;action2&quot;)</code>.</p>
+        <p>Hence, the associative law holds.</p>
         <h2 id="making-a-generic-monad-that-logs">Making a Generic Monad that Logs<a class="fa fa-anchor" href="#making-a-generic-monad-that-logs" onclick="event.stopPropagation()"></a></h2>
         <p>We can make <code>DoubleString</code> a <strong>generic class</strong> that logs what happen to a variable.</p>
         <pre><code class="hljs"><span>  T x;<br></span><span>  String log;<br></span><span><br></span><span>  Logger(T x, String log) {<br></span><span>    this.x = x;<br></span><span>    this.log = log;<br></span><span>  }<br></span><span><br></span><span>  &lt;R&gt; Logger&lt;R&gt; flatMap(Function&lt;? super T, ? extends Logger&lt;? extends R&gt;&gt; mapper) {<br></span><span>    Logger&lt;R&gt; ds = mapper.apply(x);<br></span><span>    return new Logger&lt;&gt;(ds.x, this.log + &quot;\n&quot; + ds.log);<br></span><span>  }<br></span><span><br></span><span>  public String toString() {<br></span><span>    return x + &quot;\n&quot; + log;<br></span><span>  }<br></span><span>}<br></span></code></pre>
@@ -106,6 +128,7 @@
             <a class="nav-link py-1" href="#do-you-want-to-build-a-monad-part-two">Do you want to build a monad? (Part Two)&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
               <a class="nav-link py-1" href="#making-it-a-monad">Making it a Monad&#x200E;</a>
+              <a class="nav-link py-1" href="#fulfilling-the-monad-laws">Fulfilling the Monad laws&#x200E;</a>
               <a class="nav-link py-1" href="#making-a-generic-monad-that-logs">Making a Generic Monad that Logs&#x200E;</a>
               <a class="nav-link py-1" href="#functor">Functor&#x200E;</a>
               <a class="nav-link py-1" href="#wait-what-is-a-monad-again">Wait, What is a Monad Again?&#x200E;</a>
@@ -118,7 +141,7 @@
     <footer>
 
       <div class="text-center">
-        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Fri, May 8, 2020, 5:18:33 AM UTC</small></div>
+        <small>Generated by <a href="https://markbind.org/">MarkBind 2.14.1</a> on Sat, May 9, 2020, 2:41:18 AM UTC</small></div>
     </footer>
   </div>
 </body>

@@ -760,6 +760,7 @@
       "headings": {
         "do-you-want-to-build-a-monad-part-two": "Do you want to build a monad? (Part Two)",
         "making-it-a-monad": "Making it a Monad",
+        "fulfilling-the-monad-laws": "Fulfilling the Monad laws",
         "making-a-generic-monad-that-logs": "Making a Generic Monad that Logs",
         "functor": "Functor",
         "wait-what-is-a-monad-again": "Wait, What is a Monad Again?"
