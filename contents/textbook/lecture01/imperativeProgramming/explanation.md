@@ -4,6 +4,7 @@
 
 What we will be introduced in CS2030 is the concept of **Imperative Programming**. 
 What we have learnt in CS1010J / CS1010S / CS1101S is the usage of **Functional Programming**, which is a form of **Declarative Programming**. 
+Those who come from CS1010E, we have learnt basics of C programming language and **procedural programming**, which is a form of **Imperative Programming**.
 
 Here some differences we can see in **Imperative Programming Vs. Functional Programming**. 
 
