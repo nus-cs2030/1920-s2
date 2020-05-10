@@ -16,15 +16,14 @@
 
 ## Definition of Nested Classes
 
-Nested classes is defined as a class which is defined in another class. There are two types of nested classes, one is static nested classes, and the other is non-static inner classes. Inner classes are further classified into local classes and anonymous classes
+Nested Classes are defined as classes which are defined in another class. There are two types of nested classes, one is static nested classes, and the other is non-static inner classes. Inner classes are further classified into local classes and anonymous classes
 
-1) static nested class : Nested classes that are declared static are called static nested classes.
+1) static nested class : A nested class that is declared static is called static nested class.
 2) inner class : An inner class is a non-static nested class
 
 ### static nested classes
 
-As with class methods and variables, a static nested class is associated with its outer class. And like static class methods, a static nested class cannot refer directly to instance variables or methods defined in its enclosing class: it can use them only through an object reference.
-They are accessed using the enclosing class name:
+As with class methods and variables, a static nested class is associated with its outer class. And like static class methods, a static nested class cannot refer directly to instance variables or methods defined in its enclosing class: it can use them only through an object reference. They are accessed using the enclosing class name:
 
 ```java
 OuterClass.StaticNestedClass
@@ -55,7 +54,7 @@ In this example, the static nested class CircleCreator can only access the stati
 
 ### Inner class Type 1: local inner classes
 
-Local Inner Classes are defined inside a block, which is usually a method body. This block can be a for loop as well. They belong to the block of code that they are defined within. These class have access only to the fields of the class enclosing it and fields of the block which are final or explicitly final. Local inner class must be instantiated in the block they are defined in.
+Local Inner Classes are defined inside a block, which is usually a method body. This block can be a for loop as well. They belong to the block of code that they are defined within. These class have access only to the fields of the enclosing class and fields of the block which are final or explicitly final. Local inner class must be instantiated in the block which they are defined in.
 
 1) Declaring a local inner class: A local inner class can be declared within a block. This block can be either a method body, a for loop etc.
 
