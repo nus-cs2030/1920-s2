@@ -806,6 +806,19 @@
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "site-nav.md",
+      "src": "contents/textbook/lecture13/Summary.md",
+      "title": "",
+      "layout": "default",
+      "headings": {
+        "summary-of-cs2030": "Summary of CS2030"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "pageNav": 2,
+      "header": "header.md",
+      "footer": "footer.md",
+      "siteNav": "site-nav.md",
       "src": "contents/textbook/misc/filesWSL/filesWSL.md",
       "title": "",
       "layout": "default",
