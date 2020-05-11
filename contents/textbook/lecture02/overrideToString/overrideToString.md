@@ -43,18 +43,21 @@ Today I folded 30 paper cranes at a rate of 5.932 cranes per hour
 ```
 
 # Overriding equals Method
+Classes inherit Object's equal method, which is not very useful because the method only implies if two objects' references to another obhject are the same or not. However, we want to use .equal() method to find equality. For example, lecture notes talk about how a Point is equal. It considers p.x and p.y and compares them with another point (this.x and this.y) in the given method below.
+
 A more correct way of comparing two object method is via the equals method.
 1. We have to check if the object is the same
 2. We have to check if it is of the same type
 3. We have to check if the values are equal (type casting is needed after checking if they are of the same type)
 
 An example from the lecture notes is:
+
 ```
 @Override
 boolean equals(Object obj) {
     if (this == obj) {
         return true;
-    } else if (obj instance of) {
+    } else if (obj instanceof Point) {
         Point p = (Point) obj;
         return Math.abs(this.x - p.x) < 1E-15 &&
             Math.abs(this.y - p.y) < 1E-15;
