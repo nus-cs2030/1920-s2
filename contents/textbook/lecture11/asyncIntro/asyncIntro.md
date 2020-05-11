@@ -141,7 +141,7 @@ Suppose you have several `CompletableFuture` objects, say `cf1`, `cf2`, and `cf3
 CompletableFuture.allOf(cf1, cf2, cf3).join();
 ```
 
-The object created by `CompletableFuture.allOf(cf1, cf2, cf3)` completes, only after all of `cf1`, `cf2`, `cf3` completes.
+The object created by `CompletableFuture.allOf(cf1, cf2, cf3)` completes, only after all of `cf1`, `cf2`, `cf3` completes. We need to take note that when call `join()` after `allOf()`, the result when completing `cf1`, `cf2`, and `cf3` individually would not be returned, since it is hard to determine the return type considering all different possibilities of the types of the value these objects may return. If we want to return the values of each object, we need to call `join()` for each of them individually.
 
 There is also a `anyOf`, for cases where it is sufficient for any one of the `CompletableFuture` to complete:
 ```Java
