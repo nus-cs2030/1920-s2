@@ -66,3 +66,42 @@ boolean equals(Object obj) {
     }
 }
 ````
+Rules for overriding a method:
+1. Only the overriding method is able to invoke the overriden method.
+2. The access level of the overriding method cannot be more restrictive than that of the overriden method.
+3. The return type of the overriding method should be the same or a subtype of the return type declared in the original overridden method in the superclass.
+4. A method declared final cannot be overridden.
+5. A subclass within the same package as the instance's superclass can override any superclass method that is not declared private or final.
+6. A subclass in a different package can only override the non-final methods declared public or protected.
+7. An overriding method can throw any unchecked exceptions, regardless of whether the overridden method throws exceptions or not. However, the overriding method should not throw checked exceptions that are new or broader than the ones declared by the overridden method. The overriding method can throw narrower or fewer exceptions than the overridden method.
+
+
+
+# Method Overloading
+Methods of the same name can co-exist if the signatures are different.
+
+Examples of method signatures:
+1. number of parameters.
+2. order of parameters: foo(int a, double b); foo(double a, int b).
+3. type of arguments.
+
+Static binding occurs during method overloading. Method to be called is determined during compile time.
+An example from the lecture notes is:
+
+```
+class A {
+    Number foo(Number x) { ... }
+    Number foo(String x) { ... }
+}
+
+A a = new A();
+a.foo(123)
+
+a.foo("123")
+````
+In contrast to method overriding, method overloading is very common among constructors. However, constructors cannot be overriden. 
+A static method cannot be overriden but can be overloaded.
+
+
+
+
