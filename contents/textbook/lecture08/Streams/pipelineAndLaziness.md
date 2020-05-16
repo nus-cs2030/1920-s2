@@ -182,6 +182,79 @@ List<Integer> integerList = intStream.boxed().collect(Collectors.toList());
 ArrayList<Integer> integerArrayList = new ArrayList<>(integerList);
 ```
 
+## Functional Interfaces that stream operations can take in
+
+### Predicate<T> 
+    filter (Predicate <? super T> predicate)
+    java.util.function.Predicate
+    a simple function that takes a single value as parameter, and returns true or false
+
+```java
+public interface Predicate {
+    boolean test(T t);
+}	
+```
+
+The Predicate interface contains more methods than the test() method, but the rest of the methods are default or static methods which you don't have to implement.
+You can implement the Predicate interface using a class, like this:
+
+```java
+public class CheckForNull implements Predicate {
+    @Override
+    public boolean test(Object o) {
+        return o != null;
+    }
+}
+```
+
+You can also implement the Java Predicate interface using a Lambda expression. Here is an example of implementing the Predicate interface using a Java lambda expression:
+
+```java
+Predicate predicate = (value) -> value != null;
+```
+
+### Consumer<T>
+    forEach (Consumer <? super T> consumer)
+    java.util.function.Consumer
+    a functional interface that represents a function that consumes a value without returning any value. 
+
+```java
+Consumer<Integer> consumer = (value) -> System.out.println(value);
+```
+
+### Supplier<T>
+    generate (Supplier <? extends T> s)
+    java.util.function.Supplier
+    a functional interface that represents a function that supplies a value of some sorts.
+
+```java
+Supplier<Integer> supplier = () -> new Integer((int) (Math.random() * 1000D));
+```
+
+### Function<T, R>
+    map (Function <? super T , ? extends R> mapper)
+    java.util.function
+    a function (method) that takes a single parameter and returns a single value
+   
+ ```java
+public interface Function<T,R> {
+
+    	public <R> apply(T parameter);
+}
+```
+
+In the Function interface, the only method you have to implement is the apply() method. Here is a Function implementation example:
+
+ ```java
+public class IncreaseOne implements Function<Integer, Integer> {
+
+ 	   @Override
+ 	   public Integer apply(Integer a) {
+  	      return a + 1;
+ 	   }
+}
+```
+
 ## Summary for Streams
 Here is a Summary for Streams that you can use during finals since there are so many methods for streams. 
 
