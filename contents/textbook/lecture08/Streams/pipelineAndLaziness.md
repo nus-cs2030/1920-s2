@@ -104,6 +104,12 @@ first 100 prime numbers. If we were to use a list, we would not know how big our
 create an infinite stream, filter with a predicate to look for prime numbers and set a limit on the number of elements we want in the
 stream.
 
+## Initializing an Optional
+To wrap up the discussion, let's see how we can create an Optional object. If you want to wrap a non-null value in an Optional, call Optional.of(value). Otherwise, if you want to wrap it in a null, call Optional.empty().
+<br>
+<br>
+Alternatively, if you do not want to check if the value is null or not, call Optional.ofNullable(value) which will return one of the above appropriately for you.
+
 ## Converting Between Streams, Arrays and ArrayLists
 
 From Array to ArrayList
