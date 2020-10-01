@@ -11,3 +11,5 @@ To set up a staging env on your server, follow these instructions:
 5. You should able to see your changes in https://(your-github-username).github.io/1920-s2/
 
 [TA guide for integrating PRs](https://github.com/nus-cs2030/1920-s2/blob/master/contents/guides/taGuide.md)
+## final commenet
+ i am a user and i know all  the difficulties i really appreciate your project good effort,worth a try
